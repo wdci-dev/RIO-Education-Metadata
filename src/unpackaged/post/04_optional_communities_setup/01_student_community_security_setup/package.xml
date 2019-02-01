@@ -9,6 +9,7 @@
     
     <types>
         <members>REDU - Student</members>
+		<members>Student Community Profile</members>
         <name>Profile</name>
     </types>
     <version>44.0</version>

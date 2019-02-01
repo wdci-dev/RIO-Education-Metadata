@@ -27,7 +27,7 @@
 	</recordTypeVisibilities>
 	<recordTypeVisibilities>
 		<default>false</default>
-		<recordType>Account.Location</recordType>
+		<recordType>Account.rio_ed__Location</recordType>
 		<visible>true</visible>
 	</recordTypeVisibilities>
 	<recordTypeVisibilities>
@@ -42,12 +42,12 @@
 	</recordTypeVisibilities>
 	<recordTypeVisibilities>
 		<default>false</default>
-		<recordType>Plan__c.Resource</recordType>
+		<recordType>rio_ed__Plan__c.rio_ed__Resource</recordType>
 		<visible>true</visible>
 	</recordTypeVisibilities>
 	<recordTypeVisibilities>
 		<default>true</default>
-		<recordType>Plan__c.Resource_Type</recordType>
+		<recordType>rio_ed__Plan__c.rio_ed__Resource_Type</recordType>
 		<visible>true</visible>
 	</recordTypeVisibilities>
 	
