@@ -76,11 +76,11 @@
 		<recordType>Account.Academic_Program</recordType>
 	</layoutAssignments>
 	<layoutAssignments>
-		<layout>Account-hed__HEDA Household Layout</layout>
+		<layout>Account-rio_ed__RIOEducation Household Layout</layout>
 		<recordType>Account.Administrative</recordType>
 	</layoutAssignments>
 	<layoutAssignments>
-		<layout>Account-hed__HEDA Household Layout</layout>
+		<layout>Account-rio_ed__RIOEducation Household Layout</layout>
 		<recordType>Account.HH_Account</recordType>
 	</layoutAssignments>
 	<layoutAssignments>
