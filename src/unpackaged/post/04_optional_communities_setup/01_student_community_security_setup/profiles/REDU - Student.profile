@@ -640,12 +640,12 @@
         <recordType>Account.Academic_Program</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-hed__HEDA Household Layout</layout>
-        <recordType>Account.rio_ed__RIOEducation Student Community Household Layout</recordType>
+        <layout>Account-rio_ed__RIOEducation Student Community Household Layout</layout>
+        <recordType>Account.Administrative</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-hed__HEDA Household Layout</layout>
-        <recordType>Account.rio_ed__RIOEducation Student Community Household Layout</recordType>
+        <layout>Account-rio_ed__RIOEducation Student Community Household Layout</layout>
+        <recordType>Account.HH_Account</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>rio_ed__Activity__c-rio_ed__RIOEducation Activity Layout</layout>

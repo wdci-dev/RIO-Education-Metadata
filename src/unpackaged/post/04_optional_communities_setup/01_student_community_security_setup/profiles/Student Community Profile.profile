@@ -1194,11 +1194,40 @@
         <field>hed__Program_Plan__c.hed__Is_Primary__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    
+    	
+	<layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.University_Department</recordType>
+    </layoutAssignments>
     <layoutAssignments>
-        <layout>Account-rio_ed__RIOEducation Location Layout</layout>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
         <recordType>Account.rio_ed__Location</recordType>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.Business_Organization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.Educational_Institution</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.Sports_Organization</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Program Layout</layout>
+        <recordType>Account.Academic_Program</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.Administrative</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-rio_ed__RIOEducation Guest Community Layout</layout>
+        <recordType>Account.HH_Account</recordType>
+    </layoutAssignments>
+	
     <layoutAssignments>
         <layout>Contact-rio_ed__RIOEducation Guest Community Layout</layout>
     </layoutAssignments>
