@@ -28,5 +28,9 @@
 		<members>Admin</members>
         <name>Profile</name>
     </types>
+	<types>
+        <members>REDU_Admin_Manual_Add_on</members>
+        <name>PermissionSet</name>
+    </types>
     <version>44.0</version>
 </Package>
