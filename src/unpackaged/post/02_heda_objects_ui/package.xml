@@ -15,7 +15,7 @@
         <name>CustomObject</name>
     </types>
 	<types>
-        <members>Course</members>
+        <members>Course_Record_Page_Header_One_Column</members>
         <name>FlexiPage</name>
     </types>
     <types>
