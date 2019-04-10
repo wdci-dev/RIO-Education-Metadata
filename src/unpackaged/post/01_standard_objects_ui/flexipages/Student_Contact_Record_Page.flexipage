@@ -33,7 +33,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Student Contact Record Page</masterLabel>
+    <masterLabel>RIOEducation Student Contact Record Page</masterLabel>
     <sobjectType>Contact</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

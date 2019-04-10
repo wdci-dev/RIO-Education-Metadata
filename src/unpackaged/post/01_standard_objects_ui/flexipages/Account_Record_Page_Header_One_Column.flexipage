@@ -99,7 +99,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Account Record Page (Header &amp; One Column)</masterLabel>
+    <masterLabel>RIOEducation Account Record Page (Header &amp; One Column)</masterLabel>
     <sobjectType>Account</sobjectType>
     <template>
         <name>flexipage:recordHomeSingleColTemplateDesktop</name>

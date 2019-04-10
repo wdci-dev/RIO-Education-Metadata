@@ -55,7 +55,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Course Record Page (Header &amp; One Column)</masterLabel>
+    <masterLabel>RIOEducation Course Record Page (Header &amp; One Column)</masterLabel>
     <sobjectType>hed__Course__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSingleColTemplateDesktop</name>
