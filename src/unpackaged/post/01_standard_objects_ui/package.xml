@@ -7,11 +7,7 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Account_Record_Page</members>
-        <members>Account_Record_Page_Header_One_Column</members>
         <members>Case_Record_Page</members>
-        <members>Contact_Record_Page</members>
-        <members>Student_Contact_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <version>44.0</version>

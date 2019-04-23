@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override updated by Lightning App Builder during activation.</comment>
-        <content>rio_ed__Program_Enrollment_Record_Page2</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-        <pageOrSobjectType>hed__Program_Enrollment__c</pageOrSobjectType>
-    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>rio_ed__image0031</logo>
@@ -21,44 +12,6 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>RIO Education Student Administration</label>
     <navType>Standard</navType>
-
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Account_Record_Page_Header_One_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Educational_Institution</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Account_Record_Page_Header_One_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Academic_Program</recordType>
-        <type>Flexipage</type>
-        <profile>REDU - Admin</profile>
-    </profileActionOverrides>
-
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Account_Record_Page_Header_One_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Academic_Program</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Account_Record_Page_Header_One_Column</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.Educational_Institution</recordType>
-        <type>Flexipage</type>
-        <profile>REDU - Admin</profile>
-    </profileActionOverrides>
     <tabs>standard-Contact</tabs>
     <tabs>rio_ed__Program_Application__c</tabs>
     <tabs>hed__Program_Enrollment__c</tabs>
