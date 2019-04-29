@@ -20,5 +20,9 @@
         <members>*</members>
         <name>SharingOwnerRule</name>
     </types>
+	<types>
+		<members>REDU_Faculty</members>
+        <name>SharingSet</name>
+    </types>
     <version>44.0</version>
 </Package>
