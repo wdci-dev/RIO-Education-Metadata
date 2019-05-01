@@ -50,6 +50,16 @@
 		<recordType>rio_ed__Plan__c.rio_ed__Resource_Type</recordType>
 		<visible>true</visible>
 	</recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>hed__Course_Enrollment__c.Faculty</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>hed__Course_Enrollment__c.Student</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
 	
 	<layoutAssignments>
 		<layout>Account-rio_ed__RIOEducation Department Layout</layout>
