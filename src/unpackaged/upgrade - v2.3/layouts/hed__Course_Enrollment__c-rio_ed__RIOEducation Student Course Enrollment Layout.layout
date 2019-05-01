@@ -21,23 +21,23 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Term__c</field>
+                <field>rio_ed__Term__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Course__c</field>
+                <field>rio_ed__Course__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Course_ID__c</field>
+                <field>rio_ed__Course_ID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Requirement_Logic__c</field>
+                <field>rio_ed__Requirement_Logic__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Hours_Attended__c</field>
+                <field>rio_ed__Hours_Attended__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -51,7 +51,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Enrollment_Status__c</field>
+                <field>rio_ed__Enrollment_Status__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -63,15 +63,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Requirement_Met__c</field>
+                <field>rio_ed__Requirement_Met__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Allow_Pre_Enrollment__c</field>
+                <field>rio_ed__Allow_Pre_Enrollment__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>EFTSL__c</field>
+                <field>rio_ed__EFTSL__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -84,21 +84,21 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Start_Date__c</field>
+                <field>rio_ed__Start_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Census_Date__c</field>
+                <field>rio_ed__Census_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Due_Date__c</field>
+                <field>rio_ed__Due_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>End_Date__c</field>
+                <field>rio_ed__End_Date__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -111,33 +111,33 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Fee_Method__c</field>
+                <field>rio_ed__Fee_Method__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fee_Type__c</field>
+                <field>rio_ed__Fee_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fee_Type_Option__c</field>
+                <field>rio_ed__Fee_Type_Option__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Loan_Fee__c</field>
+                <field>rio_ed__Loan_Fee__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Fee_Amount__c</field>
+                <field>rio_ed__Fee_Amount__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Upfront_Payment__c</field>
+                <field>rio_ed__Upfront_Payment__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Help_Debt_Amount__c</field>
+                <field>rio_ed__Help_Debt_Amount__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -150,7 +150,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Grade_Setting_Type__c</field>
+                <field>rio_ed__Grade_Setting_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -158,17 +158,17 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Grade_Value__c</field>
+                <field>rio_ed__Grade_Value__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Release_Grades__c</field>
+                <field>rio_ed__Release_Grades__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Credits_Offered__c</field>
+                <field>rio_ed__Credits_Offered__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -180,11 +180,11 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Grade_Points__c</field>
+                <field>rio_ed__Grade_Points__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Grade_Result__c</field>
+                <field>rio_ed__Grade_Result__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -201,15 +201,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PE_Group__c</field>
+                <field>rio_ed__PE_Group__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>PE_Pathway__c</field>
+                <field>rio_ed__PE_Pathway__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Plan_Requirement_Course__c</field>
+                <field>rio_ed__Plan_Requirement_Course__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -274,31 +274,31 @@
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Faculty__c</fields>
-        <fields>Faculty_Confirmed__c</fields>
-        <fields>Session__c</fields>
-        <fields>Status__c</fields>
-        <fields>Attendance__c</fields>
-        <fields>Attendance_Count__c</fields>
-        <relatedList>Session_Connection__c.Course_Connection__c</relatedList>
+        <fields>rio_ed__Faculty__c</fields>
+        <fields>rio_ed__Faculty_Confirmed__c</fields>
+        <fields>rio_ed__Session__c</fields>
+        <fields>rio_ed__Status__c</fields>
+        <fields>rio_ed__Attendance__c</fields>
+        <fields>rio_ed__Attendance_Count__c</fields>
+        <relatedList>rio_ed__Session_Connection__c.rio_ed__Course_Connection__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Requirement_ID__c</fields>
-        <fields>Requirement_Met__c</fields>
-        <fields>Requirement_Type__c</fields>
-        <fields>Credit_Points__c</fields>
-        <fields>External_Id__c</fields>
-        <fields>Other__c</fields>
-        <fields>Related_Course__c</fields>
-        <relatedList>Course_Connection_Requirement__c.Course_Connection__c</relatedList>
+        <fields>rio_ed__Requirement_ID__c</fields>
+        <fields>rio_ed__Requirement_Met__c</fields>
+        <fields>rio_ed__Requirement_Type__c</fields>
+        <fields>rio_ed__Credit_Points__c</fields>
+        <fields>rio_ed__External_Id__c</fields>
+        <fields>rio_ed__Other__c</fields>
+        <fields>rio_ed__Related_Course__c</fields>
+        <relatedList>rio_ed__Course_Connection_Requirement__c.rio_ed__Course_Connection__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Student_Fee__c</fields>
-        <fields>Fee_Description__c</fields>
-        <fields>Fee_Amount__c</fields>
-        <relatedList>Fee_Line__c.Course_Connection__c</relatedList>
+        <fields>rio_ed__Student_Fee__c</fields>
+        <fields>rio_ed__Fee_Description__c</fields>
+        <fields>rio_ed__Fee_Amount__c</fields>
+        <relatedList>rio_ed__Fee_Line__c.rio_ed__Course_Connection__c</relatedList>
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -9,38 +8,46 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Readonly</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Fee_Type__c</field>
+                <field>rio_ed__Program_Enrollment__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Fee_Unit__c</field>
+                <field>rio_ed__My_Term__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Loan_Fee__c</field>
+                <behavior>Required</behavior>
+                <field>rio_ed__Number_of_Terms__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>rio_ed__Study_Mode__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Fee_Domestic__c</field>
+                <field>rio_ed__Status__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Current_Non_Tuition_Fee_Domestic__c</field>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Notes__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Current_Fee_International__c</field>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Term__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Current_Non_Tuition_Fee_International__c</field>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Program_Pathway__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Automatically_Enroll_in_Courses__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -49,32 +56,40 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Grouping</label>
+        <label>Result Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Parent_Fee__c</field>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Credits_Attempted__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Credits_Earned__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Grade_Points__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__GPA__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__All_Courses_Completed__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__All_Courses_Passed__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fee_Label__c</field>
+                <field>rio_ed__Deferred__c</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
-    </layoutSections>
-    <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
-        <editHeading>true</editHeading>
-        <label>Other Information</label>
-        <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Description__c</field>
-            </layoutItems>
-        </layoutColumns>
-        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -105,6 +120,12 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
+    <miniLayout>
+        <fields>rio_ed__Program_Enrollment__c</fields>
+        <fields>rio_ed__Number_of_Terms__c</fields>
+        <fields>rio_ed__My_Term__c</fields>
+        <fields>rio_ed__Study_Mode__c</fields>
+    </miniLayout>
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
@@ -140,32 +161,34 @@
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Fee_Start_Date__c</fields>
-        <fields>Fee_End_Date__c</fields>
-        <fields>Current__c</fields>
-        <fields>Fee_Amount_Domestic__c</fields>
-        <fields>Fee_Amount_International__c</fields>
-        <relatedList>Fee_Schedule__c.Fee__c</relatedList>
-        <sortField>Fee_Start_Date__c</sortField>
-        <sortOrder>Desc</sortOrder>
-    </relatedLists>
-    <relatedLists>
-        <excludeButtons>New</excludeButtons>
-        <fields>NAME</fields>
-        <fields>hed__Course_ID__c</fields>
-        <fields>EFTSL__c</fields>
-        <fields>Current_Fee_Domestic__c</fields>
-        <fields>Current_Fee_International__c</fields>
-        <relatedList>hed__Course__c.Fee__c</relatedList>
-        <sortField>hed__Course_ID__c</sortField>
+        <fields>rio_ed__Course_ID__c</fields>
+        <fields>rio_ed__Plan_Requirement_Course__c</fields>
+        <fields>rio_ed__PE_Group_Status__c</fields>
+        <fields>rio_ed__Number_of_Courses_from_Group__c</fields>
+        <relatedList>rio_ed__PE_Pathway_Unit__c.rio_ed__Program_Pathway_Status__c</relatedList>
+        <sortField>rio_ed__Course_ID__c</sortField>
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Description__c</fields>
-        <fields>Current_Fee_Domestic__c</fields>
-        <fields>Current_Fee_International__c</fields>
-        <relatedList>Fee__c.Parent_Fee__c</relatedList>
+        <fields>hed__Course_Offering__c</fields>
+        <fields>hed__Contact__c</fields>
+        <fields>hed__Program_Enrollment__c</fields>
+        <fields>hed__Account__c</fields>
+        <fields>hed__Status__c</fields>
+        <fields>hed__Grade__c</fields>
+        <fields>rio_ed__Grade_Value__c</fields>
+        <fields>hed__Credits_Attempted__c</fields>
+        <fields>hed__Credits_Earned__c</fields>
+        <relatedList>hed__Course_Enrollment__c.rio_ed__PE_Pathway__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>rio_ed__Fee_Reference__c</fields>
+        <fields>rio_ed__Fee_Status__c</fields>
+        <fields>rio_ed__Total_Fee__c</fields>
+        <fields>rio_ed__Outstanding_Amount__c</fields>
+        <relatedList>rio_ed__Student_Fee__c.rio_ed__PE_Pathway__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -173,7 +196,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h6A000004QvDu</masterLabel>
+        <masterLabel>00h6C000000N80M</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

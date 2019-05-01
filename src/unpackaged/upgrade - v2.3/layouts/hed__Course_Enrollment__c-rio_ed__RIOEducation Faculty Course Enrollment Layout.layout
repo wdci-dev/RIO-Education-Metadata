@@ -19,23 +19,43 @@
                 <behavior>Edit</behavior>
                 <field>hed__Status__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>hed__Primary__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Term__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Requirement_Met__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__PE_Group__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__PE_Pathway__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>hed__Account__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>hed__Course_Offering__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Term__c</field>
+                <field>rio_ed__Course__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Course__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Course_ID__c</field>
+                <field>rio_ed__Course_ID__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -76,6 +96,16 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Clone</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>1</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>2</sortOrder>
@@ -100,26 +130,30 @@
             <actionType>StandardButton</actionType>
             <sortOrder>6</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Clone</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>1</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Faculty__c</fields>
-        <fields>Faculty_Confirmed__c</fields>
-        <fields>Session__c</fields>
-        <fields>Status__c</fields>
-        <fields>Attendance__c</fields>
-        <fields>Attendance_Count__c</fields>
-        <relatedList>Session_Connection__c.Course_Connection__c</relatedList>
+        <fields>rio_ed__Faculty__c</fields>
+        <fields>rio_ed__Faculty_Confirmed__c</fields>
+        <fields>rio_ed__Session__c</fields>
+        <fields>rio_ed__Status__c</fields>
+        <fields>rio_ed__Attendance__c</fields>
+        <fields>rio_ed__Attendance_Count__c</fields>
+        <relatedList>rio_ed__Session_Connection__c.rio_ed__Course_Connection__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>rio_ed__Requirement_ID__c</fields>
+        <fields>rio_ed__Requirement_Met__c</fields>
+        <fields>rio_ed__Requirement_Type__c</fields>
+        <fields>rio_ed__Credit_Points__c</fields>
+        <fields>rio_ed__External_Id__c</fields>
+        <fields>rio_ed__Other__c</fields>
+        <fields>rio_ed__Related_Course__c</fields>
+        <relatedList>rio_ed__Course_Connection_Requirement__c.rio_ed__Course_Connection__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

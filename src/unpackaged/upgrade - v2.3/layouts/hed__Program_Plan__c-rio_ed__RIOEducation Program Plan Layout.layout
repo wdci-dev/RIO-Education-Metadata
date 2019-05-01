@@ -28,7 +28,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Next_Starting_Term__c</field>
+                <field>rio_ed__Next_Starting_Term__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -59,40 +59,40 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Fee_Method__c</field>
+                <field>rio_ed__Fee_Method__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Pay_Upfront__c</field>
+                <field>rio_ed__Pay_Upfront__c</field>
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Fee__c</field>
+                <field>rio_ed__Fee__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Use_Default_Fee__c</field>
+                <field>rio_ed__Use_Default_Fee__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Fee_Domestic__c</field>
+                <field>rio_ed__Current_Fee_Domestic__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Non_Tuition_Fee_Domestic__c</field>
+                <field>rio_ed__Current_Non_Tuition_Fee_Domestic__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Fee_International__c</field>
+                <field>rio_ed__Current_Fee_International__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Current_Non_Tuition_Fee_International__c</field>
+                <field>rio_ed__Current_Non_Tuition_Fee_International__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -133,17 +133,17 @@
         <fields>hed__Course__c</fields>
         <fields>hed__Category__c</fields>
         <fields>hed__Credits__c</fields>
-        <fields>Allow_Pre_Enrollment__c</fields>
-        <fields>Requirement_Description__c</fields>
+        <fields>rio_ed__Allow_Pre_Enrollment__c</fields>
+        <fields>rio_ed__Requirement_Description__c</fields>
         <relatedList>hed__Plan_Requirement__c.hed__Program_Plan__c</relatedList>
         <sortField>hed__Plan_Requirement__c</sortField>
         <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Number_of_Terms__c</fields>
-        <fields>Study_Mode__c</fields>
-        <relatedList>Program_Pathway__c.Program_Plan__c</relatedList>
+        <fields>rio_ed__Number_of_Terms__c</fields>
+        <fields>rio_ed__Study_Mode__c</fields>
+        <relatedList>rio_ed__Program_Pathway__c.rio_ed__Program_Plan__c</relatedList>
     </relatedLists>
     <relatedLists>
         <excludeButtons>MassChangeOwner</excludeButtons>
@@ -156,7 +156,7 @@
         <fields>hed__Enrollment_Status__c</fields>
         <fields>hed__Start_Date__c</fields>
         <fields>hed__End_Date__c</fields>
-        <fields>Institute_Id__c</fields>
+        <fields>rio_ed__Institute_Id__c</fields>
         <fields>hed__Admission_Date__c</fields>
         <relatedList>hed__Program_Enrollment__c.hed__Program_Plan__c</relatedList>
     </relatedLists>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <excludeButtons>Share</excludeButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -8,32 +9,72 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Number_of_Terms__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Notes__c</field>
+                <field>rio_ed__Fee_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Study_Mode__c</field>
+                <field>rio_ed__Fee_Unit__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Program_Plan__c</field>
+                <field>rio_ed__Loan_Fee__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Current_Fee_Domestic__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Current_Non_Tuition_Fee_Domestic__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Current_Fee_International__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>rio_ed__Current_Non_Tuition_Fee_International__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Grouping</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Parent_Fee__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Enrollment_Method__c</field>
+                <field>rio_ed__Fee_Label__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Other Information</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Description__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -41,10 +82,6 @@
         <editHeading>true</editHeading>
         <label>System Information</label>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>OwnerId</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>CreatedById</field>
@@ -54,10 +91,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>External_Id__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -90,36 +123,49 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Share</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>3</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>4</sortOrder>
+            <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>FeedItem.ContentPost</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>5</sortOrder>
+            <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>ChangeOwnerOne</actionName>
             <actionType>StandardButton</actionType>
-            <sortOrder>6</sortOrder>
+            <sortOrder>5</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Term_Number__c</fields>
-        <fields>Plan_Requirement_Group__c</fields>
-        <fields>Number_of_Courses_from_Group__c</fields>
-        <fields>Plan_Requirement_Course__c</fields>
-        <fields>Course_ID__c</fields>
-        <relatedList>Pathway_Unit__c.Program_Pathway__c</relatedList>
-        <sortField>Term_Number__c</sortField>
+        <fields>rio_ed__Fee_Start_Date__c</fields>
+        <fields>rio_ed__Fee_End_Date__c</fields>
+        <fields>rio_ed__Current__c</fields>
+        <fields>rio_ed__Fee_Amount_Domestic__c</fields>
+        <fields>rio_ed__Fee_Amount_International__c</fields>
+        <relatedList>rio_ed__Fee_Schedule__c.rio_ed__Fee__c</relatedList>
+        <sortField>rio_ed__Fee_Start_Date__c</sortField>
+        <sortOrder>Desc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <excludeButtons>New</excludeButtons>
+        <fields>NAME</fields>
+        <fields>hed__Course_ID__c</fields>
+        <fields>rio_ed__EFTSL__c</fields>
+        <fields>rio_ed__Current_Fee_Domestic__c</fields>
+        <fields>rio_ed__Current_Fee_International__c</fields>
+        <relatedList>hed__Course__c.rio_ed__Fee__c</relatedList>
+        <sortField>hed__Course_ID__c</sortField>
         <sortOrder>Asc</sortOrder>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>rio_ed__Description__c</fields>
+        <fields>rio_ed__Current_Fee_Domestic__c</fields>
+        <fields>rio_ed__Current_Fee_International__c</fields>
+        <relatedList>rio_ed__Fee__c.rio_ed__Parent_Fee__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -127,7 +173,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h6A000004QvFR</masterLabel>
+        <masterLabel>00h6A000004QvDu</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

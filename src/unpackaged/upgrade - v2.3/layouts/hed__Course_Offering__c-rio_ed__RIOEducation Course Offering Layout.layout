@@ -8,50 +8,46 @@
         <label>Information</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
+                <behavior>Required</behavior>
+                <field>hed__Course__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
-                <field>Program_Enrollment__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>My_Term__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Number_of_Terms__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>Study_Mode__c</field>
+                <behavior>Edit</behavior>
+                <field>hed__Start_Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Deferred__c</field>
+                <field>hed__End_Date__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Course_Delivery_Method__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Scheduled_Hours__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Status__c</field>
+                <behavior>Required</behavior>
+                <field>hed__Term__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Notes__c</field>
+                <field>rio_ed__Campus__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Term__c</field>
+                <field>hed__Section_ID__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Program_Pathway__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Automatically_Enroll_in_Courses__c</field>
+                <field>hed__Faculty__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -60,33 +56,64 @@
         <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
-        <label>Result Information</label>
+        <label>Details</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Credits_Attempted__c</field>
+                <behavior>Edit</behavior>
+                <field>hed__Capacity__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Booked_Places__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>Credits_Earned__c</field>
+                <field>rio_ed__Available_Places__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Grade_Points__c</field>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Session_Instructions__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>GPA__c</field>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Description__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Release_Grades__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>Fees</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Fee_Label__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Fee__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Manual_Fee_Selection__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>All_Courses_Completed__c</field>
+                <field>rio_ed__Fee_Amount_Domestic__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>All_Courses_Passed__c</field>
+                <field>rio_ed__Fee_Amount_International__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -104,6 +131,10 @@
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>rio_ed__Plan__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
             </layoutItems>
@@ -120,12 +151,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <miniLayout>
-        <fields>Program_Enrollment__c</fields>
-        <fields>Number_of_Terms__c</fields>
-        <fields>My_Term__c</fields>
-        <fields>Study_Mode__c</fields>
-    </miniLayout>
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
@@ -154,41 +179,37 @@
             <sortOrder>4</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
+            <actionName>ChangeRecordType</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>5</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Submit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>6</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>ChangeOwnerOne</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>7</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Course_ID__c</fields>
-        <fields>Plan_Requirement_Course__c</fields>
-        <fields>PE_Group_Status__c</fields>
-        <fields>Number_of_Courses_from_Group__c</fields>
-        <relatedList>PE_Pathway_Unit__c.Program_Pathway_Status__c</relatedList>
-        <sortField>Course_ID__c</sortField>
-        <sortOrder>Asc</sortOrder>
+        <fields>rio_ed__Session_Type__c</fields>
+        <fields>rio_ed__Number_of_Sessions__c</fields>
+        <fields>rio_ed__Capacity__c</fields>
+        <fields>rio_ed__Mandatory_Attendance__c</fields>
+        <fields>rio_ed__Attendance_for_completion__c</fields>
+        <relatedList>rio_ed__Session__c.rio_ed__Course_Offering__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>hed__Course_Offering__c</fields>
         <fields>hed__Contact__c</fields>
-        <fields>hed__Program_Enrollment__c</fields>
-        <fields>hed__Account__c</fields>
-        <fields>hed__Status__c</fields>
+        <fields>rio_ed__Enrollment_Status__c</fields>
         <fields>hed__Grade__c</fields>
-        <fields>Grade_Value__c</fields>
-        <fields>hed__Credits_Attempted__c</fields>
-        <fields>hed__Credits_Earned__c</fields>
-        <relatedList>hed__Course_Enrollment__c.PE_Pathway__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Fee_Reference__c</fields>
-        <fields>Fee_Status__c</fields>
-        <fields>Total_Fee__c</fields>
-        <fields>Outstanding_Amount__c</fields>
-        <relatedList>Student_Fee__c.PE_Pathway__c</relatedList>
+        <fields>rio_ed__Grade_Result__c</fields>
+        <relatedList>hed__Course_Enrollment__c.hed__Course_Offering__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
@@ -196,7 +217,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h6A000004QvET</masterLabel>
+        <masterLabel>00h6A000004QvDk</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
