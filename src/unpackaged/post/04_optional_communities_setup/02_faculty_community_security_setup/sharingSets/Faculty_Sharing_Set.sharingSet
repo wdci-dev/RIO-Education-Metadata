@@ -13,6 +13,6 @@
         <userField>Contact</userField>
     </accessMappings>
     <description>Sharing settings for the REDU-Faculty profile.</description>
-    <name>REDU - Faculty</name>
+    <name>Faculty Sharing Set</name>
     <profiles>REDU - Faculty</profiles>
 </SharingSet>

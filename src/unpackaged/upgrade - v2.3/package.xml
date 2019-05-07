@@ -5,13 +5,19 @@
         <members>hed__Course_Enrollment__c-rio_ed__RIOEducation Student Course Enrollment Layout</members>
         <members>hed__Course_Offering__c-rio_ed__RIOEducation Course Offering Layout</members>
         <members>hed__Course__c-rio_ed__RIOEducation Course Layout</members>
+        <members>hed__Program_Enrollment__c-rio_ed__RIOEducation Program Enrollment Layout</members>
         <members>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</members>
         <members>hed__Term__c-rio_ed__RIOEducation Term Layout</members>
         <members>rio_ed__Fee__c-rio_ed__RIOEducation Fee Layout</members>
         <members>rio_ed__PE_Pathway_Status__c-rio_ed__RIOEducation PE Pathway Layout</members>
+        <members>rio_ed__Program_Application__c-rio_ed__RIOEducation Program Application Layout</members>
         <members>rio_ed__Program_Pathway__c-rio_ed__RIOEducation Program Pathway Layout</members>
         <members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout</members>
         <name>Layout</name>
+    </types>
+	<types>
+        <members>rio_ed__Session__c.rio_ed__Faculty_Status__c</members>
+        <name>CustomField</name>
     </types>
     <version>44.0</version>
 </Package>

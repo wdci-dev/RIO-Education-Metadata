@@ -63,7 +63,7 @@
                 <field>hed__Capacity__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>rio_ed__Booked_Places__c</field>
             </layoutItems>
             <layoutItems>
@@ -130,10 +130,6 @@
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>rio_ed__Plan__c</field>
-            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>

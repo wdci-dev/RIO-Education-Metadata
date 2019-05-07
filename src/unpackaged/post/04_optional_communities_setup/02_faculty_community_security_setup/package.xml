@@ -21,7 +21,7 @@
         <name>SharingOwnerRule</name>
     </types>
 	<types>
-		<members>REDU_Faculty</members>
+		<members>Faculty_Sharing_Set</members>
         <name>SharingSet</name>
     </types>
     <version>44.0</version>
