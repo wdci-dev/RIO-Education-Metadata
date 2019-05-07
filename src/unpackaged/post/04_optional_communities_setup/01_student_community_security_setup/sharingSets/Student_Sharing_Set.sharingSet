@@ -18,7 +18,7 @@
         <objectField>hed__Contact__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
-    <description>For student using community login licence.</description>
+    <description>Sharing setting for student community users.</description>
     <name>Student Sharing Set</name>
     <profiles>redu - student</profiles>
 </SharingSet>

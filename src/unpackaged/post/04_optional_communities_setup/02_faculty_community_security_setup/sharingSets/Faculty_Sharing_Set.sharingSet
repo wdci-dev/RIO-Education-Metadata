@@ -12,7 +12,7 @@
         <objectField>Id</objectField>
         <userField>Contact</userField>
     </accessMappings>
-    <description>Sharing settings for the REDU-Faculty profile.</description>
+    <description>Sharing setting for faculty community users.</description>
     <name>Faculty Sharing Set</name>
     <profiles>REDU - Faculty</profiles>
 </SharingSet>
