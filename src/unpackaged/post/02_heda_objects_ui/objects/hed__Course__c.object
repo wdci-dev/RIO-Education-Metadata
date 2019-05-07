@@ -56,7 +56,7 @@
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>Academic course that a Department or School (the degree-granting Account type for the University) offers.</description>
+    <description>Academic course that a Department or School (the degree-granting Account type for the educational institution) offers.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>
