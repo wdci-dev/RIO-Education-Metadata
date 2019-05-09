@@ -12,6 +12,12 @@
         <objectField>Id</objectField>
         <userField>Contact</userField>
     </accessMappings>
+	<accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>hed__Course_Enrollment__c</object>
+        <objectField>hed__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
     <description>Sharing setting for faculty community users.</description>
     <name>Faculty Sharing Set</name>
     <profiles>REDU - Faculty</profiles>
