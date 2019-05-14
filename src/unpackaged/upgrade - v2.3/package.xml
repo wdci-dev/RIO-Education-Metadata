@@ -19,5 +19,9 @@
         <members>rio_ed__Session__c.rio_ed__Faculty_Status__c</members>
         <name>CustomField</name>
     </types>
+	<types>
+        <members>hed__Course_Enrollment__c</members>
+        <name>CustomObject</name>
+    </types>
     <version>44.0</version>
 </Package>

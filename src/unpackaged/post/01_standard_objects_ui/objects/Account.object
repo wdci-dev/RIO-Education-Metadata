@@ -165,7 +165,7 @@
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Account.Academic_Program</value>
+            <value>Account.University_Department</value>
         </filters>
         <label>All Department Accounts</label>
     </listViews>
