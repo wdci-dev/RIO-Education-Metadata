@@ -85,7 +85,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Case Record Page</masterLabel>
+    <masterLabel>RIOEducation Case Record Page</masterLabel>
     <sobjectType>Case</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

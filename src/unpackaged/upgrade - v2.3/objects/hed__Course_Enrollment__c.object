@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents a connection to a Course Offering.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    
+	<label>Course Connection</label>
+	<pluralLabel>Course Connections</pluralLabel>
+	
+	<sharingModel>Private</sharingModel>
+	
+    <nameField>
+        <displayFormat>CC-{0000}</displayFormat>
+        <label>Course Connection ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>Student</fullName>
+        <active>true</active>
+        <description>A Student Course Connection</description>
+        <label>Student</label>
+        
+        <picklistValues>
+            <picklist>rio_ed__Grade_Result__c</picklist>
+            <values>
+                <fullName>Fail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RPL</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+		
+    </recordTypes>
+    <visibility>Public</visibility>
+</CustomObject>

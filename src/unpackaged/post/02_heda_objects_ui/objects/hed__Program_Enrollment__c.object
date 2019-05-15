@@ -57,10 +57,10 @@
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>Contains details about the relationship a student Contact has with a Department or School (the degree-granting Account type for the University).</description>
-    <enableActivities>false</enableActivities>
+    <description>Contains details about the relationship a student Contact has with a Department or School (the degree-granting Account type for the educational institution).</description>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>

@@ -14,10 +14,6 @@
         <members>hed__Trigger_Handler__c</members>
         <name>CustomObject</name>
     </types>
-	<types>
-        <members>Course_Record_Page_Header_One_Column</members>
-        <name>FlexiPage</name>
-    </types>
     <types>
         <members>hed__Address__c.hed__All</members>
         <members>hed__Affiliation__c.hed__All</members>

@@ -11,3 +11,5 @@ This contains metadata that we need to deploy manual as part to RIO Education se
     * 04_optional_communities_setup (**OPTIONAL** - skip if not using communities)
       * 01_student_community_security_setup (profile security for student community)
       * 02_faculty_community_security_setup (profile security for faculty community)
+	* 05_obsolete_components (obsolete components)
+  * upgrade - v2.3 (upgrade task for v2.2 to v2.3)
