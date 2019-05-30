@@ -2,8 +2,20 @@
 <SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <accessMappings>
         <accessLevel>Edit</accessLevel>
+        <object>Case</object>
+        <objectField>Contact</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
         <object>Contact</object>
         <objectField>Id</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>PE_Discipline__c</object>
+        <objectField>Contact__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
     <accessMappings>
@@ -19,6 +31,6 @@
         <userField>Contact</userField>
     </accessMappings>
     <description>Sharing setting for student community users.</description>
-    <name>Student Sharing Set</name>
+    <name>REDU - Student</name>
     <profiles>redu - student</profiles>
 </SharingSet>
