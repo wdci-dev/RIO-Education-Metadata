@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>**DO NOT PACKAGE** This is additional permission set to be created/imported manually to grant Manage User system permission.</description>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>PE_Pathway_Status__c.Study_Mode__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>REDU - Admin (Manual Add on)</label>
     <userPermissions>
