@@ -3236,11 +3236,6 @@
     </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
-        <recordType>hed__Course_Enrollment__c.Default</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
         <recordType>hed__Course_Enrollment__c.Faculty</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
