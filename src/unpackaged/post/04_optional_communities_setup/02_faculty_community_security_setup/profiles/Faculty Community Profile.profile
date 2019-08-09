@@ -2542,11 +2542,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>rio_ed__PE_Group_Status__c.rio_ed__Contact__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>rio_ed__PE_Group_Status__c.rio_ed__Credits_Attempted__c</field>
         <readable>false</readable>
     </fieldPermissions>
