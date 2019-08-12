@@ -5,6 +5,13 @@
         <members>rio_ed__Program_Pathway__c.rio_ed__Study_Mode__c</members>
         <name>CustomField</name>
     </types>
+	<types>
+        <members>rio_ed__Discipline_Requirement__c</members>
+		<members>rio_ed__Program_Discipline__c</members>
+		<members>rio_ed__PE_Discipline__c</members>
+		<members>rio_ed__PE_Discipline_Requirement__c</members>
+        <name>CustomObject</name>
+    </types>
     <types>
         <members>Account-rio_ed__RIOEducation Program Layout</members>
         <members>hed__Course_Enrollment__c-rio_ed__RIOEducation Faculty Course Enrollment Layout</members>

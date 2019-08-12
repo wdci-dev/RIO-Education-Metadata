@@ -4,5 +4,9 @@
 		<members>Student Community Profile</members>
         <name>Profile</name>
     </types>
+	<types>
+        <members>REDU_Student</members>
+        <name>SharingSet</name>
+    </types>
     <version>46.0</version>
 </Package>
