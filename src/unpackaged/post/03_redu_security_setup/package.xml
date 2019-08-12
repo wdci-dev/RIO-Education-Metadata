@@ -32,5 +32,12 @@
         <members>REDU_Admin_Manual_Add_on</members>
         <name>PermissionSet</name>
     </types>
+	<types>
+        <members>rio_ed__Discipline_Requirement__c</members>
+		<members>rio_ed__Program_Discipline__c</members>
+		<members>rio_ed__PE_Discipline__c</members>
+		<members>rio_ed__PE_Discipline_Requirement__c</members>
+        <name>CustomObject</name>
+    </types>
     <version>44.0</version>
 </Package>

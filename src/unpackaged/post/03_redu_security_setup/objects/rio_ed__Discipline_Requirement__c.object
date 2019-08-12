@@ -43,29 +43,24 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
-        <fullName>rio_ed__PE_Discipline_Requirement_Course_Compact_Layout</fullName>
-        <fields>rio_ed__Course_Connection__c</fields>
+        <fullName>rio_ed__Discipline_Requirement_Course_Compact_Layout</fullName>
+        <fields>rio_ed__Program_Discipline__c</fields>
         <fields>Name</fields>
-        <fields>rio_ed__PE_Discipline__c</fields>
-        <fields>rio_ed__Parent__c</fields>
-        <fields>rio_ed__Requirement__c</fields>
-        <fields>rio_ed__Credits_Required__c</fields>
-        <fields>rio_ed__Credits_Earned__c</fields>
-        <fields>rio_ed__Complete__c</fields>
         <fields>RecordTypeId</fields>
-        <label>PE Discipline Requirement Course Compact Layout</label>
+        <fields>rio_ed__Parent__c</fields>
+        <fields>rio_ed__Plan_Requirement__c</fields>
+        <fields>rio_ed__Requirement__c</fields>
+        <fields>rio_ed__Credits__c</fields>
+        <label>Discipline Requirement Course Compact Layout</label>
     </compactLayouts>
     <compactLayouts>
-        <fullName>rio_ed__PE_Discipline_Requirement_Group_Compact_Layout</fullName>
-        <fields>rio_ed__Course_Connection__c</fields>
+        <fullName>rio_ed__Discipline_Requirement_Group_Compact_Layout</fullName>
+        <fields>rio_ed__Program_Discipline__c</fields>
         <fields>Name</fields>
-        <fields>rio_ed__PE_Discipline__c</fields>
-        <fields>rio_ed__Requirement__c</fields>
-        <fields>rio_ed__Credits_Required__c</fields>
-        <fields>rio_ed__Credits_Earned__c</fields>
-        <fields>rio_ed__Complete__c</fields>
         <fields>RecordTypeId</fields>
-        <label>PE Discipline Requirement Group Compact Layout</label>
+        <fields>rio_ed__Requirement__c</fields>
+        <fields>rio_ed__Credits__c</fields>
+        <label>Discipline Requirement Group Compact Layout</label>
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
@@ -77,28 +72,14 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
-	<fields>
-        <fullName>rio_ed__PE_Discipline__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>PE Discipline</label>
-        <referenceTo>rio_ed__PE_Discipline__c</referenceTo>
-        <relationshipLabel>PE Discipline Requirements</relationshipLabel>
-        <relationshipName>PE_Discipline_Requirements</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <label>PE Discipline Requirement</label>
+    <externalSharingModel>Read</externalSharingModel>
+    <label>Discipline Requirement</label>
     <nameField>
-        <label>PE Discipline Requirement Name</label>
+        <label>Discipline Requirement Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>PE Discipline Requirements</pluralLabel>
+    <pluralLabel>Discipline Requirements</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

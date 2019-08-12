@@ -5,7 +5,7 @@
         <name>Profile</name>
     </types>
 	<types>
-        <members>REDU_Student</members>
+        <members>Student_Sharing_Set</members>
         <name>SharingSet</name>
     </types>
     <version>46.0</version>

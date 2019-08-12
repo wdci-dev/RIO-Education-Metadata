@@ -14,7 +14,7 @@
     </types>
 	
 	<types>
-        <members>REDU_Student</members>
+        <members>Student_Sharing_Set</members>
         <name>SharingSet</name>
     </types>
 	
