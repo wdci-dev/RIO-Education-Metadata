@@ -15,6 +15,7 @@
 	<types>
         <members>rio_ed__Program_Pathway__c.rio_ed__Study_Mode__c</members>
 		<members>rio_ed__PE_Pathway_Status__c.rio_ed__Study_Mode__c</members>
+		<members>hed__Program_Enrollment__c.rio_ed__Program_Status__c</members>
         <name>CustomField</name>
     </types>
 	<types>
