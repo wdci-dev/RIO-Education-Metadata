@@ -78,6 +78,20 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+	<fields>
+        <fullName>rio_ed__PE_Discipline__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>PE Discipline</label>
+        <referenceTo>rio_ed__PE_Discipline__c</referenceTo>
+        <relationshipLabel>PE Discipline Requirements</relationshipLabel>
+        <relationshipName>PE_Discipline_Requirements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <label>PE Discipline Requirement</label>
     <nameField>
         <label>PE Discipline Requirement Name</label>

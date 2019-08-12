@@ -31,6 +31,6 @@
         <userField>Contact</userField>
     </accessMappings>
     <description>Sharing setting for student community users.</description>
-    <name>REDU - Student</name>
+    <name>Student Sharing Set</name>
     <profiles>redu - student</profiles>
 </SharingSet>
