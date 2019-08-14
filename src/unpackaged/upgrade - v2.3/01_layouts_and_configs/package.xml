@@ -13,6 +13,7 @@
         <members>rio_ed__Program_Application__c-rio_ed__RIOEducation Program Application Layout</members>
         <members>rio_ed__Program_Pathway__c-rio_ed__RIOEducation Program Pathway Layout</members>
         <members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout</members>
+		<members>Account-rio_ed__RIOEducation Location Layout</members>
         <name>Layout</name>
     </types>
 	<types>
