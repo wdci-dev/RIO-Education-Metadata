@@ -23,5 +23,9 @@
         <members>hed__Course_Enrollment__c</members>
         <name>CustomObject</name>
     </types>
+	<types>
+        <members>rio_ed__Grade_Result</members>
+        <name>GlobalValueSet</name>
+    </types>
     <version>44.0</version>
 </Package>
