@@ -27,6 +27,54 @@
     </nameField>
     
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+	
+	<fields>
+        <fullName>rio_ed__Enrollment_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enrollment Requested</fullName>
+                    <default>false</default>
+                    <label>Enrollment Requested</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal Requested</fullName>
+                    <default>false</default>
+                    <label>Withdrawal Requested</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn With Penalty</fullName>
+                    <default>false</default>
+                    <label>Withdrawn With Penalty</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	
     <recordTypes>
         <fullName>Student</fullName>
         <active>true</active>
@@ -45,6 +93,34 @@
             </values>
             <values>
                 <fullName>RPL</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+		
+		<picklistValues>
+            <picklist>rio_ed__Enrollment_Status__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Enrollment Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawal Requested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdrawn With Penalty</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

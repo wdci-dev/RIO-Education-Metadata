@@ -24,6 +24,7 @@
         <members>rio_ed__Program_Application__c-rio_ed__RIOEducation Program Application Layout</members>
         <members>rio_ed__Session_Connection__c-rio_ed__RIOEducation Session Connection Layout</members>
         <members>rio_ed__Student_Fee__c-rio_ed__RIOEducation Student Fee Layout</members>
+		<members>rio_ed__Attendance__c-rio_ed__RIOEducation Attendance Layout</members>
         <name>Layout</name>
     </types>
     <types>
