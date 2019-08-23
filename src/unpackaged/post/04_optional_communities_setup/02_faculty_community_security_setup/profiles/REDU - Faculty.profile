@@ -746,6 +746,15 @@
         <object>hed__Term__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+	<objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>hed__Course_Offering__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
 	
     <recordTypeVisibilities>
         <default>false</default>
