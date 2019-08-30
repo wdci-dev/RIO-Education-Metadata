@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <types>
+        <members>REDU_Guest</members>
+        <members>REDU_All</members>
+		<members>REDU_Student</members>
+		<members>REDU_Faculty</members>
+        <name>Group</name>
+    </types>
+    
+    <types>
+        <members>REDU - Faculty</members>
+		<members>REDU - Student</members>
+		<members>RIO Education Community Profile</members>
+        <name>Profile</name>
+    </types>
+	
+	<types>
+        <members>Student_Sharing_Set</members>
+		<members>Faculty_Sharing_Set</members>
+        <name>SharingSet</name>
+    </types>
+	
+	<types>
+        <members>*</members>
+        <name>SharingRules</name>
+    </types>
+	
+    <version>44.0</version>
+</Package>

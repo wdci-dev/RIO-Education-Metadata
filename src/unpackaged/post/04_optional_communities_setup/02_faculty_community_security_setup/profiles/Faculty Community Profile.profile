@@ -2542,11 +2542,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>rio_ed__PE_Group_Status__c.rio_ed__Contact__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>rio_ed__PE_Group_Status__c.rio_ed__Credits_Attempted__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3232,11 +3227,6 @@
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>Account.rio_ed__Location</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>hed__Course_Enrollment__c.Default</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>

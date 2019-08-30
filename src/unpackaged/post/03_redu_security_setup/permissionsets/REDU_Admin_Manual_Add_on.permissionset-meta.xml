@@ -7,9 +7,17 @@
         <enabled>true</enabled>
         <name>AssignPermissionSets</name>
     </userPermissions>
+	<userPermissions>
+        <enabled>true</enabled>
+        <name>CustomizeApplication</name>
+    </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>DelegatedTwoFactor</name>
+    </userPermissions>
+	<userPermissions>
+        <enabled>true</enabled>
+        <name>ManageCustomPermissions</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
