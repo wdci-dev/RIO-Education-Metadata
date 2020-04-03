@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Contains details about the relationship a student Contact has with a Department or School (the degree-granting Account type for the educational institution).</description>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>hed__Credits_Earned__c</fullName>
         <deprecated>false</deprecated>
@@ -168,4 +173,14 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+	<label>Program Enrollment</label>
+    <nameField>
+        <displayFormat>PE-{0000}</displayFormat>
+        <label>Program Enrollment ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Program Enrollments</pluralLabel>
+    <sharingModel>Private</sharingModel>
 </CustomObject>
