@@ -5,6 +5,20 @@
     <description>Joins Courses and Terms to contain information related to a single occurrence of a course.</description>
     <enableHistory>true</enableHistory>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+	<fields>
+        <fullName>hed__Term__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Term</label>
+        <referenceTo>hed__Term__c</referenceTo>
+        <relationshipLabel>Course Offerings</relationshipLabel>
+        <relationshipName>Course_Offerings</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <fields>
         <fullName>hed__End_Date__c</fullName>
         <deprecated>false</deprecated>
