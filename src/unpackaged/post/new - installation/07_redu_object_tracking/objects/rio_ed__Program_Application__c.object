@@ -285,4 +285,5 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Program Applications</pluralLabel>
+	<sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

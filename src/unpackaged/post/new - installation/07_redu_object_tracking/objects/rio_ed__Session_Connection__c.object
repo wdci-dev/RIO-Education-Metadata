@@ -4,6 +4,21 @@
     <deprecated>false</deprecated>
     <enableHistory>true</enableHistory>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+	<fields>
+        <fullName>rio_ed__Course_Connection__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Course Connection</label>
+        <referenceTo>hed__Course_Enrollment__c</referenceTo>
+        <relationshipLabel>Session Connections</relationshipLabel>
+        <relationshipName>Session_Connections</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <fields>
         <fullName>rio_ed__Faculty_Confirmed__c</fullName>
         <deprecated>false</deprecated>

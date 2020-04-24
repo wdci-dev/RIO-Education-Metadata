@@ -4,6 +4,21 @@
     <deprecated>false</deprecated>
     <enableHistory>true</enableHistory>
     <externalSharingModel>ControlledByParent</externalSharingModel>
+	<fields>
+        <fullName>rio_ed__Program_Enrollment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Program Enrollment</label>
+        <referenceTo>hed__Program_Enrollment__c</referenceTo>
+        <relationshipLabel>PE Pathways</relationshipLabel>
+        <relationshipName>PE_Pathway_Statuses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
     <fields>
         <fullName>rio_ed__Automatically_Enroll_in_Courses__c</fullName>
         <defaultValue>false</defaultValue>
