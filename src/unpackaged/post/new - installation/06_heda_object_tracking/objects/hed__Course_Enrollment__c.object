@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Represents a connection to a Course Offering.</description>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>hed__Course_Offering__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Course Offering that the Contact is connected to. Identifies a specific occurence of a Course, for a specific Term.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Course Offering the student is enrolled in. It&apos;s a Course offered at a specific Term.</inlineHelpText>
+        <label>Course Offering ID</label>
+        <referenceTo>hed__Course_Offering__c</referenceTo>
+        <relationshipLabel>Course Connection</relationshipLabel>
+        <relationshipName>Course_Enrollment</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>hed__Credits_Earned__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Credits Earned</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hed__Grade__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Grade</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hed__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Represents the Status of the Course Connection.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Represents the Status of the Course Connection.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>true</default>
+                    <label>Current</label>
+                </value>
+                <value>
+                    <fullName>Former</fullName>
+                    <default>false</default>
+                    <label>Former</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Enrollment_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Enrollment Requested</fullName>
+                    <default>false</default>
+                    <label>Enrollment Requested</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal Requested</fullName>
+                    <default>false</default>
+                    <label>Withdrawal Requested</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn With Penalty</fullName>
+                    <default>false</default>
+                    <label>Withdrawn With Penalty</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Amount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type_Option__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee Type Option</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>rio_ed__Fee_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Government Funding</controllingFieldValue>
+                <valueName>FEE-HELP</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Release_Grades__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Release Grades</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Requirement_Met__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is checked when all course connection requirement(s) is completed.</inlineHelpText>
+        <label>Requirement Met</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Upfront_Payment__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Upfront Payment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Course Connection</label>
+    <nameField>
+        <displayFormat>CC-{0000}</displayFormat>
+        <label>Course Connection ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Course Connections</pluralLabel>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

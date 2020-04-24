@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Joins Courses and Terms to contain information related to a single occurrence of a course.</description>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+	<fields>
+        <fullName>hed__Term__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Term</label>
+        <referenceTo>hed__Term__c</referenceTo>
+        <relationshipLabel>Course Offerings</relationshipLabel>
+        <relationshipName>Course_Offerings</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>hed__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>hed__Faculty__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Primary Faculty</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Course Offerings</relationshipLabel>
+        <relationshipName>Courses_Taught</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>hed__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to identify which child fee of the parent fee defined in course should be used. This will replaced the default fee from course.</inlineHelpText>
+        <label>Fee Label</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Label</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Only a Fee that has a Fee Unit of Course can be added to a Course record.</errorMessage>
+            <filterItems>
+                <field>rio_ed__Fee__c.rio_ed__Fee_Unit__c</field>
+                <operation>equals</operation>
+                <value>Course</value>
+            </filterItems>
+            <infoMessage>Please select a Fee for this Course.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>rio_ed__Fee__c</referenceTo>
+        <relationshipLabel>Course Offerings</relationshipLabel>
+        <relationshipName>Course_Offerings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Release_Grades__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Release Grades</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+	<label>Course Offering</label>
+    <nameField>
+        <label>Course Offering ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Course Offerings</pluralLabel>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

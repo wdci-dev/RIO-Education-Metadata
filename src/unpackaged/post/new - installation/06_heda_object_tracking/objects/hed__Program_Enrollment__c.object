@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Contains details about the relationship a student Contact has with a Department or School (the degree-granting Account type for the educational institution).</description>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>hed__Credits_Earned__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Credits Earned</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hed__End_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>hed__Enrollment_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enrollment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full-time</fullName>
+                    <default>false</default>
+                    <label>Full-time</label>
+                </value>
+                <value>
+                    <fullName>Half-time</fullName>
+                    <default>false</default>
+                    <label>Half-time</label>
+                </value>
+                <value>
+                    <fullName>Less than half-time</fullName>
+                    <default>false</default>
+                    <label>Less than half-time</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>hed__GPA__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>GPA</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>hed__Start_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type_Option__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee Type Option</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>rio_ed__Fee_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Government Funding</controllingFieldValue>
+                <valueName>FEE-HELP</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Fee Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Grade_Points__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Grade Points = Sum(Grade Points) achieved for each Course completed.</inlineHelpText>
+        <label>Grade Points</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Program_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Program Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current</fullName>
+                    <default>true</default>
+                    <label>Current</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Withdrawn</fullName>
+                    <default>false</default>
+                    <label>Withdrawn</label>
+                </value>
+                <value>
+                    <fullName>Deferred</fullName>
+                    <default>false</default>
+                    <label>Deferred</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+	<label>Program Enrollment</label>
+    <nameField>
+        <displayFormat>PE-{0000}</displayFormat>
+        <label>Program Enrollment ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Program Enrollments</pluralLabel>
+    <sharingModel>Private</sharingModel>
+</CustomObject>
