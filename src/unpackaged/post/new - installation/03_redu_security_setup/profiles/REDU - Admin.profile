@@ -927,9 +927,6 @@
     <layoutAssignments>
         <layout>hed__Term__c-rio_ed__RIOEducation Term Layout</layout>
     </layoutAssignments>
-	<layoutAssignments>
-        <layout>hed__Term_Grade__c-rio_ed__RIOEducation Term Grade Layout</layout>
-    </layoutAssignments>
     <layoutAssignments>
         <layout>hed__Trigger_Handler__c-rio_ed__RIOEducation Trigger Handler Layout</layout>
     </layoutAssignments>
