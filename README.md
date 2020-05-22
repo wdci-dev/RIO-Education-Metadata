@@ -4,6 +4,7 @@ This contains metadata that we need to deploy manual as part to RIO Education se
 
 * unpackaged
   * pre (for pre RIO Education installation)
+    * 01_heda_object_tracking.zip (field history tracking for EDA)
   * post (for post RIO Education installation)
     * 01_standard_objects_ui (lightning page and configuration for standard object)
     * 02_heda_objects_ui (lightning page and configuration for HEDA object)
