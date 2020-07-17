@@ -89,13 +89,29 @@
         <columns>hed__End_Date__c</columns>
         <columns>hed__Is_Primary__c</columns>
         <columns>hed__Status__c</columns>
-        <filterScope>Mine</filterScope>
+        <filterScope>Everything</filterScope>
         <filters>
             <field>hed__Is_Primary__c</field>
             <operation>equals</operation>
             <value>1</value>
         </filters>
         <label>Primary Program Plan</label>
+    </listViews>
+	<listViews>
+        <fullName>Dual_Qualification_Plans</fullName>
+        <columns>NAME</columns>
+        <columns>hed__Is_Primary__c</columns>
+        <columns>hed__Account__c</columns>
+        <columns>Primary_Program__c</columns>
+        <columns>Secondary_Program__c</columns>
+        <columns>hed__Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Dual_Qualification__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Dual Qualification Plans</label>
     </listViews>
     <nameField>
         <label>Program Plan Name</label>

@@ -15,46 +15,6 @@
 	
 	<recordTypeVisibilities>
 		<default>false</default>
-		<recordType>Account.Academic_Program</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>true</default>
-		<recordType>Account.Administrative</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.Business_Organization</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.Educational_Institution</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.HH_Account</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.rio_ed__Location</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.Sports_Organization</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
-		<recordType>Account.University_Department</recordType>
-		<visible>true</visible>
-	</recordTypeVisibilities>
-	<recordTypeVisibilities>
-		<default>false</default>
 		<recordType>rio_ed__Plan__c.rio_ed__Resource</recordType>
 		<visible>true</visible>
 	</recordTypeVisibilities>
@@ -65,47 +25,15 @@
 	</recordTypeVisibilities>
 	<recordTypeVisibilities>
         <default>false</default>
-        <recordType>hed__Course_Enrollment__c.Faculty</recordType>
+        <recordType>rio_ed__Session__c.rio_ed__Class</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>hed__Course_Enrollment__c.Student</recordType>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>rio_ed__Session__c.rio_ed__Template</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
 	
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Department Layout</layout>
-		<recordType>Account.University_Department</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Location Layout</layout>
-		<recordType>Account.rio_ed__Location</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Organization Layout</layout>
-		<recordType>Account.Business_Organization</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Organization Layout</layout>
-		<recordType>Account.Educational_Institution</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Organization Layout</layout>
-		<recordType>Account.Sports_Organization</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Program Layout</layout>
-		<recordType>Account.Academic_Program</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Household Layout</layout>
-		<recordType>Account.Administrative</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Account-rio_ed__RIOEducation Household Layout</layout>
-		<recordType>Account.HH_Account</recordType>
-	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Activity__c-rio_ed__RIOEducation Activity Layout</layout>
 	</layoutAssignments>
@@ -117,9 +45,6 @@
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Attendance__c-rio_ed__RIOEducation Attendance Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>Contact-rio_ed__RIOEducation Contact Layout</layout>
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Course_Connection_Requirement__c-rio_ed__RIOEducation Course Connection Requirement Layout</layout>
@@ -224,6 +149,11 @@
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Session__c-rio_ed__RIOEducation Session Layout</layout>
+		<recordType>rio_ed__Session__c.rio_ed__Class</recordType>
+	</layoutAssignments>
+	<layoutAssignments>
+		<layout>rio_ed__Session__c-rio_ed__RIOEducation Session Template Layout</layout>
+		<recordType>rio_ed__Session__c.rio_ed__Template</recordType>
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Term_Holiday__c-rio_ed__RIOEducation Term Holiday Layout</layout>
@@ -233,43 +163,6 @@
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Trigger_Handler_Data__mdt-rio_ed__Trigger Handler Data Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Course_Enrollment__c-rio_ed__RIOEducation Faculty Course Enrollment Layout</layout>
-		<recordType>hed__Course_Enrollment__c.Faculty</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Course_Enrollment__c-rio_ed__RIOEducation Student Course Enrollment Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Course_Enrollment__c-rio_ed__RIOEducation Student Course Enrollment Layout</layout>
-		<recordType>hed__Course_Enrollment__c.Student</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Course_Offering__c-rio_ed__RIOEducation Course Offering Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Course__c-rio_ed__RIOEducation Course Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Plan_Requirement__c-rio_ed__RIOEducation Plan Requirement %28Course%29 Layout</layout>
-		<recordType>hed__Plan_Requirement__c.rio_ed__Course</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Plan_Requirement__c-rio_ed__RIOEducation Plan Requirement %28Group%29 Layout</layout>
-		<recordType>hed__Plan_Requirement__c.rio_ed__Group</recordType>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Program_Enrollment__c-rio_ed__RIOEducation Program Enrollment Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Term__c-rio_ed__RIOEducation Term Layout</layout>
-	</layoutAssignments>
-	<layoutAssignments>
-		<layout>hed__Trigger_Handler__c-rio_ed__RIOEducation Trigger Handler Layout</layout>
 	</layoutAssignments>
 	
 	<custom>false</custom>

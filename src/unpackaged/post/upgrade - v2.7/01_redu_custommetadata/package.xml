@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>rio_ed__Course_Offering_Session_Status.Cancelled</members>
+        <members>rio_ed__Course_Offering_Session_Status.Completed</members>
+        <members>rio_ed__Course_Offering_Session_Status.Draft</members>
+        <members>rio_ed__Course_Offering_Session_Status.Enrollment_Closed</members>
+        <members>rio_ed__Course_Offering_Session_Status.Enrollment_Opened</members>
+        <members>rio_ed__Course_Offering_Session_Status.Not_Started</members>
+        <members>rio_ed__Course_Offering_Session_Status.Pre_enrollment_Opened</members>
+        <members>rio_ed__Course_Offering_Session_Status.Running</members>
+        <members>rio_ed__Course_Offering_Session_Status.Running_Enrollment_Opened</members>
+        <name>CustomMetadata</name>
+    </types>
+    <version>44.0</version>
+</Package>
