@@ -94,6 +94,47 @@
         <enabled>true</enabled>
     </pageAccesses>
 	
+	<recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.Administrative</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Academic_Program</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Business_Organization</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Educational_Institution</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.HH_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Sports_Organization</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.University_Department</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.rio_ed__Location</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>hed__Course_Enrollment__c.Faculty</recordType>

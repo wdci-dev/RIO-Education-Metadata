@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+	<recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.Administrative</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Academic_Program</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Business_Organization</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Educational_Institution</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.HH_Account</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Sports_Organization</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.University_Department</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.rio_ed__Location</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>hed__Course_Enrollment__c.Faculty</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>hed__Course_Enrollment__c.Student</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>hed__Plan_Requirement__c.rio_ed__Course</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>hed__Plan_Requirement__c.rio_ed__Group</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+	
     <applicationVisibilities>
         <application>hed__HEDA</application>
         <default>false</default>
@@ -93,27 +155,6 @@
         <apexPage>hed__STG_Settings</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
-	
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>hed__Course_Enrollment__c.Faculty</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>hed__Course_Enrollment__c.Student</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>hed__Plan_Requirement__c.rio_ed__Course</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>true</default>
-        <recordType>hed__Plan_Requirement__c.rio_ed__Group</recordType>
-        <visible>true</visible>
-    </recordTypeVisibilities>
 		
     <userLicense>Salesforce</userLicense>
     

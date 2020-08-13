@@ -4,5 +4,10 @@
         <members>REDU_Faculty</members>
         <name>SharingSet</name>
     </types>
+	<types>
+        <members>REDU - Faculty</members>
+		<members>REDU - Platform Faculty</members>
+        <name>Profile</name>
+    </types>
     <version>44.0</version>
 </Package>

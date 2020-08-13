@@ -348,7 +348,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
 	<recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>rio_ed__Session__c.rio_ed__Class</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
