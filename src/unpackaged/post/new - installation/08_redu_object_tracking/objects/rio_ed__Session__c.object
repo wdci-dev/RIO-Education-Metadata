@@ -58,7 +58,7 @@
         <fullName>rio_ed__Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Status</label>
+        <label>Booking Status</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>

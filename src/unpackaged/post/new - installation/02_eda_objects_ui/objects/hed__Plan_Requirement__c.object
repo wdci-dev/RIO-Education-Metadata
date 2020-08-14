@@ -55,7 +55,7 @@
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>This object will be the various course requirements that would need to be met to achieve the particular Program Plan</description>
+    <description>The various course requirements for completing a Program Plan.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>

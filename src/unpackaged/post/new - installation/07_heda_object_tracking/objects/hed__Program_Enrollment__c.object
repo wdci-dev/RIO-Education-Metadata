@@ -2,13 +2,15 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>Contains details about the relationship a student Contact has with a Department or School (the degree-granting Account type for the educational institution).</description>
+    <description>A student Contact&apos;s enrollment in an academic program offered by a Department or School (the degree-granting Account type for the educational institution).</description>
     <enableHistory>true</enableHistory>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>hed__Credits_Earned__c</fullName>
         <deprecated>false</deprecated>
+        <description>The number of credits the student has successfully completed to date.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The number of credits the student has successfully completed to date.</inlineHelpText>
         <label>Credits Earned</label>
         <precision>6</precision>
         <required>false</required>
@@ -22,7 +24,9 @@
     <fields>
         <fullName>hed__End_Date__c</fullName>
         <deprecated>false</deprecated>
+        <description>The date the student is scheduled to complete the Program.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The date the student is scheduled to complete the Program.</inlineHelpText>
         <label>End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -33,7 +37,9 @@
     <fields>
         <fullName>hed__Enrollment_Status__c</fullName>
         <deprecated>false</deprecated>
+        <description>The student&apos;s enrollment status, for example, full-time or half-time.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The student&apos;s enrollment status, for example, full-time or half-time.</inlineHelpText>
         <label>Enrollment Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -64,7 +70,9 @@
     <fields>
         <fullName>hed__GPA__c</fullName>
         <deprecated>false</deprecated>
+        <description>The student&apos;s current grade point average.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The student&apos;s current grade point average.</inlineHelpText>
         <label>GPA</label>
         <precision>4</precision>
         <required>false</required>
@@ -78,7 +86,9 @@
     <fields>
         <fullName>hed__Start_Date__c</fullName>
         <deprecated>false</deprecated>
+        <description>The date the student started, or is expected to start, this Program.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The date the student started, or is expected to start, this Program.</inlineHelpText>
         <label>Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

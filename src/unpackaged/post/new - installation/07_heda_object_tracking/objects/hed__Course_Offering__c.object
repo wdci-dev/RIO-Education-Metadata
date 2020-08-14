@@ -8,6 +8,7 @@
 	<fields>
         <fullName>hed__Term__c</fullName>
         <deprecated>false</deprecated>
+        <description>Lookup to the Term record that represents when this Course Offering takes place.</description>
         <externalId>false</externalId>
         <label>Term</label>
         <referenceTo>hed__Term__c</referenceTo>
@@ -15,6 +16,7 @@
         <relationshipName>Course_Offerings</relationshipName>
         <relationshipOrder>1</relationshipOrder>
         <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
@@ -22,7 +24,9 @@
     <fields>
         <fullName>hed__End_Date__c</fullName>
         <deprecated>false</deprecated>
+        <description>The date of the last session for this Course Offering.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The date of the last session for this Course Offering.</inlineHelpText>
         <label>End Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -34,7 +38,9 @@
         <fullName>hed__Faculty__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
+        <description>Lookup to the lead instructor for this Course Offering.</description>
         <externalId>false</externalId>
+        <inlineHelpText>Lookup to the lead instructor for this Course Offering.</inlineHelpText>
         <label>Primary Faculty</label>
         <referenceTo>Contact</referenceTo>
         <relationshipLabel>Course Offerings</relationshipLabel>
@@ -48,7 +54,9 @@
     <fields>
         <fullName>hed__Start_Date__c</fullName>
         <deprecated>false</deprecated>
+        <description>The date of the first session for this Course Offering.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The date of the first session for this Course Offering.</inlineHelpText>
         <label>Start Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

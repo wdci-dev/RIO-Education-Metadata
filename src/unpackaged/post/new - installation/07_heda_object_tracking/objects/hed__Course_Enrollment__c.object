@@ -9,9 +9,9 @@
         <fullName>hed__Course_Offering__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
-        <description>Course Offering that the Contact is connected to. Identifies a specific occurence of a Course, for a specific Term.</description>
+        <description>The Course Offering the student or faculty member is involved with.</description>
         <externalId>false</externalId>
-        <inlineHelpText>The Course Offering the student is enrolled in. It&apos;s a Course offered at a specific Term.</inlineHelpText>
+        <inlineHelpText>The Course Offering the student or faculty member is involved with.</inlineHelpText>
         <label>Course Offering ID</label>
         <referenceTo>hed__Course_Offering__c</referenceTo>
         <relationshipLabel>Course Connection</relationshipLabel>
@@ -23,10 +23,12 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>hed__Credits_Earned__c</fullName>
+        <fullName>hed__Credits_Attempted__c</fullName>
         <deprecated>false</deprecated>
+        <description>The number of credits the student is trying to earn through this Course Offering.</description>
         <externalId>false</externalId>
-        <label>Credits Earned</label>
+        <inlineHelpText>The number of credits the student is trying to earn through this Course Offering.</inlineHelpText>
+        <label>Credits Attempted</label>
         <precision>6</precision>
         <required>false</required>
         <scale>3</scale>
@@ -39,7 +41,9 @@
     <fields>
         <fullName>hed__Grade__c</fullName>
         <deprecated>false</deprecated>
+        <description>The numeric grade the student earned in this Course Offering.</description>
         <externalId>false</externalId>
+        <inlineHelpText>The numeric grade the student earned in this Course Offering.</inlineHelpText>
         <label>Grade</label>
         <precision>6</precision>
         <required>false</required>
@@ -53,9 +57,9 @@
     <fields>
         <fullName>hed__Status__c</fullName>
         <deprecated>false</deprecated>
-        <description>Represents the Status of the Course Connection.</description>
+        <description>Indicates whether this is a current or former Course Connection.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Represents the Status of the Course Connection.</inlineHelpText>
+        <inlineHelpText>Indicates whether this is a current or former Course Connection.</inlineHelpText>
         <label>Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>

@@ -102,12 +102,12 @@
         <columns>NAME</columns>
         <columns>hed__Is_Primary__c</columns>
         <columns>hed__Account__c</columns>
-        <columns>Primary_Program__c</columns>
-        <columns>Secondary_Program__c</columns>
+        <columns>rio_ed__Primary_Program__c</columns>
+        <columns>rio_ed__Secondary_Program__c</columns>
         <columns>hed__Status__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Dual_Qualification__c</field>
+            <field>rio_ed__Dual_Qualification__c</field>
             <operation>equals</operation>
             <value>1</value>
         </filters>

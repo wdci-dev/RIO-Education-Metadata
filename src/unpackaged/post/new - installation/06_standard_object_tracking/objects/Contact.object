@@ -15,9 +15,9 @@
         <fullName>hed__Deceased__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
-        <description>When selected, this option marks the contact as deceased, and excludes them from household naming, emails, and phone calls.</description>
+        <description>Indicates this person is deceased. When selected, also enables Do Not Contact, Do Not Call, Email Opt Out, and Fax Opt Out. If the Contact is not the only member of the Household, the Contact name is removed from the Household name.</description>
         <externalId>false</externalId>
-        <inlineHelpText>When selected, this option marks the contact as deceased, and excludes them from household naming, emails, and phone calls.</inlineHelpText>
+        <inlineHelpText>Indicates this person is deceased. When selected, also enables Do Not Contact, Do Not Call, Email Opt Out, and Fax Opt Out. If the Contact is not the only member of the Household, the Contact name is removed from the Household name.</inlineHelpText>
         <label>Deceased</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>

@@ -6,13 +6,7 @@
         <members>rio_ed__RIO_Education_Program_Administration</members>
         <members>rio_ed__RIO_Education_Student_Administration</members>
         <members>rio_ed__RIO_Education_Timetable_Administration</members>
-		<members>rio_ed__RIO_Education_Appointment_Scheduler</members>
         <name>CustomApplication</name>
-    </types>
-    <types>
-        <members>REDU_Admin</members>
-        <members>REDU_All</members>
-        <name>Group</name>
     </types>
 	<types>
         <members>*</members>

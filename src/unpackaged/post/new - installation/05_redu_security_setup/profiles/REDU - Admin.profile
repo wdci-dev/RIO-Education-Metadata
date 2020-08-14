@@ -25,11 +25,6 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-	<applicationVisibilities>
-        <application>RIO_Education_Appointment_Scheduler</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
 	
 	<objectPermissions>
         <allowCreate>true</allowCreate>
@@ -258,7 +253,7 @@
 		<layout>rio_ed__Pathway_Unit__c-rio_ed__RIOEducation Pathway Unit Layout</layout>
 	</layoutAssignments>
 	<layoutAssignments>
-		<layout>rio_ed__Payment_Configuration__mdt-rio_ed__Payment Configuration Layout</layout>
+		<layout>rio_ed__Payment_Configuration__mdt-rio_ed__RIOEducation Payment Configuration Layout</layout>
 	</layoutAssignments>
 	<layoutAssignments>
 		<layout>rio_ed__Payment_Line__c-rio_ed__RIOEducation Payment Line Layout</layout>

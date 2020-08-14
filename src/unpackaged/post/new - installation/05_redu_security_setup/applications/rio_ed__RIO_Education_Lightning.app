@@ -2,15 +2,15 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
         <headerColor>#0070D2</headerColor>
-        <logo>rio_ed__rioed</logo>
+        <logo>rio_ed__rioed_eddie</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>RIO Education (Student Information System)</description>
+    <description>RIO Education School Admin Console</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
-    <label>RIO Education</label>
+    <label>RIO Admin Console</label>
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -68,6 +68,123 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_PE_Discipline_Requirement_Course_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__PE_Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__PE_Discipline_Requirement__c.rio_ed__Course</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_PE_Discipline_Requirement_Course_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__PE_Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__PE_Discipline_Requirement__c.rio_ed__Course</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Grade_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Grade__c</pageOrSobjectType>
+        <recordType>rio_ed__Grade__c.rio_ed__Grade</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Grade_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Grade__c</pageOrSobjectType>
+        <recordType>rio_ed__Grade__c.rio_ed__Grade</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_PE_Discipline_Requirement_Group_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__PE_Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__PE_Discipline_Requirement__c.rio_ed__Group</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_PE_Discipline_Requirement_Group_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__PE_Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__PE_Discipline_Requirement__c.rio_ed__Group</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Session_Template_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Session__c</pageOrSobjectType>
+        <recordType>rio_ed__Session__c.rio_ed__Template</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Session_Template_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Session__c</pageOrSobjectType>
+        <recordType>rio_ed__Session__c.rio_ed__Template</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Sub_Grade_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Grade__c</pageOrSobjectType>
+        <recordType>rio_ed__Grade__c.rio_ed__Sub_Grade</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Discipline_Requirement_Course_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__Discipline_Requirement__c.rio_ed__Course</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Discipline_Requirement_Course_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__Discipline_Requirement__c.rio_ed__Course</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Sub_Grade_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Grade__c</pageOrSobjectType>
+        <recordType>rio_ed__Grade__c.rio_ed__Sub_Grade</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Discipline_Requirement_Group_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__Discipline_Requirement__c.rio_ed__Group</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>rio_ed__RIOEducation_Location_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
@@ -81,6 +198,33 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.rio_ed__Location</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Discipline_Requirement_Group_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Discipline_Requirement__c</pageOrSobjectType>
+        <recordType>rio_ed__Discipline_Requirement__c.rio_ed__Group</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__Session_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Session__c</pageOrSobjectType>
+        <recordType>rio_ed__Session__c.rio_ed__Class</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__Session_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>rio_ed__Session__c</pageOrSobjectType>
+        <recordType>rio_ed__Session__c.rio_ed__Class</recordType>
         <type>Flexipage</type>
         <profile>REDU - Admin</profile>
     </profileActionOverrides>
@@ -123,13 +267,15 @@
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
-    <tabs>rio_ed__Program_Application__c</tabs>
-    <tabs>hed__Program_Enrollment__c</tabs>
-    <tabs>hed__Course__c</tabs>
     <tabs>hed__Term__c</tabs>
-    <tabs>rio_ed__Fee__c</tabs>
+    <tabs>hed__Facility__c</tabs>
+    <tabs>rio_ed__Staff_Award__c</tabs>
     <tabs>standard-Feed</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>rio_ed__Appointment_Availability__c</tabs>
+    <tabs>rio_ed__Availability_Time__c</tabs>
+    <tabs>rio_ed__Assigned_Location__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
