@@ -3,43 +3,43 @@
     <label>Pre-enrollment Opened</label>
     <protected>false</protected>
     <values>
-        <field>Allow_Enrollment__c</field>
+        <field>rio_ed__Allow_Enrollment__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Allow_Pre_Enrollment__c</field>
+        <field>rio_ed__Allow_Pre_Enrollment__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
-        <field>Allow_Unenrollment__c</field>
+        <field>rio_ed__Allow_Unenrollment__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
-        <field>Cancelled__c</field>
+        <field>rio_ed__Cancelled__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Completed__c</field>
+        <field>rio_ed__Completed__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Draft__c</field>
+        <field>rio_ed__Draft__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>In_Progress__c</field>
+        <field>rio_ed__In_Progress__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Inactive__c</field>
+        <field>rio_ed__Inactive__c</field>
         <value xsi:type="xsd:boolean">false</value>
     </values>
     <values>
-        <field>Pending__c</field>
+        <field>rio_ed__Pending__c</field>
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
-        <field>Status__c</field>
+        <field>rio_ed__Status__c</field>
         <value xsi:type="xsd:string">Pre-enrollment Opened</value>
     </values>
 </CustomMetadata>
