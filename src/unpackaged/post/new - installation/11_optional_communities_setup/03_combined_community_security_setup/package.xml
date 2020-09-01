@@ -11,6 +11,7 @@
     
     <types>
         <members>REDU - Faculty</members>
+		<members>REDU - Platform Faculty</members>
 		<members>REDU - Student</members>
 		<members>RIO Education Community Profile</members>
         <name>Profile</name>
