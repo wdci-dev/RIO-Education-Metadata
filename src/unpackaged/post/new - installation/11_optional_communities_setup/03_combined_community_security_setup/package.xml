@@ -18,8 +18,8 @@
     </types>
 	
 	<types>
-        <members>Student_Sharing_Set</members>
-		<members>Faculty_Sharing_Set</members>
+        <members>REDU_Student</members>
+		<members>REDU_Faculty</members>
         <name>SharingSet</name>
     </types>
 	

@@ -12,25 +12,13 @@
         <objectField>Id</objectField>
         <userField>Contact</userField>
     </accessMappings>
-    <accessMappings>
-        <accessLevel>Edit</accessLevel>
-        <object>rio_ed__PE_Discipline__c</object>
-        <objectField>rio_ed__Contact__c</objectField>
-        <userField>Contact</userField>
-    </accessMappings>
-    <accessMappings>
+	<accessMappings>
         <accessLevel>Edit</accessLevel>
         <object>hed__Course_Enrollment__c</object>
         <objectField>hed__Contact__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
-    <accessMappings>
-        <accessLevel>Edit</accessLevel>
-        <object>hed__Program_Enrollment__c</object>
-        <objectField>hed__Contact__c</objectField>
-        <userField>Contact</userField>
-    </accessMappings>
-    <description>Sharing setting for student community users.</description>
-    <name>Student Sharing Set</name>
-    <profiles>redu - student</profiles>
+    <description>Sharing setting for faculty community users.</description>
+    <name>REDU - Faculty</name>
+    <profiles>REDU - Faculty</profiles>
 </SharingSet>

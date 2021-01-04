@@ -195,10 +195,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>hed__CON_Email</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>hed__CON_Email_BATCH</apexClass>
         <enabled>false</enabled>
     </classAccesses>
