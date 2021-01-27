@@ -10,6 +10,17 @@
         <members>rio_ed__Course_Offering_Session_Status.Pre_enrollment_Opened</members>
         <members>rio_ed__Course_Offering_Session_Status.Running</members>
         <members>rio_ed__Course_Offering_Session_Status.Running_Enrollment_Opened</members>
+		
+		<members>rio_ed__Payment_Configuration.Financial_Assistance_Scholarship</members>
+        <members>rio_ed__Payment_Configuration.Financial_Assistance_Financial_AID</members>
+        <members>rio_ed__Payment_Configuration.rio_ed__Scholarship</members>
+        <members>rio_ed__Payment_Configuration.Financial_Assistance_Multiple</members>
+        <members>rio_ed__Payment_Configuration.rio_ed__Government_Funding</members>
+        <members>rio_ed__Payment_Configuration.rio_ed__Sponsor</members>
+        <members>rio_ed__Payment_Configuration.rio_ed__Self_Paid</members>
+        <members>rio_ed__Payment_Configuration.Financial_Assistance_Sponsor</members>
+        <members>rio_ed__Payment_Configuration.rio_ed__Government_Funding1</members>
+		
         <name>CustomMetadata</name>
     </types>
     <version>44.0</version>
