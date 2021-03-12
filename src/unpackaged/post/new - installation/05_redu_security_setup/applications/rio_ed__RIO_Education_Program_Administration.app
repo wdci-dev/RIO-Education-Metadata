@@ -156,7 +156,7 @@
         <type>Flexipage</type>
         <profile>REDU - Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__Session_Record_Page</content>
         <formFactor>Large</formFactor>
@@ -174,7 +174,7 @@
         <type>Flexipage</type>
         <profile>REDU - Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_Educational_Institution_Page</content>
         <formFactor>Large</formFactor>
@@ -192,7 +192,7 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_Location_Page</content>
         <formFactor>Large</formFactor>
@@ -210,7 +210,7 @@
         <type>Flexipage</type>
         <profile>REDU - Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_Session_Template_Record_Page</content>
         <formFactor>Large</formFactor>
@@ -228,7 +228,7 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_Academic_Program_Page</content>
         <formFactor>Large</formFactor>
@@ -246,7 +246,7 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
-	<profileActionOverrides>
+    <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_University_Department_Page</content>
         <formFactor>Large</formFactor>
