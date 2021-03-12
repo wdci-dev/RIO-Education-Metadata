@@ -271,10 +271,10 @@
     <tabs>standard-Contact</tabs>
     <tabs>rio_ed__Fee__c</tabs>
     <tabs>hed__Course_Offering__c</tabs>
-	<tabs>rio_ed__Session__c</tabs>
+    <tabs>rio_ed__Session__c</tabs>
     <tabs>rio_ed__SessionTemplateBuilder</tabs>
     <tabs>rio_ed__SessionScheduler</tabs>
-	<tabs>rio_ed__StudentScheduler</tabs>
+    <tabs>rio_ed__StudentScheduler</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>rio_ed__RIO_Education_Program_Administration_UtilityBar</utilityBar>
 </CustomApplication>
