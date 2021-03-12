@@ -277,5 +277,6 @@
     <tabs>rio_ed__Appointment_Availability__c</tabs>
     <tabs>rio_ed__Availability_Time__c</tabs>
     <tabs>rio_ed__Assigned_Location__c</tabs>
+    <tabs>Funding__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
