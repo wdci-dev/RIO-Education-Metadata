@@ -192,6 +192,78 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+	<profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Educational_Institution_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Educational_Institution</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Educational_Institution_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Educational_Institution</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+	<profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Location_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.rio_ed__Location</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Location_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.rio_ed__Location</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+	<profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Academic_Program_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Academic_Program</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_Academic_Program_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.Academic_Program</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+	<profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_University_Department_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.University_Department</recordType>
+        <type>Flexipage</type>
+        <profile>REDU - Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>rio_ed__RIOEducation_University_Department_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.University_Department</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
     <tabs>standard-Today</tabs>
     <tabs>standard-Lead</tabs>
     <tabs>rio_ed__Program_Application__c</tabs>
