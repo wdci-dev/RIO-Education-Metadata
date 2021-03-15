@@ -54,7 +54,7 @@
         <fullName>rio_ed__Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Status</label>
+        <label>Enrollment Status</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -65,18 +65,28 @@
                 <sorted>false</sorted>
                 <value>
                     <fullName>Current</fullName>
+                    <default>true</default>
+                    <label>Enrolled</label>
+                </value>
+		<value>
+                    <fullName>Enrollment requested</fullName>
                     <default>false</default>
-                    <label>Current</label>
+                    <label>Enrollment requested</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
                 </value>
                 <value>
                     <fullName>Withdrawn</fullName>
                     <default>false</default>
                     <label>Withdrawn</label>
                 </value>
-                <value>
-                    <fullName>Completed</fullName>
+		<value>
+                    <fullName>Waitlisted</fullName>
                     <default>false</default>
-                    <label>Completed</label>
+                    <label>Waitlisted</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
