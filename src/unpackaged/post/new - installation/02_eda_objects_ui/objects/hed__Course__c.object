@@ -70,6 +70,7 @@
     <fields>
         <fullName>hed__Account__c</fullName>
         <deprecated>false</deprecated>
+        <description>The department (Account record) that offers this Course.</description>
         <externalId>false</externalId>
         <label>Department</label>
         <referenceTo>Account</referenceTo>
