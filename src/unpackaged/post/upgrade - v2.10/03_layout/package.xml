@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+		<members>rio_ed__Appointment_Type__c-rio_ed__RIOEducation Appointment Type Layout</members>
+		<members>rio_ed__Allocation__c-rio_ed__RIOEducation Allocation Layout</members>
+		<members>hed__Facility__c-rio_ed__RIOEducation Facility Layout</members>
+		<members>Account-rio_ed__RIOEducation Program Layout</members>
+		<members>Account-rio_ed__RIOEducation Department Layout</members>
+		<members>Account-rio_ed__RIOEducation Organization Layout</members>
+		<members>Account-rio_ed__RIOEducation Location Layout</members>
+		<members>Contact-rio_ed__RIOEducation Contact Layout</members>
+		<members>Contact-rio_ed__RIOEducation Student Community Layout</members>
+		<members>Contact-rio_ed__RIOEducation Faculty Community Layout</members>
+		<members>hed__Course__c-rio_ed__RIOEducation Course Layout</members>
+		<members>hed__Course_Enrollment__c-rio_ed__RIOEducation Faculty Course Enrollment Layout</members>
+		<members>hed__Course_Enrollment__c-rio_ed__RIOEducation Community Student Course Enrollment Layout</members>
+		<members>hed__Course_Enrollment__c-rio_ed__RIOEducation Community Faculty Course Enrollment Layout</members>
+		<members>hed__Course_Offering__c-rio_ed__RIOEducation Course Offering Layout</members>
+		<members>hed__Course_Offering__c-rio_ed__RIOEducation Community Course Offering Layout</members>
+		<members>rio_ed__Funding_Allocation__c-rio_ed__RIOEducation Funding Allocation Layout</members>
+		<members>rio_ed__Leave_Request__c-rio_ed__RIOEducation Leave Request Layout</members>
+		<members>rio_ed__Fee__c-rio_ed__RIOEducation Fee Layout</members>
+		<members>rio_ed__Fee_Payment__c-rio_ed__RIOEducation Fee Payment Layout</members>
+		<members>rio_ed__Fee_Schedule__c-rio_ed__RIOEducation Fee Schedule Layout</members>
+		<members>rio_ed__Grade__c-rio_ed__RIOEducation Grade Layout</members>
+		<members>rio_ed__Grade__c-rio_ed__RIOEducation SubGrade Layout</members>
+		<members>rio_ed__Grade_Criteria__c-rio_ed__RIOEducation Grade Criteria Layout</members>
+		<members>rio_ed__Grade_Setting__c-rio_ed__RIOEducation Grade Setting Layout</members>
+		<members>rio_ed__Program_Application__c-rio_ed__RIOEducation Guest Community Layout</members>
+		<members>hed__Program_Enrollment__c-rio_ed__RIOEducation Program Enrollment Layout</members>
+		<members>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</members>
+		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout</members>
+		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout (Faculty)</members>
+		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout (Student)</members>
+		<members>rio_ed_Session_Time__c-rio_ed__RIOEducation Session Time Layout</members>
+		<members>rio_ed__Staff_Award__c-rio_ed__RIOEducation Staff Award Layout</members>
+		<members>rio_ed__Staff_Leave__c-rio_ed__RIOEducation Staff Leave Layout</members>
+		<members>rio_ed__Student_Fee__c-rio_ed__RIOEducation Student Fee Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>50.0</version>
+</Package>
