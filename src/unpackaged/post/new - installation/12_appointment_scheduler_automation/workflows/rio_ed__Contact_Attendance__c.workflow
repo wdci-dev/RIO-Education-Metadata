@@ -9,7 +9,7 @@
             <type>contactLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>RIO_Education/RIO_Education_Appointment_status_updated</template>
+        <template>rio_ed__RIO_Education/RIO_Education_Appointment_status_updated</template>
     </alerts>
     <alerts>
         <fullName>Send_Email_to_new_Contact_Attendances</fullName>
@@ -20,6 +20,6 @@
             <type>contactLookup</type>
         </recipients>
         <senderType>CurrentUser</senderType>
-        <template>RIO_Education/RIO_Education_Appointment_new_appointment</template>
+        <template>rio_ed__RIO_Education/RIO_Education_Appointment_new_appointment</template>
     </alerts>
 </Workflow>
