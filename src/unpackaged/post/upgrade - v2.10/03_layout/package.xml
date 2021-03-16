@@ -30,9 +30,9 @@
 		<members>hed__Program_Enrollment__c-rio_ed__RIOEducation Program Enrollment Layout</members>
 		<members>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</members>
 		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout</members>
-		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout (Faculty)</members>
-		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout (Student)</members>
-		<members>rio_ed_Session_Time__c-rio_ed__RIOEducation Session Time Layout</members>
+		<members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout %28Faculty%29</members>
+        <members>rio_ed__Session__c-rio_ed__RIOEducation Session Layout %28Student%29</members>
+		<members>rio_ed__Session_Time__c-rio_ed__RIOEducation Session Time Layout</members>
 		<members>rio_ed__Staff_Award__c-rio_ed__RIOEducation Staff Award Layout</members>
 		<members>rio_ed__Staff_Leave__c-rio_ed__RIOEducation Staff Leave Layout</members>
 		<members>rio_ed__Student_Fee__c-rio_ed__RIOEducation Student Fee Layout</members>
