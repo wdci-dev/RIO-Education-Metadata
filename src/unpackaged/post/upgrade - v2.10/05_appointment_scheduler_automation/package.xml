@@ -7,7 +7,7 @@
     </types>
     <types>
         <members>Appointment_Status_email_flow</members>
-        <members>New_Contact_Attendance_Flow</members>
+        <members>New_Contact_Attendance_flow</members>
         <name>Flow</name>
     </types>
     <types>
