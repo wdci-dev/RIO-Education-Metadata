@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>rio_ed__rioed_eddie</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>RIO Education School Admin Console</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>RIO Admin Console</label>
+    <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__Plan_Requirement_Record_Page</content>
@@ -252,4 +264,19 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>hed__Term__c</tabs>
+    <tabs>hed__Facility__c</tabs>
+    <tabs>rio_ed__Staff_Award__c</tabs>
+    <tabs>standard-Feed</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>rio_ed__Appointment_Availability__c</tabs>
+    <tabs>rio_ed__Availability_Time__c</tabs>
+    <tabs>rio_ed__Assigned_Location__c</tabs>
+    <tabs>rio_ed__Funding__c</tabs>
+    <uiType>Lightning</uiType>
 </CustomApplication>

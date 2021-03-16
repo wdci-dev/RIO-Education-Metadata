@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>rio_ed__rioed_eddie</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>RIO Education Student Administration Console</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>RIO Student Admin</label>
+    <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>rio_ed__RIOEducation_PE_Discipline_Requirement_Course_Record_Page</content>
@@ -252,4 +264,13 @@
         <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
+    <tabs>standard-Contact</tabs>
+    <tabs>rio_ed__Program_Application__c</tabs>
+    <tabs>hed__Program_Enrollment__c</tabs>
+    <tabs>hed__Course_Enrollment__c</tabs>
+    <tabs>standard-Case</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>rio_ed__Appointment_Scheduler</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>rio_ed__RIO_Education_Student_Administration_UtilityBar</utilityBar>
 </CustomApplication>
