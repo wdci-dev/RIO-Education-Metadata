@@ -57,7 +57,7 @@
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>Joins Courses and Terms to contain information related to a single occurrence of a course.</description>
+    <description>Joins Courses and Terms to contain information related to a single occurrence of a Course.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>true</enableFeeds>

@@ -199,10 +199,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>hed__CON_Email_TEST</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>hed__CON_EthnicityRace_BATCH</apexClass>
         <enabled>true</enabled>
     </classAccesses>

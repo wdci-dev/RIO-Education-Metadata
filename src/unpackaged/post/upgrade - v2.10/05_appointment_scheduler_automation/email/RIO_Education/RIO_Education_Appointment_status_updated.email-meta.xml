@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>RIO Education Appointment status updated</name>
+    <style>none</style>
+    <subject>Updated Appointment</subject>
+    <textOnly>Hi {!Contact_Attendance__c.Contact_Name__c},
+
+One of your appointments has been updated:
+Name: {!Contact_Attendance__c.Booking_Display_Name__c}
+Start: {!Contact_Attendance__c.Booking_Start__c}
+End: {!Contact_Attendance__c.Booking_End__c}
+Status: {!Contact_Attendance__c.Booking_Status__c}
+
+Go here: https://YourCommunity.na124.force.com/portal/s/YourAppointmentSchedulerPage?c__apptId={!Contact_Attendance__c.BookingId__c} for more information</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
