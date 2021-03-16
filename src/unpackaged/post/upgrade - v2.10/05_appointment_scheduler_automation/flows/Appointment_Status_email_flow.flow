@@ -107,28 +107,28 @@ Used to find Contact Emails for sending emails.</description>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Booking__c</field>
+            <field>rio_ed__Booking__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
         <filters>
-            <field>Status__c</field>
+            <field>rio_ed__Status__c</field>
             <operator>NotEqualTo</operator>
             <value>
                 <stringValue>Rejected &amp; Cancelled</stringValue>
             </value>
         </filters>
         <filters>
-            <field>Contact_Email__c</field>
+            <field>rio_ed__Contact_Email__c</field>
             <operator>IsNull</operator>
             <value>
                 <booleanValue>false</booleanValue>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>Contact_Attendance__c</object>
+        <object>rio_ed__Contact_Attendance__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
@@ -139,7 +139,7 @@ Used to find Contact Emails for sending emails.</description>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Appointment_Type__c</field>
+            <field>rio_ed__Appointment_Type__c</field>
             <operator>IsNull</operator>
             <value>
                 <booleanValue>false</booleanValue>
