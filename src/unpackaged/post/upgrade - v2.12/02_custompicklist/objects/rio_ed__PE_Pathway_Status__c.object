@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <fields>
+        <fullName>rio_ed__Fixed_Term_Fee_Status__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Only used for Fixed Term fee methods. Creates Student Fee for this PE Pathway.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only used for Fixed Term fee methods. Creates Student Fee for this PE Pathway.</inlineHelpText>
+        <label>Fixed Term Fee Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Don&apos;t generate</fullName>
+                    <default>false</default>
+                    <label>Don&apos;t generate</label>
+                </value>
+                <value>
+                    <fullName>Not generated</fullName>
+                    <default>true</default>
+                    <label>Not generated</label>
+                </value>
+                <value>
+                    <fullName>Generate</fullName>
+                    <default>false</default>
+                    <label>Generate</label>
+                </value>
+                <value>
+                    <fullName>Fee generated</fullName>
+                    <default>false</default>
+                    <label>Fee generated</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
