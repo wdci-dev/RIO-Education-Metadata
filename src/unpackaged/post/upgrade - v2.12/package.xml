@@ -26,6 +26,7 @@
 		<members>rio_ed__Fee_Line__c.rio_ed__Other_Fee_Type__c</members>
 		<members>hed__Course_Enrollment__c.rio_ed__Requirement_Type__c</members>
 		<members>rio_ed__Program_Course_Requirement__c.rio_ed__Requirement_Type__c</members>
+		<members>rio_ed__PE_Pathway_Status__c.rio_ed__Fixed_Term_Fee_Status__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>
