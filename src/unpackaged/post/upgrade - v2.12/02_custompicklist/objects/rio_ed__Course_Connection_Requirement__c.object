@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>rio_ed__Requirement_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Requirement Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre-Requisite</fullName>
+                    <default>false</default>
+                    <label>Pre-Requisite</label>
+                </value>
+                <value>
+                    <fullName>Pre-Requisite (Enrolled or Completed)</fullName>
+                    <default>false</default>
+                    <label>Pre-Requisite (Enrolled or Completed)</label>
+                </value>
+                <value>
+                    <fullName>Co-Requisite</fullName>
+                    <default>false</default>
+                    <label>Co-Requisite</label>
+                </value>
+                <value>
+                    <fullName>Credit Points</fullName>
+                    <default>false</default>
+                    <label>Credit Points</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
