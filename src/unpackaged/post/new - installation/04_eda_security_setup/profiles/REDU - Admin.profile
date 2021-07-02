@@ -28,6 +28,19 @@
         <visible>true</visible>
     </applicationVisibilities>
 	
+	<fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Primary_Department__c</field>
+        <readable>true</readable>
+		<editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Primary_Educational_Institution__c</field>
+        <readable>true</readable>
+		<editable>true</editable>
+    </fieldPermissions>
+	
 	<objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
