@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>rio_ed__Funding_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Funding Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Scholarship</fullName>
+                    <default>false</default>
+                    <label>Scholarship</label>
+                </value>
+                <value>
+                    <fullName>Discount</fullName>
+                    <default>false</default>
+                    <label>Discount</label>
+                </value>
+                <value>
+                    <fullName>Sponsor</fullName>
+                    <default>false</default>
+                    <label>Sponsor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
