@@ -18,14 +18,19 @@
                     <label>Scholarship</label>
                 </value>
                 <value>
+                    <fullName>Sponsor</fullName>
+                    <default>false</default>
+                    <label>Sponsor</label>
+                </value>
+				<value>
                     <fullName>Discount</fullName>
                     <default>false</default>
                     <label>Discount</label>
                 </value>
-                <value>
-                    <fullName>Sponsor</fullName>
+				<value>
+                    <fullName>Discount %</fullName>
                     <default>false</default>
-                    <label>Sponsor</label>
+                    <label>Discount %</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
