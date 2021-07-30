@@ -6,10 +6,5 @@
         <members>rio_ed__Funding__c.rio_ed__Funding_Type__c</members>
         <name>CustomField</name>
     </types>
-	<types>
-        <members>REDU - Admin</members>
-		<members>Admin</members>
-        <name>Profile</name>
-    </types>
     <version>51.0</version>
 </Package>
