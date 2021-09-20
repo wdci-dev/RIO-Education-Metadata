@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>rio_ed__Course_Connection_Fee_Type_Option__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Course Connection Fee Type Option</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Course_Connection_Fee_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Course Connection Fee Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type</valueSetName>
+        </valueSet>
+    </fields>
+</CustomObject>

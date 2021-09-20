@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>hed__Course_Enrollment__c.rio_ed__Fee_Type_Option__c</members>
+        <members>hed__Course_Enrollment__c.rio_ed__Fee_Type__c</members>
+        <members>hed__Program_Enrollment__c.rio_ed__Fee_Type_Option__c</members>
+        <members>hed__Program_Enrollment__c.rio_ed__Fee_Type__c</members>
+        <members>rio_ed__Fee_Line__c.rio_ed__Course_Connection_Fee_Type_Option__c</members>
+        <members>rio_ed__Fee_Line__c.rio_ed__Course_Connection_Fee_Type__c</members>
+        <members>rio_ed__Program_Application__c.rio_ed__Fee_Type_Option__c</members>
+        <members>rio_ed__Program_Application__c.rio_ed__Fee_Type__c</members>
+        <members>rio_ed__Transfer_Credit__c.rio_ed__Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>rio_ed__Fee_Type_Option</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <version>52.0</version>
+</Package>
