@@ -37,7 +37,7 @@
         <userField>Contact</userField>
     </accessMappings>
 	<accessMappings>
-        <accessLevel>Read</accessLevel>
+        <accessLevel>Edit</accessLevel>
         <object>rio_ed__Transfer_Credit__c</object>
         <objectField>rio_ed__Contact__c</objectField>
         <userField>Contact</userField>
