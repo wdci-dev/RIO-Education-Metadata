@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+		<members>rio_ed__Appointment_Type__c-rio_ed__RIOEducation Appointment Type Layout</members>
+		<members>rio_ed__Appointment_Time__c-rio_ed__RIOEducation Appointment Time Layout</members>
+        <name>Layout</name>
+    </types>
+    <version>52.0</version>
+</Package>
