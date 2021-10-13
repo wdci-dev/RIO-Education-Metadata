@@ -651,6 +651,24 @@
         <object>rio_ed__Location_Time__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+	<objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>rio_ed__Staff_Leave__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>rio_ed__Leave_Request__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
 	
     <layoutAssignments>
         <layout>Account-rio_ed__RIOEducation Student Community Department Layout</layout>
