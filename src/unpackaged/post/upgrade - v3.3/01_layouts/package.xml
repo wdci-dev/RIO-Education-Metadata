@@ -5,7 +5,7 @@
         <members>hed__Plan_Requirement__c-rio_ed__RIOEducation Plan Requirement %28Course%29 Layout</members>
         <members>hed__Program_Enrollment__c-rio_ed__RIOEducation Program Enrollment Layout</members>
         <members>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</members>
-        <members>hed__Trigger_handler__c-rio_ed__RIOEducation Trigger Handler Layout</members>
+        <members>hed__Trigger_Handler__c-rio_ed__RIOEducation Trigger Handler Layout</members>
         <members>rio_ed__Auto_Credit_Transfer_Configuration__mdt-rio_ed__RIOEducation Auto Credit Transfer Configuration Layout</members>
         <members>rio_ed__Grade_Setting__c-rio_ed__RIOEducation Grade Setting Layout</members>
         <members>rio_ed__Program_Enrollment_Status__mdt-rio_ed__RIOEducation Program Enrollment Status Layout</members>
