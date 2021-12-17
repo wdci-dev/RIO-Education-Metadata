@@ -4,6 +4,16 @@
     <deprecated>false</deprecated>
     <description>Represents a connection to a Course Offering.</description>
     <enableHistory>true</enableHistory>
+	<label>Course Connection</label>
+    <nameField>
+        <displayFormat>CC-{0000}</displayFormat>
+        <label>Course Connection ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Course Connections</pluralLabel>
+    <sharingModel>Private</sharingModel>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>hed__Course_Offering__c</fullName>
@@ -62,7 +72,6 @@
         <inlineHelpText>Indicates whether this is a current or former Course Connection.</inlineHelpText>
         <label>Status</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -79,6 +88,41 @@
                     <default>false</default>
                     <label>Former</label>
                 </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Enrolled</fullName>
+                    <default>false</default>
+                    <label>Enrolled</label>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                    <label>Failed</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Withdrew</fullName>
+                    <default>false</default>
+                    <label>Withdrew</label>
+                </value>
+                <value>
+                    <fullName>Audit</fullName>
+                    <default>false</default>
+                    <label>Audit</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -88,7 +132,6 @@
         <externalId>false</externalId>
         <label>Enrollment Status</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -126,6 +169,11 @@
                     <default>false</default>
                     <label>Completed</label>
                 </value>
+                <value>
+                    <fullName>Waitlisted</fullName>
+                    <default>false</default>
+                    <label>Waitlisted</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -133,11 +181,11 @@
         <fullName>rio_ed__Fee_Amount__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>Calculated Student fee for this course</inlineHelpText>
         <label>Fee Amount</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -146,9 +194,9 @@
         <fullName>rio_ed__Fee_Type_Option__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
         <label>Fee Type Option</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -157,7 +205,23 @@
             <restricted>true</restricted>
             <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
             <valueSettings>
-                <controllingFieldValue>Government Funding</controllingFieldValue>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Financial AID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Scholarship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Sponsor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Multiple</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
                 <valueName>FEE-HELP</valueName>
             </valueSettings>
         </valueSet>
@@ -166,9 +230,9 @@
         <fullName>rio_ed__Fee_Type__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
         <label>Fee Type</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -182,8 +246,8 @@
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>Used to release grades to students and trigger the completion engine</inlineHelpText>
         <label>Release Grades</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -195,7 +259,6 @@
         <externalId>false</externalId>
         <inlineHelpText>This is checked when all course connection requirement(s) is completed.</inlineHelpText>
         <label>Requirement Met</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -204,23 +267,14 @@
         <fullName>rio_ed__Upfront_Payment__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>Amount that student can optionally elect to pay upfront (For HELP loans etc)</inlineHelpText>
         <label>Upfront Payment</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
-    <label>Course Connection</label>
-    <nameField>
-        <displayFormat>CC-{0000}</displayFormat>
-        <label>Course Connection ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Course Connections</pluralLabel>
-    <sharingModel>Private</sharingModel>
+    
 </CustomObject>

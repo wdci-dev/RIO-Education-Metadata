@@ -15,7 +15,7 @@
         <relationshipLabel>Program Applications</relationshipLabel>
         <relationshipName>Program_Applications</relationshipName>
         <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
@@ -25,6 +25,7 @@
         <fullName>rio_ed__Fee_Type_Option__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
         <label>Fee Type Option</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
@@ -35,7 +36,23 @@
             <restricted>true</restricted>
             <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
             <valueSettings>
-                <controllingFieldValue>Government Funding</controllingFieldValue>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Financial AID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Scholarship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Sponsor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Multiple</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
                 <valueName>FEE-HELP</valueName>
             </valueSettings>
         </valueSet>
@@ -44,6 +61,7 @@
         <fullName>rio_ed__Fee_Type__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
         <label>Fee Type</label>
         <required>false</required>
         <trackHistory>true</trackHistory>
@@ -201,6 +219,56 @@
                     <default>false</default>
                     <label>2020</label>
                 </value>
+				<value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                    <label>2021</label>
+                </value>
+				<value>
+                    <fullName>2022</fullName>
+                    <default>false</default>
+                    <label>2022</label>
+                </value>
+				<value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                    <label>2023</label>
+                </value>
+				<value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                    <label>2024</label>
+                </value>
+				<value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                    <label>2025</label>
+                </value>
+				<value>
+                    <fullName>2026</fullName>
+                    <default>false</default>
+                    <label>2026</label>
+                </value>
+				<value>
+                    <fullName>2027</fullName>
+                    <default>false</default>
+                    <label>2027</label>
+                </value>
+				<value>
+                    <fullName>2028</fullName>
+                    <default>false</default>
+                    <label>2028</label>
+                </value>
+				<value>
+                    <fullName>2029</fullName>
+                    <default>false</default>
+                    <label>2029</label>
+                </value>
+				<value>
+                    <fullName>2030</fullName>
+                    <default>false</default>
+                    <label>2030</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -245,11 +313,6 @@
                     <label>Pending</label>
                 </value>
                 <value>
-                    <fullName>Cancelled</fullName>
-                    <default>false</default>
-                    <label>Cancelled</label>
-                </value>
-                <value>
                     <fullName>Pending - Awaiting Documentation</fullName>
                     <default>false</default>
                     <label>Pending - Awaiting Documentation</label>
@@ -268,6 +331,11 @@
                     <fullName>Approved</fullName>
                     <default>false</default>
                     <label>Approved</label>
+                </value>
+				<value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
                 </value>
                 <value>
                     <fullName>Rejected</fullName>

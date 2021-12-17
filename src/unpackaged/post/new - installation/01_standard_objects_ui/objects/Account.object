@@ -214,8 +214,6 @@
         <columns>ACCOUNT.NAME</columns>
         <columns>rio_ed__Campus__c</columns>
         <columns>rio_ed__Timezone__c</columns>
-        <columns>rio_ed__Parent_Location__c</columns>
-        <columns>rio_ed__Location_Capacity__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>

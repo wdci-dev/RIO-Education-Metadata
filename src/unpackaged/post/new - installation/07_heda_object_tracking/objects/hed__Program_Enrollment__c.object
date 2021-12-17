@@ -4,6 +4,16 @@
     <deprecated>false</deprecated>
     <description>A student Contact&apos;s enrollment in an academic program offered by a Department or School (the degree-granting Account type for the educational institution).</description>
     <enableHistory>true</enableHistory>
+	<label>Program Enrollment</label>
+    <nameField>
+        <displayFormat>PE-{0000}</displayFormat>
+        <label>Program Enrollment ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Program Enrollments</pluralLabel>
+    <sharingModel>Private</sharingModel>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>hed__Credits_Earned__c</fullName>
@@ -102,7 +112,6 @@
         <externalId>false</externalId>
         <label>Fee Type Option</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -111,7 +120,23 @@
             <restricted>true</restricted>
             <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
             <valueSettings>
-                <controllingFieldValue>Government Funding</controllingFieldValue>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Financial AID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Scholarship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Sponsor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Multiple</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
                 <valueName>FEE-HELP</valueName>
             </valueSettings>
         </valueSet>
@@ -122,7 +147,6 @@
         <externalId>false</externalId>
         <label>Fee Type</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -137,9 +161,9 @@
         <externalId>false</externalId>
         <inlineHelpText>Grade Points = Sum(Grade Points) achieved for each Course completed.</inlineHelpText>
         <label>Grade Points</label>
-        <precision>6</precision>
+        <precision>7</precision>
         <required>false</required>
-        <scale>3</scale>
+        <scale>4</scale>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
@@ -152,7 +176,6 @@
         <externalId>false</externalId>
         <label>Program Status</label>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -160,6 +183,11 @@
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
                 <value>
                     <fullName>Current</fullName>
                     <default>true</default>
@@ -180,17 +208,13 @@
                     <default>false</default>
                     <label>Deferred</label>
                 </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
-	<label>Program Enrollment</label>
-    <nameField>
-        <displayFormat>PE-{0000}</displayFormat>
-        <label>Program Enrollment ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Program Enrollments</pluralLabel>
-    <sharingModel>Private</sharingModel>
+	
 </CustomObject>
