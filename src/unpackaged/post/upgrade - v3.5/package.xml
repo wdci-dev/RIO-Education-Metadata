@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>rio_ed__Student_Fee_Type__mdt-rio_ed__RIOEducation Student Fee Type Layout</members>
+        <members>hed__Program_Plan__c-rio_ed__RIOEducation Program Plan Layout</members>
+        <members>rio_ed__Student_Fee__c-rio_ed__RIOEducation Student Fee Layout</members>
+		<members>rio_ed__Program_Enrollment_Status__mdt-rio_ed__RIOEducation Program Enrollment Status Layout</members>
+		<members>Account-rio_Ed__RIOEducation Program Layout</members>
+		<members>rio_ed__Funding__c-RIOEducation Funding Layout</members>
+        <name>Layout</name>
+    </types>
+	<types>
+        <members>rio_ed__Fee__c.rio_ed__Fee_Type__c</members>
+        <members>rio_ed__Fee__c.rio_ed__Fee_Unit__c</members>
+        <members>rio_ed__Fee_Schedule__c.rio_ed__Fee_Schedule_Fee_Unit__c</members>
+        <name>CustomField</name>
+    </types>
+	<types>
+        <members>hed__Course_Enrollment__c.REDU_Faculty_ReadOnFaculty</members>
+        <members>hed__Course_Enrollment__c.REDU_Faculty_ReadEditOnStudent</members>
+        <members>hed__Program_Enrollment__c.REDU_Faculty_ReadEdit</members>
+		<members>rio_ed__PE_Discipline__c.REDU_Faculty_ReadEdit</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <version>52.0</version>
+</Package>
