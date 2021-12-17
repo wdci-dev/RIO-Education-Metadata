@@ -71,9 +71,9 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Grade Points</label>
-        <precision>6</precision>
+        <precision>7</precision>
         <required>false</required>
-        <scale>3</scale>
+        <scale>4</scale>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>

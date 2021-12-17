@@ -9,7 +9,7 @@
             <group>REDU_Faculty</group>
         </sharedTo>
         <criteriaItems>
-            <field>Program_Status__c</field>
+            <field>rio_ed__Program_Status__c</field>
             <operation>equals</operation>
             <value>Current,Completed</value>
         </criteriaItems>

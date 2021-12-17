@@ -4,6 +4,15 @@
     <deprecated>false</deprecated>
     <description>Joins Courses and Terms to contain information related to a single occurrence of a Course.</description>
     <enableHistory>true</enableHistory>
+	<label>Course Offering</label>
+    <nameField>
+        <label>Course Offering ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Course Offerings</pluralLabel>
+    <sharingModel>ControlledByParent</sharingModel>
     <externalSharingModel>ControlledByParent</externalSharingModel>
 	<fields>
         <fullName>hed__Term__c</fullName>
@@ -85,14 +94,21 @@
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
+        <inlineHelpText>Will be automatically set based on Fee Label and Course &quot;use default fee&quot; settings</inlineHelpText>
         <label>Fee</label>
         <lookupFilter>
             <active>true</active>
-            <errorMessage>Only a Fee that has a Fee Unit of Course can be added to a Course record.</errorMessage>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>Only a Fee that has a Fee Unit of Course or Credit can be added to a Course record.</errorMessage>
             <filterItems>
                 <field>rio_ed__Fee__c.rio_ed__Fee_Unit__c</field>
                 <operation>equals</operation>
                 <value>Course</value>
+            </filterItems>
+            <filterItems>
+                <field>rio_ed__Fee__c.rio_ed__Fee_Unit__c</field>
+                <operation>equals</operation>
+                <value>Credit</value>
             </filterItems>
             <infoMessage>Please select a Fee for this Course.</infoMessage>
             <isOptional>false</isOptional>
@@ -101,7 +117,6 @@
         <relationshipLabel>Course Offerings</relationshipLabel>
         <relationshipName>Course_Offerings</relationshipName>
         <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -117,13 +132,5 @@
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
-	<label>Course Offering</label>
-    <nameField>
-        <label>Course Offering ID</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Course Offerings</pluralLabel>
-    <sharingModel>ControlledByParent</sharingModel>
+	
 </CustomObject>
