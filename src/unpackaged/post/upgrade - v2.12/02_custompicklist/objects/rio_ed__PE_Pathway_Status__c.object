@@ -4,10 +4,10 @@
     <fields>
         <fullName>rio_ed__Fixed_Term_Fee_Status__c</fullName>
         <deprecated>false</deprecated>
-        <description>Only used for Fixed Term fee methods. Creates Student Fee for this PE Pathway.</description>
+        <description>Only used for Fixed Term and Term - Course fee methods. Creates Student Fee for this PE Pathway.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Only used for Fixed Term fee methods. Creates Student Fee for this PE Pathway.</inlineHelpText>
-        <label>Fixed Term Fee Status</label>
+        <inlineHelpText>Only used for Fixed Term and Term - Course fee methods. Creates Student Fee for this PE Pathway.</inlineHelpText>
+        <label>Term Fee Status</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
