@@ -896,6 +896,11 @@
         <recordType>Account.University_Department</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+	<recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.rio_ed__External_Educational_Institution</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
     <recordTypeVisibilities>
         <default>false</default>
         <recordType>rio_ed__Plan__c.rio_ed__Resource</recordType>
