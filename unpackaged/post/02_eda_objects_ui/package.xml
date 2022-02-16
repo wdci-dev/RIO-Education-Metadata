@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>hed__Address__c</members>
+        <members>hed__Affiliation__c</members>
+        <members>hed__Course_Enrollment__c</members>
+        <members>hed__Course_Offering__c</members>
+        <members>hed__Course__c</members>
+        <members>hed__Plan_Requirement__c</members>
+        <members>hed__Program_Enrollment__c</members>
+        <members>hed__Program_Plan__c</members>
+        <members>hed__Relationship__c</members>
+        <members>hed__Term__c</members>
+        <members>hed__Trigger_Handler__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>hed__Address__c.hed__All</members>
+        <members>hed__Affiliation__c.hed__All</members>
+        <members>hed__Course_Enrollment__c.All_Faculty</members>
+        <members>hed__Course_Enrollment__c.All_Students</members>
+        <members>hed__Course_Enrollment__c.hed__All</members>
+        <members>hed__Course_Offering__c.hed__All</members>
+        <members>hed__Course__c.hed__All</members>
+        <members>hed__Plan_Requirement__c.hed__All</members>
+        <members>hed__Program_Enrollment__c.hed__All</members>
+        <members>hed__Program_Plan__c.hed__All</members>
+        <members>hed__Program_Plan__c.hed__Primary_Program_Plan</members>
+        <members>hed__Relationship__c.hed__All</members>
+        <members>hed__Term__c.hed__All</members>
+        <members>hed__Trigger_Handler__c.hed__All</members>
+        <name>ListView</name>
+    </types>
+    <version>44.0</version>
+</Package>

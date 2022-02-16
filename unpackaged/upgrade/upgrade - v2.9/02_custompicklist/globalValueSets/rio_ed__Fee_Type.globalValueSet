@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Self Paid</fullName>
+        <default>true</default>
+        <label>Self Paid</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Assistance</fullName>
+        <default>false</default>
+        <label>Financial Assistance</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarship</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scholarship</label>
+    </customValue>
+    <customValue>
+        <fullName>Sponsor</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sponsor</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Funding</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Government Funding</label>
+    </customValue>
+    <masterLabel>Fee Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

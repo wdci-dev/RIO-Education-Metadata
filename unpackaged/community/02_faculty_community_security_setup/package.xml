@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <types>
+        <members>REDU_All</members>
+        <members>REDU_Faculty</members>
+        <name>Group</name>
+    </types>
+    
+    <types>
+        <members>REDU - Faculty</members>
+		<members>REDU - Platform Faculty</members>
+		<members>Faculty Community Profile</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingOwnerRule</name>
+    </types>
+	<types>
+		<members>REDU_Faculty</members>
+        <name>SharingSet</name>
+    </types>
+    <version>44.0</version>
+</Package>

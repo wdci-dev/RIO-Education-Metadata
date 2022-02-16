@@ -1,0 +1,129 @@
+body {
+    height: 100% !important;
+}
+
+.viewport_height {
+    height: 78vh;
+}
+
+/** ISS-000610 start **/
+.classlist_panel, .scheduler_panel {
+    transition: 0.5s;
+}
+
+.classlist_panel.hidden_panel {
+    width: 0px;
+}
+
+.classlist_panel.hidden_panel .classlist_title{
+    display: none;
+}
+
+.panel_divider {
+    border-right: double #ddd;
+}
+
+.panel_collapsed {
+    cursor: e-resize;
+}
+
+.panel_expanded {
+    cursor: w-resize;
+}
+/** ISS-000610 end **/
+
+.classlist_content {
+    height: 73vh;
+}
+
+.overflow_auto {
+    overflow-y: auto;
+}
+
+.fc-rows > table > tbody > tr:first-child {
+    display: none;
+    /* won't work because of https://salesforce.stackexchange.com/questions/246887/target-inner-elements-of-standard-lightning-web-components-with-css*/
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25BA";
+    color: #666;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    content: "\25BC";
+    color: #666;
+    font-size: 12px;
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+    margin-left: 0px;
+}
+
+.active > li{
+    margin-left: 5px;
+}
+
+.action-class {
+    cursor: pointer;
+    opacity: .85;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.action-class:hover {
+    text-decoration: underline;
+}
+
+.fc-bgevent {
+    background: #d2d2d2 !important;
+}
+
+.doublebooked_event {
+    border-left: 6px solid rgb(194, 57, 52) !important;
+}
+
+.clickable-legend {
+    cursor: pointer;
+}
+
+.freezepanellabel {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color:#eee;
+}
+
+.freezepanelbody {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color:rgb(238, 238, 238, 0.5);
+}
+
+.fc-event-container{
+    top: 0;
+}
+
+.fc-nonbusiness{
+    background: none !important;
+    border-right: 2px solid #ddd;
+    border-left: 2px solid #ddd;
+    opacity: 1;
+}

@@ -1,0 +1,77 @@
+<!--
+  @description       : 
+  @author            : Pasan (peeriyagama@wdcigroup.net)
+  @group             : 
+  @last modified on  : 04-08-2021
+  @last modified by  : Pasan (peeriyagama@wdcigroup.net)
+-->
+<template>
+    <div class="slds-modal__container top_dialog">
+        <header class="slds-modal__header">
+            <template if:true={showClose}>
+                <lightning-button-icon icon-name="utility:close" size="large" alternative-text={label.close} variant="bare-inverse" title={label.close} onclick={handleCancelClick} class="slds-modal__close"></lightning-button-icon>
+            </template>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{modalHeaderText}</h2>                
+        </header>
+        <div class="slds-modal__content slds-var-p-around_medium editor-content" id="modal-content-id-1">
+            <template if:true={error}>
+                <lightning-layout-item class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error slds-align_absolute-center c-error">
+                    <span>
+                        {error}
+                    </span>
+                </lightning-layout-item>
+            </template>
+
+            <div id="spinnerdiv">
+                <template if:true={showSpinner}>
+                    <lightning-spinner data-id="mySpinner" alternative-text={label.loading}></lightning-spinner>
+                </template>
+            </div>
+            <div class="slds-is-relative">
+                
+                <!--<lightning-input type="search" label="Institute"></lightning-input>
+                <lightning-input type="search" label="Course"></lightning-input>-->
+
+                <c-redu-custom-lookup-lwc init-record-id={tcw.tc.rio_ed__Transfer_Course__r.rio_ed__Agreement__c} icon-name={instituteIconName} field-label={instituteLabel}
+                get-look-up-values-custom custom-query={customQueryInstitute} onchange={handleLookupInstituteChange}
+                onsearchcomplete={onSearchCompleteInstitute} object-api-name="rio_ed__Agreement__c"
+                data-name="institute" required="true" show-default-records={showDefaultInstituteList}>
+                </c-redu-custom-lookup-lwc>
+
+                <c-redu-custom-lookup-lwc init-record-id={tcw.tc.rio_ed__Transfer_Course__c} icon-name={courseIconName} field-label={transferCourseIdLabel}
+                get-look-up-values-custom custom-query={customQueryCourse} onchange={handleLookupCourseChange} record-display-fields="rio_ed__Transfer_Course_ID__c,rio_ed__Transfer_Course_Title__c"
+                display-field-expr="rio_ed__Transfer_Course_ID__c"
+                onsearchcomplete={onSearchCompleteCourse} object-api-name="rio_ed__Agreement_Course__c" 
+                data-name="course" required="true" fields-to-search="Id,Name,rio_ed__Transfer_Course_ID__c"
+                display-sub-text-expr="rio_ed__Transfer_Course_Title__c" show-sub-text-in-list="true"
+                show-default-records={showDefaultCourseList}>
+                </c-redu-custom-lookup-lwc>
+                
+                <template if:true={matchExists}>
+                    <lightning-input read-only type="text" label={transferCourseTitleLabel} value={tcw.tc.rio_ed__Transfer_Course__r.rio_ed__Transfer_Course_Title__c}></lightning-input>
+                </template>
+                <template if:false={matchExists}>
+                    <lightning-input name="rio_ed__Transfer_Course_Title__c" type="text" onchange={saveInputs2Objects} required label={transferCourseTitleLabel} value={tcw.tc.rio_ed__Transfer_Course__r.rio_ed__Transfer_Course_Title__c}></lightning-input>
+                </template>
+
+                <lightning-input name="rio_ed__Credits_Attempted__c" type="text" onchange={saveInputs2Objects} label={transferCourseCreditsAttemptedLabel} value={tcw.tc.rio_ed__Credits_Attempted__c}></lightning-input>
+                <lightning-input name="rio_ed__Credits_Earned__c" type="text" onchange={saveInputs2Objects} label={transferCourseCreditsEarnedLabel} value={tcw.tc.rio_ed__Credits_Earned__c}></lightning-input>
+                <lightning-input name="rio_ed__Grade__c" type="text" label={transferCourseGradeLabel} onchange={saveInputs2Objects} value={tcw.tc.rio_ed__Grade__c}></lightning-input>
+                <lightning-input name="rio_ed__Start_Date__c" type="date" label={transferCourseStartDateLabel} onchange={saveInputs2Objects} value={tcw.tc.rio_ed__Start_Date__c}></lightning-input>
+                <lightning-input name="rio_ed__Completed_Date__c" type="date" label={transferCourseCompletedDateLabel} onchange={saveInputs2Objects} value={tcw.tc.rio_ed__Completed_Date__c}></lightning-input>
+                <lightning-input name="rio_ed__Term__c" type="text" label={transferCourseTermLabel} onchange={saveInputs2Objects} value={tcw.tc.rio_ed__Term__c}></lightning-input>
+            </div>
+        </div>
+        <footer class="slds-modal__footer">
+            <ul class="slds-button-group-row">
+                <li class="slds-button-group-item slds-var-p-right_small">
+                    <lightning-button name="cancel" label={label.cancel} onclick={handleCancelClick}></lightning-button>
+                </li>
+                <li class="slds-button-group-item">
+                    <lightning-button name="save" label={label.save} variant="brand" onclick={handleSaveClick}></lightning-button>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    
+</template>
