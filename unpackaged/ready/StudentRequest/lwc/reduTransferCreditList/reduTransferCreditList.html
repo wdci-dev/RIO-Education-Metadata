@@ -1,0 +1,89 @@
+<!--
+  @description       : 
+  @author            : Pasan (peeriyagama@wdcigroup.net)
+  @group             : 
+  @last modified on  : 03-08-2021
+  @last modified by  : Pasan (peeriyagama@wdcigroup.net)
+-->
+<template>
+    <template if:true={error}>
+        <lightning-layout-item class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error slds-align_absolute-center c-error">
+            <span>
+                <lightning-icon icon-name="utility:error" variant="inverse" size="small"></lightning-icon>&nbsp;
+                {componentLabel}: {error}
+            </span>
+        </lightning-layout-item>
+    </template>
+    <template if:false={error}>
+        <div>
+            <!--Spinner Panel-->
+            <template if:true={showSpinner}>
+                <lightning-spinner
+                variant="brand"
+                alternative-text="Loading details..."
+                size="medium"
+                >
+                </lightning-spinner>
+            </template>
+            <!--List Title-->
+            <div class="slds-box">
+
+                <!--<div slot="title" class="slds-wrap slds-clearfix slds-grid">
+                    <span slot="title">{componentLabel}</span>
+
+                    <div class="slds-var-m-right_xx-large slds-col slds-size_1-of-2 slds-medium-size_10-of-12 slds-large-size_10-of-12 slds-float_left">
+                        <lightning-input type="search" value={searchText} placeholder={searchTextPlaceHolder} onkeyup={handleFilterChange} variant="label-hidden"></lightning-input>
+                    </div>
+
+                </div>-->
+
+
+                <!--<span slot="title">{componentLabel}</span>-->
+            
+                <div class="slds-wrap slds-clearfix slds-var-m-bottom_xx-small">
+                    <h3 class="slds-float_left slds-text-heading_small"><lightning-icon icon-name={componentIcon} size={componentIconSize} class="slds-var-m-right_xx-small"></lightning-icon> <b>{componentLabel}</b></h3>
+                    <template if:true={showCreateNew}>
+                        <div class="slds-float_right">
+                            <lightning-button variant="label-inline" label={createNewLabel} onclick={createNew}></lightning-button>
+                        </div>
+                </template>
+                </div>
+
+                <div data-id="c-fa-list" class="slds-border_right slds-border_left">
+                    <!-- <selected fields on Cmp attribute>,<Question fields>, Actions[Approve, Reject] class="slds-max-medium-table_stacked"-->
+                    <c-redu-transfercreditlistcustomdatatable class="slds-table_header-fixed_container slds-scrollable_x slds-border_top slds-max-medium-table_stacked"
+                        hide-checkbox-column
+                        key-field="index"
+                        columns={tcColumns}
+                        data={tcRows}
+                        onsort={updateColumnSorting}
+                        sorted-by={sortedBy}
+                        sorted-direction={sortDirection}
+                        onrowaction={handleRowAction}
+                        is-loading={showSpinner}
+                        errors={error}
+                    ></c-redu-transfercreditlistcustomdatatable>
+                </div>
+
+                <template if:true={noTransferCreditsYet}> 
+                    <div class="slds-text-align_center slds-var-m-around_small ">No Transfer Credits have been requested yet!</div>
+                </template>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showCreateEditModal}> 
+        <div data-id="backdropdiv" if:true={showCreateEditModal} class="slds-backdrop slds-backdrop_open">
+            <c-redu-transfercredit-edit slot="body" show-close="true" source-tcw={selectedTCW}
+            allow-create-agreement={allowCreateAgreement} allow-create-agreement-course={allowCreateAgreementCourse}
+            modal-header-text={modalUITitle} institute-label={instituteLabel}
+            onsavedtcw={doAfterSaveUIUpdate} institute-icon-name={instituteIconName} course-icon-name={courseIconName}
+            oncancel={handleNewEditCancel}
+            number-of-lookup-institutes={numberOfLookupInstitutes}
+            number-of-lookup-courses={numberOfLookupCourses}
+            show-default-course-list={showDefaultCourseList}
+            show-default-institute-list={showDefaultInstituteList}
+            ></c-redu-transfercredit-edit>
+        </div>
+    </template>
+</template>

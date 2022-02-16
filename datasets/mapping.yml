@@ -1,0 +1,766 @@
+Insert Account:
+  sf_object: Account
+  fields:
+  - Name
+  - RecordTypeId
+  - rio_ed__Campus__c
+  - rio_ed__Program_Code__c
+  - rio_ed__Program_Structure_Type__c
+  - rio_ed__Timezone__c
+  lookups:
+    ParentId:
+      table: Account
+      after: Insert Account
+    hed__Primary_Contact__c:
+      table: Contact
+      after: Insert Contact
+  anchor_date: 2022-01-28
+Insert Contact:
+  sf_object: Contact
+  fields:
+  - Email
+  - FirstName
+  - LastName
+  - Salutation
+  - hed__AlternateEmail__c
+  - hed__Gender__c
+  - hed__Preferred_Email__c
+  - hed__UniversityEmail__c
+  - rio_ed__Community_Username_Prefix__c
+  - rio_ed__Community_Username__c
+  - rio_ed__Faculty_Member__c
+  lookups:
+    AccountId:
+      table: Account
+  anchor_date: 2022-01-28
+Insert hed__Affiliation__c:
+  sf_object: hed__Affiliation__c
+  fields:
+  - hed__Role__c
+  - hed__Status__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    hed__Contact__c:
+      table: Contact
+  anchor_date: 2022-01-28
+Insert hed__Time_Block__c:
+  sf_object: hed__Time_Block__c
+  fields:
+  - Name
+  - hed__End_Time__c
+  - hed__Start_Time__c
+  - rio_ed__Is_Extended__c
+  lookups:
+    hed__Educational_Institution__c:
+      table: Account
+    rio_ed__Parent_Time_Block__c:
+      table: hed__Time_Block__c
+      after: Insert hed__Time_Block__c
+  anchor_date: 2022-01-28
+Insert hed__Facility__c:
+  sf_object: hed__Facility__c
+  fields:
+  - Name
+  - hed__Capacity__c
+  - hed__Facility_Type__c
+  - rio_ed__Active__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    hed__Parent_Facility__c:
+      table: hed__Facility__c
+      after: Insert hed__Facility__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Fee__c:
+  sf_object: rio_ed__Fee__c
+  fields:
+  - Name
+  - rio_ed__Fee_Type__c
+  - rio_ed__Fee_Unit__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Fee_Schedule__c:
+  sf_object: rio_ed__Fee_Schedule__c
+  fields:
+  - Name
+  - rio_ed__Current__c
+  - rio_ed__Discountable__c
+  - rio_ed__Fee_Amount_Domestic__c
+  - rio_ed__Fee_Amount_International__c
+  - rio_ed__Fee_End_Date__c
+  - rio_ed__Fee_Schedule_Fee_Unit__c
+  - rio_ed__Fee_Start_Date__c
+  - rio_ed__Non_repeatable__c
+  - rio_ed__Status__c
+  lookups:
+    rio_ed__Fee__c:
+      table: rio_ed__Fee__c
+  anchor_date: 2022-01-28
+Insert hed__Term__c:
+  sf_object: hed__Term__c
+  fields:
+  - Name
+  - hed__End_Date__c
+  - hed__Start_Date__c
+  - hed__Type__c
+  - rio_ed__Enrollment_Open_Date_Time__c
+  - rio_ed__Grading_Period_Type__c
+  - rio_ed__Term_Label__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    rio_ed__Previous_Term__c:
+      table: hed__Term__c
+      after: Insert hed__Term__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Fee_Schedule_Term__c:
+  sf_object: rio_ed__Fee_Schedule_Term__c
+  lookups:
+    rio_ed__Fee_Schedule__c:
+      table: rio_ed__Fee_Schedule__c
+    rio_ed__Term__c:
+      table: hed__Term__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Grade_Setting__c:
+  sf_object: rio_ed__Grade_Setting__c
+  fields:
+  - Name
+  - rio_ed__For_Fail_Absent__c
+  - rio_ed__Grade_Points__c
+  - rio_ed__Grade_Range__c
+  - rio_ed__Grade_Result__c
+  - rio_ed__Grade_Setting_Scope__c
+  - rio_ed__Grade_Setting_Unique_Key__c
+  - rio_ed__Grade_Value_Scoring_Range__c
+  - rio_ed__Grade_Value__c
+  lookups:
+    rio_ed__Grade_Setting_Group__c:
+      table: Account
+  anchor_date: 2022-01-28
+Insert hed__Course__c:
+  sf_object: hed__Course__c
+  fields:
+  - Name
+  - hed__Course_ID__c
+  - hed__Credit_Hours__c
+  - rio_ed__Background_Colour__c
+  - rio_ed__Default_Scheduled_Duration_Unit__c
+  - rio_ed__External_Id__c
+  - rio_ed__Grade_Setting_Type__c
+  - rio_ed__Grade_Type__c
+  - rio_ed__Grading_Frequency__c
+  - rio_ed__Use_Default_Fee__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    rio_ed__Fee__c:
+      table: rio_ed__Fee__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Grade_Criteria__c:
+  sf_object: rio_ed__Grade_Criteria__c
+  fields:
+  - Name
+  - rio_ed__Sequence__c
+  - rio_ed__Weight__c
+  lookups:
+    rio_ed__Course__c:
+      table: hed__Course__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Qualified_Faculty__c:
+  sf_object: rio_ed__Qualified_Faculty__c
+  fields:
+  - rio_ed__Roles__c
+  lookups:
+    rio_ed__Course__c:
+      table: hed__Course__c
+    rio_ed__Faculty__c:
+      table: Contact
+  anchor_date: 2022-01-28
+Insert hed__Program_Plan__c:
+  sf_object: hed__Program_Plan__c
+  fields:
+  - Name
+  - hed__Is_Primary__c
+  - hed__Start_Date__c
+  - hed__Status__c
+  - rio_ed__Auto_Credit_Transfer__c
+  - rio_ed__Auto_Generate_Application_Student_Fee__c
+  - rio_ed__Auto_Generate_Deposit_Student_Fee__c
+  - rio_ed__Dual_Qualification__c
+  - rio_ed__Fee_Method__c
+  - rio_ed__Pay_Upfront__c
+  - rio_ed__Support_Pre_Acceptance_Enrollment__c
+  - rio_ed__Use_Default_Fee__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    rio_ed__Application_Fee__c:
+      table: rio_ed__Fee__c
+    rio_ed__Default_Program_Pathway__c:
+      table: rio_ed__Program_Pathway__c
+      after: Insert rio_ed__Program_Pathway__c
+    rio_ed__Deposit_Fee__c:
+      table: rio_ed__Fee__c
+  anchor_date: 2022-01-28
+Insert hed__Plan_Requirement__c:
+  sf_object: hed__Plan_Requirement__c
+  fields:
+  - Name
+  - RecordTypeId
+  - hed__Category__c
+  - hed__Credits__c
+  - hed__Sequence__c
+  - rio_ed__Allow_Pre_Enrollment__c
+  - rio_ed__Hide_in_Enrollment__c
+  - rio_ed__Placeholder__c
+  - rio_ed__Requirement_Description__c
+  - rio_ed__Requirement_Logic__c
+  - rio_ed__Show_Child_Groups__c
+  lookups:
+    hed__Course__c:
+      table: hed__Course__c
+    hed__Plan_Requirement__c:
+      table: hed__Plan_Requirement__c
+      after: Insert hed__Plan_Requirement__c
+    hed__Program_Plan__c:
+      table: hed__Program_Plan__c
+    rio_ed__Shared_Group__c:
+      table: hed__Plan_Requirement__c
+      after: Insert hed__Plan_Requirement__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Program_Course_Requirement__c:
+  sf_object: rio_ed__Program_Course_Requirement__c
+  fields:
+  - Name
+  - rio_ed__Requirement_ID__c
+  - rio_ed__Requirement_Type__c
+  lookups:
+    rio_ed__Course__c:
+      table: hed__Course__c
+    rio_ed__Plan_Requirement__c:
+      table: hed__Plan_Requirement__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Program_Pathway__c:
+  sf_object: rio_ed__Program_Pathway__c
+  fields:
+  - rio_ed__Enrollment_Method__c
+  - rio_ed__Name__c
+  - rio_ed__Number_of_Terms__c
+  - rio_ed__Study_Mode__c
+  - rio_ed__Term_Label__c
+  lookups:
+    rio_ed__Program_Plan__c:
+      table: hed__Program_Plan__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Pathway_Unit__c:
+  sf_object: rio_ed__Pathway_Unit__c
+  fields:
+  - rio_ed__RIO_P1__c
+  - rio_ed__Term_Number__c
+  lookups:
+    rio_ed__Plan_Requirement_Course__c:
+      table: hed__Plan_Requirement__c
+    rio_ed__Plan_Requirement_Group__c:
+      table: hed__Plan_Requirement__c
+    rio_ed__Program_Pathway__c:
+      table: rio_ed__Program_Pathway__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Program_Discipline__c:
+  sf_object: rio_ed__Program_Discipline__c
+  fields:
+  - Name
+  - rio_ed__Credits__c
+  - rio_ed__Type__c
+  lookups:
+    rio_ed__Program_Plan__c:
+      table: hed__Program_Plan__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Discipline_Requirement__c:
+  sf_object: rio_ed__Discipline_Requirement__c
+  fields:
+  - Name
+  - RecordTypeId
+  - rio_ed__Credits__c
+  - rio_ed__Requirement__c
+  lookups:
+    rio_ed__Parent__c:
+      table: rio_ed__Discipline_Requirement__c
+      after: Insert rio_ed__Discipline_Requirement__c
+    rio_ed__Plan_Requirement__c:
+      table: hed__Plan_Requirement__c
+    rio_ed__Program_Discipline__c:
+      table: rio_ed__Program_Discipline__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Plan__c:
+  sf_object: rio_ed__Plan__c
+  fields:
+  - Name
+  - rio_ed__Active_on_Planner__c
+  - rio_ed__Course_Offering_Id__c
+  - rio_ed__End_Date__c
+  - rio_ed__Plan_Line_Label__c
+  - rio_ed__Resource_Label__c
+  - rio_ed__Show_on_Planner__c
+  - rio_ed__Start_Date__c
+  anchor_date: 2022-01-28
+Insert hed__Course_Offering__c:
+  sf_object: hed__Course_Offering__c
+  fields:
+  - Name
+  - hed__Capacity__c
+  - hed__End_Date__c
+  - hed__Start_Date__c
+  - rio_ed__Booked_Places__c
+  - rio_ed__Census_Date__c
+  - rio_ed__Fee_Amount_Domestic__c
+  - rio_ed__Fee_Amount_International__c
+  - rio_ed__Grading_Period_Type__c
+  - rio_ed__Scheduled_Duration_Unit__c
+  - rio_ed__Use_Cohort_Enrollment__c
+  - rio_ed__Waitlist_Places__c
+  lookups:
+    hed__Course__c:
+      table: hed__Course__c
+    hed__Faculty__c:
+      table: Contact
+    hed__Term__c:
+      table: hed__Term__c
+    rio_ed__Campus__c:
+      table: Account
+    rio_ed__Fee_Schedule_Term__c:
+      table: rio_ed__Fee_Schedule_Term__c
+    rio_ed__Fee__c:
+      table: rio_ed__Fee__c
+    rio_ed__Plan__c:
+      table: rio_ed__Plan__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Program_Application__c:
+  sf_object: rio_ed__Program_Application__c
+  fields:
+  - rio_ed__Fee_Method__c
+  - rio_ed__Fee_Type__c
+  - rio_ed__Non_Tuition_Fee_Type__c
+  - rio_ed__Pay_Upfront__c
+  - rio_ed__Prerequisites_Met__c
+  - rio_ed__Start_Month__c
+  - rio_ed__Start_Year__c
+  - rio_ed__Status_Date__c
+  - rio_ed__Status__c
+  - rio_ed__Study_Mode__c
+  lookups:
+    rio_ed__Applicant__c:
+      table: Contact
+    rio_ed__Program_Pathway__c:
+      table: rio_ed__Program_Pathway__c
+    rio_ed__Program_Plan__c:
+      table: hed__Program_Plan__c
+    rio_ed__Program__c:
+      table: Account
+  anchor_date: 2022-01-28
+Insert hed__Program_Enrollment__c:
+  sf_object: hed__Program_Enrollment__c
+  fields:
+  - hed__Admission_Date__c
+  - hed__Application_Submitted_Date__c
+  - hed__Credits_Attempted__c
+  - hed__Credits_Earned__c
+  - hed__Eligible_to_Enroll__c
+  - hed__Enrollment_Status__c
+  - hed__GPA__c
+  - rio_ed__Completion_Percentage__c
+  - rio_ed__Fee_Method__c
+  - rio_ed__Fee_Type__c
+  - rio_ed__Grade_Points__c
+  - rio_ed__Non_Tuition_Fee_Type__c
+  - rio_ed__Pay_Upfront__c
+  - rio_ed__Program_Status__c
+  - rio_ed__Study_Group__c
+  - rio_ed__Study_Pathway__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    hed__Affiliation__c:
+      table: hed__Affiliation__c
+    hed__Contact__c:
+      table: Contact
+    hed__Program_Plan__c:
+      table: hed__Program_Plan__c
+    rio_ed__ProgramApplication__c:
+      table: rio_ed__Program_Application__c
+    rio_ed__Program_Pathway__c:
+      table: rio_ed__Program_Pathway__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Student_Fee__c:
+  sf_object: rio_ed__Student_Fee__c
+  fields:
+  - rio_ed__Due_Date__c
+  - rio_ed__Fee_Reference__c
+  - rio_ed__RIO_P1__c
+  - rio_ed__Student_Fee_Label__c
+  - rio_ed__Type__c
+  lookups:
+    rio_ed__Program_Enrollment__c:
+      table: hed__Program_Enrollment__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Funding__c:
+  sf_object: rio_ed__Funding__c
+  fields:
+  - Name
+  - rio_ed__Discount_Amount__c
+  - rio_ed__Discount_Percent__c
+  - rio_ed__Filter_by_Fee_Unit__c
+  - rio_ed__Funding_Type__c
+  - rio_ed__Max_Amount_per_Student__c
+  - rio_ed__Max_Amount_per_Term__c
+  - rio_ed__Status__c
+  - rio_ed__Student_Selectable_Amount__c
+  - rio_ed__Total_Fund__c
+  anchor_date: 2022-01-28
+Insert rio_ed__PE_Group_Status__c:
+  sf_object: rio_ed__PE_Group_Status__c
+  fields:
+  - Name
+  - rio_ed__Category__c
+  - rio_ed__Completion_Percentage__c
+  - rio_ed__Courses_Passed__c
+  - rio_ed__Credits_Attempted__c
+  - rio_ed__Credits_Earned__c
+  - rio_ed__Credits__c
+  - rio_ed__Grade_Points__c
+  - rio_ed__Group_Status__c
+  - rio_ed__Hide_in_Enrollment__c
+  lookups:
+    rio_ed__Plan_Requirement__c:
+      table: hed__Plan_Requirement__c
+    rio_ed__Program_Enrollment__c:
+      table: hed__Program_Enrollment__c
+  anchor_date: 2022-01-28
+Insert rio_ed__PE_Pathway_Status__c:
+  sf_object: rio_ed__PE_Pathway_Status__c
+  fields:
+  - rio_ed__All_Courses_Completed__c
+  - rio_ed__All_Courses_Passed__c
+  - rio_ed__Automatically_Enroll_in_Courses__c
+  - rio_ed__Credits_Attempted__c
+  - rio_ed__Credits_Earned__c
+  - rio_ed__Deferred__c
+  - rio_ed__Enrolled_Courses__c
+  - rio_ed__Fixed_Term_Fee_Status__c
+  - rio_ed__GPA__c
+  - rio_ed__Grade_Points__c
+  - rio_ed__My_Term__c
+  - rio_ed__Number_of_Terms__c
+  - rio_ed__Study_Mode__c
+  lookups:
+    rio_ed__Program_Enrollment__c:
+      table: hed__Program_Enrollment__c
+    rio_ed__Program_Pathway__c:
+      table: rio_ed__Program_Pathway__c
+    rio_ed__Term__c:
+      table: hed__Term__c
+  anchor_date: 2022-01-28
+Insert hed__Course_Enrollment__c:
+  sf_object: hed__Course_Enrollment__c
+  fields:
+  - RecordTypeId
+  - hed__Credits_Attempted__c
+  - hed__Credits_Earned__c
+  - hed__Grade__c
+  - hed__Primary__c
+  - hed__Status__c
+  - rio_ed__Attempt_Number__c
+  - rio_ed__Census_Date__c
+  - rio_ed__Due_Date__c
+  - rio_ed__Enrollment_Date__c
+  - rio_ed__Enrollment_Status__c
+  - rio_ed__Fee_Amount__c
+  - rio_ed__Fee_Type__c
+  - rio_ed__Grade_Points__c
+  - rio_ed__Grade_Result__c
+  - rio_ed__Grade_Setting_Type__c
+  - rio_ed__Grade_Value__c
+  - rio_ed__Non_Tuition_Fee_Type__c
+  - rio_ed__Release_Grades__c
+  - rio_ed__Requirement_Met__c
+  - rio_ed__Session_Rules_Matching_Status__c
+  - rio_ed__Session_Rules_Result__c
+  - rio_ed__Start_Date__c
+  lookups:
+    hed__Account__c:
+      table: Account
+    hed__Affiliation__c:
+      table: hed__Affiliation__c
+    hed__Contact__c:
+      table: Contact
+    hed__Course_Offering__c:
+      table: hed__Course_Offering__c
+    hed__Program_Enrollment__c:
+      table: hed__Program_Enrollment__c
+    rio_ed__PE_Group__c:
+      table: rio_ed__PE_Group_Status__c
+    rio_ed__PE_Pathway__c:
+      table: rio_ed__PE_Pathway_Status__c
+    rio_ed__Plan_Requirement_Course__c:
+      table: hed__Plan_Requirement__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Course_Connection_Requirement__c:
+  sf_object: rio_ed__Course_Connection_Requirement__c
+  fields:
+  - Name
+  - rio_ed__Requirement_ID__c
+  - rio_ed__Requirement_Met__c
+  - rio_ed__Requirement_Type__c
+  lookups:
+    rio_ed__Course_Connection__c:
+      table: hed__Course_Enrollment__c
+    rio_ed__Related_Course__c:
+      table: hed__Course__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Fee_Line__c:
+  sf_object: rio_ed__Fee_Line__c
+  fields:
+  - rio_ed__Commencement_Date__c
+  - rio_ed__Completion_Date__c
+  - rio_ed__Course_Connection_Fee_Amount__c
+  - rio_ed__Course_Connection_Fee_Type__c
+  - rio_ed__Discount_Amount__c
+  - rio_ed__Other_Fee_Type__c
+  lookups:
+    rio_ed__Course_Connection__c:
+      table: hed__Course_Enrollment__c
+    rio_ed__Fee_Schedule_Term__c:
+      table: rio_ed__Fee_Schedule_Term__c
+    rio_ed__Student_Fee__c:
+      table: rio_ed__Student_Fee__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Resource_Type__c:
+  sf_object: rio_ed__Resource_Type__c
+  fields:
+  - Name
+  anchor_date: 2022-01-28
+Insert rio_ed__Resource__c:
+  sf_object: rio_ed__Resource__c
+  fields:
+  - Name
+  - rio_ed__Active__c
+  - rio_ed__Public__c
+  lookups:
+    rio_ed__Facility__c:
+      table: hed__Facility__c
+    rio_ed__Resource_Type__c:
+      table: rio_ed__Resource_Type__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Role__c:
+  sf_object: rio_ed__Role__c
+  fields:
+  - Name
+  - rio_ed__Auto_Allocate__c
+  - rio_ed__Double_Booking_Count__c
+  - rio_ed__Published__c
+  - rio_ed__Session_Id__c
+  lookups:
+    rio_ed__Plan__c:
+      table: rio_ed__Plan__c
+    rio_ed__Resource_Type__c:
+      table: rio_ed__Resource_Type__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Session__c:
+  sf_object: rio_ed__Session__c
+  fields:
+  - Name
+  - RecordTypeId
+  - rio_ed__Attendance_Marking__c
+  - rio_ed__Band__c
+  - rio_ed__Booked_Places__c
+  - rio_ed__Capacity__c
+  - rio_ed__Faculty_Status__c
+  - rio_ed__Last_Booking_Generation_Date__c
+  - rio_ed__Number_of_Booked_Sessions__c
+  - rio_ed__Published__c
+  - rio_ed__Required_Facility_Type__c
+  - rio_ed__Session_Type__c
+  - rio_ed__Status__c
+  - rio_ed__Waitlist_Places__c
+  lookups:
+    rio_ed__Course_Offering__c:
+      table: hed__Course_Offering__c
+    rio_ed__Course__c:
+      table: hed__Course__c
+    rio_ed__Plan_Line__c:
+      table: rio_ed__Role__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Session_Time__c:
+  sf_object: rio_ed__Session_Time__c
+  fields:
+  - rio_ed__Booking_Action__c
+  - rio_ed__Change_Log__c
+  - rio_ed__Day_of_week__c
+  - rio_ed__End_Date__c
+  - rio_ed__End_Time__c
+  - rio_ed__Historical_Recurrence__c
+  - rio_ed__Ignore_Holidays__c
+  - rio_ed__Label__c
+  - rio_ed__Recurrence__c
+  - rio_ed__Start_Date__c
+  - rio_ed__Start_Time__c
+  - rio_ed__Status__c
+  - rio_ed__Update_Settings__c
+  lookups:
+    rio_ed__Facility__c:
+      table: hed__Facility__c
+    rio_ed__Session__c:
+      table: rio_ed__Session__c
+  anchor_date: 2022-01-28
+Insert hed__Term_Grade__c:
+  sf_object: hed__Term_Grade__c
+  fields:
+  - hed__Credits_Attempted__c
+  - hed__Credits_Earned__c
+  - hed__Letter_Grade__c
+  - hed__Numerical_Grade__c
+  - hed__Percent_Grade__c
+  - hed__Result__c
+  lookups:
+    hed__Contact__c:
+      table: Contact
+    hed__Course_Connection__c:
+      table: hed__Course_Enrollment__c
+    hed__Course_Offering__c:
+      table: hed__Course_Offering__c
+    rio_ed__Session__c:
+      table: rio_ed__Session__c
+    hed__Term__c:
+      table: hed__Term__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Grade__c:
+  sf_object: rio_ed__Grade__c
+  fields:
+  - Name
+  - RecordTypeId
+  - rio_ed__Grade_Criteria_Id__c
+  - rio_ed__Grade_Value__c
+  - rio_ed__Sequence__c
+  - rio_ed__Weight__c
+  lookups:
+    rio_ed__Term_Grade__c:
+      table: hed__Term_Grade__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Allocation__c:
+  sf_object: rio_ed__Allocation__c
+  fields:
+  - rio_ed__Booking_Status__c
+  - rio_ed__End_Date_Non_TZ__c
+  - rio_ed__End_Time_Non_TZ__c
+  - rio_ed__End__c
+  - rio_ed__Session_Time_Id__c
+  - rio_ed__Start_Date_Non_TZ__c
+  - rio_ed__Start_Time_Non_TZ__c
+  - rio_ed__Start__c
+  - rio_ed__Status_Reason__c
+  - rio_ed__Status__c
+  - rio_ed__Updated_Booking__c
+  lookups:
+    rio_ed__Resource__c:
+      table: rio_ed__Resource__c
+    rio_ed__Role__c:
+      table: rio_ed__Role__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Session_Connection__c:
+  sf_object: rio_ed__Session_Connection__c
+  fields:
+  - Name
+  - rio_ed__Auto_Attendance_Creation__c
+  - rio_ed__End_Date__c
+  - rio_ed__Faculty_Confirmed__c
+  - rio_ed__Faculty__c
+  - rio_ed__Relief_Faculty__c
+  - rio_ed__Start_Date__c
+  - rio_ed__Status__c
+  lookups:
+    rio_ed__Course_Connection__c:
+      table: hed__Course_Enrollment__c
+    rio_ed__Session_Time__c:
+      table: rio_ed__Session_Time__c
+    rio_ed__Session__c:
+      table: rio_ed__Session__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Attendance__c:
+  sf_object: rio_ed__Attendance__c
+  fields:
+  - rio_ed__Session_Date__c
+  lookups:
+    rio_ed__Booking__c:
+      table: rio_ed__Allocation__c
+    rio_ed__Session_Connection__c:
+      table: rio_ed__Session_Connection__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Appointment_Type__c:
+  sf_object: rio_ed__Appointment_Type__c
+  fields:
+  - Name
+  - rio_ed__Active__c
+  - rio_ed__Allow_Students_to_book__c
+  - rio_ed__Editable_Time__c
+  - rio_ed__Event_Type__c
+  - rio_ed__Faculty_Auto_Accept__c
+  - rio_ed__Jump_to_Start_Date__c
+  - rio_ed__Location_Only__c
+  - rio_ed__Location_Required__c
+  - rio_ed__Student_Auto_Accept__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Appointment_Availability__c:
+  sf_object: rio_ed__Appointment_Availability__c
+  lookups:
+    rio_ed__Appointment_Type__c:
+      table: rio_ed__Appointment_Type__c
+    rio_ed__Contact__c:
+      table: Contact
+    rio_ed__Facility__c:
+      table: hed__Facility__c
+  anchor_date: 2022-01-28
+Insert rio_ed__Appointment_Time__c:
+  sf_object: rio_ed__Appointment_Time__c
+  fields:
+  - Name
+  - rio_ed__Active__c
+  - rio_ed__Appointment_Duration__c
+  - rio_ed__Day_of_the_Week__c
+  - rio_ed__End_Time__c
+  - rio_ed__Start_Time__c
+  lookups:
+    rio_ed__Appointment_Type__c:
+      table: rio_ed__Appointment_Type__c
+    rio_ed__Campus__c:
+      table: Account
+  anchor_date: 2022-01-28
+Insert rio_ed__Availability_Time__c:
+  sf_object: rio_ed__Availability_Time__c
+  fields:
+  - Name
+  - rio_ed__All_Locations__c
+  - rio_ed__Day_of_the_Week__c
+  - rio_ed__End_Time__c
+  - rio_ed__From_Date__c
+  - rio_ed__Start_Time__c
+  - rio_ed__To_Date__c
+  lookups:
+    rio_ed__Contact__c:
+      table: Contact
+  anchor_date: 2022-01-28
+Insert rio_ed__Assigned_Location__c:
+  sf_object: rio_ed__Assigned_Location__c
+  lookups:
+    rio_ed__Location__c:
+      table: Account
+    rio_ed__Contact__c:
+      table: Contact
+  anchor_date: 2022-01-28
+Insert rio_ed__Contact_Attendance__c:
+  sf_object: rio_ed__Contact_Attendance__c
+  fields:
+  - rio_ed__Primary_Contact__c
+  - rio_ed__Status__c
+  lookups:
+    rio_ed__Contact__c:
+      table: Contact
+  anchor_date: 2022-01-28

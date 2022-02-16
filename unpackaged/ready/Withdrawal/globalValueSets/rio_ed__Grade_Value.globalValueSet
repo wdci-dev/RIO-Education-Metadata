@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HD - High Distinction</fullName>
+        <default>false</default>
+        <label>HD - High Distinction</label>
+    </customValue>
+    <customValue>
+        <fullName>D - Distinction</fullName>
+        <default>false</default>
+        <label>D - Distinction</label>
+    </customValue>
+    <customValue>
+        <fullName>CR - Credit</fullName>
+        <default>false</default>
+        <label>CR - Credit</label>
+    </customValue>
+    <customValue>
+        <fullName>PS - Pass</fullName>
+        <default>false</default>
+        <label>PS - Pass</label>
+    </customValue>
+    <customValue>
+        <fullName>FL - Fail</fullName>
+        <default>false</default>
+        <label>FL - Fail</label>
+    </customValue>
+    <customValue>
+        <fullName>WF - Withdrawn Fail</fullName>
+        <default>false</default>
+        <label>WF - Withdrawn Fail</label>
+    </customValue>
+    <customValue>
+        <fullName>FA - Fail Absent</fullName>
+        <default>false</default>
+        <label>FA - Fail Absent</label>
+    </customValue>
+    <customValue>
+        <fullName>W</fullName>
+        <default>false</default>
+        <label>W</label>
+    </customValue>
+    <description>Grade Value = Grade Code - Grade Name</description>
+    <masterLabel>Grade Value</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

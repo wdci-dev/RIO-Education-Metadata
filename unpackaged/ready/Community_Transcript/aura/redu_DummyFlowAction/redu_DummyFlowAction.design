@@ -1,0 +1,3 @@
+<design:component label="Custom RIO Ed - Dummy Flow Action (Aura)">
+	<design:attribute name="navUrl" label="Navigation Url" description="Url to navigate if present" />
+</design:component>

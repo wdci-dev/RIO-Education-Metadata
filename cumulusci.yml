@@ -1,0 +1,191 @@
+minimum_cumulusci_version: '3.51.1'
+project:
+    name: RIO-Education-Metadata
+    package:
+        name: RIO-Education-Metadata
+        namespace: rio_ed
+        api_version: '52.0'
+    git:
+        prefix_release: rel/
+        repo_url: https://github.com/wdci-dev/RIO-Education-Metadata
+        default_branch: 'metadeploy'
+    source_format: sfdx
+
+sources:
+    latest_release:
+        github: https://github.com/wdci-dev/RIO-Education-Metadata
+        release: latest
+
+tasks:
+    robot:
+        options:
+            suites: robot/RIO-Education-Metadata/tests
+            options:
+                outputdir: robot/RIO-Education-Metadata/results
+
+    robot_testdoc:
+        options:
+            path: robot/RIO-Education-Metadata/tests
+            output: robot/RIO-Education-Metadata/doc/RIO-Education-Metadata_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
+
+    deploy_post:
+        ui_options:
+            01_standard_objects_ui:
+                name: RIO Education - Standard Objects UI
+            02_eda_objects_ui:
+                name: RIO Education - EDA Objects UI
+            03_standard_objects_security_setup:
+                name: RIO Education - Standard Objects Security Setup
+            04_eda_security_setup:
+                name: RIO Education - EDA Security Setup
+            05_redu_security_setup:
+                name: RIO Education - REDU Security Setup
+            06_standard_object_tracking:
+                name: RIO Education - Standard Object Tracking
+            07_heda_object_tracking:
+                name: RIO Education - HEDA Object Tracking
+            08_redu_object_tracking:
+                name: RIO Education - REDU Object Tracking
+            11_00_orgwide_default_sharing:
+                name: RIO Education - Orgwide Default Sharing
+            11_01_student_community_security_setup:
+                name: RIO Education - Student Community Security Setup
+                is_required: False
+                is_recommended: False
+            11_02_faculty_community_security_setup:
+                name: RIO Education - Faculty Community Security Setup
+                is_required: False
+                is_recommended: False
+            11_03_combined_community_security_setup:
+                name: RIO Education - Combined Community Security Setup
+                is_required: False
+                is_recommended: False
+            12_appointment_scheduler_automation:
+                name: RIO Education - Appointment Scheduler Automation
+            13_eda_object_picklist:
+                name: RIO Education - EDA Object Picklist
+            AccountsReceivableDisplay:
+                name: RIO Ready - Accounts Receivable Display
+            Community_Transcript:
+                name: RIO Ready - Community Transcript
+                is_required: False
+                is_recommended: False
+            FeeLine:
+                name: RIO Ready - Fee Line
+            LoginAndRegister:
+                name: RIO Ready - Login and Register
+            LoginAndRegister_preDeploy:
+                name: RIO Ready - Login and Register (Pre-Deploy)
+            Payment2us:
+                name: RIO Ready - Payment 2 Us
+                is_required: False
+                is_recommended: False
+            ProgramApplication:
+                name: RIO Ready - Program Application
+            Refund:
+                name: RIO Ready - Refund
+            RIO Education Community:
+                name: RIO Ready - RIO Education Community
+            Scholarship:
+                name: RIO Ready - Scholarship
+            StudentID:
+                name: RIO Ready - Student ID
+            StudentRequest:
+                name: RIO Ready - Student Request
+            Withdrawal:
+                name: RIO Ready - Withdrawal
+    
+    deploy_pre:
+        ui_options:
+            01_heda_object_tracking:
+                name: RIO Education - HEDA Object Tracking
+    
+    load_dataset:
+        ui_options:
+            name: RIO Education - Load Sample Data
+
+    check_org_settings_value:
+        ui_options:
+            name: RIO Education - Check Community Settings
+
+flows:
+    basic_install:
+        steps:
+                1:
+                    task: check_org_settings_value
+                    options:
+                        settings_type: CommunitiesSettings
+                        settings_field: enableCommunityWorkspaces
+                        value: true
+                        treat_missing_as_failure: True
+                2:
+                    flow: dependencies
+                3:
+                    task: install_managed
+                    options:
+                        version_number: 04t3u000002wKwa
+                4:
+                    task: deploy_post
+                    options:
+                        unmanaged: False
+
+plans:
+    install:
+        slug: install
+        title: Install RIO Education
+        tier: primary
+        checks:
+            - when: "not tasks.check_my_domain_active()"
+              action: error
+              message: "Please enable My Domain in your org prior to installing."
+            - when: "'hed__Trigger_Handler__c' not in tasks.check_sobjects_available()"
+              action: error
+              message: "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education."
+        steps:
+            1:
+                flow: basic_install
+    
+    sharing:
+        slug: sharing
+        title: Org-Wide Default Sharing
+        tier: additional
+        steps:
+            1:
+                task: deploy_post
+                options:
+                    path: unpackaged/sharing
+                    unmanaged: False
+
+    community:
+        slug: community
+        title: Community Security Setup
+        tier: additional
+        steps:
+            1:
+                task: deploy_post
+                options:
+                    path: unpackaged/community
+                    unmanaged: False
+    
+    ready:
+        slug: ready
+        title: RIO Ready Metadata
+        tier: additional
+        steps:
+            1:
+                task: deploy_post
+                options:
+                    path: unpackaged/ready
+                    unmanaged: False
+    
+    dataset:
+        slug: dataset
+        title: Sample Data
+        tier: additional
+        steps:
+            1:
+                task: load_dataset

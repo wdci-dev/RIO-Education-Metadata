@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Related_Course_Enrollment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Course Enrollment</label>
+        <referenceTo>hed__Course_Enrollment__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>redu_Related_Program_Enrollment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>User will need to manually search and link this case to the relevant Program Enrollment record</inlineHelpText>
+        <label>Related Program Enrollment</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.ContactId</field>
+                <operation>equals</operation>
+                <valueField>hed__Program_Enrollment__c.hed__Contact__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>hed__Program_Enrollment__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>redu_Type_of_Variation__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Variation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deferral</fullName>
+                    <default>false</default>
+                    <label>Deferral</label>
+                </value>
+                <value>
+                    <fullName>Withdraw from Program</fullName>
+                    <default>false</default>
+                    <label>Withdraw from Program</label>
+                </value>
+                <value>
+                    <fullName>Withdraw from Course</fullName>
+                    <default>false</default>
+                    <label>Withdraw from Course</label>
+                </value>
+                <value>
+                    <fullName>Timetable Adjustment</fullName>
+                    <default>false</default>
+                    <label>Timetable Adjustment</label>
+                </value>
+                <value>
+                    <fullName>Program Change</fullName>
+                    <default>false</default>
+                    <label>Program Change</label>
+                </value>
+                <value>
+                    <fullName>Course Change</fullName>
+                    <default>false</default>
+                    <label>Course Change</label>
+                </value>
+                <value>
+                    <fullName>Study Mode Change</fullName>
+                    <default>false</default>
+                    <label>Study Mode Change</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>Student_Request</fullName>
+        <active>true</active>
+        <businessProcess>Behavior Management</businessProcess>
+        <description>Student request of different types</description>
+        <label>Student Request</label>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+        </picklistValues>
+        <picklistValues>
+            <picklist>hed__Category__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>hed__Location__c</picklist>
+            <values>
+                <fullName>Off Campus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Campus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>redu_Type_of_Variation__c</picklist>
+            <values>
+                <fullName>Course Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Program Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Study Mode Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Timetable Adjustment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdraw from Course</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Withdraw from Program</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

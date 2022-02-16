@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>RIO Ed - Transfer Credits Approval List</masterLabel>
+    <description>Use this to list on Application page to Approve/Reject Transfer Credits</description>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default,lightning__AppPage,lightning__HomePage">
+            <property name="componentLabel" type="String" label="Title" description="Displays top-left of the component" placeholder="Component label" required="false"/>
+            <property name="componentIcon" type="String" label="Component Icon" description="Component Icon" default="standard:visit_templates"/>
+            <property name="componentIconSize" type="String" label="Component Icon Size" description="Component Icon Size" default="small"/>
+            <property name="fieldListString" required="true" type="String" label="Field List" description="Comma separated list of fields to display" default="Id,rio_ed__Program_Application__c,rio_ed__Program_Enrollment__c,rio_ed__Transfer_Course__r.rio_ed__Agreement__r.Name, rio_ed__Transfer_Course__r.rio_ed__Transfer_Course_ID__c, rio_ed__Transfer_Course__r.rio_ed__Transfer_Course_Title__c, rio_ed__Credits_Attempted__c, rio_ed__Credits_Earned__c, rio_ed__Grade__c, rio_ed__Start_Date__c,rio_ed__Completed_Date__c, rio_ed__Term__c" />
+            <property name="fieldLabelString" type="String" label="Field Label List" description="Comma separated list of field labels to display as header text for fields, if present at theri respective comma separated location, they will be used. Leave blank to use Field label, a space to remove Label." default=",,,Institute,"/>           
+            
+            <property name="filterLabelText" type="String" label="Filter Label text" description="Filter Label text" default="Filter by:"/>           
+            <property name="defaultFilterOptionLabel" type="String" label="Default Filter Option Label" description="Default Filter Label for view to filter on" default="Pending Approval(All)"/>           
+            <property name="filterOptionConfig" type="String" label="Filtered Views" description="Filtered Views" default="All=>,Pending Approval(All)=> rio_ed__Status__c = 'Draft',Pending Approval(Requested this month)=> rio_ed__Status__c = 'Draft' AND rio_ed__Transfer_Request_Date__c = THIS_MONTH ,Approved Credit (This month)=> rio_ed__Status__c = 'Approved' AND rio_ed__Transfer_Date__c = THIS_MONTH ,Approved Credit (Last month)=> rio_ed__Status__c = 'Approved' AND rio_ed__Transfer_Date__c = LAST_MONTH "/>           
+          
+            <property name="peGroupFieldColumnwidth" type="Integer" label="PE Group field Column width" description="Width for PE Group column" default="200"/>
+            <property name="pedGroupFieldColumnwidth" type="Integer" label="PE Disc. Req. Group field Column width" description="Width for PE Discipline Requirement Group column" default="200"/>
+            <property name="actionColumnwidth" type="Integer" label="Status Action Column width" description="Action Column width" default="250"/>
+            <property name="actionColumnLabel" type="String" label="Status Action Column Label" description="Status Action Col. Label" default="Status"/>
+            <property name="selectableSatuses" type="String" label="Selectable Statuses" description="String Comma separated list of API names of selectable statuses" default="Draft,Approved,Rejected"/>
+            <property name="actionableStatuses" type="String" label="Actionable Statuses" description="String Comma separated list of API names of actionable statuses (determines when statuses can be updated by component)" default="Draft,Approved,Rejected"/>
+            <property name="showPEGroupSelection" type="Boolean" label="Show Pe Group Selection col" description="Show Pe Group Selection column" default="false"/>
+            <property name="showPEDGroupSelection" type="Boolean" label="Show PE Discipline Requirement (Group) selection col" description="Show PE Discipline Requirement (Group) selection column" default="false"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
