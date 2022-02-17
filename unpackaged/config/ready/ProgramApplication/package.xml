@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+	<members>rio_ed__Program_Offering__c.redu_Program_Name_F__c</members>
+	<name>CustomField</name>
+  </types>
+  <types>
+    <members>REDU_Program_Application</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>REDU - Student</members>
+    <name>Profile</name>
+  </types>
+  <types>
+    <members>Account</members>
+    <name>SharingRules</name>
+  </types>
+  <version>53.0</version>
+</Package>

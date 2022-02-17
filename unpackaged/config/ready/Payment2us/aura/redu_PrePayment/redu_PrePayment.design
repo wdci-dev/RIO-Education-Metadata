@@ -1,0 +1,4 @@
+<design:component label="REDU - Payment Confirmation">
+    <design:attribute name="studentFeeId" label="Student Fee Id" description="For testing only" />
+    <design:attribute name="homeUrl" label="Home Url" description="Url to be redirected when user clicks on close or cancel." />
+</design:component>

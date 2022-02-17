@@ -1,0 +1,30 @@
+<template>
+    <template if:true={selectable}>
+            <!-- <lightning-combobox
+            name="peDGroup"
+            label="PE Discipline Requirement Group"
+            variant="label-hidden"
+            value={selectedId}
+            placeholder="Select..."
+            options={options}
+            onchange={handleChange}>
+            </lightning-combobox> -->
+
+            <div class="slds-select_container" >
+                <select name="pedGroup"  selected={selectedId} class="slds-select" onchange={handleChange}>
+                    <option value="" disabled selected>Select an option</option>
+                    
+                    <template if:true={selectedId}>
+                        <option selected key={selectedId} value={selectedId}>{selectedText}</option> 
+                    </template>
+
+                    <template for:each={unselectedOptions} for:item="opt">
+                       <option key={opt.value} value={opt.value}>{opt.label}</option> 
+                    </template>
+                </select>
+            </div>
+    </template>
+    <template if:false={selectable}>
+        {selectedText}
+    </template>
+</template>

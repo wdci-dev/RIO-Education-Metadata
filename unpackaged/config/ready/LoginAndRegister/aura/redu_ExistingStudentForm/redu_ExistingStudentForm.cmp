@@ -1,0 +1,60 @@
+<aura:component controller="redu_ExistingStudentForm_LCTRL" implements="forceCommunity:availableForAllPageTypes,lightning:isUrlAddressable">
+    
+    <aura:attribute name="showError" type="Boolean" required="true" description="" default="false" access="private"/>
+    <aura:attribute name="errorMessage" type="String" required="false" description="" access="private"/>    
+    <aura:attribute name="emailParam" type="String" required="false" description="Email Parameter"/>
+    <aura:attribute name="emailLabel" type="String" required="false" default="Enter the Email that was used to register"/>
+    <aura:attribute name="checkEmailButtonLabel" type="String" required="false" default="Submit"/>
+    <aura:attribute name="regConfirmUrl" type="String" required="true"/>
+
+    <aura:attribute name="introMsg" type="String" required="false" default="Please enter your Crandall email address below to verify your account."/>    
+    <aura:attribute name="existingActiveUserMsg" type="String" required="false" default="A user login of the email entered has been found."/>    
+    <aura:attribute name="noContactMsg" type="String" required="false" default="The email that you have entered is not found in our system."/>
+
+    <aura:attribute name="pageControl" type="String" access="private"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}"/>
+
+    <div>
+        <span>
+            <aura:renderIf isTrue="{!v.showError}">
+                <div id="error">
+                    <ui:outputRichText value="{!v.errorMessage}"/>
+                </div>
+            </aura:renderIf>
+        </span>
+
+        <!-- Default Page at start -->
+        <aura:renderIf isTrue="{!v.pageControl == 'emailCheck'}">
+
+            <div id="initialMessage">
+                <ui:outputRichText value="{!v.introMsg}"/>
+            </div>
+            <br/>
+
+            <div id="sfdc_email_container" class="sfdc">
+                <lightning:icon iconName="utility:email" size="x-small" title="" class="btnIconOverlay"/>
+                <ui:inputText value="" aura:id="emailcheck" placeholder="{!v.emailLabel}" keyup="{!c.onKeyUp}" class="input sfdc_usernameinput sfdc" disabled="{!v.emailParam}"/>
+            </div>
+
+            <div class="sfdc">
+                <ui:button aura:id="submitButton" label="{!v.checkEmailButtonLabel}" press="{!c.handleCheckEmail}" class="sfdc_button"/>
+            </div>
+        </aura:renderIf>
+
+        <!-- Existing User found -->
+        <aura:renderIf isTrue="{!v.pageControl == 'existingUserFound'}">
+            <div id="existingUser">
+                <ui:outputRichText value="{!v.existingActiveUserMsg}"/>
+            </div>
+        </aura:renderIf>
+
+        <!-- No Contact found -->
+        <aura:renderIf isTrue="{!v.pageControl == 'noContactFound'}">
+            <div id="noContact">
+                <ui:outputRichText value="{!v.noContactMsg}" class=""/>
+            </div>            
+        </aura:renderIf>            
+
+    </div>
+</aura:component>

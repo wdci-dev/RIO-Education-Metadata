@@ -1,0 +1,16 @@
+<design:component label="REDU Login Form">
+    <design:attribute name="startUrl"/>
+    <design:attribute name="usernameLabel" default="Email"/>
+    <design:attribute name="passwordLabel" default="Password"/>
+    <design:attribute name="loginButtonLabel" default="Log in"/>
+    <design:attribute name="forgotPasswordLabel" default="Forgot your password?"/>
+    <design:attribute name="forgotPasswordUrl"/>
+    <design:attribute name="selfRegisterLabel" default="Register here"/>
+    <design:attribute name="selfRegisterUrl"/>
+    <design:attribute name="existingStudentLabel" default="Existing Student?"/>
+    <design:attribute name="existingStudentUrl"/>
+    <design:attribute name="sso_Button_Label"/>
+    <design:attribute name="sso_Login_StartURL"/>
+    <design:attribute name="sso_Community_URL"/>
+    <design:attribute name="sso_Setting_Name"/>
+</design:component>

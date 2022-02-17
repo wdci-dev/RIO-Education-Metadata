@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Payment_Form_ID__c</fullName>
+        <description>Payment Form ID used for field mapping during Payment Transaction initialization (applicable to the payment form shown to the student)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Payment Form ID used for field mapping during Payment Transaction initialization (applicable to the payment form shown to the student)</inlineHelpText>
+        <label>Payment Form ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Payment_Trx_Default_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Trx Default Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Payment_Trx_Payment_RT_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Trx Payment RT Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

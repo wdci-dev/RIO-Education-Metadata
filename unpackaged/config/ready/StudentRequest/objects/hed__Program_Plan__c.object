@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Max_Transfer_Credits_Allowed__c</fullName>
+        <description>Maximum amount of Transfer Credits allowed to request against a Program Application</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum amount of Transfer Credits allowed to request against a Program Application</inlineHelpText>
+        <label>Max Transfer Credits Allowed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+
+</CustomObject>

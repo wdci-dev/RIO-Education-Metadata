@@ -1,0 +1,4 @@
+.slds-dropdown_left, .slds-dropdown--left {
+    z-index: 9999;
+    position: relative;
+}

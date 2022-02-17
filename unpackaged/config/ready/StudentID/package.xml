@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>redu_CON_StudentID_TDTM</members>
+        <members>redu_CON_StudentID_TEST</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Contact.redu_Contact_Type__c</members>
+        <members>redu_Student_Number__c.redu_Salesforce_Record_Id__c</members>
+        <members>redu_Student_Number__c.redu_Student_Email__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>redu_Student_Number__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Contact-rio_ed__RIOEducation Contact Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <version>52.0</version>
+</Package>

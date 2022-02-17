@@ -50,24 +50,24 @@ tasks:
                 name: RIO Education - HEDA Object Tracking
             08_redu_object_tracking:
                 name: RIO Education - REDU Object Tracking
-            11_00_orgwide_default_sharing:
-                name: RIO Education - Orgwide Default Sharing
-            11_01_student_community_security_setup:
-                name: RIO Education - Student Community Security Setup
-                is_required: False
-                is_recommended: False
-            11_02_faculty_community_security_setup:
-                name: RIO Education - Faculty Community Security Setup
-                is_required: False
-                is_recommended: False
-            11_03_combined_community_security_setup:
-                name: RIO Education - Combined Community Security Setup
-                is_required: False
-                is_recommended: False
             12_appointment_scheduler_automation:
                 name: RIO Education - Appointment Scheduler Automation
             13_eda_object_picklist:
                 name: RIO Education - EDA Object Picklist
+            00_orgwide_default_sharing:
+                name: RIO Education - Orgwide Default Sharing
+            01_student_community_security_setup:
+                name: RIO Education - Student Community Security Setup
+                is_required: False
+                is_recommended: False
+            02_faculty_community_security_setup:
+                name: RIO Education - Faculty Community Security Setup
+                is_required: False
+                is_recommended: False
+            03_combined_community_security_setup:
+                name: RIO Education - Combined Community Security Setup
+                is_required: False
+                is_recommended: False
             AccountsReceivableDisplay:
                 name: RIO Ready - Accounts Receivable Display
             Community_Transcript:

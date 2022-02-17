@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <types>
+        <members>rio_ed__RIO_Education_Lightning</members>
+        <members>rio_ed__RIO_Education_Program_Administration</members>
+        <members>rio_ed__RIO_Education_Student_Administration</members>
+        <members>rio_ed__RIO_Education_Timetable_Administration</members>
+        <name>CustomApplication</name>
+    </types>
+	<types>
+        <members>*</members>
+        <name>SharingCriteriaRule</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>SharingOwnerRule</name>
+    </types>
+    <types>
+        <members>REDU - Admin</members>
+		<members>Admin</members>
+        <name>Profile</name>
+    </types>
+	<types>
+        <members>REDU_Admin_Manual_Add_on</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>44.0</version>
+</Package>

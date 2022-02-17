@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Agreement_Active_Statuses__c</fullName>
+        <defaultValue>"Active"</defaultValue>
+        <description>Comma separated list of Agreement Active Statuses</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comma separated list of Agreement Active Statuses</inlineHelpText>
+        <label>TransferCredit Agreement Active Statuses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Program_Completion_Fee_Due_Days__c</fullName>
+        <description>The number of days after completing a Program that the Program Completion fees are due.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of days after completing a Program that the Program Completion fees are due.</inlineHelpText>
+        <label>Program Completion Fee Due Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Transfer_Credit_Approved_Statuses__c</fullName>
+        <defaultValue>"Approved"</defaultValue>
+        <description>Comma separated list of Transfer Credits Approved Statuses</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Comma separated list of Transfer Credits Approved Statuses</inlineHelpText>
+        <label>Transfer Credit Approved Statuses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Transfer_Credit_Grade_Result__c</fullName>
+        <defaultValue>"Credit Transfer"</defaultValue>
+        <description>Course Connection Grade Result to be set by Transferred Credits</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Course Connection Grade Result to be set by Transferred Credits</inlineHelpText>
+        <label>Transfer Credit Grade Result</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Transfer_Credit_Release_Grades__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Course Connection check Release Grades field when Transfer Credits is approved</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Course Connection check Release Grades field when Transfer Credits is approved</inlineHelpText>
+        <label>Transfer Credit Release Grades</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+</CustomObject>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Case.Official_Date_of_Withdrawal__c</members>
+        <members>Case.redu_Related_Program_Enrollment__c</members>
+        <members>hed__Program_Enrollment__c.Program_Enrollment__c</members>
+        <members>rio_ed__PE_Pathway_Status__c.Drop_Course_Date__c</members>
+        <members>rio_ed__PE_Pathway_Status__c.Enrolled_Term__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Course_Withdrawal</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>rio_ed__Grade_Value</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Case.Withdraw_Course</members>
+        <name>QuickAction</name>
+    </types>
+    <version>53.0</version>
+</Package>

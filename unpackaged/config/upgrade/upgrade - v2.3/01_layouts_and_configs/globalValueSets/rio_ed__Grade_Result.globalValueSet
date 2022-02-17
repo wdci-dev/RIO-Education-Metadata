@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Pass</fullName>
+        <default>false</default>
+        <label>Pass</label>
+    </customValue>
+    <customValue>
+        <fullName>Fail</fullName>
+        <default>false</default>
+        <label>Fail</label>
+    </customValue>
+    <customValue>
+        <fullName>RPL</fullName>
+        <default>false</default>
+        <label>RPL</label>
+    </customValue>
+    <masterLabel>Grade Result</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

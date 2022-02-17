@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Records each Contact&apos;s Program application(s).</description>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>rio_ed__Applicant__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Contact who is applying to be enrolled in the Program.</inlineHelpText>
+        <label>Applicant</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Program Applications</relationshipLabel>
+        <relationshipName>Program_Applications</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type_Option__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
+        <label>Fee Type Option</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>rio_ed__Fee_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type_Option</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Financial AID</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Scholarship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Sponsor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>Multiple</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Financial Assistance</controllingFieldValue>
+                <valueName>FEE-HELP</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Fee_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>How the student will pay for this course</inlineHelpText>
+        <label>Fee Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>rio_ed__Fee_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Opportunity this Program Application is optionally related to.</inlineHelpText>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Program Applications</relationshipLabel>
+        <relationshipName>Program_Applications</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Program__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The Academic Program the related to this Program Application.</inlineHelpText>
+        <label>Program</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Academic Program</value>
+            </filterItems>
+            <infoMessage>Please select the Program related to this application.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Program Applications</relationshipLabel>
+        <relationshipName>Program_Applications</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Start_Month__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The month the Applicant would like to commence in the Program.</inlineHelpText>
+        <label>Start Month</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Start_Year__c</fullName>
+        <defaultValue>TEXT(YEAR( TODAY()))</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The year the applicant would like to commence in the Program.</inlineHelpText>
+        <label>Start Year</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2018</fullName>
+                    <default>true</default>
+                    <label>2018</label>
+                </value>
+                <value>
+                    <fullName>2019</fullName>
+                    <default>false</default>
+                    <label>2019</label>
+                </value>
+                <value>
+                    <fullName>2020</fullName>
+                    <default>false</default>
+                    <label>2020</label>
+                </value>
+				<value>
+                    <fullName>2021</fullName>
+                    <default>false</default>
+                    <label>2021</label>
+                </value>
+				<value>
+                    <fullName>2022</fullName>
+                    <default>false</default>
+                    <label>2022</label>
+                </value>
+				<value>
+                    <fullName>2023</fullName>
+                    <default>false</default>
+                    <label>2023</label>
+                </value>
+				<value>
+                    <fullName>2024</fullName>
+                    <default>false</default>
+                    <label>2024</label>
+                </value>
+				<value>
+                    <fullName>2025</fullName>
+                    <default>false</default>
+                    <label>2025</label>
+                </value>
+				<value>
+                    <fullName>2026</fullName>
+                    <default>false</default>
+                    <label>2026</label>
+                </value>
+				<value>
+                    <fullName>2027</fullName>
+                    <default>false</default>
+                    <label>2027</label>
+                </value>
+				<value>
+                    <fullName>2028</fullName>
+                    <default>false</default>
+                    <label>2028</label>
+                </value>
+				<value>
+                    <fullName>2029</fullName>
+                    <default>false</default>
+                    <label>2029</label>
+                </value>
+				<value>
+                    <fullName>2030</fullName>
+                    <default>false</default>
+                    <label>2030</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Status_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the application status most recently changed to its current value.</inlineHelpText>
+        <label>Status Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>rio_ed__Status__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Set the current status of this Program Application.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>true</default>
+                    <label>Draft</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Pending - Awaiting Documentation</fullName>
+                    <default>false</default>
+                    <label>Pending - Awaiting Documentation</label>
+                </value>
+                <value>
+                    <fullName>Pending - Acceptance of Offer</fullName>
+                    <default>false</default>
+                    <label>Pending - Acceptance of Offer</label>
+                </value>
+                <value>
+                    <fullName>Applicant Accepted</fullName>
+                    <default>false</default>
+                    <label>Applicant Accepted</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+				<value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Program Application</label>
+    <nameField>
+        <displayFormat>PA-{00000}</displayFormat>
+        <label>Program Application ID</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Program Applications</pluralLabel>
+	<sharingModel>ControlledByParent</sharingModel>
+</CustomObject>
