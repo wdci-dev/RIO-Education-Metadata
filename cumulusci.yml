@@ -157,7 +157,7 @@ plans:
             1:
                 task: deploy_post
                 options:
-                    path: unpackaged/sharing
+                    path: unpackaged/config/sharing
                     unmanaged: False
 
     community:
@@ -168,7 +168,7 @@ plans:
             1:
                 task: deploy_post
                 options:
-                    path: unpackaged/community
+                    path: unpackaged/config/community
                     unmanaged: False
     
     ready:
@@ -179,7 +179,7 @@ plans:
             1:
                 task: deploy_post
                 options:
-                    path: unpackaged/ready
+                    path: unpackaged/config/ready
                     unmanaged: False
     
     dataset:
