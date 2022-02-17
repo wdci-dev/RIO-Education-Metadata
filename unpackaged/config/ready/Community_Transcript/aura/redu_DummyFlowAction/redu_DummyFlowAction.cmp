@@ -1,6 +1,0 @@
-<aura:component implements="lightning:availableForFlowActions">
-  <!-- redu_DummyFlowAction: this type of component doesn't support UI elements, as you don't use it 
-       on a screen in a flow, you use it as an action element between screens or 
-       other elements. You can declare attributes or import a library, however -->
-    <aura:attribute name="navUrl" type="String" default="" access="global" />
-</aura:component>
