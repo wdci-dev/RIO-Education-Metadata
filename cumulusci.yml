@@ -282,17 +282,6 @@ plans:
                     path: unpackaged/config/ready
                     unmanaged: False
     
-    upgrade:
-        slug: upgrade
-        title: Upgrade RIO Education Metadata
-        tier: additional
-        steps:
-            1:
-                task: deploy_post
-                options:
-                    path: unpackaged/config/upgrade
-                    unmanaged: False
-    
     dataset:
         slug: dataset
         title: Sample Data
