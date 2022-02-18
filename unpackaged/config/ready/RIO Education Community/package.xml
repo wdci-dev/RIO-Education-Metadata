@@ -36,5 +36,14 @@
     <members>RIO_Education_Community1</members>
     <name>SiteDotCom</name>
   </types>
+  <types>
+	<members>CommunitiesLanding</members>
+	<name>ApexPage</name>
+  </types>
+  <types>
+	<members>CommunitiesLandingController</members>
+	<members>CommunitiesLandingControllerTest</members>
+	<name>ApexClass</name>
+  </types>
   <version>53.0</version>
 </Package>
