@@ -78,26 +78,26 @@ INSERT INTO "Contact" VALUES(22,'fiona@riouni.edu','Fiona','Forton','Ms.','','Fe
 INSERT INTO "Contact" VALUES(23,'fran@riouni.edu','Fran','Fisher','Ms.','','Female','University Email','fran@riouni.edu','','','True','1');
 INSERT INTO "Contact" VALUES(24,'jmonroe@wdcigroup.net','John','Smith','','jmonroe@wdcigroup.net','Male','Alternate Email','','john.smith','john.smith@rioedplayground.com','False','11');
 INSERT INTO "Contact" VALUES(25,'eef@eef.eef','Edward','Educator','','','Male','University Email','eef@eef.eef','','','True','15');
-INSERT INTO "Contact" VALUES(26,'','Test','Student 4','','','Female','','','','','False','13');
-INSERT INTO "Contact" VALUES(27,'','Test','Student 5','','','Male','','','','','False','16');
-INSERT INTO "Contact" VALUES(28,'','Test','Student 6','','','Male','','','','','False','17');
-INSERT INTO "Contact" VALUES(29,'','Test','Student 2','','','Male','','','','','False','18');
-INSERT INTO "Contact" VALUES(30,'','Test','Student 1','','','','','','','','False','19');
-INSERT INTO "Contact" VALUES(31,'','Test','Student 3','','','Female','','','','','False','14');
-INSERT INTO "Contact" VALUES(32,'','Test','Student 9','','','','','','','','False','27');
-INSERT INTO "Contact" VALUES(33,'','Test','Student 15','','','','','','','','False','28');
-INSERT INTO "Contact" VALUES(34,'','Test','Student 16','','','','','','','','False','29');
-INSERT INTO "Contact" VALUES(35,'','Test','Student 17','','','','','','','','False','30');
-INSERT INTO "Contact" VALUES(36,'','Test','Student 18','','','','','','','','False','20');
-INSERT INTO "Contact" VALUES(37,'','Test','Student 19','','','','','','','','False','31');
-INSERT INTO "Contact" VALUES(38,'','Test','Student 20','','','','','','','','False','32');
-INSERT INTO "Contact" VALUES(39,'','Test','Student 10','','','','','','','','False','24');
-INSERT INTO "Contact" VALUES(40,'','Test','Student 7','','','','','','','','False','23');
-INSERT INTO "Contact" VALUES(41,'','Test','Student 8','','','','','','','','False','10');
-INSERT INTO "Contact" VALUES(42,'','Test','Student 11','','','','','','','','False','21');
-INSERT INTO "Contact" VALUES(43,'','Test','Student 12','','','','','','','','False','22');
-INSERT INTO "Contact" VALUES(44,'','Test','Student 13','','','','','','','','False','25');
-INSERT INTO "Contact" VALUES(45,'','Test','Student 14','','','','','','','','False','26');
+INSERT INTO "Contact" VALUES(26,'','Test','Student 4','','','Female','University Email','teststudent4@riouni.com','','','False','13');
+INSERT INTO "Contact" VALUES(27,'','Test','Student 5','','','Male','University Email','teststudent5@riouni.com','','','False','16');
+INSERT INTO "Contact" VALUES(28,'','Test','Student 6','','','Male','University Email','teststudent6@riouni.com','','','False','17');
+INSERT INTO "Contact" VALUES(29,'','Test','Student 2','','','Male','University Email','teststudent2@riouni.com','','','False','18');
+INSERT INTO "Contact" VALUES(30,'','Test','Student 1','','','','University Email','teststudent1@riouni.com','','','False','19');
+INSERT INTO "Contact" VALUES(31,'','Test','Student 3','','','Female','University Email','teststudent3@riouni.com','','','False','14');
+INSERT INTO "Contact" VALUES(32,'','Test','Student 9','','','','University Email','teststudent9@riouni.com','','','False','27');
+INSERT INTO "Contact" VALUES(33,'','Test','Student 15','','','','University Email','teststudent15@riouni.com','','','False','28');
+INSERT INTO "Contact" VALUES(34,'','Test','Student 16','','','','University Email','teststudent16@riouni.com','','','False','29');
+INSERT INTO "Contact" VALUES(35,'','Test','Student 17','','','','University Email','teststudent17@riouni.com','','','False','30');
+INSERT INTO "Contact" VALUES(36,'','Test','Student 18','','','','University Email','teststudent18@riouni.com','','','False','20');
+INSERT INTO "Contact" VALUES(37,'','Test','Student 19','','','','University Email','teststudent19@riouni.com','','','False','31');
+INSERT INTO "Contact" VALUES(38,'','Test','Student 20','','','','University Email','teststudent20@riouni.com','','','False','32');
+INSERT INTO "Contact" VALUES(39,'','Test','Student 10','','','','University Email','teststudent10@riouni.com','','','False','24');
+INSERT INTO "Contact" VALUES(40,'','Test','Student 7','','','','University Email','teststudent7@riouni.com','','','False','23');
+INSERT INTO "Contact" VALUES(41,'','Test','Student 8','','','','University Email','teststudent8@riouni.com','','','False','10');
+INSERT INTO "Contact" VALUES(42,'','Test','Student 11','','','','University Email','teststudent11@riouni.com','','','False','21');
+INSERT INTO "Contact" VALUES(43,'','Test','Student 12','','','','University Email','teststudent12@riouni.com','','','False','22');
+INSERT INTO "Contact" VALUES(44,'','Test','Student 13','','','','University Email','teststudent13@riouni.com','','','False','25');
+INSERT INTO "Contact" VALUES(45,'','Test','Student 14','','','','University Email','teststudent14@riouni.com','','','False','26');
 CREATE TABLE "hed__Affiliation__c" (
 	id INTEGER NOT NULL, 
 	"hed__Role__c" VARCHAR(255), 
