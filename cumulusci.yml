@@ -70,10 +70,6 @@ tasks:
                 is_recommended: False
             AccountsReceivableDisplay:
                 name: RIO Ready - Accounts Receivable Display
-            Payment2us:
-                name: RIO Ready - Payment 2 Us
-                is_required: False
-                is_recommended: False
             Community_Transcript:
                 name: RIO Ready - Community Transcript
                 is_required: False
@@ -84,6 +80,10 @@ tasks:
                 name: RIO Ready - Login and Register
             LoginAndRegister_preDeploy:
                 name: RIO Ready - Login and Register (Pre-Deploy)
+            Payment2us:
+                name: RIO Ready - Payment 2 Us
+                is_required: False
+                is_recommended: False
             ProgramApplication:
                 name: RIO Ready - Program Application
             Refund:
