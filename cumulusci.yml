@@ -283,7 +283,7 @@ plans:
                     unmanaged: False
     
     upgrade:
-        slug: ready
+        slug: upgrade
         title: Upgrade RIO Education Metadata
         tier: additional
         steps:
