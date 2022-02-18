@@ -181,7 +181,7 @@ tasks:
             upgrade - v3.2:
                 name: RIO Education - Upgrade to v3.2
                 is_required: False
-                is_recommended: False\
+                is_recommended: False
             upgrade - v3.3:
                 name: RIO Education - Upgrade to v3.3
                 is_required: False

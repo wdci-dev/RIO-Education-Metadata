@@ -153,6 +153,82 @@
         "Install RIO Education": {
             "message": "Install RIO Education",
             "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.10": {
+            "message": "RIO Education - Upgrade to v2.10",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.10.8": {
+            "message": "RIO Education - Upgrade to v2.10.8",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.11": {
+            "message": "RIO Education - Upgrade to v2.11",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.12": {
+            "message": "RIO Education - Upgrade to v2.12",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.13": {
+            "message": "RIO Education - Upgrade to v2.13",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.14": {
+            "message": "RIO Education - Upgrade to v2.14",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.3": {
+            "message": "RIO Education - Upgrade to v2.3",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.4": {
+            "message": "RIO Education - Upgrade to v2.4",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.5": {
+            "message": "RIO Education - Upgrade to v2.5",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.6": {
+            "message": "RIO Education - Upgrade to v2.6",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.7": {
+            "message": "RIO Education - Upgrade to v2.7",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.8": {
+            "message": "RIO Education - Upgrade to v2.8",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.9": {
+            "message": "RIO Education - Upgrade to v2.9",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.0": {
+            "message": "RIO Education - Upgrade to v3.0",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.1": {
+            "message": "RIO Education - Upgrade to v3.1",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.2": {
+            "message": "RIO Education - Upgrade to v3.2",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.3": {
+            "message": "RIO Education - Upgrade to v3.3",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.4": {
+            "message": "RIO Education - Upgrade to v3.4",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.5": {
+            "message": "RIO Education - Upgrade to v3.5",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
@@ -176,6 +252,12 @@
     "plan:dataset": {
         "title": {
             "message": "Sample Data",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:upgrade": {
+        "title": {
+            "message": "Upgrade RIO Education Metadata",
             "description": "title of installation plan"
         }
     }
