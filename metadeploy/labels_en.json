@@ -257,7 +257,7 @@
     },
     "plan:upgrade": {
         "title": {
-            "message": "Upgrade RIO Education Metadata",
+            "message": "Upgrade RIO Education",
             "description": "title of installation plan"
         }
     }

@@ -270,7 +270,7 @@ plans:
                 options:
                     path: unpackaged/config/community
                     unmanaged: False
-    
+
     upgrade:
         slug: upgrade
         title: Upgrade RIO Education
