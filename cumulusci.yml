@@ -36,24 +36,44 @@ tasks:
         ui_options:
             01_standard_objects_ui:
                 name: RIO Education - Standard Objects UI
+                is_required: False
+                is_recommended: False
             02_eda_objects_ui:
                 name: RIO Education - EDA Objects UI
+                is_required: False
+                is_recommended: False
             03_standard_objects_security_setup:
                 name: RIO Education - Standard Objects Security Setup
+                is_required: False
+                is_recommended: False
             04_eda_security_setup:
                 name: RIO Education - EDA Security Setup
+                is_required: False
+                is_recommended: False
             05_redu_security_setup:
                 name: RIO Education - REDU Security Setup
+                is_required: False
+                is_recommended: False
             06_standard_object_tracking:
                 name: RIO Education - Standard Object Tracking
+                is_required: False
+                is_recommended: False
             07_heda_object_tracking:
                 name: RIO Education - HEDA Object Tracking
+                is_required: False
+                is_recommended: False
             08_redu_object_tracking:
                 name: RIO Education - REDU Object Tracking
+                is_required: False
+                is_recommended: False
             12_appointment_scheduler_automation:
                 name: RIO Education - Appointment Scheduler Automation
+                is_required: False
+                is_recommended: False
             13_eda_object_picklist:
                 name: RIO Education - EDA Object Picklist
+                is_required: False
+                is_recommended: False
             00_orgwide_default_sharing:
                 name: RIO Education - Orgwide Default Sharing
             01_student_community_security_setup:
@@ -98,6 +118,82 @@ tasks:
                 name: RIO Ready - Student Request
             Withdrawal:
                 name: RIO Ready - Withdrawal
+            upgrade - v2.3:
+                name: RIO Education - Upgrade to v2.3
+                is_required: False
+                is_recommended: False
+            upgrade - v2.4:
+                name: RIO Education - Upgrade to v2.4
+                is_required: False
+                is_recommended: False
+            upgrade - v2.5:
+                name: RIO Education - Upgrade to v2.5
+                is_required: False
+                is_recommended: False
+            upgrade - v2.6:
+                name: RIO Education - Upgrade to v2.6
+                is_required: False
+                is_recommended: False
+            upgrade - v2.7:
+                name: RIO Education - Upgrade to v2.7
+                is_required: False
+                is_recommended: False
+            upgrade - v2.8:
+                name: RIO Education - Upgrade to v2.8
+                is_required: False
+                is_recommended: False
+            upgrade - v2.9:
+                name: RIO Education - Upgrade to v2.9
+                is_required: False
+                is_recommended: False
+            upgrade - v2.10:
+                name: RIO Education - Upgrade to v2.10
+                is_required: False
+                is_recommended: False
+            upgrade - v2.10.8:
+                name: RIO Education - Upgrade to v2.10.8
+                is_required: False
+                is_recommended: False
+            upgrade - v2.11:
+                name: RIO Education - Upgrade to v2.11
+                is_required: False
+                is_recommended: False
+            upgrade - v2.12:
+                name: RIO Education - Upgrade to v2.12
+                is_required: False
+                is_recommended: False
+            upgrade - v2.13:
+                name: RIO Education - Upgrade to v2.13
+                is_required: False
+                is_recommended: False
+            upgrade - v2.14:
+                name: RIO Education - Upgrade to v2.14
+                is_required: False
+                is_recommended: False
+            upgrade - v3.0:
+                name: RIO Education - Upgrade to v3.0
+                is_required: False
+                is_recommended: False
+            upgrade - v3.1:
+                name: RIO Education - Upgrade to v3.1
+                is_required: False
+                is_recommended: False
+            upgrade - v3.2:
+                name: RIO Education - Upgrade to v3.2
+                is_required: False
+                is_recommended: False\
+            upgrade - v3.3:
+                name: RIO Education - Upgrade to v3.3
+                is_required: False
+                is_recommended: False
+            upgrade - v3.4:
+                name: RIO Education - Upgrade to v3.4
+                is_required: False
+                is_recommended: False
+            upgrade - v3.5:
+                name: RIO Education - Upgrade to v3.5
+                is_required: False
+                is_recommended: False
     
     deploy_pre:
         ui_options:
@@ -184,6 +280,17 @@ plans:
                 task: deploy_post
                 options:
                     path: unpackaged/config/ready
+                    unmanaged: False
+    
+    upgrade:
+        slug: ready
+        title: Upgrade RIO Education Metadata
+        tier: additional
+        steps:
+            1:
+                task: deploy_post
+                options:
+                    path: unpackaged/config/upgrade
                     unmanaged: False
     
     dataset:
