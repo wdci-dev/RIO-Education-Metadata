@@ -49,9 +49,6 @@ public without sharing class redu_CommonTestDataFactory_UTIL {
         customSettings.rio_ed__Resource_Type_Plan_RT_Id__c = Schema.SObjectType.rio_ed__Plan__c.getRecordTypeInfosByDeveloperName().get('Resource_Type').getRecordTypeId();
         customSettings.rio_ed__Session_Scheduler_REST_API_Url__c = 'https://' + System.URL.getOrgDomainUrl().getHost() + '/services/apexrest/rio_ed/calendarevent';
 
-        customSettings.redu_Payment_Trx_Payment_RT_Id__c = Schema.SObjectType.AAkPay__Payment_Txn__c.getRecordTypeInfosByDeveloperName().get('Payment').getRecordTypeId();
-        customSettings.redu_Payment_Trx_Default_Status__c = 'Awaiting Payment';
-        customSettings.redu_Student_Permission_Set_Group__c = 'REDU_Student';
         customSettings.redu_File_Sharing_Prefix__c = 'Official_Transcript';
         return customSettings;
     }
@@ -159,7 +156,7 @@ public without sharing class redu_CommonTestDataFactory_UTIL {
                 AccountId = acc.Id);
             con.rio_ed__Community_Username__c = con.Email;
             con.rio_ed__Community_Username_Prefix__c = 'testStud_'+conCounter+'_'+numContacts;
-            con.hed__Preferred_Email__c = redu_PaymentConstant_UTIL.PREFERREDEMAIL_ALTERNATE;
+            con.hed__Preferred_Email__c = 'Alternate Email';
             con.hed__AlternateEmail__c = con.Email;
             cons.add(con);
             conCounter++;

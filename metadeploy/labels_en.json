@@ -149,6 +149,10 @@
         "RIO Education - Load Sample Data": {
             "message": "RIO Education - Load Sample Data",
             "description": "title of installation step"
+        },
+        "Install RIO Education": {
+            "message": "Install RIO Education",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
