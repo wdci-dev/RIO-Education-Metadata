@@ -271,17 +271,6 @@ plans:
                     path: unpackaged/config/community
                     unmanaged: False
 
-    upgrade:
-        slug: upgrade
-        title: Upgrade RIO Education
-        tier: additional
-        steps:
-            1:
-                task: deploy_post
-                options:
-                    path: unpackaged/config/upgrade
-                    unmanaged: False
-
     ready:
         slug: ready
         title: RIO Ready Metadata
