@@ -252,6 +252,8 @@ plans:
               action: error
               message: "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education."
             - when: "not tasks.check_org_settings_value(CommunitiesSettings, enableCommunityWorkspaces, true, True)"
+              action: error
+              message: "Please enable Community Settings prior to installing."
         steps:
             1:
                 flow: basic_install
