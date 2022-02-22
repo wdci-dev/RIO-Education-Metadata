@@ -237,6 +237,10 @@
         "org_settings": {
             "message": "org_settings",
             "description": "title of installation step"
+        },
+        "RIO Education - Salesforce Feature Enablement": {
+            "message": "RIO Education - Salesforce Feature Enablement",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
