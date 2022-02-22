@@ -211,6 +211,12 @@ tasks:
     check_org_settings_value:
         ui_options:
             name: RIO Education - Check Community Settings
+    
+    org_settings:
+        ui_options:
+            name: RIO Education - Salesforce Feature Enablement
+            is_required: False
+            is_recommended: False
 
 flows:
     basic_install:
@@ -228,6 +234,10 @@ flows:
                         settings:
                             ChatterSettings:
                                 enableChatter: true
+                            ContentSettings:
+                                enableSiteGuestUserToUploadFiles: true
+                            PathAssistantSettings:
+                                pathAssistantEnabled: true
                 3:
                     flow: dependencies
                 4:
@@ -251,9 +261,6 @@ plans:
             - when: "'hed__Trigger_Handler__c' not in tasks.check_sobjects_available()"
               action: error
               message: "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education."
-            - when: "not tasks.check_org_settings_value('CommunitiesSettings', 'enableCommunityWorkspaces', true, True)"
-              action: error
-              message: "Please enable Community Settings prior to installing."
         steps:
             1:
                 flow: basic_install
