@@ -27,6 +27,10 @@
         "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education.": {
             "message": "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education.",
             "description": "shown if validation fails"
+        },
+        "Please enable Community Settings prior to installing.": {
+            "message": "Please enable Community Settings prior to installing.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
