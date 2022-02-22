@@ -229,6 +229,10 @@
         "RIO Education - Upgrade to v3.5": {
             "message": "RIO Education - Upgrade to v3.5",
             "description": "title of installation step"
+        },
+        "org_settings": {
+            "message": "org_settings",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

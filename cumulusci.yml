@@ -226,7 +226,8 @@ flows:
                     task: org_settings
                     options:
                         settings:
-                            enableChatter: true
+                            ChatterSettings:
+                                enableChatter: true
                 3:
                     flow: dependencies
                 4:
