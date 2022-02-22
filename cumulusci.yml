@@ -223,12 +223,17 @@ flows:
                         value: true
                         treat_missing_as_failure: True
                 2:
-                    flow: dependencies
+                    task: org_settings
+                    options:
+                        settings:
+                            enableChatter: true
                 3:
+                    flow: dependencies
+                4:
                     task: install_managed
                     options:
                         version_number: 04t3u000002wKwa
-                4:
+                5:
                     task: deploy_post
                     options:
                         unmanaged: False
