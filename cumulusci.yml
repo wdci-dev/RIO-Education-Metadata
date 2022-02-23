@@ -215,7 +215,7 @@ tasks:
         options:
             settings_type: CommunitiesSettings
             settings_field: enableCommunityWorkspaces
-            value: true
+            value: false
             treat_missing_as_failure: True
     
     org_settings:
