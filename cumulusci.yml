@@ -239,12 +239,19 @@ flows:
                             PathAssistantSettings:
                                 pathAssistantEnabled: true
                 3:
-                    flow: dependencies
+                    task: check_org_settings_value
+                    options:
+                        settings_type: ChatterSettings
+                        settings_field: enableChatter
+                        value: true
+                        treat_missing_as_failure: True
                 4:
+                    flow: dependencies
+                5:
                     task: install_managed
                     options:
                         version_number: 04t3u000002wKwa
-                5:
+                6:
                     task: deploy_post
                     options:
                         unmanaged: False
