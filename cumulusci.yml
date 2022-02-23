@@ -216,8 +216,6 @@ tasks:
             settings_type: CommunitiesSettings
             settings_field: enableCommunityWorkspaces
             value: True
-        ui_options:
-            name: RIO Education - Check Community Settings
     
     org_settings:
         ui_options:

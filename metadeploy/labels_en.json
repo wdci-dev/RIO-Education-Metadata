@@ -31,6 +31,10 @@
         "Please enable Community Settings prior to installing.": {
             "message": "Please enable Community Settings prior to installing.",
             "description": "shown if validation fails"
+        },
+        "Please enable Communities in your org prior to installing.": {
+            "message": "Please enable Communities in your org prior to installing.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
