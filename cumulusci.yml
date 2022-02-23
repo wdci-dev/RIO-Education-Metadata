@@ -242,7 +242,7 @@ flows:
                     task: check_org_settings_value
                     options:
                         settings_type: ChatterSettings
-                        settings_field: enableChatter
+                        settings_field: IsChatterEnabled
                         value: true
                         treat_missing_as_failure: True
                 4:
