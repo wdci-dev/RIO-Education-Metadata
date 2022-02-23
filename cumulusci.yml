@@ -225,7 +225,7 @@ flows:
                     task: check_org_settings_value
                     options:
                         settings_type: CommunitiesSettings
-                        settings_field: enableCommunityWorkspaces
+                        settings_field: IsCommunityWorkspacesEnabled
                         value: true
                         treat_missing_as_failure: True
                 2:
@@ -239,19 +239,12 @@ flows:
                             PathAssistantSettings:
                                 pathAssistantEnabled: true
                 3:
-                    task: check_org_settings_value
-                    options:
-                        settings_type: ChatterSettings
-                        settings_field: IsChatterEnabled
-                        value: true
-                        treat_missing_as_failure: True
-                4:
                     flow: dependencies
-                5:
+                4:
                     task: install_managed
                     options:
                         version_number: 04t3u000002wKwa
-                6:
+                5:
                     task: deploy_post
                     options:
                         unmanaged: False
