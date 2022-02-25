@@ -311,3 +311,7 @@ plans:
                     namespace: hed
             2:
                 task: load_dataset
+            3:
+                task: restore_tdtm_trigger_handlers
+                options:
+                    namespace: hed
