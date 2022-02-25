@@ -82,7 +82,7 @@ INSERT INTO "Contact" VALUES(26,'','Eleanor','Huber','','','Female','University 
 INSERT INTO "Contact" VALUES(27,'','Tim','Cruz','','','Male','University Email','teststudent5@riouni.com','','','False','16');
 INSERT INTO "Contact" VALUES(28,'','Howard','Randall','','','Male','University Email','teststudent6@riouni.com','','','False','17');
 INSERT INTO "Contact" VALUES(29,'','Gregg','Robinson','','','Male','University Email','teststudent2@riouni.com','','','False','18');
-INSERT INTO "Contact" VALUES(30,'','Test','Student 1','','','','University Email','teststudent1@riouni.com','','','False','19');
+INSERT INTO "Contact" VALUES(30,'','Gwen','Burton','','','','University Email','teststudent1@riouni.com','','','False','19');
 INSERT INTO "Contact" VALUES(31,'','Charlotte','Andrews','','','Female','University Email','teststudent3@riouni.com','','','False','14');
 INSERT INTO "Contact" VALUES(32,'','Sammy','Hunter','','','','University Email','teststudent9@riouni.com','','','False','27');
 INSERT INTO "Contact" VALUES(33,'','Lorna','Daily','','','','University Email','teststudent15@riouni.com','','','False','28');
