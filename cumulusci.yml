@@ -212,7 +212,7 @@ tasks:
 
     install_managed:
         ui_options:
-            name: Install RIO Education
+            name: Install RIO Education 3.5.3
     
     load_dataset:
         ui_options:
@@ -306,4 +306,8 @@ plans:
         tier: additional
         steps:
             1:
+                task: disable_tdtm_trigger_handlers
+            2:
                 task: load_dataset
+            3:
+                task: restore_tdtm_trigger_handlers
