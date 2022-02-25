@@ -308,6 +308,6 @@ plans:
             1:
                 task: disable_tdtm_trigger_handlers
                 options:
-                    namespace: eda
+                    namespace: hed
             2:
                 task: load_dataset
