@@ -245,6 +245,14 @@
         "RIO Education - Salesforce Feature Enablement": {
             "message": "RIO Education - Salesforce Feature Enablement",
             "description": "title of installation step"
+        },
+        "Install {product} {version}": {
+            "message": "Install {product} {version}",
+            "description": "title of installation step"
+        },
+        "disable_tdtm_trigger_handlers": {
+            "message": "disable_tdtm_trigger_handlers",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
