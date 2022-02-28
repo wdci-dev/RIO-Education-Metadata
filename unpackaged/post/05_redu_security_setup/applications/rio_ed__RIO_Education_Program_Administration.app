@@ -3,14 +3,14 @@
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>rio_ed__rioed_eddie</logo>
-        <logoVersion>1</logoVersion>
+        <logoVersion>2</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>RIO Education Program Administration Console</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
-    <label>RIO Program Admin</label>
+    <label>RIO Programs</label>
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>

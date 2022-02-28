@@ -3,7 +3,7 @@
     <brand>
         <headerColor>#0070D2</headerColor>
         <logo>rio_ed__rioed_eddie</logo>
-        <logoVersion>1</logoVersion>
+        <logoVersion>2</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
     <description>RIO Admissions Console</description>
