@@ -253,6 +253,10 @@
         "disable_tdtm_trigger_handlers": {
             "message": "disable_tdtm_trigger_handlers",
             "description": "title of installation step"
+        },
+        "restore_tdtm_trigger_handlers": {
+            "message": "restore_tdtm_trigger_handlers",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
