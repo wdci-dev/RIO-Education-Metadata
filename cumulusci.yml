@@ -166,7 +166,7 @@ flows:
                 3:
                     task: install_managed
                     options:
-                        version_number: 04t3u000002wKwa
+                        version_number: 04t3u0000038RWV
                 4:
                     task: deploy_post
                     options:
