@@ -136,7 +136,7 @@ tasks:
 
     install_managed:
         ui_options:
-            name: Install RIO Education 3.5.3
+            name: Install RIO Education 3.6
     
     load_dataset:
         ui_options:
