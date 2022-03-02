@@ -75,7 +75,7 @@ tasks:
                 is_required: False
                 is_recommended: False
             00_orgwide_default_sharing:
-                name: RIO Education - Orgwide Default Sharing
+                name: RIO Education - Org-Wide Default Sharing
             01_student_community_security_setup:
                 name: RIO Education - Student Community Security Setup
                 is_required: False
@@ -101,7 +101,7 @@ tasks:
             LoginAndRegister_preDeploy:
                 name: RIO Ready - Login and Register (Pre-Deploy)
             Payment2us:
-                name: RIO Ready - Payment 2 Us
+                name: RIO Ready - Payments2Us
                 is_required: False
                 is_recommended: False
             ProgramApplication:
@@ -147,6 +147,14 @@ tasks:
             name: RIO Education - Salesforce Feature Enablement
             is_required: False
             is_recommended: False
+    
+    disable_tdtm_trigger_handlers:
+        ui_options:
+            name: Disable Trigger Handlers
+    
+    restore_tdtm_trigger_handlers:
+        ui_options:
+            name: Restore Trigger Handlers
 
 flows:
     basic_install:
