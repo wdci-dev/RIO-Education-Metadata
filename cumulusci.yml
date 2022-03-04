@@ -138,10 +138,6 @@ tasks:
         ui_options:
             name: Install RIO Education 3.6
     
-    load_dataset:
-        ui_options:
-            name: RIO Education - Load Sample Data
-    
     org_settings:
         ui_options:
             name: RIO Education - Salesforce Feature Enablement
@@ -151,10 +147,20 @@ tasks:
     disable_tdtm_trigger_handlers:
         ui_options:
             name: Disable Trigger Handlers
+            is_required: False
+            is_recommended: False
+    
+    load_dataset:
+        ui_options:
+            name: RIO Education - Load Sample Data
+            is_required: False
+            is_recommended: False
     
     restore_tdtm_trigger_handlers:
         ui_options:
             name: Restore Trigger Handlers
+            is_required: False
+            is_recommended: False
 
 flows:
     basic_install:

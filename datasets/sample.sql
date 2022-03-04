@@ -76,7 +76,7 @@ CREATE TABLE "Contact" (
 INSERT INTO "Contact" VALUES(21,'fred@riouni.edu','Freddie','Freeman','Mr.','','Male','University Email','fred@riouni.edu','','','True','9');
 INSERT INTO "Contact" VALUES(22,'fiona@riouni.edu','Fiona','Forton','Ms.','','Female','University Email','fiona@riouni.edu','','','True','12');
 INSERT INTO "Contact" VALUES(23,'fran@riouni.edu','Fran','Fisher','Ms.','','Female','University Email','fran@riouni.edu','','','True','1');
-INSERT INTO "Contact" VALUES(24,'jmonroe@wdcigroup.net','John','Smith','','jmonroe@wdcigroup.net','Male','Alternate Email','','john.smith','john.smith@rioedplayground.com','False','11');
+INSERT INTO "Contact" VALUES(24,'jsmith@riouni.edu','John','Smith','','jsmith@riouni.edu','Male','Alternate Email','','john.smith','john.smith@rioedplayground.com','False','11');
 INSERT INTO "Contact" VALUES(25,'eef@eef.eef','Edward','Educator','','','Male','University Email','eef@eef.eef','','','True','15');
 INSERT INTO "Contact" VALUES(26,'','Eleanor','Huber','','','Female','University Email','teststudent4@riouni.com','','','False','13');
 INSERT INTO "Contact" VALUES(27,'','Tim','Cruz','','','Male','University Email','teststudent5@riouni.com','','','False','16');

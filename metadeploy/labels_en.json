@@ -257,6 +257,22 @@
         "restore_tdtm_trigger_handlers": {
             "message": "restore_tdtm_trigger_handlers",
             "description": "title of installation step"
+        },
+        "RIO Education - Org-Wide Default Sharing": {
+            "message": "RIO Education - Org-Wide Default Sharing",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Payments2Us": {
+            "message": "RIO Ready - Payments2Us",
+            "description": "title of installation step"
+        },
+        "Disable Trigger Handlers": {
+            "message": "Disable Trigger Handlers",
+            "description": "title of installation step"
+        },
+        "Restore Trigger Handlers": {
+            "message": "Restore Trigger Handlers",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
