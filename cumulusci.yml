@@ -187,6 +187,244 @@ flows:
                     task: assign_permission_sets
                     options:
                         api_names: REDU_Admin
+    
+    delete_sample_data:
+        steps:
+                1:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Contact_Attendance__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                2:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Assigned_Location__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                3:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Availability_Time__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                4:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Appointment_Time__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                5:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Appointment_Availability__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                6:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Appointment_Type__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                7:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Attendance__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                8:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Session_Connection__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                9:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Allocation__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                10:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Grade__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                11:
+                    task: delete_data
+                    options:
+                        objects: hed__Term_Grade__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                12:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Session_Time__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                13:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Session__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                14:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Role__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                15:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Resource__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                16:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Resource_Type__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                17:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Fee_Line__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                18:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Course_Connection_Requirement__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                19:
+                    task: delete_data
+                    options:
+                        objects: hed__Course_Enrollment__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                20:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__PE_Pathway_Status__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                21:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__PE_Group_Status__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                22:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Funding__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                23:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Student_Fee__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                24:
+                    task: delete_data
+                    options:
+                        objects: hed__Program_Enrollment__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                25:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Program_Application__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                26:
+                    task: delete_data
+                    options:
+                        objects: hed__Course_Offering__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                27:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Plan__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                28:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Discipline_Requirement__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                29:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Program_Discipline__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                30:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Pathway_Unit__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                31:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Program_Pathway__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                32:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Program_Course_Requirement__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                33:
+                    task: delete_data
+                    options:
+                        objects: hed__Plan_Requirement__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                34:
+                    task: delete_data
+                    options:
+                        objects: hed__Program_Plan__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                35:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Qualified_Faculty__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                36:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Grade_Criteria__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                37:
+                    task: delete_data
+                    options:
+                        objects: hed__Course__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                38:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Grade_Setting__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                39:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Fee_Schedule_Term__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                40:
+                    task: delete_data
+                    options:
+                        objects: hed__Term__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                41:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Fee_Schedule__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                42:
+                    task: delete_data
+                    options:
+                        objects: rio_ed__Fee__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                43:
+                    task: delete_data
+                    options:
+                        objects: hed__Facility__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                44:
+                    task: delete_data
+                    options:
+                        objects: hed__Time_Block__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                45:
+                    task: delete_data
+                    options:
+                        objects: hed__Affiliation__c
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                46:
+                    task: delete_data
+                    options:
+                        objects: Contact
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
+                47:
+                    task: delete_data
+                    options:
+                        objects: Account
+                        where: rio_ed__RIO_P1__c = 'Installer Sample Data'
 
 plans:
     install:
@@ -246,12 +484,168 @@ plans:
         tier: additional
         steps:
             1:
+                task: create_permission_set
+                options:
+                    api_name: Sample_Data_RIO_P1
+                    label: Sample Data RIO P1
+            2:
+                task: add_permission_set_perms
+                options:
+                    field_permissions:
+                        Account.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        Contact.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Affiliation__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Time_Block__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Facility__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Fee__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Fee_Schedule__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Term__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Fee_Schedule_Term__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Grade_Setting__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Course__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Grade_Criteria__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Qualified_Faculty__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Program_Plan__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Plan_Requirement__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Program_Course_Requirement__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Program_Pathway__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Pathway_Unit__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Program_Discipline__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Discipline_Requirement__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Plan__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Course_Offering__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Program_Application__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Program_Enrollment__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Student_Fee__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Funding__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__PE_Group_Status__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__PE_Pathway_Status__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Course_Enrollment__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Course_Connection_Requirement__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Fee_Line__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Resource_Type__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Resource__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Role__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Session__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Session_Time__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        hed__Term_Grade__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Grade__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Allocation__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Session_Connection__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Attendance__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Appointment_Type__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Appointment_Availability__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Appointment_Time__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Availability_Time__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Assigned_Location__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+                        rio_ed__Contact_Attendance__c.rio_ed__RIO_P1__c:
+                            readable: True
+                            editable: True
+            3:
+                task: assign_permission_sets
+                options:
+                    api_names: Sample_Data_RIO_P1
+            4:
                 task: disable_tdtm_trigger_handlers
                 options:
                     namespace: hed
-            2:
+            5:
+                flow: delete_sample_data 
+            6:
                 task: load_dataset
-            3:
+            7:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed
