@@ -137,6 +137,10 @@ tasks:
     install_managed:
         ui_options:
             name: Install RIO Education 3.6
+
+    assign_permission_sets:
+        ui_options:
+            name: RIO Education - Assign Permission Sets
     
     org_settings:
         ui_options:
@@ -179,6 +183,10 @@ flows:
                     task: deploy_post
                     options:
                         unmanaged: False
+                5:
+                    task: assign_permission_sets
+                    options:
+                        api_names: REDU_Admin
 
 plans:
     install:

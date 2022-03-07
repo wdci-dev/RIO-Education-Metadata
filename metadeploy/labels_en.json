@@ -9,7 +9,7 @@
             "description": "tagline of product"
         },
         "description": {
-            "message": "<h1>Welcome to the RIO Education installer!</h1>\r\n\r\n<b>IMPORTANT:</b> We do not recommend installing upgrades directly in production organizations. Instead, install your RIO Education upgrade in one of your free sandbox environments, or a developer organization first.\r\n\r\n<b>In order to install RIO Education, please first ensure you have installed Salesforce.org's Education Data Architecture (EDA). The EDA installer can be found <a href='https://install.salesforce.org/products/eda/latest'>here</a>.</b>\r\n\r\n<b>Please complete this installation before deploying any additional plans. All additional plans are dependent on the main RIO Education package.</b>",
+            "message": "<h1>Welcome to the RIO Education installer!</h1>\r\n\r\n<b>IMPORTANT:</b> We do not recommend installing upgrades directly in production organizations. Instead, install your RIO Education upgrade in one of your free sandbox environments, or a developer organization first.\r\n\r\n<b>In order to install RIO Education, please ensure you have first installed Salesforce.org's Education Data Architecture (EDA). The EDA installer can be found <a href='https://install.salesforce.org/products/eda/latest'>here</a>.</b>\r\n\r\nPlease install RIO Education before deploying any additional plans. All additional plans are dependent on the main RIO Education package.",
             "description": "shown on product detail page (markdown)"
         }
     },
