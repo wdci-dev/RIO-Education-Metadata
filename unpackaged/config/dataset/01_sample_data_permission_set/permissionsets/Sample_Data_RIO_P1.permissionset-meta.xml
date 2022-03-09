@@ -6,141 +6,233 @@
         <editable>true</editable>
         <field>Account.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Affiliation__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Time_Block__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Facility__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Fee__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Fee_Schedule__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Term__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Fee_Schedule_Term__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Grade_Setting__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Course__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Grade_Criteria__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Qualified_Faculty__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Program_Plan__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Plan_Requirement__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Program_Course_Requirement__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Program_Pathway__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Pathway_Unit__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Program_Discipline__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Discipline_Requirement__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Plan__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Course_Offering__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Program_Application__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Program_Enrollment__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Student_Fee__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Funding__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__PE_Group_Status__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__PE_Pathway_Status__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Course_Enrollment__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Course_Connection_Requirement__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Fee_Line__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Resource_Type__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Resource__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Role__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Session__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Session_Time__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>hed__Term_Grade__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Grade__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Allocation__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Session_Connection__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Attendance__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Appointment_Type__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Appointment_Availability__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Appointment_Time__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Availability_Time__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Assigned_Location__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>rio_ed__Contact_Attendance__c.rio_ed__RIO_P1__c</field>
         <readable>true</readable>
