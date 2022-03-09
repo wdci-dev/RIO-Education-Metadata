@@ -20,17 +20,25 @@ Insert Contact:
   sf_object: Contact
   fields:
   - rio_ed__RIO_P1__c
+  - Birthdate
   - Email
   - FirstName
   - LastName
+  - MailingCity
+  - MailingCountry
+  - MailingPostalCode
+  - MailingState
+  - MailingStreet
   - Salutation
   - hed__AlternateEmail__c
+  - hed__Country_of_Origin__c
   - hed__Gender__c
   - hed__Preferred_Email__c
   - hed__UniversityEmail__c
   - rio_ed__Community_Username_Prefix__c
   - rio_ed__Community_Username__c
   - rio_ed__Faculty_Member__c
+  - rio_ed__Student_ID__c
   lookups:
     AccountId:
       table: Account
