@@ -486,23 +486,12 @@ plans:
         tier: additional
         steps:
             1:
-                task: deploy_post
-                options:
-                    path: unpackaged/config/dataset
-                    unmanaged: False
-            2:
-                task: assign_permission_sets
-                options:
-                    api_names: Sample_Data_RIO_P1
-            3:
                 task: disable_tdtm_trigger_handlers
                 options:
                     namespace: hed
-            4:
-                flow: delete_sample_data 
-            5:
+            2:
                 task: load_dataset
-            6:
+            3:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed

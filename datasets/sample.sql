@@ -21,29 +21,29 @@ INSERT INTO "Account" VALUES(6,'Installer Sample Data','Campus: Sydney','0125j00
 INSERT INTO "Account" VALUES(7,'Installer Sample Data','School of Art','0125j000000IJiXAAW','False','','Full Program','','5','');
 INSERT INTO "Account" VALUES(8,'Installer Sample Data','Bachelor of Business Information System','0125j000000IJiRAAW','False','RIOUNI02','Full Program','','1','');
 INSERT INTO "Account" VALUES(9,'Installer Sample Data','Freeman Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','45');
-INSERT INTO "Account" VALUES(10,'Installer Sample Data','Student 8 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','22');
+INSERT INTO "Account" VALUES(10,'Installer Sample Data','Christensen Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','22');
 INSERT INTO "Account" VALUES(11,'Installer Sample Data','Smith Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','23');
 INSERT INTO "Account" VALUES(12,'Installer Sample Data','Forton Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','24');
-INSERT INTO "Account" VALUES(13,'Installer Sample Data','Student 4 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','25');
-INSERT INTO "Account" VALUES(14,'Installer Sample Data','Student 3 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','26');
+INSERT INTO "Account" VALUES(13,'Installer Sample Data','Huber Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','25');
+INSERT INTO "Account" VALUES(14,'Installer Sample Data','Andrews Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','26');
 INSERT INTO "Account" VALUES(15,'Installer Sample Data','Educator Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','27');
-INSERT INTO "Account" VALUES(16,'Installer Sample Data','Student 5 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','28');
-INSERT INTO "Account" VALUES(17,'Installer Sample Data','Student 6 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','29');
-INSERT INTO "Account" VALUES(18,'Installer Sample Data','Student 2 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','30');
-INSERT INTO "Account" VALUES(19,'Installer Sample Data','Student 1 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','31');
-INSERT INTO "Account" VALUES(20,'Installer Sample Data','Student 18 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','32');
-INSERT INTO "Account" VALUES(21,'Installer Sample Data','Student 11 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','33');
-INSERT INTO "Account" VALUES(22,'Installer Sample Data','Student 12 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','34');
-INSERT INTO "Account" VALUES(23,'Installer Sample Data','Student 7 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','35');
-INSERT INTO "Account" VALUES(24,'Installer Sample Data','Student 10 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','36');
-INSERT INTO "Account" VALUES(25,'Installer Sample Data','Student 13 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','37');
-INSERT INTO "Account" VALUES(26,'Installer Sample Data','Student 14 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','38');
-INSERT INTO "Account" VALUES(27,'Installer Sample Data','Student 9 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','39');
-INSERT INTO "Account" VALUES(28,'Installer Sample Data','Student 15 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','40');
-INSERT INTO "Account" VALUES(29,'Installer Sample Data','Student 16 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','41');
-INSERT INTO "Account" VALUES(30,'Installer Sample Data','Student 17 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','42');
-INSERT INTO "Account" VALUES(31,'Installer Sample Data','Student 19 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','43');
-INSERT INTO "Account" VALUES(32,'Installer Sample Data','Student 20 Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','44');
+INSERT INTO "Account" VALUES(16,'Installer Sample Data','Cruz Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','28');
+INSERT INTO "Account" VALUES(17,'Installer Sample Data','Randall Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','29');
+INSERT INTO "Account" VALUES(18,'Installer Sample Data','Robinson Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','30');
+INSERT INTO "Account" VALUES(19,'Installer Sample Data','Burton Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','31');
+INSERT INTO "Account" VALUES(20,'Installer Sample Data','Wang Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','32');
+INSERT INTO "Account" VALUES(21,'Installer Sample Data','Poole Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','33');
+INSERT INTO "Account" VALUES(22,'Installer Sample Data','Vance Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','34');
+INSERT INTO "Account" VALUES(23,'Installer Sample Data','Steward Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','35');
+INSERT INTO "Account" VALUES(24,'Installer Sample Data','Mack Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','36');
+INSERT INTO "Account" VALUES(25,'Installer Sample Data','Shay Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','37');
+INSERT INTO "Account" VALUES(26,'Installer Sample Data','Richards Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','38');
+INSERT INTO "Account" VALUES(27,'Installer Sample Data','Hunter Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','39');
+INSERT INTO "Account" VALUES(28,'Installer Sample Data','Daily Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','40');
+INSERT INTO "Account" VALUES(29,'Installer Sample Data','Short Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','41');
+INSERT INTO "Account" VALUES(30,'Installer Sample Data','Shelton Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','42');
+INSERT INTO "Account" VALUES(31,'Installer Sample Data','Underwood Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','43');
+INSERT INTO "Account" VALUES(32,'Installer Sample Data','Kramer Administrative Account','0125j000000IJiSAAW','False','','Full Program','','','44');
 CREATE TABLE "Account_rt_mapping" (
 	record_type_id VARCHAR(18) NOT NULL, 
 	developer_name VARCHAR(255), 
@@ -1802,14 +1802,13 @@ CREATE TABLE "rio_ed__Availability_Time__c" (
 INSERT INTO "rio_ed__Availability_Time__c" VALUES(1,'Installer Sample Data','All Time','True','Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday','23:45:00.000Z','','00:00:00.000Z','','27');
 CREATE TABLE "rio_ed__Contact_Attendance__c" (
 	id INTEGER NOT NULL, 
-	"rio_ed__RIO_P1__c" VARCHAR(255), 
 	"rio_ed__Primary_Contact__c" VARCHAR(255), 
 	"rio_ed__Status__c" VARCHAR(255), 
 	"rio_ed__Contact__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(1,'Installer Sample Data','True','Tentative','27');
-INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(2,'Installer Sample Data','True','Tentative','29');
+INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(1,'True','Tentative','27');
+INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(2,'True','Tentative','29');
 CREATE TABLE "rio_ed__Course_Connection_Requirement__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__RIO_P1__c" VARCHAR(255), 
