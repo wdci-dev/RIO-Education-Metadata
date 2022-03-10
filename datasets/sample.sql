@@ -1810,13 +1810,14 @@ CREATE TABLE "rio_ed__Availability_Time__c" (
 INSERT INTO "rio_ed__Availability_Time__c" VALUES(1,'Installer Sample Data','All Time','True','Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday','23:45:00.000Z','','00:00:00.000Z','','26');
 CREATE TABLE "rio_ed__Contact_Attendance__c" (
 	id INTEGER NOT NULL, 
+	"rio_ed__RIO_P1__c" VARCHAR(255), 
 	"rio_ed__Primary_Contact__c" VARCHAR(255), 
 	"rio_ed__Status__c" VARCHAR(255), 
 	"rio_ed__Contact__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(1,'True','Tentative','26');
-INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(2,'True','Tentative','29');
+INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(1,'Installer Sample Data','True','Tentative','26');
+INSERT INTO "rio_ed__Contact_Attendance__c" VALUES(2,'Installer Sample Data','True','Tentative','29');
 CREATE TABLE "rio_ed__Course_Connection_Requirement__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__RIO_P1__c" VARCHAR(255), 

@@ -814,6 +814,7 @@ Insert rio_ed__Assigned_Location__c:
 Insert rio_ed__Contact_Attendance__c:
   sf_object: rio_ed__Contact_Attendance__c
   fields:
+  - rio_ed__RIO_P1__c
   - rio_ed__Primary_Contact__c
   - rio_ed__Status__c
   lookups:
