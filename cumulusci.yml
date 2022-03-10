@@ -193,9 +193,7 @@ flows:
     delete_sample_data:
         steps:
                 1:
-                    task: delete_data
-                    options:
-                        objects: rio_ed__Contact_Attendance__c
+                    task: load_dataset
 
 plans:
     install:
