@@ -118,8 +118,6 @@ tasks:
                 name: RIO Ready - Student Request
             Withdrawal:
                 name: RIO Ready - Withdrawal
-            01_sample_data_permission_set:
-                name: RIO Education - Sample Data Permission Set
     
     deploy_pre:
         ui_options:
@@ -189,14 +187,6 @@ flows:
                     task: assign_permission_sets
                     options:
                         api_names: REDU_Admin
-    
-    delete_sample_data:
-        steps:
-                1:
-                    task: delete_data
-                    options:
-                        objects: Account
-                        where: "rio_ed__RIO_P1__c = 'Installer Sample Data'"
 
 plans:
     install:
@@ -259,8 +249,6 @@ plans:
                 task: disable_tdtm_trigger_handlers
                 options:
                     namespace: hed
-            2:
-                flow: delete_sample_data
             3:
                 task: load_dataset
             4:

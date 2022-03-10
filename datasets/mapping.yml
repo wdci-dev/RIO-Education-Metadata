@@ -1,5 +1,7 @@
 Insert Account:
   sf_object: Account
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
