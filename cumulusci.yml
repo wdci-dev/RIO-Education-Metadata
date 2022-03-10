@@ -196,7 +196,6 @@ flows:
                     task: delete_data
                     options:
                         objects: rio_ed__Contact_Attendance__c
-                        where: "rio_ed__RIO_P1__c = 'Installer Sample Data'"
 
 plans:
     install:
@@ -260,10 +259,10 @@ plans:
                 options:
                     namespace: hed
             2:
-                task: load_dataset
-                options:
-                    ignore_row_errors: true
+                flow: delete_sample_data
             3:
+                task: load_dataset
+            4:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed
