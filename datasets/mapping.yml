@@ -20,6 +20,8 @@ Insert Account:
   anchor_date: 2022-01-28
 Insert Contact:
   sf_object: Contact
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Birthdate
@@ -47,6 +49,8 @@ Insert Contact:
   anchor_date: 2022-01-28
 Insert hed__Affiliation__c:
   sf_object: hed__Affiliation__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - hed__Role__c
@@ -59,6 +63,8 @@ Insert hed__Affiliation__c:
   anchor_date: 2022-01-28
 Insert hed__Time_Block__c:
   sf_object: hed__Time_Block__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -74,6 +80,8 @@ Insert hed__Time_Block__c:
   anchor_date: 2022-01-28
 Insert hed__Facility__c:
   sf_object: hed__Facility__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -89,6 +97,8 @@ Insert hed__Facility__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Fee__c:
   sf_object: rio_ed__Fee__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -97,6 +107,8 @@ Insert rio_ed__Fee__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Fee_Schedule__c:
   sf_object: rio_ed__Fee_Schedule__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -115,6 +127,8 @@ Insert rio_ed__Fee_Schedule__c:
   anchor_date: 2022-01-28
 Insert hed__Term__c:
   sf_object: hed__Term__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -133,6 +147,8 @@ Insert hed__Term__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Fee_Schedule_Term__c:
   sf_object: rio_ed__Fee_Schedule_Term__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   lookups:
@@ -143,6 +159,8 @@ Insert rio_ed__Fee_Schedule_Term__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Grade_Setting__c:
   sf_object: rio_ed__Grade_Setting__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -160,6 +178,8 @@ Insert rio_ed__Grade_Setting__c:
   anchor_date: 2022-01-28
 Insert hed__Course__c:
   sf_object: hed__Course__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -180,6 +200,8 @@ Insert hed__Course__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Grade_Criteria__c:
   sf_object: rio_ed__Grade_Criteria__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -191,6 +213,8 @@ Insert rio_ed__Grade_Criteria__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Qualified_Faculty__c:
   sf_object: rio_ed__Qualified_Faculty__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Roles__c
@@ -202,6 +226,8 @@ Insert rio_ed__Qualified_Faculty__c:
   anchor_date: 2022-01-28
 Insert hed__Program_Plan__c:
   sf_object: hed__Program_Plan__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -229,6 +255,8 @@ Insert hed__Program_Plan__c:
   anchor_date: 2022-01-28
 Insert hed__Plan_Requirement__c:
   sf_object: hed__Plan_Requirement__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -256,6 +284,8 @@ Insert hed__Plan_Requirement__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Program_Course_Requirement__c:
   sf_object: rio_ed__Program_Course_Requirement__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -269,6 +299,8 @@ Insert rio_ed__Program_Course_Requirement__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Program_Pathway__c:
   sf_object: rio_ed__Program_Pathway__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Enrollment_Method__c
@@ -282,6 +314,8 @@ Insert rio_ed__Program_Pathway__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Pathway_Unit__c:
   sf_object: rio_ed__Pathway_Unit__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Term_Number__c
@@ -295,6 +329,8 @@ Insert rio_ed__Pathway_Unit__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Program_Discipline__c:
   sf_object: rio_ed__Program_Discipline__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -306,6 +342,8 @@ Insert rio_ed__Program_Discipline__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Discipline_Requirement__c:
   sf_object: rio_ed__Discipline_Requirement__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -323,6 +361,8 @@ Insert rio_ed__Discipline_Requirement__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Plan__c:
   sf_object: rio_ed__Plan__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -336,6 +376,8 @@ Insert rio_ed__Plan__c:
   anchor_date: 2022-01-28
 Insert hed__Course_Offering__c:
   sf_object: hed__Course_Offering__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -368,6 +410,8 @@ Insert hed__Course_Offering__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Program_Application__c:
   sf_object: rio_ed__Program_Application__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Fee_Method__c
@@ -392,6 +436,8 @@ Insert rio_ed__Program_Application__c:
   anchor_date: 2022-01-28
 Insert hed__Program_Enrollment__c:
   sf_object: hed__Program_Enrollment__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - hed__Admission_Date__c
@@ -426,6 +472,8 @@ Insert hed__Program_Enrollment__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Student_Fee__c:
   sf_object: rio_ed__Student_Fee__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Due_Date__c
@@ -439,6 +487,8 @@ Insert rio_ed__Student_Fee__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Funding__c:
   sf_object: rio_ed__Funding__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -454,6 +504,8 @@ Insert rio_ed__Funding__c:
   anchor_date: 2022-01-28
 Insert rio_ed__PE_Group_Status__c:
   sf_object: rio_ed__PE_Group_Status__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -474,6 +526,8 @@ Insert rio_ed__PE_Group_Status__c:
   anchor_date: 2022-01-28
 Insert rio_ed__PE_Pathway_Status__c:
   sf_object: rio_ed__PE_Pathway_Status__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__All_Courses_Completed__c
@@ -499,6 +553,8 @@ Insert rio_ed__PE_Pathway_Status__c:
   anchor_date: 2022-01-28
 Insert hed__Course_Enrollment__c:
   sf_object: hed__Course_Enrollment__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - RecordTypeId
@@ -544,6 +600,8 @@ Insert hed__Course_Enrollment__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Course_Connection_Requirement__c:
   sf_object: rio_ed__Course_Connection_Requirement__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -558,6 +616,8 @@ Insert rio_ed__Course_Connection_Requirement__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Fee_Line__c:
   sf_object: rio_ed__Fee_Line__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Commencement_Date__c
@@ -576,12 +636,16 @@ Insert rio_ed__Fee_Line__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Resource_Type__c:
   sf_object: rio_ed__Resource_Type__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
   anchor_date: 2022-01-28
 Insert rio_ed__Resource__c:
   sf_object: rio_ed__Resource__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -595,6 +659,8 @@ Insert rio_ed__Resource__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Role__c:
   sf_object: rio_ed__Role__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -610,6 +676,8 @@ Insert rio_ed__Role__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Session__c:
   sf_object: rio_ed__Session__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -636,6 +704,8 @@ Insert rio_ed__Session__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Session_Time__c:
   sf_object: rio_ed__Session_Time__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Booking_Action__c
@@ -659,6 +729,8 @@ Insert rio_ed__Session_Time__c:
   anchor_date: 2022-01-28
 Insert hed__Term_Grade__c:
   sf_object: hed__Term_Grade__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - hed__Credits_Attempted__c
@@ -681,6 +753,8 @@ Insert hed__Term_Grade__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Grade__c:
   sf_object: rio_ed__Grade__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -695,6 +769,8 @@ Insert rio_ed__Grade__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Allocation__c:
   sf_object: rio_ed__Allocation__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Booking_Status__c
@@ -716,6 +792,8 @@ Insert rio_ed__Allocation__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Session_Connection__c:
   sf_object: rio_ed__Session_Connection__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -736,6 +814,8 @@ Insert rio_ed__Session_Connection__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Attendance__c:
   sf_object: rio_ed__Attendance__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Session_Date__c
@@ -747,6 +827,8 @@ Insert rio_ed__Attendance__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Appointment_Type__c:
   sf_object: rio_ed__Appointment_Type__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -762,6 +844,8 @@ Insert rio_ed__Appointment_Type__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Appointment_Availability__c:
   sf_object: rio_ed__Appointment_Availability__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   lookups:
@@ -774,6 +858,8 @@ Insert rio_ed__Appointment_Availability__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Appointment_Time__c:
   sf_object: rio_ed__Appointment_Time__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -790,6 +876,8 @@ Insert rio_ed__Appointment_Time__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Availability_Time__c:
   sf_object: rio_ed__Availability_Time__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - Name
@@ -805,6 +893,8 @@ Insert rio_ed__Availability_Time__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Assigned_Location__c:
   sf_object: rio_ed__Assigned_Location__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   lookups:
@@ -815,6 +905,8 @@ Insert rio_ed__Assigned_Location__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Contact_Attendance__c:
   sf_object: rio_ed__Contact_Attendance__c
+  action: upsert
+  update_key: Id
   fields:
   - rio_ed__RIO_P1__c
   - rio_ed__Primary_Contact__c
