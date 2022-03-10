@@ -193,7 +193,9 @@ flows:
     delete_sample_data:
         steps:
                 1:
-                    task: load_dataset
+                    task: delete_data
+                    options:
+                        objects: "Account"
 
 plans:
     install:
