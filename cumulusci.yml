@@ -195,7 +195,8 @@ flows:
                 1:
                     task: delete_data
                     options:
-                        objects: "Account"
+                        objects: Account
+                        where: "rio_ed__RIO_P1__c = 'Installer Sample Data'"
 
 plans:
     install:
