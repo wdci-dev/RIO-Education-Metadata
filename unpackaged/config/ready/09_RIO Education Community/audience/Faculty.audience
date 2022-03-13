@@ -13,6 +13,14 @@
             <operator>Equal</operator>
             <type>Permission</type>
         </criterion>
+        <criterion>
+            <criteriaNumber>2</criteriaNumber>
+            <criterionValue>
+                <profile>redu - student</profile>
+            </criterionValue>
+            <operator>NotEqual</operator>
+            <type>Profile</type>
+        </criterion>
     </criteria>
     <formulaFilterType>AllCriteriaMatch</formulaFilterType>
     <isDefaultAudience>false</isDefaultAudience>

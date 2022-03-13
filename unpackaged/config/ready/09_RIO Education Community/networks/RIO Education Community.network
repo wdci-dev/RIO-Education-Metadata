@@ -37,7 +37,7 @@
         <permissionSet>rio_ed__REDU_Faculty</permissionSet>
         <profile>admin</profile>
         <profile>redu - student</profile>
-        <profile>redu - platform faculty</profile>
+        <profile>redu - faculty</profile>
     </networkMemberGroups>
     <networkPageOverrides>
         <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>

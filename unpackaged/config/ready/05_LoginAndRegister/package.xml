@@ -47,5 +47,9 @@
         <members>Admin</members>
         <name>Profile</name>
     </types>
+    <types>
+        <members>REDU_Guest_Login_Permission</members>
+        <name>PermissionSet</name>
+    </types>
     <version>52.0</version>
 </Package>
