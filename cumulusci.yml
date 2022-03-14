@@ -251,6 +251,8 @@ plans:
                     namespace: hed
             3:
                 task: load_dataset
+                options:
+                    ignore_row_errors: true
             4:
                 task: restore_tdtm_trigger_handlers
                 options:
