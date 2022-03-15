@@ -320,6 +320,8 @@ Insert rio_ed__Discipline_Requirement__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Plan__c:
   sf_object: rio_ed__Plan__c
+  action: upsert
+  update_key: External_Id__c
   fields:
   - External_Id__c
   - Name
@@ -423,6 +425,8 @@ Insert hed__Program_Enrollment__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Student_Fee__c:
   sf_object: rio_ed__Student_Fee__c
+  action: upsert
+  update_key: External_Id__c
   fields:
   - External_Id__c
   - rio_ed__Due_Date__c
@@ -579,6 +583,8 @@ Insert rio_ed__Resource_Type__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Resource__c:
   sf_object: rio_ed__Resource__c
+  action: upsert
+  update_key: External_Id__c
   fields:
   - External_Id__c
   - Name
@@ -592,6 +598,8 @@ Insert rio_ed__Resource__c:
   anchor_date: 2022-01-28
 Insert rio_ed__Role__c:
   sf_object: rio_ed__Role__c
+  action: upsert
+  update_key: External_Id__c
   fields:
   - External_Id__c
   - Name
