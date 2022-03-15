@@ -256,7 +256,8 @@ plans:
             3:
                 task: load_dataset
                 options:
-                    ignore_row_errors: true
+                    ignore_row_errors: True
+                    drop_missing_schema: True
             4:
                 task: restore_tdtm_trigger_handlers
                 options:
