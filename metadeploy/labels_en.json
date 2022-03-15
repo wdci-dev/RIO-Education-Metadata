@@ -277,6 +277,10 @@
         "RIO Education - Assign Permission Sets": {
             "message": "RIO Education - Assign Permission Sets",
             "description": "title of installation step"
+        },
+        "RIO Education - Approve Fee Schedules": {
+            "message": "RIO Education - Approve Fee Schedules",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

@@ -258,10 +258,10 @@ plans:
                 options:
                     ignore_row_errors: true
             4:
-                task: execute_anon
-                options:
-                    path: apex/approve_fs.txt
-            5:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed
+            5:
+                task: execute_anon
+                options:
+                    path: apex/approve_fs.txt
