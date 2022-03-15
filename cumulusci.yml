@@ -156,6 +156,10 @@ tasks:
         ui_options:
             name: RIO Education - Load Sample Data
     
+    execute_anon:
+        ui_options:
+            name: RIO Education - Approve Fee Schedules
+    
     restore_tdtm_trigger_handlers:
         ui_options:
             name: Restore Trigger Handlers
