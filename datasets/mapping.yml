@@ -321,7 +321,6 @@ Insert rio_ed__Discipline_Requirement__c:
 Insert rio_ed__Plan__c:
   sf_object: rio_ed__Plan__c
   fields:
-  - External_Id__c
   - Name
   - rio_ed__Active_on_Planner__c
   - rio_ed__Course_Offering_Id__c
@@ -424,7 +423,6 @@ Insert hed__Program_Enrollment__c:
 Insert rio_ed__Student_Fee__c:
   sf_object: rio_ed__Student_Fee__c
   fields:
-  - External_Id__c
   - rio_ed__Due_Date__c
   - rio_ed__Fee_Reference__c
   - rio_ed__RIO_P1__c
@@ -580,7 +578,6 @@ Insert rio_ed__Resource_Type__c:
 Insert rio_ed__Resource__c:
   sf_object: rio_ed__Resource__c
   fields:
-  - External_Id__c
   - Name
   - rio_ed__Active__c
   - rio_ed__Public__c
@@ -593,7 +590,6 @@ Insert rio_ed__Resource__c:
 Insert rio_ed__Role__c:
   sf_object: rio_ed__Role__c
   fields:
-  - External_Id__c
   - Name
   - rio_ed__Auto_Allocate__c
   - rio_ed__Double_Booking_Count__c
