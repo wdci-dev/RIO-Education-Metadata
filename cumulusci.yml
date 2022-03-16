@@ -156,10 +156,6 @@ tasks:
         ui_options:
             name: RIO Education - Load Sample Data
     
-    execute_anon:
-        ui_options:
-            name: RIO Education - Approve Fee Schedules
-    
     restore_tdtm_trigger_handlers:
         ui_options:
             name: Restore Trigger Handlers
@@ -253,6 +249,12 @@ plans:
                 task: disable_tdtm_trigger_handlers
                 options:
                     namespace: hed
+            2:
+                task: execute_anon
+                options:
+                    path: apex/delete_sample_data.txt
+                ui_options:
+                    name: RIO Education - Delete Sample Data
             3:
                 task: load_dataset
                 options:
@@ -266,3 +268,5 @@ plans:
                 task: execute_anon
                 options:
                     path: apex/approve_fs.txt
+                ui_options:
+                    name: RIO Education - Approve Fee Schedules

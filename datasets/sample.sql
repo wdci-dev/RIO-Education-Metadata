@@ -1897,26 +1897,26 @@ INSERT INTO "rio_ed__Fee_Line__c" VALUES(7,'ISD-FL-07','2021-12-19','','1000.0',
 INSERT INTO "rio_ed__Fee_Line__c" VALUES(8,'ISD-FL-08','2021-12-19','','1000.0','Self Paid','','Self Paid','128','7','4');
 INSERT INTO "rio_ed__Fee_Line__c" VALUES(9,'ISD-FL-09','2021-12-19','','1000.0','Self Paid','','Self Paid','140','7','5');
 INSERT INTO "rio_ed__Fee_Line__c" VALUES(10,'ISD-FL-10','2022-01-19','','1000.0','Self Paid','','Self Paid','191','7','16');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(11,'ISD-ISD-FL-11','2021-12-19','','1000.0','Self Paid','','Self Paid','125','7','7');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(12,'ISD-ISD-FL-12','2022-01-19','','1000.0','Self Paid','','Self Paid','192','7','16');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(13,'ISD-ISD-FL-13','2022-01-19','','1000.0','Self Paid','','Self Paid','154','7','12');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(14,'ISD-ISD-FL-14','2022-01-19','','1000.0','Self Paid','','Self Paid','158','7','12');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(15,'ISD-ISD-FL-15','2022-01-19','','1000.0','Self Paid','','Self Paid','193','7','16');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(16,'ISD-ISD-FL-16','2022-01-19','','1000.0','Self Paid','','Self Paid','160','7','12');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(17,'ISD-ISD-FL-17','2021-12-19','','1000.0','Self Paid','','Self Paid','194','7','16');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(18,'ISD-ISD-FL-18','2022-01-19','','1000.0','Self Paid','','Self Paid','166','7','14');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(19,'ISD-ISD-FL-19','2022-01-19','','1000.0','Self Paid','','Self Paid','167','7','14');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(20,'ISD-ISD-FL-20','2022-01-19','','1000.0','Self Paid','','Self Paid','168','7','14');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(21,'ISD-ISD-FL-21','2021-12-19','','1000.0','Self Paid','','Self Paid','169','7','14');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(22,'ISD-ISD-FL-22','2022-01-19','','1000.0','Self Paid','','Self Paid','162','7','12');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(23,'ISD-ISD-FL-23','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','202','7','15');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(24,'ISD-ISD-FL-24','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','204','7','15');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(25,'ISD-ISD-FL-25','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','205','7','15');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(26,'ISD-ISD-FL-26','2021-12-19','2022-01-08','1000.0','Self Paid','','Self Paid','206','7','15');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(27,'ISD-ISD-FL-27','2021-12-19','','1000.0','Self Paid','','Self Paid','218','7','3');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(28,'ISD-ISD-FL-28','2021-12-19','','1000.0','Self Paid','','Self Paid','278','7','10');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(29,'ISD-ISD-FL-29','2021-12-19','','1000.0','Self Paid','','Self Paid','3','7','11');
-INSERT INTO "rio_ed__Fee_Line__c" VALUES(30,'ISD-ISD-FL-30','2021-12-19','','1000.0','Self Paid','','Self Paid','230','7','8');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(11,'ISD-FL-11','2021-12-19','','1000.0','Self Paid','','Self Paid','125','7','7');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(12,'ISD-FL-12','2022-01-19','','1000.0','Self Paid','','Self Paid','192','7','16');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(13,'ISD-FL-13','2022-01-19','','1000.0','Self Paid','','Self Paid','154','7','12');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(14,'ISD-FL-14','2022-01-19','','1000.0','Self Paid','','Self Paid','158','7','12');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(15,'ISD-FL-15','2022-01-19','','1000.0','Self Paid','','Self Paid','193','7','16');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(16,'ISD-FL-16','2022-01-19','','1000.0','Self Paid','','Self Paid','160','7','12');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(17,'ISD-FL-17','2021-12-19','','1000.0','Self Paid','','Self Paid','194','7','16');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(18,'ISD-FL-18','2022-01-19','','1000.0','Self Paid','','Self Paid','166','7','14');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(19,'ISD-FL-19','2022-01-19','','1000.0','Self Paid','','Self Paid','167','7','14');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(20,'ISD-FL-20','2022-01-19','','1000.0','Self Paid','','Self Paid','168','7','14');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(21,'ISD-FL-21','2021-12-19','','1000.0','Self Paid','','Self Paid','169','7','14');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(22,'ISD-FL-22','2022-01-19','','1000.0','Self Paid','','Self Paid','162','7','12');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(23,'ISD-FL-23','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','202','7','15');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(24,'ISD-FL-24','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','204','7','15');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(25,'ISD-FL-25','2022-01-19','2022-01-08','1000.0','Self Paid','','Self Paid','205','7','15');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(26,'ISD-FL-26','2021-12-19','2022-01-08','1000.0','Self Paid','','Self Paid','206','7','15');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(27,'ISD-FL-27','2021-12-19','','1000.0','Self Paid','','Self Paid','218','7','3');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(28,'ISD-FL-28','2021-12-19','','1000.0','Self Paid','','Self Paid','278','7','10');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(29,'ISD-FL-29','2021-12-19','','1000.0','Self Paid','','Self Paid','3','7','11');
+INSERT INTO "rio_ed__Fee_Line__c" VALUES(30,'ISD-FL-30','2021-12-19','','1000.0','Self Paid','','Self Paid','230','7','8');
 CREATE TABLE "rio_ed__Fee_Schedule_Term__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 
@@ -2276,7 +2276,8 @@ INSERT INTO "rio_ed__Pathway_Unit__c" VALUES(42,'ISD-PU-42','1.0','29','','1');
 INSERT INTO "rio_ed__Pathway_Unit__c" VALUES(43,'ISD-PU-43','3.0','30','','2');
 INSERT INTO "rio_ed__Pathway_Unit__c" VALUES(44,'ISD-PU-44','6.0','30','','3');
 CREATE TABLE "rio_ed__Plan__c" (
-	id INTEGER NOT NULL,  
+	id INTEGER NOT NULL, 
+	"rio_ed__RIO_P1__c" VARCHAR(255), 
 	"Name" VARCHAR(255), 
 	"rio_ed__Active_on_Planner__c" VARCHAR(255), 
 	"rio_ed__Course_Offering_Id__c" VARCHAR(255), 
@@ -2287,41 +2288,41 @@ CREATE TABLE "rio_ed__Plan__c" (
 	"rio_ed__Start_Date__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Plan__c" VALUES(1,'Last Year Term 2 BUS105','False','a0C5j000000s9WREAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(2,'Last Year Term 2 BUS105','False','a0C5j000000s9WREAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(3,'Last Year Term 2 ICT211','False','a0C5j000000s9WBEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(4,'Last Year Term 2 ICT211','False','a0C5j000000s9WBEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(5,'Last Year Term 2 BUS104','False','a0C5j000000s9WCEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(6,'Last Year Term 2 BUS104','False','a0C5j000000s9WCEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(7,'Last Year Term 2 BUS101','False','a0C5j000000s9WLEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(8,'Last Year Term 2 BUS101','False','a0C5j000000s9WLEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(9,'Last Year Term 2 ICT120','False','a0C5j000000s9VKEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(10,'Last Year Term 2 ICT120','False','a0C5j000000s9VKEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(11,'2022 Term 1 ICT115','False','a0C5j000000qiheEAA','2022-06-17','Role','Resource','False','2022-01-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(12,'2022 Term 1 ICT112','False','a0C5j000000qihPEAQ','2022-06-17','Role','Resource','False','2021-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(13,'Appointments','False','','2072-01-11','Role','Resource','False','2022-01-11');
-INSERT INTO "rio_ed__Plan__c" VALUES(14,'Last Year Term 1 BUS104','False','a0C5j000000s9VNEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(15,'Last Year Term 1 BUS104','False','a0C5j000000s9VNEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(16,'Last Year Term 1 BUS105','False','a0C5j000000s9VJEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(17,'Last Year Term 1 BUS105','False','a0C5j000000s9VJEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(18,'Last Year Term 1 ICT120','False','a0C5j000000s9UtEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(19,'Last Year Term 1 ICT120','False','a0C5j000000s9UtEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(20,'Last Year Term 1 BUS101','False','a0C5j000000s9V8EAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(21,'Last Year Term 1 BUS101','False','a0C5j000000s9V8EAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(22,'Last Year Term 1 ICT112','False','a0C5j000000s9UjEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(23,'Last Year Term 1 ICT112','False','a0C5j000000s9UjEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(24,'Last Year Term 1 ICT211','False','a0C5j000000s9V3EAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(25,'Last Year Term 1 ICT211','False','a0C5j000000s9V3EAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(26,'Last Year Term 1 ICT115','False','a0C5j000000s9UoEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(27,'Last Year Term 1 ICT115','False','a0C5j000000s9UoEAI','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(28,'Last Year Term 1 BUS102','False','a0C5j000000s9VIEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(29,'Last Year Term 1 BUS102','False','a0C5j000000s9VIEAY','2021-06-17','Role','Resource','False','2020-12-19');
-INSERT INTO "rio_ed__Plan__c" VALUES(30,'Last Year Term 2 ICT115','False','a0C5j000000s9VrEAI','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(31,'Last Year Term 2 ICT115','False','a0C5j000000s9VrEAI','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(32,'Last Year Term 2 ICT112','False','a0C5j000000s9VhEAI','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(33,'Last Year Term 2 ICT112','False','a0C5j000000s9VhEAI','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(34,'Last Year Term 2 BUS102','False','a0C5j000000s9WQEAY','2021-11-17','Role','Resource','False','2021-07-01');
-INSERT INTO "rio_ed__Plan__c" VALUES(35,'Last Year Term 2 BUS102','False','a0C5j000000s9WQEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(1,'ISD','Last Year Term 2 BUS105','False','a0C5j000000s9WREAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(2,'ISD','Last Year Term 2 BUS105','False','a0C5j000000s9WREAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(3,'ISD','Last Year Term 2 ICT211','False','a0C5j000000s9WBEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(4,'ISD','Last Year Term 2 ICT211','False','a0C5j000000s9WBEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(5,'ISD','Last Year Term 2 BUS104','False','a0C5j000000s9WCEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(6,'ISD','Last Year Term 2 BUS104','False','a0C5j000000s9WCEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(7,'ISD','Last Year Term 2 BUS101','False','a0C5j000000s9WLEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(8,'ISD','Last Year Term 2 BUS101','False','a0C5j000000s9WLEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(9,'ISD','Last Year Term 2 ICT120','False','a0C5j000000s9VKEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(10,'ISD','Last Year Term 2 ICT120','False','a0C5j000000s9VKEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(11,'ISD','2022 Term 1 ICT115','False','a0C5j000000qiheEAA','2022-06-17','Role','Resource','False','2022-01-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(12,'ISD','2022 Term 1 ICT112','False','a0C5j000000qihPEAQ','2022-06-17','Role','Resource','False','2021-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(13,'ISD','Appointments','False','','2072-01-11','Role','Resource','False','2022-01-11');
+INSERT INTO "rio_ed__Plan__c" VALUES(14,'ISD','Last Year Term 1 BUS104','False','a0C5j000000s9VNEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(15,'ISD','Last Year Term 1 BUS104','False','a0C5j000000s9VNEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(16,'ISD','Last Year Term 1 BUS105','False','a0C5j000000s9VJEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(17,'ISD','Last Year Term 1 BUS105','False','a0C5j000000s9VJEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(18,'ISD','Last Year Term 1 ICT120','False','a0C5j000000s9UtEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(19,'ISD','Last Year Term 1 ICT120','False','a0C5j000000s9UtEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(20,'ISD','Last Year Term 1 BUS101','False','a0C5j000000s9V8EAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(21,'ISD','Last Year Term 1 BUS101','False','a0C5j000000s9V8EAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(22,'ISD','Last Year Term 1 ICT112','False','a0C5j000000s9UjEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(23,'ISD','Last Year Term 1 ICT112','False','a0C5j000000s9UjEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(24,'ISD','Last Year Term 1 ICT211','False','a0C5j000000s9V3EAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(25,'ISD','Last Year Term 1 ICT211','False','a0C5j000000s9V3EAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(26,'ISD','Last Year Term 1 ICT115','False','a0C5j000000s9UoEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(27,'ISD','Last Year Term 1 ICT115','False','a0C5j000000s9UoEAI','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(28,'ISD','Last Year Term 1 BUS102','False','a0C5j000000s9VIEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(29,'ISD','Last Year Term 1 BUS102','False','a0C5j000000s9VIEAY','2021-06-17','Role','Resource','False','2020-12-19');
+INSERT INTO "rio_ed__Plan__c" VALUES(30,'ISD','Last Year Term 2 ICT115','False','a0C5j000000s9VrEAI','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(31,'ISD','Last Year Term 2 ICT115','False','a0C5j000000s9VrEAI','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(32,'ISD','Last Year Term 2 ICT112','False','a0C5j000000s9VhEAI','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(33,'ISD','Last Year Term 2 ICT112','False','a0C5j000000s9VhEAI','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(34,'ISD','Last Year Term 2 BUS102','False','a0C5j000000s9WQEAY','2021-11-17','Role','Resource','False','2021-07-01');
+INSERT INTO "rio_ed__Plan__c" VALUES(35,'ISD','Last Year Term 2 BUS102','False','a0C5j000000s9WQEAY','2021-11-17','Role','Resource','False','2021-07-01');
 CREATE TABLE "rio_ed__Program_Application__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 
@@ -2454,6 +2455,7 @@ INSERT INTO "rio_ed__Resource_Type__c" VALUES(5,'ISD-RT-05','Location');
 INSERT INTO "rio_ed__Resource_Type__c" VALUES(6,'ISD-RT-06','Location');
 CREATE TABLE "rio_ed__Resource__c" (
 	id INTEGER NOT NULL, 
+	"rio_ed__RIO_P1__c" VARCHAR(255), 
 	"Name" VARCHAR(255), 
 	"rio_ed__Active__c" VARCHAR(255), 
 	"rio_ed__Public__c" VARCHAR(255), 
@@ -2461,20 +2463,21 @@ CREATE TABLE "rio_ed__Resource__c" (
 	"rio_ed__Resource_Type__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Resource__c" VALUES(1,'Beta 101','True','False','1','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(2,'Alpha 104','True','False','10','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(3,'Alpha 101','True','False','11','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(4,'Alpha 102','True','False','12','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(5,'Beta 102','True','False','2','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(6,'Beta 103','True','False','3','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(7,'Beta 104','True','False','4','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(8,'Alpha Building','True','False','5','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(9,'Beta Building','True','False','6','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(10,'Alpha 103','True','False','7','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(11,'Beta 100','True','False','8','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(12,'Alpha 100','True','False','9','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(1,'ISD','Beta 101','True','False','1','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(2,'ISD','Alpha 104','True','False','10','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(3,'ISD','Alpha 101','True','False','11','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(4,'ISD','Alpha 102','True','False','12','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(5,'ISD','Beta 102','True','False','2','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(6,'ISD','Beta 103','True','False','3','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(7,'ISD','Beta 104','True','False','4','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(8,'ISD','Alpha Building','True','False','5','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(9,'ISD','Beta Building','True','False','6','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(10,'ISD','Alpha 103','True','False','7','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(11,'ISD','Beta 100','True','False','8','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(12,'ISD','Alpha 100','True','False','9','6');
 CREATE TABLE "rio_ed__Role__c" (
 	id INTEGER NOT NULL, 
+	"rio_ed__RIO_P1__c" VARCHAR(255), 
 	"Name" VARCHAR(255), 
 	"rio_ed__Auto_Allocate__c" VARCHAR(255), 
 	"rio_ed__Double_Booking_Count__c" VARCHAR(255), 
@@ -2484,32 +2487,32 @@ CREATE TABLE "rio_ed__Role__c" (
 	"rio_ed__Resource_Type__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Role__c" VALUES(1,'BUS105 Lecture #1','False','0.0','True','a1c5j000000UtGlAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(2,'BUS101 Lecture #1','False','0.0','True','a1c5j000000UtGWAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(3,'BUS104 Lecture #1','False','0.0','True','a1c5j000000UtGgAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(4,'HRM311 Lecture #1','False','0.0','True','a1c5j000000UtHFAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(5,'BUS320 Lecture #1','False','0.0','True','a1c5j000000UtHAAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(6,'BUS106 Lecture #1','False','0.0','True','a1c5j000000UtGqAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(7,'BUS203 Lecture #1','False','0.0','True','a1c5j000000UtGvAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(8,'ICT310 Lecture #1','False','0.0','True','a1c5j000000UtHeAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(9,'BUS108 Lecture #1','False','0.0','True','a1c5j000000UtGhAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(10,'COR109 Lecture #1','False','0.0','True','a1c5j000000UtGXAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(11,'BUS301 Lecture #1','False','0.0','True','a1c5j000000UtH5AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(12,'BUS102 Lecture #1','False','0.0','True','a1c5j000000UtGbAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(13,'BUS211 Lecture #1','False','0.0','True','a1c5j000000UtH0AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(14,'ICT211 Lecture #1','False','0.0','True','a1c5j000000UtHUAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(15,'ICT120 Lecture #1','False','0.0','True','a1c5j000000UtHBAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(16,'ICT352 Lecture #1','False','0.0','True','a1c5j000000UtH6AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(17,'ICT221 Lecture #1','False','0.0','True','a1c5j000000UtHZAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(18,'ICT320 Lecture #1','False','0.0','True','a1c5j000000UtHjAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(19,'MGT210 Lecture #1','False','0.0','True','a1c5j000000UuKpAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(20,'HRM321 Lecture #1','False','0.0','True','a1c5j000000UuKkAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(21,'MGT310 Lecture #1','False','0.0','True','a1c5j000000UuKuAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(22,'BUS101 Lecture #2 (Session Group)','False','0.0','True','a1c5j000000UunKAAS','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(23,'ICT115 Tutorial Series #1','False','0.0','False','a1c5j000000UfN7AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(24,'ICT115 Lecture #1','False','0.0','True','a1c5j000000UtHKAA0','11','6');
-INSERT INTO "rio_ed__Role__c" VALUES(25,'ICT112 Lecture #1','False','0.0','True','a1c5j000000UtGSAA0','12','6');
-INSERT INTO "rio_ed__Role__c" VALUES(26,'Appointments','False','0.0','False','','13','6');
+INSERT INTO "rio_ed__Role__c" VALUES(1,'ISD','BUS105 Lecture #1','False','0.0','True','a1c5j000000UtGlAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(2,'ISD','BUS101 Lecture #1','False','0.0','True','a1c5j000000UtGWAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(3,'ISD','BUS104 Lecture #1','False','0.0','True','a1c5j000000UtGgAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(4,'ISD','HRM311 Lecture #1','False','0.0','True','a1c5j000000UtHFAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(5,'ISD','BUS320 Lecture #1','False','0.0','True','a1c5j000000UtHAAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(6,'ISD','BUS106 Lecture #1','False','0.0','True','a1c5j000000UtGqAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(7,'ISD','BUS203 Lecture #1','False','0.0','True','a1c5j000000UtGvAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(8,'ISD','ICT310 Lecture #1','False','0.0','True','a1c5j000000UtHeAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(9,'ISD','BUS108 Lecture #1','False','0.0','True','a1c5j000000UtGhAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(10,'ISD','COR109 Lecture #1','False','0.0','True','a1c5j000000UtGXAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(11,'ISD','BUS301 Lecture #1','False','0.0','True','a1c5j000000UtH5AAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(12,'ISD','BUS102 Lecture #1','False','0.0','True','a1c5j000000UtGbAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(13,'ISD','BUS211 Lecture #1','False','0.0','True','a1c5j000000UtH0AAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(14,'ISD','ICT211 Lecture #1','False','0.0','True','a1c5j000000UtHUAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(15,'ISD','ICT120 Lecture #1','False','0.0','True','a1c5j000000UtHBAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(16,'ISD','ICT352 Lecture #1','False','0.0','True','a1c5j000000UtH6AAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(17,'ISD','ICT221 Lecture #1','False','0.0','True','a1c5j000000UtHZAA0','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(18,'ISD','ICT320 Lecture #1','False','0.0','True','a1c5j000000UtHjAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(19,'ISD','MGT210 Lecture #1','False','0.0','True','a1c5j000000UuKpAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(20,'ISD','HRM321 Lecture #1','False','0.0','True','a1c5j000000UuKkAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(21,'ISD','MGT310 Lecture #1','False','0.0','True','a1c5j000000UuKuAAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(22,'ISD','BUS101 Lecture #2 (Session Group)','False','0.0','True','a1c5j000000UunKAAS','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(23,'ISD','ICT115 Tutorial Series #1','False','0.0','False','a1c5j000000UfN7AAK','','6');
+INSERT INTO "rio_ed__Role__c" VALUES(24,'ISD','ICT115 Lecture #1','False','0.0','True','a1c5j000000UtHKAA0','11','6');
+INSERT INTO "rio_ed__Role__c" VALUES(25,'ISD','ICT112 Lecture #1','False','0.0','True','a1c5j000000UtGSAA0','12','6');
+INSERT INTO "rio_ed__Role__c" VALUES(26,'ISD','Appointments','False','0.0','False','','13','6');
 CREATE TABLE "rio_ed__Session_Connection__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 
@@ -2809,31 +2812,31 @@ INSERT INTO "rio_ed__Session__c_rt_mapping" VALUES('0125j000000IJkIAAW','Class')
 INSERT INTO "rio_ed__Session__c_rt_mapping" VALUES('0125j000000IJkJAAW','Template');
 CREATE TABLE "rio_ed__Student_Fee__c" (
 	id INTEGER NOT NULL, 
-	"rio_ed__Due_Date__c" VARCHAR(255), 
-	"rio_ed__Fee_Reference__c" VARCHAR(255), 
 	"rio_ed__RIO_P1__c" VARCHAR(255), 
+	"rio_ed__Due_Date__c" VARCHAR(255), 
+	"rio_ed__Fee_Reference__c" VARCHAR(255),
 	"rio_ed__Student_Fee_Label__c" VARCHAR(255), 
 	"rio_ed__Type__c" VARCHAR(255), 
 	"rio_ed__Program_Enrollment__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(1,'2022-01-14','F-000000000','Installer Sample Data','Bachelor of Business Information System','Tuition','4');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(2,'2022-01-14','F-000000001','Installer Sample Data','Bachelor of Business Information System','Tuition','11');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(3,'2022-01-15','F-000000002','Installer Sample Data','Bachelor of Business Information System','Tuition','1');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(4,'2022-01-15','F-000000003','Installer Sample Data','Bachelor of Business Information System','Tuition','12');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(5,'2022-01-15','F-000000004','Installer Sample Data','Bachelor of Business Information System','Tuition','13');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(6,'2022-01-14','F-000000005','Installer Sample Data','Bachelor of Business Information System','Tuition','5');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(7,'2022-01-14','F-000000006','Installer Sample Data','Bachelor of Business Information System','Tuition','14');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(8,'2022-01-14','F-000000007','Installer Sample Data','Bachelor of Business Information System','Tuition','2');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(9,'2022-01-14','F-000000008','Installer Sample Data','Bachelor of Business Information System','Tuition','3');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(10,'2022-01-14','F-000000009','Installer Sample Data','Bachelor of Business Information System','Tuition','6');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(11,'2022-01-14','F-000000010','Installer Sample Data','Bachelor of Business Information System','Tuition','7');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(12,'2021-12-22','F-000000011','Installer Sample Data','Bachelor of Business Information System','Tuition','15');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(13,'2022-01-12','F-000000012','Installer Sample Data','Bachelor of Business Information System','Tuition','16');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(14,'2022-01-11','F-000000013','Installer Sample Data','Bachelor of Business Information System','Tuition','18');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(15,'2022-01-08','F-000000014','Installer Sample Data','Bachelor of Business Information System','Tuition','19');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(16,'2022-01-11','F-000000015','Installer Sample Data','Bachelor of Business Information System','Tuition','17');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(17,'2022-01-14','F-000000016','Installer Sample Data','Bachelor of Business Information System','Tuition','8');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(18,'2022-01-14','F-000000017','Installer Sample Data','Bachelor of Business Information System','Tuition','9');
-INSERT INTO "rio_ed__Student_Fee__c" VALUES(19,'2022-01-14','F-000000018','Installer Sample Data','Bachelor of Business Information System','Tuition','10');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(1,'ISD','2022-01-14','F-000000000','Bachelor of Business Information System','Tuition','4');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(2,'ISD','2022-01-14','F-000000001','Bachelor of Business Information System','Tuition','11');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(3,'ISD','2022-01-15','F-000000002','Bachelor of Business Information System','Tuition','1');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(4,'ISD','2022-01-15','F-000000003','Bachelor of Business Information System','Tuition','12');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(5,'ISD','2022-01-15','F-000000004','Bachelor of Business Information System','Tuition','13');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(6,'ISD','2022-01-14','F-000000005','Bachelor of Business Information System','Tuition','5');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(7,'ISD','2022-01-14','F-000000006','Bachelor of Business Information System','Tuition','14');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(8,'ISD','2022-01-14','F-000000007','Bachelor of Business Information System','Tuition','2');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(9,'ISD','2022-01-14','F-000000008','Bachelor of Business Information System','Tuition','3');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(10,'ISD','2022-01-14','F-000000009','Bachelor of Business Information System','Tuition','6');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(11,'ISD','2022-01-14','F-000000010','Bachelor of Business Information System','Tuition','7');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(12,'ISD','2021-12-22','F-000000011','Bachelor of Business Information System','Tuition','15');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(13,'ISD','2022-01-12','F-000000012','Bachelor of Business Information System','Tuition','16');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(14,'ISD','2022-01-11','F-000000013','Bachelor of Business Information System','Tuition','18');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(15,'ISD','2022-01-08','F-000000014','Bachelor of Business Information System','Tuition','19');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(16,'ISD','2022-01-11','F-000000015','Bachelor of Business Information System','Tuition','17');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(17,'ISD','2022-01-14','F-000000016','Bachelor of Business Information System','Tuition','8');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(18,'ISD','2022-01-14','F-000000017','Bachelor of Business Information System','Tuition','9');
+INSERT INTO "rio_ed__Student_Fee__c" VALUES(19,'ISD','2022-01-14','F-000000018','Bachelor of Business Information System','Tuition','10');
 COMMIT;
