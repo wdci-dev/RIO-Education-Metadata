@@ -281,6 +281,10 @@
         "RIO Education - Approve Fee Schedules": {
             "message": "RIO Education - Approve Fee Schedules",
             "description": "title of installation step"
+        },
+        "RIO Education - Delete Sample Data": {
+            "message": "RIO Education - Delete Sample Data",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

@@ -255,6 +255,8 @@ plans:
                     path: apex/delete_sample_data.txt
                 ui_options:
                     name: RIO Education - Delete Sample Data
+                    is_required: False
+                    is_recommended: False
             3:
                 task: load_dataset
                 options:
