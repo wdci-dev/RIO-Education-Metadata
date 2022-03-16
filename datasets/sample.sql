@@ -2720,7 +2720,7 @@ INSERT INTO "rio_ed__Session_Time__c" VALUES(48,'ISD-ST-48','Recreate','Session 
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Wednesday','2022-11-17','17:00','Weekly','False','Wednesday','Weekly','2022-07-01','16:00','Active','Create/Update after today','9','34');
-INSERT INTO "rio_ed__Session_Time__c" VALUES(49,'ISD-ST-40','Recreate','Session booking generation log 21/1/2022, 5:42 pm:
+INSERT INTO "rio_ed__Session_Time__c" VALUES(49,'ISD-ST-49','Recreate','Session booking generation log 21/1/2022, 5:42 pm:
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Monday','2022-06-17','13:00','Weekly','False','Monday','Weekly','2022-01-19','12:00','Active','Create/Update after today','9','35');
