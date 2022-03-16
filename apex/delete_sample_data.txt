@@ -1,1 +1,159 @@
-System.debug('Test');
+try {
+    List<rio_ed__Fee_Schedule__c> afss = [Select rio_ed__Status__c From rio_ed__Fee_Schedule__c Where rio_ed__External_Id__c Like 'ISD-%'];
+
+    for (rio_ed__Fee_Schedule__c afs : afss) {
+        if (afs.rio_ed__Status__c == 'Approved') {
+            afs.rio_ed__Status__c = 'Draft';
+        }
+    }
+
+    update afss;
+
+    List<rio_ed__Contact_Attendance__c> cas = [Select Id From rio_ed__Contact_Attendance__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete cas;
+
+    List<rio_ed__Assigned_Location__c> als = [Select Id From rio_ed__Assigned_Location__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete als;
+
+    List<rio_ed__Availability_Time__c> avts = [Select Id From rio_ed__Availability_Time__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete avts;
+
+    List<rio_ed__Appointment_Time__c> apts = [Select Id From rio_ed__Appointment_Time__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete apts;
+
+    List<rio_ed__Appointment_Availability__c> aas = [Select Id From rio_ed__Appointment_Availability__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete aas;
+
+    List<rio_ed__Appointment_Type__c> atypes = [Select Id From rio_ed__Appointment_Type__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete atypes;
+
+    List<rio_ed__Attendance__c> atts = [Select Id From rio_ed__Attendance__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete atts;
+
+    List<rio_ed__Session_Connection__c> scs = [Select Id From rio_ed__Session_Connection__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete scs;
+
+    List<rio_ed__Allocation__c> bks = [Select Id From rio_ed__Allocation__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete bks;
+
+    List<rio_ed__Grade__c> grades = [Select Id From rio_ed__Grade__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete grades;
+
+    List<hed__Term_Grade__c> tgs = [Select Id From hed__Term_Grade__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete tgs;
+
+    List<rio_ed__Session_Time__c> sts = [Select Id From rio_ed__Session_Time__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete sts;
+
+    List<rio_ed__Session__c> sess = [Select Id From rio_ed__Session__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete sess;
+
+    List<rio_ed__Role__c> pls = [Select Id From rio_ed__Role__c Where rio_ed__RIO_P1__c = 'ISD'];
+    delete pls;
+
+    List<rio_ed__Resource__c> ress = [Select Id From rio_ed__Resource__c Where rio_ed__RIO_P1__c = 'ISD'];
+    delete ress;
+
+    List<rio_ed__Resource_Type__c> rts = [Select Id From rio_ed__Resource_Type__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete rts;
+
+    List<rio_ed__Fee_Line__c> fls = [Select Id From rio_ed__Fee_Line__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete fls;
+
+    List<rio_ed__Course_Connection_Requirement__c> ccrs = [Select Id From rio_ed__Course_Connection_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete ccrs;
+
+    List<hed__Course_Enrollment__c> ccs = [Select Id From hed__Course_Enrollment__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete ccs;
+
+    List<rio_ed__PE_Pathway_Status__c> peps = [Select Id From rio_ed__PE_Pathway_Status__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete peps;
+
+    List<rio_ed__PE_Group_Status__c> pegs = [Select Id From rio_ed__PE_Group_Status__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pegs;
+
+    List<rio_ed__Funding__c> funds = [Select Id From rio_ed__Funding__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete funds;
+
+    List<rio_ed__Student_Fee__c> sfs = [Select Id From rio_ed__Student_Fee__c Where rio_ed__RIO_P1__c = 'ISD'];
+    delete sfs;
+
+    List<hed__Program_Enrollment__c> pes = [Select Id From hed__Program_Enrollment__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pes;
+
+    List<rio_ed__Program_Application__c> pas = [Select Id From rio_ed__Program_Application__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pas;
+
+    List<hed__Course_Offering__c> cos = [Select Id From hed__Course_Offering__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete cos;
+
+    List<rio_ed__Plan__c> plans = [Select Id From rio_ed__Plan__c Where rio_ed__RIO_P1__c = 'ISD'];
+    delete plans;
+
+    List<rio_ed__Discipline_Requirement__c> drs = [Select Id From rio_ed__Discipline_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete drs;
+
+    List<rio_ed__Program_Discipline__c> pds = [Select Id From rio_ed__Program_Discipline__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pds;
+
+    List<rio_ed__Pathway_Unit__c> pus = [Select Id From rio_ed__Pathway_Unit__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pus;
+
+    List<rio_ed__Program_Pathway__c> ppaths = [Select Id From rio_ed__Program_Pathway__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete ppaths;
+
+    List<rio_ed__Program_Course_Requirement__c> pcrs = [Select Id From rio_ed__Program_Course_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pcrs;
+
+    List<hed__Plan_Requirement__c> cprs = [Select Id From hed__Plan_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%' And
+                                            hed__Plan_Requirement__c != null];
+    delete cprs;
+
+    List<hed__Plan_Requirement__c> pprs = [Select Id From hed__Plan_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%' And
+                                            hed__Plan_Requirement__c = null];
+    delete pprs;
+
+    List<hed__Program_Plan__c> pplans = [Select Id From hed__Program_Plan__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete pplans;
+
+    List<rio_ed__Qualified_Faculty__c> qfs = [Select Id From rio_ed__Qualified_Faculty__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete qfs;
+
+    List<rio_ed__Grade_Criteria__c> gcs = [Select Id From rio_ed__Grade_Criteria__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete gcs;
+
+    List<hed__Course__c> courses = [Select Id From hed__Course__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete courses;
+
+    List<rio_ed__Grade_Setting__c> gss = [Select Id From rio_ed__Grade_Setting__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete gss;
+
+    List<rio_ed__Fee_Schedule_Term__c> fsts = [Select Id From rio_ed__Fee_Schedule_Term__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete fsts;
+
+    List<hed__Term__c> terms = [Select Id From hed__Term__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete terms;
+
+    List<rio_ed__Fee_Schedule__c> fss = [Select Id From rio_ed__Fee_Schedule__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete fss;
+
+    List<rio_ed__Fee__c> fees = [Select Id From rio_ed__Fee__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete fees;
+
+    List<hed__Facility__c> facs = [Select Id From hed__Facility__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete facs;
+
+    List<hed__Time_Block__c> tbs = [Select Id From hed__Time_Block__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete tbs;
+
+    List<hed__Affiliation__c> affs = [Select Id From hed__Affiliation__c Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete affs;
+
+    List<Contact> cts = [Select Id From Contact Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete cts;
+
+    List<Account> accts = [Select Id From Account Where rio_ed__External_Id__c Like 'ISD-%'];
+    delete accts;
+} catch (Exception e) {
+    System.debug('Error deleting data');
+}
