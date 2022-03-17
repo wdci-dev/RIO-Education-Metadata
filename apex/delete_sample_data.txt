@@ -10,7 +10,7 @@ try {
     update afss;
 
     List<rio_ed__Contact_Attendance__c> cas = [Select Id From rio_ed__Contact_Attendance__c Where rio_ed__External_Id__c Like 'ISD-%'];
-    delete cas;
+    insert cas;
 
     List<rio_ed__Assigned_Location__c> als = [Select Id From rio_ed__Assigned_Location__c Where rio_ed__External_Id__c Like 'ISD-%'];
     delete als;
