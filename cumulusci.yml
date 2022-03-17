@@ -8,7 +8,7 @@ project:
     git:
         prefix_release: rel/
         repo_url: https://github.com/wdci-dev/RIO-Education-Metadata
-        default_branch: 'metadeploy'
+        default_branch: master
     source_format: sfdx
 
 sources:
