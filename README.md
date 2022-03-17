@@ -1,5 +1,5 @@
 # RIO-Education-Metadata
-This contains all files needed to set up the RIO Education product in the <a href='https://rioed-installer.herokuapp.com/products/RIO_Education/latest'>RIO Education installer</a>, as well as all metadata that it deploys.
+This contains all files needed to set up the <a href='https://rioed-installer.herokuapp.com/products/RIO_Education/latest'>RIO Education product</a> in the RIO Education installer, as well as all metadata that it deploys.
 
 The following is the folder structure (not all folders included here - many are set up automatically by CumulusCI). Instructions for how to deploy this metadata can be found on the installer webpage.
 
