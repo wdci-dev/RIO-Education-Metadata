@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Accounts_Receivable_Amount__c</fullName>
+        <description>Accounts Receivable outstanding amount for the student, synced from external accounting system</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Accounts Receivable outstanding amount for the student, synced from external accounting system</inlineHelpText>
+        <label>Accounts Receivable Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>redu_Accounts_Receivable_Last_Updated__c</fullName>
+        <description>Date Time that the Accounts Receivable Amount is last synced</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Time that the Accounts Receivable Amount is last synced</inlineHelpText>
+        <label>Accounts Receivable Last Updated</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>redu_Displayed_AR_Amount__c</fullName>
+        <description>Accounts Receivable amount that will be displayed in the Community</description>
+        <externalId>false</externalId>
+        <formula>redu_Accounts_Receivable_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Accounts Receivable amount that will be displayed in the Community</inlineHelpText>
+        <label>Displayed Accounts Receivable Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

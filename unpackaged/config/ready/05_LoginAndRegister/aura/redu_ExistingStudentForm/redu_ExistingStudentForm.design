@@ -1,0 +1,12 @@
+<design:component label="REDU Existing Student">
+    <design:attribute name="emailLabel" default="Email Check Label"/>
+    <design:attribute name="checkEmailButtonLabel" default="Submit"/>
+
+    <design:attribute name="introMsg" default="Please enter your email address below to verify your account."/>
+
+    <design:attribute name="existingActiveUserMsg" default="A user login of the email entered has been found."/>        
+
+    <design:attribute name="noContactMsg" default="The email that you have entered is not found in our system."/>    
+
+    <design:attribute name="regConfirmUrl" default="./CheckPasswordResetEmail"/>
+</design:component>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Captcha_SecretKey__c</fullName>
+        <externalId>false</externalId>
+        <label>Captcha SecretKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Student_Permission_Set_Group__c</fullName>
+        <description>Default permission set group name (developer name) for a student contact.</description>
+        <externalId>false</externalId>
+        <label>Student - Permission Set Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

@@ -1,0 +1,320 @@
+{
+    "product": {
+        "title": {
+            "message": "RIO Education",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "Salesforce native student management system by RIO Education",
+            "description": "tagline of product"
+        },
+        "description": {
+            "message": "<h1>Welcome to the RIO Education installer!</h1>\r\n\r\n<b>IMPORTANT:</b> We do not recommend installing upgrades directly in production organizations. Instead, install your RIO Education upgrade in one of your free sandbox environments, or a developer organization first.\r\n\r\n<b>In order to install RIO Education, please ensure you have first installed Salesforce.org's Education Data Architecture (EDA). The EDA installer can be found <a href='https://install.salesforce.org/products/eda/latest'>here</a>.</b>\r\n\r\nPlease install RIO Education before deploying any additional plans. All additional plans are dependent on the main RIO Education package.",
+            "description": "shown on product detail page (markdown)"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install RIO Education",
+            "description": "title of installation plan"
+        }
+    },
+    "checks": {
+        "Please enable My Domain in your org prior to installing.": {
+            "message": "Please enable My Domain in your org prior to installing.",
+            "description": "shown if validation fails"
+        },
+        "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education.": {
+            "message": "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education.",
+            "description": "shown if validation fails"
+        },
+        "Please enable Community Settings prior to installing.": {
+            "message": "Please enable Community Settings prior to installing.",
+            "description": "shown if validation fails"
+        },
+        "Please enable Communities in your org prior to installing.": {
+            "message": "Please enable Communities in your org prior to installing.",
+            "description": "shown if validation fails"
+        }
+    },
+    "steps": {
+        "RIO Education - Check Community Settings": {
+            "message": "RIO Education - Check Community Settings",
+            "description": "title of installation step"
+        },
+        "RIO Education - HEDA Object Tracking": {
+            "message": "RIO Education - HEDA Object Tracking",
+            "description": "title of installation step"
+        },
+        "Install RIO-Education-Metadata 04t3u000002wKwa": {
+            "message": "Install RIO-Education-Metadata 04t3u000002wKwa",
+            "description": "title of installation step"
+        },
+        "RIO Education - Standard Objects UI": {
+            "message": "RIO Education - Standard Objects UI",
+            "description": "title of installation step"
+        },
+        "RIO Education - EDA Objects UI": {
+            "message": "RIO Education - EDA Objects UI",
+            "description": "title of installation step"
+        },
+        "RIO Education - Standard Objects Security Setup": {
+            "message": "RIO Education - Standard Objects Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Education - EDA Security Setup": {
+            "message": "RIO Education - EDA Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Education - REDU Security Setup": {
+            "message": "RIO Education - REDU Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Education - Standard Object Tracking": {
+            "message": "RIO Education - Standard Object Tracking",
+            "description": "title of installation step"
+        },
+        "RIO Education - REDU Object Tracking": {
+            "message": "RIO Education - REDU Object Tracking",
+            "description": "title of installation step"
+        },
+        "RIO Education - Appointment Scheduler Automation": {
+            "message": "RIO Education - Appointment Scheduler Automation",
+            "description": "title of installation step"
+        },
+        "RIO Education - EDA Object Picklist": {
+            "message": "RIO Education - EDA Object Picklist",
+            "description": "title of installation step"
+        },
+        "RIO Education - Orgwide Default Sharing": {
+            "message": "RIO Education - Orgwide Default Sharing",
+            "description": "title of installation step"
+        },
+        "RIO Education - Student Community Security Setup": {
+            "message": "RIO Education - Student Community Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Education - Faculty Community Security Setup": {
+            "message": "RIO Education - Faculty Community Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Education - Combined Community Security Setup": {
+            "message": "RIO Education - Combined Community Security Setup",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Accounts Receivable Display": {
+            "message": "RIO Ready - Accounts Receivable Display",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Community Transcript": {
+            "message": "RIO Ready - Community Transcript",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Fee Line": {
+            "message": "RIO Ready - Fee Line",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Login and Register": {
+            "message": "RIO Ready - Login and Register",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Login and Register (Pre-Deploy)": {
+            "message": "RIO Ready - Login and Register (Pre-Deploy)",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Payment 2 Us": {
+            "message": "RIO Ready - Payment 2 Us",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Program Application": {
+            "message": "RIO Ready - Program Application",
+            "description": "title of installation step"
+        },
+        "RIO Ready - RIO Education Community": {
+            "message": "RIO Ready - RIO Education Community",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Refund": {
+            "message": "RIO Ready - Refund",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Scholarship": {
+            "message": "RIO Ready - Scholarship",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Student ID": {
+            "message": "RIO Ready - Student ID",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Student Request": {
+            "message": "RIO Ready - Student Request",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Withdrawal": {
+            "message": "RIO Ready - Withdrawal",
+            "description": "title of installation step"
+        },
+        "RIO Education - Load Sample Data": {
+            "message": "RIO Education - Load Sample Data",
+            "description": "title of installation step"
+        },
+        "Install RIO Education": {
+            "message": "Install RIO Education",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.10": {
+            "message": "RIO Education - Upgrade to v2.10",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.10.8": {
+            "message": "RIO Education - Upgrade to v2.10.8",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.11": {
+            "message": "RIO Education - Upgrade to v2.11",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.12": {
+            "message": "RIO Education - Upgrade to v2.12",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.13": {
+            "message": "RIO Education - Upgrade to v2.13",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.14": {
+            "message": "RIO Education - Upgrade to v2.14",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.3": {
+            "message": "RIO Education - Upgrade to v2.3",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.4": {
+            "message": "RIO Education - Upgrade to v2.4",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.5": {
+            "message": "RIO Education - Upgrade to v2.5",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.6": {
+            "message": "RIO Education - Upgrade to v2.6",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.7": {
+            "message": "RIO Education - Upgrade to v2.7",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.8": {
+            "message": "RIO Education - Upgrade to v2.8",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v2.9": {
+            "message": "RIO Education - Upgrade to v2.9",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.0": {
+            "message": "RIO Education - Upgrade to v3.0",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.1": {
+            "message": "RIO Education - Upgrade to v3.1",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.2": {
+            "message": "RIO Education - Upgrade to v3.2",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.3": {
+            "message": "RIO Education - Upgrade to v3.3",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.4": {
+            "message": "RIO Education - Upgrade to v3.4",
+            "description": "title of installation step"
+        },
+        "RIO Education - Upgrade to v3.5": {
+            "message": "RIO Education - Upgrade to v3.5",
+            "description": "title of installation step"
+        },
+        "org_settings": {
+            "message": "org_settings",
+            "description": "title of installation step"
+        },
+        "RIO Education - Salesforce Feature Enablement": {
+            "message": "RIO Education - Salesforce Feature Enablement",
+            "description": "title of installation step"
+        },
+        "Install {product} {version}": {
+            "message": "Install {product} {version}",
+            "description": "title of installation step"
+        },
+        "disable_tdtm_trigger_handlers": {
+            "message": "disable_tdtm_trigger_handlers",
+            "description": "title of installation step"
+        },
+        "restore_tdtm_trigger_handlers": {
+            "message": "restore_tdtm_trigger_handlers",
+            "description": "title of installation step"
+        },
+        "RIO Education - Org-Wide Default Sharing": {
+            "message": "RIO Education - Org-Wide Default Sharing",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Payments2Us": {
+            "message": "RIO Ready - Payments2Us",
+            "description": "title of installation step"
+        },
+        "Disable Trigger Handlers": {
+            "message": "Disable Trigger Handlers",
+            "description": "title of installation step"
+        },
+        "Restore Trigger Handlers": {
+            "message": "Restore Trigger Handlers",
+            "description": "title of installation step"
+        },
+        "RIO Education - Assign Permission Sets": {
+            "message": "RIO Education - Assign Permission Sets",
+            "description": "title of installation step"
+        },
+        "RIO Education - Approve Fee Schedules": {
+            "message": "RIO Education - Approve Fee Schedules",
+            "description": "title of installation step"
+        },
+        "RIO Education - Delete Sample Data": {
+            "message": "RIO Education - Delete Sample Data",
+            "description": "title of installation step"
+        }
+    },
+    "plan:sharing": {
+        "title": {
+            "message": "Org-Wide Default Sharing",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:community": {
+        "title": {
+            "message": "Community Security Setup",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:ready": {
+        "title": {
+            "message": "RIO Ready Metadata",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:dataset": {
+        "title": {
+            "message": "Sample Data",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:upgrade": {
+        "title": {
+            "message": "Upgrade RIO Education",
+            "description": "title of installation plan"
+        }
+    }
+}

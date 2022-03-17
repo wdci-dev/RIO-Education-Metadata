@@ -1,0 +1,11 @@
+.editor-content {
+    /*min-height: 400px; */
+}
+
+.modalclosebtn-margin {
+    margin-right: 2.2rem;
+}
+
+.top_dialog{
+    z-index: 9999;
+}

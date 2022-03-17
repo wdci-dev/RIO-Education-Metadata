@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>REDU_Student_Permission_Group</members>
+        <name>PermissionSetGroup</name>
+    </types>
+    <version>52.0</version>
+</Package>

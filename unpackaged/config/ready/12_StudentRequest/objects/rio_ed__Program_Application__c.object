@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <fullName>redu_Cannot_Approve_more_than_allowed</fullName>
+        <active>true</active>
+        <description>Cannot Approve Application if it's approved count has fulfilled Program offering defined max</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(rio_ed__Program_Offering__c)),
+			TEXT(rio_ed__Status__c)=='Approved'	,    
+rio_ed__Program_Offering__r.redu_Maximum_Approved_Applicant_Count__c &gt; 0,
+ rio_ed__Program_Offering__r.redu_Approved_Applications__c &gt;= rio_ed__Program_Offering__r.redu_Maximum_Approved_Applicant_Count__c 		
+)</errorConditionFormula>
+        <errorMessage>Program Offering's Maximum allowed applications has already been reached.</errorMessage>
+    </validationRules>
+</CustomObject>
