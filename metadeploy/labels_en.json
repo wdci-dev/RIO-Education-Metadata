@@ -285,6 +285,10 @@
         "RIO Education - Delete Sample Data": {
             "message": "RIO Education - Delete Sample Data",
             "description": "title of installation step"
+        },
+        "RIO Education - REDU - Admin Permission Set": {
+            "message": "RIO Education - REDU - Admin Permission Set",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
