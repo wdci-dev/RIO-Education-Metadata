@@ -123,8 +123,8 @@ flows:
                         api_names: REDU_Admin
                     ui_options:
                         name: RIO Education - REDU - Admin Permission Set
-                5:
-                task: execute_anon
+                6:
+                    task: execute_anon
                     options:
                         path: apex/update_group_members.txt
                     ui_options:
