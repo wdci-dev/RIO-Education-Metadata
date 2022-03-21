@@ -2448,11 +2448,6 @@ CREATE TABLE "rio_ed__Resource_Type__c" (
 	PRIMARY KEY (id)
 );
 INSERT INTO "rio_ed__Resource_Type__c" VALUES(1,'ISD-RT-01','Location');
-INSERT INTO "rio_ed__Resource_Type__c" VALUES(2,'ISD-RT-02','Location');
-INSERT INTO "rio_ed__Resource_Type__c" VALUES(3,'ISD-RT-03','Location');
-INSERT INTO "rio_ed__Resource_Type__c" VALUES(4,'ISD-RT-04','Location');
-INSERT INTO "rio_ed__Resource_Type__c" VALUES(5,'ISD-RT-05','Location');
-INSERT INTO "rio_ed__Resource_Type__c" VALUES(6,'ISD-RT-06','Location');
 CREATE TABLE "rio_ed__Resource__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__RIO_P1__c" VARCHAR(255), 
@@ -2463,18 +2458,18 @@ CREATE TABLE "rio_ed__Resource__c" (
 	"rio_ed__Resource_Type__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Resource__c" VALUES(1,'ISD','Beta 101','True','False','1','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(2,'ISD','Alpha 104','True','False','10','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(3,'ISD','Alpha 101','True','False','11','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(4,'ISD','Alpha 102','True','False','12','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(5,'ISD','Beta 102','True','False','2','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(6,'ISD','Beta 103','True','False','3','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(7,'ISD','Beta 104','True','False','4','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(8,'ISD','Alpha Building','True','False','5','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(9,'ISD','Beta Building','True','False','6','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(10,'ISD','Alpha 103','True','False','7','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(11,'ISD','Beta 100','True','False','8','6');
-INSERT INTO "rio_ed__Resource__c" VALUES(12,'ISD','Alpha 100','True','False','9','6');
+INSERT INTO "rio_ed__Resource__c" VALUES(1,'ISD','Beta 101','True','False','1','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(2,'ISD','Alpha 104','True','False','10','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(3,'ISD','Alpha 101','True','False','11','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(4,'ISD','Alpha 102','True','False','12','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(5,'ISD','Beta 102','True','False','2','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(6,'ISD','Beta 103','True','False','3','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(7,'ISD','Beta 104','True','False','4','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(8,'ISD','Alpha Building','True','False','5','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(9,'ISD','Beta Building','True','False','6','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(10,'ISD','Alpha 103','True','False','7','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(11,'ISD','Beta 100','True','False','8','1');
+INSERT INTO "rio_ed__Resource__c" VALUES(12,'ISD','Alpha 100','True','False','9','1');
 CREATE TABLE "rio_ed__Role__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__RIO_P1__c" VARCHAR(255), 
@@ -2487,32 +2482,32 @@ CREATE TABLE "rio_ed__Role__c" (
 	"rio_ed__Resource_Type__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Role__c" VALUES(1,'ISD','BUS105 Lecture #1','False','0.0','True','a1c5j000000UtGlAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(2,'ISD','BUS101 Lecture #1','False','0.0','True','a1c5j000000UtGWAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(3,'ISD','BUS104 Lecture #1','False','0.0','True','a1c5j000000UtGgAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(4,'ISD','HRM311 Lecture #1','False','0.0','True','a1c5j000000UtHFAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(5,'ISD','BUS320 Lecture #1','False','0.0','True','a1c5j000000UtHAAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(6,'ISD','BUS106 Lecture #1','False','0.0','True','a1c5j000000UtGqAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(7,'ISD','BUS203 Lecture #1','False','0.0','True','a1c5j000000UtGvAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(8,'ISD','ICT310 Lecture #1','False','0.0','True','a1c5j000000UtHeAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(9,'ISD','BUS108 Lecture #1','False','0.0','True','a1c5j000000UtGhAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(10,'ISD','COR109 Lecture #1','False','0.0','True','a1c5j000000UtGXAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(11,'ISD','BUS301 Lecture #1','False','0.0','True','a1c5j000000UtH5AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(12,'ISD','BUS102 Lecture #1','False','0.0','True','a1c5j000000UtGbAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(13,'ISD','BUS211 Lecture #1','False','0.0','True','a1c5j000000UtH0AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(14,'ISD','ICT211 Lecture #1','False','0.0','True','a1c5j000000UtHUAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(15,'ISD','ICT120 Lecture #1','False','0.0','True','a1c5j000000UtHBAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(16,'ISD','ICT352 Lecture #1','False','0.0','True','a1c5j000000UtH6AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(17,'ISD','ICT221 Lecture #1','False','0.0','True','a1c5j000000UtHZAA0','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(18,'ISD','ICT320 Lecture #1','False','0.0','True','a1c5j000000UtHjAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(19,'ISD','MGT210 Lecture #1','False','0.0','True','a1c5j000000UuKpAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(20,'ISD','HRM321 Lecture #1','False','0.0','True','a1c5j000000UuKkAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(21,'ISD','MGT310 Lecture #1','False','0.0','True','a1c5j000000UuKuAAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(22,'ISD','BUS101 Lecture #2 (Session Group)','False','0.0','True','a1c5j000000UunKAAS','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(23,'ISD','ICT115 Tutorial Series #1','False','0.0','False','a1c5j000000UfN7AAK','','6');
-INSERT INTO "rio_ed__Role__c" VALUES(24,'ISD','ICT115 Lecture #1','False','0.0','True','a1c5j000000UtHKAA0','11','6');
-INSERT INTO "rio_ed__Role__c" VALUES(25,'ISD','ICT112 Lecture #1','False','0.0','True','a1c5j000000UtGSAA0','12','6');
-INSERT INTO "rio_ed__Role__c" VALUES(26,'ISD','Appointments','False','0.0','False','','13','6');
+INSERT INTO "rio_ed__Role__c" VALUES(1,'ISD','BUS105 Lecture #1','False','0.0','True','a1c5j000000UtGlAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(2,'ISD','BUS101 Lecture #1','False','0.0','True','a1c5j000000UtGWAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(3,'ISD','BUS104 Lecture #1','False','0.0','True','a1c5j000000UtGgAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(4,'ISD','HRM311 Lecture #1','False','0.0','True','a1c5j000000UtHFAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(5,'ISD','BUS320 Lecture #1','False','0.0','True','a1c5j000000UtHAAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(6,'ISD','BUS106 Lecture #1','False','0.0','True','a1c5j000000UtGqAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(7,'ISD','BUS203 Lecture #1','False','0.0','True','a1c5j000000UtGvAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(8,'ISD','ICT310 Lecture #1','False','0.0','True','a1c5j000000UtHeAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(9,'ISD','BUS108 Lecture #1','False','0.0','True','a1c5j000000UtGhAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(10,'ISD','COR109 Lecture #1','False','0.0','True','a1c5j000000UtGXAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(11,'ISD','BUS301 Lecture #1','False','0.0','True','a1c5j000000UtH5AAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(12,'ISD','BUS102 Lecture #1','False','0.0','True','a1c5j000000UtGbAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(13,'ISD','BUS211 Lecture #1','False','0.0','True','a1c5j000000UtH0AAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(14,'ISD','ICT211 Lecture #1','False','0.0','True','a1c5j000000UtHUAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(15,'ISD','ICT120 Lecture #1','False','0.0','True','a1c5j000000UtHBAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(16,'ISD','ICT352 Lecture #1','False','0.0','True','a1c5j000000UtH6AAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(17,'ISD','ICT221 Lecture #1','False','0.0','True','a1c5j000000UtHZAA0','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(18,'ISD','ICT320 Lecture #1','False','0.0','True','a1c5j000000UtHjAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(19,'ISD','MGT210 Lecture #1','False','0.0','True','a1c5j000000UuKpAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(20,'ISD','HRM321 Lecture #1','False','0.0','True','a1c5j000000UuKkAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(21,'ISD','MGT310 Lecture #1','False','0.0','True','a1c5j000000UuKuAAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(22,'ISD','BUS101 Lecture #2 (Session Group)','False','0.0','True','a1c5j000000UunKAAS','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(23,'ISD','ICT115 Tutorial Series #1','False','0.0','False','a1c5j000000UfN7AAK','','1');
+INSERT INTO "rio_ed__Role__c" VALUES(24,'ISD','ICT115 Lecture #1','False','0.0','True','a1c5j000000UtHKAA0','11','1');
+INSERT INTO "rio_ed__Role__c" VALUES(25,'ISD','ICT112 Lecture #1','False','0.0','True','a1c5j000000UtGSAA0','12','1');
+INSERT INTO "rio_ed__Role__c" VALUES(26,'ISD','Appointments','False','0.0','False','','13','1');
 CREATE TABLE "rio_ed__Session_Connection__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 

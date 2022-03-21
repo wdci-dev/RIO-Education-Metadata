@@ -289,6 +289,10 @@
         "RIO Education - REDU - Admin Permission Set": {
             "message": "RIO Education - REDU - Admin Permission Set",
             "description": "title of installation step"
+        },
+        "RIO Education - Update Group Members": {
+            "message": "RIO Education - Update Group Members",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
