@@ -29,7 +29,7 @@ The following is the folder structure (not all folders included here - many are 
     * sharing
       * 00_orgwide_default_sharing (org-wide default sharing settings)
   * pre (for pre RIO Education installation)
-    * 01_heda_object_tracking.zip (field history tracking for EDA)
+    * 01_heda_object_tracking (field history tracking for EDA)
   * post (for post RIO Education installation)
     * 01_standard_objects_ui (lightning page and configuration for standard object)
     * 02_eda_objects_ui (lightning page and configuration for EDA object)

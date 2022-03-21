@@ -200,34 +200,56 @@ plans:
                 ui_options:
                     01_AccountsReceivableDisplay:
                         name: RIO Ready - Accounts Receivable Display
+                        is_required: False
+                        is_recommended: False
                     02_Community_Transcript:
                         name: RIO Ready - Community Transcript
                         is_required: False
                         is_recommended: False
                     03_FeeLine:
                         name: RIO Ready - Fee Line
+                        is_required: False
+                        is_recommended: False
                     04_LoginAndRegister_preDeploy:
                         name: RIO Ready - Login and Register (Pre-Deploy)
+                        is_required: False
+                        is_recommended: False
                     05_LoginAndRegister:
                         name: RIO Ready - Login and Register
+                        is_required: False
+                        is_recommended: False
                     06_Payment2us:
                         name: RIO Ready - Payments2Us
                         is_required: False
                         is_recommended: False
                     07_ProgramApplication:
                         name: RIO Ready - Program Application
+                        is_required: False
+                        is_recommended: False
                     08_Refund:
                         name: RIO Ready - Refund
+                        is_required: False
+                        is_recommended: False
                     09_RIO Education Community:
                         name: RIO Ready - RIO Education Community
+                        is_required: False
+                        is_recommended: False
                     10_Scholarship:
                         name: RIO Ready - Scholarship
+                        is_required: False
+                        is_recommended: False
                     11_StudentID:
                         name: RIO Ready - Student ID
+                        is_required: False
+                        is_recommended: False
                     12_StudentRequest:
                         name: RIO Ready - Student Request
+                        is_required: False
+                        is_recommended: False
                     13_Withdrawal:
                         name: RIO Ready - Withdrawal
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
