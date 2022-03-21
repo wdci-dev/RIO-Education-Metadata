@@ -1330,6 +1330,7 @@ CREATE TABLE "rio_ed__Appointment_Time__c" (
 	"Name" VARCHAR(255), 
 	"rio_ed__Active__c" VARCHAR(255), 
 	"rio_ed__Appointment_Duration__c" VARCHAR(255), 
+	"rio_ed__Appointment_Gap__c" VARCHAR(255), 
 	"rio_ed__Day_of_the_Week__c" VARCHAR(255), 
 	"rio_ed__End_Time__c" VARCHAR(255), 
 	"rio_ed__Start_Time__c" VARCHAR(255), 
@@ -1337,8 +1338,8 @@ CREATE TABLE "rio_ed__Appointment_Time__c" (
 	"rio_ed__Campus__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Appointment_Time__c" VALUES(1,'ISD-APTIME-01','Available Time','True','60.0','Monday;Tuesday;Wednesday;Thursday;Friday','15:00:00.000Z','14:00:00.000Z','1','17');
-INSERT INTO "rio_ed__Appointment_Time__c" VALUES(2,'ISD-APTIME-02','Available Time','True','60.0','Monday;Tuesday;Wednesday;Thursday;Friday','15:00:00.000Z','14:00:00.000Z','1','19');
+INSERT INTO "rio_ed__Appointment_Time__c" VALUES(1,'ISD-APTIME-01','Available Time','True','60.0','0.00','Monday;Tuesday;Wednesday;Thursday;Friday','15:00:00.000Z','14:00:00.000Z','1','17');
+INSERT INTO "rio_ed__Appointment_Time__c" VALUES(2,'ISD-APTIME-02','Available Time','True','60.0','0.00','Monday;Tuesday;Wednesday;Thursday;Friday','15:00:00.000Z','14:00:00.000Z','1','19');
 CREATE TABLE "rio_ed__Appointment_Type__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 

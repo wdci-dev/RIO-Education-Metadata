@@ -775,6 +775,7 @@ Insert rio_ed__Appointment_Time__c:
   - Name
   - rio_ed__Active__c
   - rio_ed__Appointment_Duration__c
+  - rio_ed__Appointment_Gap__c
   - rio_ed__Day_of_the_Week__c
   - rio_ed__End_Time__c
   - rio_ed__Start_Time__c
