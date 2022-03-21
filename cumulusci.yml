@@ -189,7 +189,7 @@ plans:
 
     ready:
         slug: ready
-        title: RIO Ready Metadata
+        title: RIO Ready
         tier: additional
         steps:
             1:
