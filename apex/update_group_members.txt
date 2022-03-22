@@ -1,14 +1,18 @@
-Group reduAll = [Select Id from Group where DeveloperName = 'REDU_All'];
+List<Group> reduAll = [Select Id from Group where DeveloperName = 'REDU_All'];
 List<Group> reduGroups = [Select Id from Group where DeveloperName like 'REDU%' 
                             and DeveloperName != 'REDU_All'];
 
-List<GroupMember> gms = new List<GroupMember>();
+if (!(reduAll.isEmpty()) && !(reduGroups.isEmpty())) {
+    List<GroupMember> gms = new List<GroupMember>();
 
-for (Group g : reduGroups) {
-    GroupMember gm = new GroupMember();
-    gm.GroupId = reduAll.Id;
-    gm.UserOrGroupId = g.Id;
-    gms.add(gm);
+    for (Group g1 : reduAll) {
+        for (Group g2 : reduGroups) {
+            GroupMember gm = new GroupMember();
+            gm.GroupId = g1.Id;
+            gm.UserOrGroupId = g2.Id;
+            gms.add(gm);
+        }
+    }
+    
+    insert gms;
 }
-
-insert gms;

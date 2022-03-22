@@ -309,7 +309,7 @@
     },
     "plan:ready": {
         "title": {
-            "message": "RIO Ready Metadata",
+            "message": "RIO Ready",
             "description": "title of installation plan"
         }
     },
