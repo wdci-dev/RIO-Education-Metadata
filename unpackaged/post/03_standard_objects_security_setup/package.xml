@@ -5,11 +5,6 @@
 		<members>Admin</members>
         <name>Profile</name>
     </types>
-    <types>
-		<members>REDU_Admin</members>
-		<members>REDU_All</members>
-		<name>Group</name>
-	</types>
 	<types>
         <members>*</members>
         <name>SharingCriteriaRule</name>

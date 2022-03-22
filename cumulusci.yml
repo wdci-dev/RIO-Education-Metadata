@@ -77,6 +77,8 @@ flows:
                     options:
                         unmanaged: False
                     ui_options:
+                        00_redu_public_groups:
+                            name: RIO Education - Public Groups
                         01_standard_objects_ui:
                             name: RIO Education - Standard Objects UI
                             is_required: False
