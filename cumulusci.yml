@@ -69,7 +69,7 @@ flows:
                 3:
                     task: install_managed
                     options:
-                        version_number: 04t3u000003KqsI
+                        version_number: 04t3u0000038RX4
                     ui_options:
                         name: Install RIO Education 3.7.2
                 4:
