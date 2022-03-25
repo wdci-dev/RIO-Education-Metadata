@@ -71,7 +71,7 @@ flows:
                     options:
                         version_number: 04t3u0000038RX4
                     ui_options:
-                        name: Install RIO Education 3.7.2
+                        name: Install RIO Education 3.7
                 4:
                     task: deploy_post
                     options:
