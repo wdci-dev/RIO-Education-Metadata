@@ -69,7 +69,7 @@ flows:
                 3:
                     task: install_managed
                     ui_options:
-                        name: Install RIO Education 3.7
+                        name: Install RIO Education 3.7.1
                 4:
                     task: deploy_post
                     options:
