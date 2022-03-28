@@ -68,6 +68,8 @@ flows:
                     flow: dependencies
                 3:
                     task: install_managed
+                    options:
+                        version_number: 04t3u000003KqsD
                     ui_options:
                         name: Install RIO Education 3.7.1
                 4:
