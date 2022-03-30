@@ -59,14 +59,7 @@ public without sharing class redu_PrePaymentHandler_LCTRL {
                     if (sfee.rio_ed__Outstanding_Amount__c > 0) {
                         
                         redu_PrePaymentInfo ppInfo = new redu_PrePaymentInfo(sfee);
-                        ppInfo.contactId = sfee.rio_ed__Program_Enrollment__r.hed__Contact__c;
-                        
-                        for (rio_ed__Funding_Allocation__c fa : [SELECT Id, rio_ed__Funding__r.Name, rio_ed__Amount__c FROM rio_ed__Funding_Allocation__c WHERE rio_ed__Status__c = 'Approved' AND (rio_ed__Program_Enrollment__c =: ppInfo.peId OR rio_ed__Program_Application__c =: ppInfo.paId)]) {
-                            ppInfo.hasScholarship = true;
-                            ppInfo.scholarshipInfo += fa.rio_ed__Funding__r.Name + ' $' + fa.rio_ed__Amount__c.format() + '.00<br/>';
-
-                            ppInfo.scholarshipAmount += fa.rio_ed__Amount__c;
-                        }
+                        ppInfo.contactId = sfee.rio_ed__Program_Enrollment__r.hed__Contact__c;                                                
 
                         if(sfee.Payment_Txns__r.isEmpty()){
                             //just in case there is no payment trx, we will create one upon request                            
