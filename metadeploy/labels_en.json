@@ -301,6 +301,14 @@
         "execute_anon": {
             "message": "execute_anon",
             "description": "title of installation step"
+        },
+        "RIO Education - Deactivate Community Users": {
+            "message": "RIO Education - Deactivate Community Users",
+            "description": "title of installation step"
+        },
+        "RIO Education - Provision Community Users": {
+            "message": "RIO Education - Provision Community Users",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

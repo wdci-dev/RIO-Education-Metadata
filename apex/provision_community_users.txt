@@ -6,12 +6,12 @@ try {
     role.CaseAccessForAccountOwner = 'Edit';
     role.ContactAccessForAccountOwner = 'Edit';
     role.OpportunityAccessForAccountOwner = 'Edit';
-
-    insert role;
-
+    
+    upsert role Name;
+    
     User currentUser = [Select UserRoleId From User Where Id = :UserInfo.getUserId()];
     currentUser.UserRoleId= [select Id from UserRole where Name = 'RIOED'].Id;
-
+    
     update currentUser;
 
     /* Provision users */
