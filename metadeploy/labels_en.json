@@ -297,6 +297,10 @@
         "RIO Education - Public Groups": {
             "message": "RIO Education - Public Groups",
             "description": "title of installation step"
+        },
+        "execute_anon": {
+            "message": "execute_anon",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
