@@ -1,0 +1,97 @@
+try {
+    /* Assign new role to running user */
+    UserRole role = new UserRole();
+    role.Name = 'RIOED';
+    role.DeveloperName = 'RIOED';
+    role.CaseAccessForAccountOwner = 'Edit';
+    role.ContactAccessForAccountOwner = 'Edit';
+    role.OpportunityAccessForAccountOwner = 'Edit';
+
+    insert role;
+
+    User currentUser = [Select UserRoleId From User Where Id = :UserInfo.getUserId()];
+    currentUser.UserRoleId= [select Id from UserRole where Name = 'RIOED'].Id;
+
+    update currentUser;
+
+    /* Provision users */
+    List<UserLicense> ccls = [select TotalLicenses, UsedLicenses from userlicense 
+                                    where Name = 'Customer Community Login'];
+            
+    if (ccls.size() == 1) {
+        Integer cclCount = ccls[0].TotalLicenses - ccls[0].UsedLicenses;
+        
+        List<Contact> students = [Select Id, FirstName, LastName From Contact Where Name = 'Howard Randall'
+                                    Or Name = 'Tim Cruz' Or Name = 'Eleanor Huber' Or Name = 'Tim Cruz' 
+                                    Or Name = 'Donna Underwood' Or Name = 'Bonnie Christensen' 
+                                    Or Name = 'Gwen Burton'];
+        
+        Profile reduStudent = [Select Id From Profile Where Name = 'REDU - Student'];
+        
+        Integer studentCount = [Select COUNT() From User Where ProfileId = :reduStudent.Id];
+        
+        List<User> newStudentUsers = new List<User>();
+        
+        for (Integer i = 0; i < Math.min(cclCount, students.size()); i++) {
+            User newStudentUser = new User();
+            newStudentUser.ContactId = students[i].Id;
+            newStudentUser.FirstName = students[i].FirstName;
+            newStudentUser.LastName = students[i].LastName;
+            newStudentUser.Alias = students[i].FirstName.substring(0,1).toLowercase() + 
+                students[i].LastName.substring(0,4).toLowercase() + String.valueOf(studentCount + i);
+            newStudentUser.Email = students[i].FirstName.toLowerCase() + '@riouni.edu';
+            newStudentUser.Username = students[i].FirstName.toLowerCase() + '@riouni.edu';
+            newStudentUser.CommunityNickname = students[i].FirstName.toLowerCase() + 
+                String.valueOf(studentCount + i);
+            newStudentUser.ProfileId = reduStudent.Id;
+            newStudentUser.TimeZoneSidKey = 'Australia/Sydney';
+            newStudentUser.LocaleSidKey = 'en_AU';
+            newStudentUser.EmailEncodingKey = 'UTF-8';
+            newStudentUser.LanguageLocaleKey = 'en_US';
+            
+            newStudentUsers.add(newStudentUser);
+        }
+        
+        insert newStudentUsers;
+    }
+
+    List<UserLicense> ccpls = [select TotalLicenses, UsedLicenses from userlicense 
+                                where Name = 'Customer Community Plus Login'];
+
+    if (ccpls.size() == 1) {
+        Integer ccplCount = ccpls[0].TotalLicenses - ccpls[0].UsedLicenses;
+        
+        List<Contact> faculty = [Select Id, FirstName, LastName From Contact Where Name = 'Fran Fisher'
+                                    Or Name = 'Freddie Freeman' Or Name = 'Edward Educator'];
+        
+        Profile reduFaculty = [Select Id From Profile Where Name = 'REDU - Faculty'];
+        
+        Integer facultyCount = [Select COUNT() From User Where ProfileId = :reduFaculty.Id];
+        
+        List<User> newFacultyUsers = new List<User>();
+        
+        for (Integer i = 0; i < Math.min(ccplCount, faculty.size()); i++) {
+            User newFacultyUser = new User();
+            newFacultyUser.ContactId = faculty[i].Id;
+            newFacultyUser.FirstName = faculty[i].FirstName;
+            newFacultyUser.LastName = faculty[i].LastName;
+            newFacultyUser.Alias = faculty[i].FirstName.substring(0,1).toLowercase() + 
+                faculty[i].LastName.substring(0,4).toLowercase() + String.valueOf(facultyCount + i);
+            newFacultyUser.Email = faculty[i].FirstName.toLowerCase() + '@riouni.edu';
+            newFacultyUser.Username = faculty[i].FirstName.toLowerCase() + '@riouni.edu';
+            newFacultyUser.CommunityNickname = faculty[i].FirstName.toLowerCase() + 
+                String.valueOf(facultyCount + i);
+            newFacultyUser.ProfileId = reduFaculty.Id;
+            newFacultyUser.TimeZoneSidKey = 'Australia/Sydney';
+            newFacultyUser.LocaleSidKey = 'en_AU';
+            newFacultyUser.EmailEncodingKey = 'UTF-8';
+            newFacultyUser.LanguageLocaleKey = 'en_US';
+            
+            newFacultyUsers.add(newFacultyUser);
+        }
+        
+        insert newFacultyUsers;
+    }   
+} catch (Exception e) {
+    System.debug('Error provisioning community users');
+}

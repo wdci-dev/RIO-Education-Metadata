@@ -1,0 +1,19 @@
+try {
+    List<Contact> cts = [Select Id From Contact Where rio_ed__External_Id__c Like 'ISD-%'];
+    List<Id> ctIds = new List<Id>();
+    
+    for (Contact ct : cts) {
+        ctIds.add(ct.Id);
+    }
+    
+    List<User> communityUsers = [Select IsActive, IsPortalEnabled From User Where ContactId in :ctIds];
+    
+    for (User user : communityUsers) {
+        user.IsActive = false;
+        user.isPortalEnabled = false;
+    }
+    
+    update communityUsers;
+} catch (Exception e) {
+    System.debug('Error deleting data');
+}

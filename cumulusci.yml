@@ -132,6 +132,17 @@ flows:
                     ui_options:
                         name: RIO Education - Update Group Members
 
+    delete_data_flow:
+        steps:
+            1:
+                task: execute_anon
+                options:
+                    path: apex/deactivate_community_users.txt
+            2:
+                task: execute_anon
+                options:
+                    path: apex/delete_sample_data.txt
+
 plans:
     install:
         slug: install
@@ -265,9 +276,7 @@ plans:
                 ui_options:
                     name: Disable Trigger Handlers
             2:
-                task: execute_anon
-                options:
-                    path: apex/delete_sample_data.txt
+                flow: delete_data_flow
                 ui_options:
                     name: RIO Education - Delete Sample Data
                     is_required: False
