@@ -309,6 +309,10 @@
         "RIO Education - Provision Community Users": {
             "message": "RIO Education - Provision Community Users",
             "description": "title of installation step"
+        },
+        "Test Apex Error": {
+            "message": "Test Apex Error",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
@@ -338,6 +342,12 @@
     "plan:upgrade": {
         "title": {
             "message": "Upgrade RIO Education",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:test_apex_error": {
+        "title": {
+            "message": "Test Apex Error",
             "description": "title of installation plan"
         }
     }
