@@ -308,7 +308,7 @@ plans:
                 ui_options:
                     name: RIO Education - Approve Fee Schedules
 
-test_apex_error:
+    test_apex_error:
         slug: test_apex_error
         title: Test Apex Error
         tier: additional
