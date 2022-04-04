@@ -307,3 +307,15 @@ plans:
                     path: apex/approve_fs.txt
                 ui_options:
                     name: RIO Education - Approve Fee Schedules
+
+test_apex_error:
+        slug: test_apex_error
+        title: Test Apex Error
+        tier: additional
+        steps:
+            1:
+                task: execute_anon
+                options:
+                    path: apex/test_apex_error.txt
+                ui_options:
+                    name: Test Apex Error
