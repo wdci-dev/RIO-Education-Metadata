@@ -46,6 +46,10 @@ tasks:
             settings_field: IsCommunityWorkspacesEnabled
             value: true
             treat_missing_as_failure: True
+    
+    custom_execute_anon:
+        description: Execute anonymous Apex. Log errors instead of throwing exceptions.
+        class_path: tasks.custom_anon.CustomAnonymousApexTask
 
 flows:
     basic_install:
@@ -314,7 +318,7 @@ plans:
         tier: additional
         steps:
             1:
-                task: execute_anon
+                task: custom_execute_anon
                 options:
                     path: apex/test_apex_error.txt
                 ui_options:
