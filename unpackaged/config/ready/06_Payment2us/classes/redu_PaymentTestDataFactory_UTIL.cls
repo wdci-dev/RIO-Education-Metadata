@@ -51,7 +51,6 @@ public without sharing class redu_PaymentTestDataFactory_UTIL {
 
         customSettings.redu_Payment_Trx_Payment_RT_Id__c = Schema.SObjectType.AAkPay__Payment_Txn__c.getRecordTypeInfosByDeveloperName().get('Payment').getRecordTypeId();
         customSettings.redu_Payment_Trx_Default_Status__c = 'Awaiting Payment';
-        customSettings.redu_Student_Permission_Set_Group__c = 'REDU_Student';
         return customSettings;
     }
 

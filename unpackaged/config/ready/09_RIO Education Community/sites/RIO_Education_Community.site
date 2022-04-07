@@ -22,8 +22,7 @@
     <redirectToCustomDomain>false</redirectToCustomDomain>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>rio-ready@wdcigroup.net</siteAdmin>
-    <siteGuestRecordDefaultOwner>rio-ready@wdcigroup.net</siteGuestRecordDefaultOwner>
+
     <siteType>ChatterNetwork</siteType>
     <subdomain>rio-ready</subdomain>
     <urlPathPrefix>portal</urlPathPrefix>
