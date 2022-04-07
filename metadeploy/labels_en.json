@@ -313,6 +313,58 @@
         "Test Apex Error": {
             "message": "Test Apex Error",
             "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/AccountsReceivableDisplay": {
+            "message": "Deploy unpackaged/config/ready/AccountsReceivableDisplay",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/Community_Transcript": {
+            "message": "Deploy unpackaged/config/ready/Community_Transcript",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/FeeLine": {
+            "message": "Deploy unpackaged/config/ready/FeeLine",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/LoginAndRegister": {
+            "message": "Deploy unpackaged/config/ready/LoginAndRegister",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/LoginAndRegister_preDeploy": {
+            "message": "Deploy unpackaged/config/ready/LoginAndRegister_preDeploy",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/Payment2us": {
+            "message": "Deploy unpackaged/config/ready/Payment2us",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/ProgramApplication": {
+            "message": "Deploy unpackaged/config/ready/ProgramApplication",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/RIO Education Community": {
+            "message": "Deploy unpackaged/config/ready/RIO Education Community",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/Refund": {
+            "message": "Deploy unpackaged/config/ready/Refund",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/Scholarship": {
+            "message": "Deploy unpackaged/config/ready/Scholarship",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/StudentID": {
+            "message": "Deploy unpackaged/config/ready/StudentID",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/StudentRequest": {
+            "message": "Deploy unpackaged/config/ready/StudentRequest",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/ready/Withdrawal": {
+            "message": "Deploy unpackaged/config/ready/Withdrawal",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
