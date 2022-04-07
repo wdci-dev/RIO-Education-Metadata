@@ -269,7 +269,7 @@ plans:
                 ui_options:
                     name: Disable Trigger Handlers
             2:
-                task: execute_anon
+                task: custom_execute_anon
                 options:
                     path: apex/deactivate_community_users.txt
                 ui_options:
@@ -277,7 +277,7 @@ plans:
                     is_required: False
                     is_recommended: False
             3:
-                task: execute_anon
+                task: custom_execute_anon
                 options:
                     path: apex/delete_sample_data.txt
                 ui_options:
@@ -292,7 +292,7 @@ plans:
                 ui_options:
                     name: RIO Education - Load Sample Data
             5:
-                task: execute_anon
+                task: custom_execute_anon
                 options:
                     path: apex/provision_community_users.txt
                 ui_options:
@@ -311,15 +311,3 @@ plans:
                     path: apex/approve_fs.txt
                 ui_options:
                     name: RIO Education - Approve Fee Schedules
-
-    test_apex_error:
-        slug: test_apex_error
-        title: Test Apex Error
-        tier: additional
-        steps:
-            1:
-                task: custom_execute_anon
-                options:
-                    path: apex/test_apex_error.txt
-                ui_options:
-                    name: Test Apex Error

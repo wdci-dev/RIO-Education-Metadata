@@ -158,5 +158,4 @@ class CustomAnonymousApexTask(BaseSalesforceApiTask):
             self.logger.info(anon_results["exceptionMessage"])
             error = True
         if error == False:
-            self.logger.info
             self.logger.info("Anonymous Apex Executed Successfully!")
