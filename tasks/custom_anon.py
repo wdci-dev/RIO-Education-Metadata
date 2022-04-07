@@ -75,7 +75,6 @@ class CustomAnonymousApexTask(BaseSalesforceApiTask):
             params={"anonymousBody": apex},
         )
         self._check_result(result)
-        self.logger.info("Anonymous Apex Executed Successfully!")
 
     def _process_apex_from_path(self, apex_path):
         """Process apex given via the --path task option"""
@@ -145,12 +144,19 @@ class CustomAnonymousApexTask(BaseSalesforceApiTask):
         anon_results = safe_json_from_response(result)
 
         # A result of `None` (body == "null") with a 200 status code means that a gack occurred.
+        error = False
         if anon_results is None:
-            raise SalesforceException(
+            self.logger.info(
                 "Anonymous Apex returned the result `null`. "
                 "This often indicates a gack occurred."
             )
+            error = True
         if not anon_results["compiled"]:
             self.logger.info(anon_results["compileProblem"])
+            error = True
         if not anon_results["success"]:
             self.logger.info(anon_results["exceptionMessage"])
+            error = True
+        if error == False:
+            self.logger.info
+            self.logger.info("Anonymous Apex Executed Successfully!")
