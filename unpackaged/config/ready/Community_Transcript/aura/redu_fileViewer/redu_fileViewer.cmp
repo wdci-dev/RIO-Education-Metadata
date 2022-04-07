@@ -1,0 +1,57 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="redu_FileViewerController_LCTRL">
+    
+    <aura:attribute name="cardTitle" type="String" access="global" required="false" default="Academic Transcripts"/>
+    
+    <aura:attribute name="currentRecordId" type="String" access="global" required="false" default=""/>
+    <aura:attribute name="targetRecordIdField" type="String" access="global" required="true" default="Id"/>
+    <aura:attribute name="parentObjectRefField" type="String" access="global" required="true" default="NotUsedForCV"/>
+    <aura:attribute name="contentVersionApiName" type="String" access="global" required="true" default="ContentVersion"/>
+    <aura:attribute name="contentVersionFieldSet" type="String" access="global" required="true" default="ContentVersion_TranscriptFields"/>
+    <aura:attribute name="contentVersionFilterCriteria" type="String" access="global" default="redu_File_Category__c = 'Transcript'"/> <!--redu_File_Category__c = 'Transcript' -->
+    
+    <aura:attribute name="sortedBy" type="String" access="global" required="true" default="Name"/>
+    <aura:attribute name="sortedDirection" type="String" access="global" required="true" default="asc"/>
+    
+    <aura:attribute name="enableNewButton" type="Boolean" access="global" default="false" />
+    <aura:attribute name="enableRowViewButton" type="Boolean" access="global" default="false" />
+    <aura:attribute name="enableRowEditButton" type="Boolean" access="global" default="false" />
+    <aura:attribute name="enableRowDeleteButton" type="Boolean" access="global" default="false" />
+    <aura:attribute name="enableRowDownloadButton" type="Boolean" access="global" default="true" />
+    
+    <aura:attribute name="maxHeight" type="Integer" access="global" default="300"/>
+    <aura:attribute name="showRowNumber" type="Boolean" access="global" default="true" />
+    
+    <aura:attribute name="enableInfiniteLoading" type="Boolean" access="global" default="true" />
+    <aura:attribute name="rowsToLoad" type="Integer" access="global" default="10" />
+    
+    <aura:attribute name="enableViewAll" type="Boolean" access="global" default="false" />
+    <aura:attribute name="enableClickableRefField" type="Boolean" access="global" default="true" />
+    <aura:attribute name="editFormFieldsString" type="String" access="global" />
+    
+    <aura:attribute name="forCommunity" type="Boolean" access="global" default="true" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <c:redu_customSingleRelatedList aura:id="trList" cardTitle = "{!v.cardTitle}"
+                                    currentRecordId = "{!v.currentRecordId}"
+                                    targetRecordIdField = "{!v.targetRecordIdField}"
+                                    parentObjectRefField = "{!v.parentObjectRefField}"
+                                    childObjectApiName = "{!v.contentVersionApiName}"
+                                    childObjectFieldSet = "{!v.contentVersionFieldSet}"
+                                    childObjectFilterCriteria = "{!v.contentVersionFilterCriteria}"
+                                    sortedBy = "{!v.sortedBy}"
+                                    sortedDirection = "{!v.sortedDirection}"
+                                    enableNewButton = "{!v.enableNewButton}"
+                                    enableRowViewButton = "{!v.enableRowViewButton}"
+                                    enableRowEditButton = "{!v.enableRowEditButton}"
+                                    enableRowDeleteButton = "{!v.enableRowDeleteButton}"
+                                    enableRowDownloadButton = "{!v.enableRowDownloadButton}"
+                                    maxHeight = "{!v.maxHeight}"
+                                    showRowNumber = "{!v.showRowNumber}"
+                                    enableInfiniteLoading = "{!v.enableInfiniteLoading}"
+                                    rowsToLoad = "{!v.rowsToLoad}"
+                                    enableViewAll = "{!v.enableViewAll}"
+                                    enableClickableRefField = "{!v.enableClickableRefField}"
+                                    editFormFieldsString = "{!v.editFormFieldsString}"
+                                    forCommunity = "{!v.forCommunity}"/>
+</aura:component>

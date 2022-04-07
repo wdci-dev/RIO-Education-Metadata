@@ -1,0 +1,115 @@
+<aura:component controller="redu_CustomSingleRelatedList_LCTRL" implements="force:hasRecordId,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,lightning:availableForFlowScreens" access="global" >
+
+    <!--PAN:7418 WDCI Lean -->
+    
+    <!-- attributes -->
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="columns" type="List"/>
+    
+    <aura:attribute name="cardTitle" type="String" access="global" required="false" />
+
+    <aura:attribute name="currentRecordId" type="String" access="global" required="false" />
+    <aura:attribute name="targetRecordIdField" type="String" access="global" required="true" />
+    <aura:attribute name="parentObjectRefField" type="String" access="global" required="true" />
+    <aura:attribute name="childObjectApiName" type="String" access="global" required="true" />
+    <aura:attribute name="childObjectFieldSet" type="String" access="global" required="true" />
+    <aura:attribute name="childObjectFilterCriteria" type="String" access="global" />
+
+    <aura:attribute name="sortedBy" type="String" access="global" required="true" />
+    <aura:attribute name="sortedDirection" type="String" access="global" required="true" />
+
+    <aura:attribute name="enableNewButton" type="Boolean" access="global" default="true" />
+    <aura:attribute name="enableRowViewButton" type="Boolean" access="global" default="true" />
+    <aura:attribute name="enableRowEditButton" type="Boolean" access="global" default="true" />
+    <aura:attribute name="enableRowDeleteButton" type="Boolean" access="global" default="true" />
+    <aura:attribute name="enableRowDownloadButton" type="Boolean" access="global" default="false" />
+    
+    <aura:attribute name="maxHeight" type="Integer" access="global" default="300"/>
+    <aura:attribute name="showRowNumber" type="Boolean" access="global" default="true" />
+
+    <aura:attribute name="enableInfiniteLoading" type="Boolean" access="global" default="false" />
+    <aura:attribute name="rowsToLoad" type="Integer" access="global" default="10" />
+
+    <aura:attribute name="enableViewAll" type="Boolean" access="global" default="true" />
+    <aura:attribute name="enableClickableRefField" type="Boolean" access="global" default="true" />
+    <aura:attribute name="editFormFieldsString" type="String" access="global" />
+
+    <aura:attribute name="forCommunity" type="Boolean" access="global" default="false" />
+
+    <!-- internal use -->
+    <aura:attribute name="childObjectRelationshipApiName" type="String" access="global" />
+    <aura:attribute name="childObjectLabel" type="String" access="global" />
+    <aura:attribute name="childObjectPluralLabel" type="String" access="global" />
+    <aura:attribute name="objectIcon" type="String" access="global" />
+    <aura:attribute name="parentId" type="String" access="global" />
+    <aura:attribute name="heightCss" type="String" access="global" />
+    <aura:attribute name="msg" type="String" access="global"  />
+    
+    <aura:attribute name="loadMoreOffset" type="Integer" default="20" />
+    <aura:attribute name="currentOffset" type="Integer" default="0" />
+
+    <aura:attribute name="loaded" type="Boolean" access="global" default="false" />
+        
+    <aura:handler event="c:redu_fileUploaded" action="{!c.reload}" />
+    <aura:handler event="force:showToast" action="{!c.handleToastEvent}"/>
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <lightning:navigation aura:id="navService"/>
+    
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <aura:method name="reload" action="{!c.reload}" description="Manual method to reload the records"/>
+
+    <!-- the container element determine the height of the datatable -->
+    <div class="maincontent">
+        <div class="spinnerholder">
+            <!--<aura:if isTrue="{!v.loaded == false}">
+                <lightning:spinner alternativeText="Loading" id="spinner" />
+            </aura:if>-->
+        </div>
+        <div class="datatableholder">
+            <lightning:card class="slds-card_boundary" iconName="{!v.objectIcon}">
+                <aura:set attribute="actions">
+                    <aura:if isTrue="{!v.enableNewButton}">
+                        <lightning:button label="New" onclick="{!c.handleCreateRecord}"/>
+                    </aura:if>
+                </aura:set>
+
+                <aura:set attribute="title">
+                    <b><a class="slds-card__header-link" onclick="{!c.handleViewAll}">{!v.cardTitle}</a></b>
+                </aura:set> 
+                
+                <aura:if isTrue="{!not(empty(v.data))}">
+                    <div style="{!v.heightCss}">
+                        <lightning:datatable
+                            columns="{!v.columns}"
+                            data="{!v.data}"
+                            keyField="id"
+                            showRowNumberColumn="{!v.showRowNumber}"
+                            onrowaction="{!c.handleRowAction}"
+                            hideCheckboxColumn="true" 
+                            enableInfiniteLoading="{!v.enableInfiniteLoading}" 
+                            loadMoreOffset="{!v.loadMoreOffset}"
+                            onloadmore="{!c.handleLoadMoreData}"
+                            sortedBy="{!v.sortedBy}"
+                            sortedDirection="{!v.sortedDirection}"
+                            onsort="{!c.handleOnSort}"
+                            resizeColumnDisabled="true"
+                            />
+                    </div>
+                </aura:if>
+                
+                <aura:set attribute="footer">
+                    <aura:if isTrue="{!v.enableViewAll}">
+                        <aura:if isTrue="{!not(empty(v.data))}">  
+                            <a onclick="{!c.handleViewAll}">{!$Label.c.redu_View_All}</a>
+                        </aura:if>
+                    </aura:if>
+                </aura:set> 
+
+            </lightning:card>
+        </div>
+        <div class="msgholder">
+            {!v.msg}
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_File_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>File Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Portfolio</fullName>
+                    <default>false</default>
+                    <label>Portfolio</label>
+                </value>
+                <value>
+                    <fullName>Reference</fullName>
+                    <default>false</default>
+                    <label>Reference</label>
+                </value>
+                <value>
+                    <fullName>Artist CV</fullName>
+                    <default>false</default>
+                    <label>Artist CV</label>
+                </value>
+                <value>
+                    <fullName>Unofficial Transcript</fullName>
+                    <default>false</default>
+                    <label>Unofficial Transcript</label>
+                </value>
+                <value>
+                    <fullName>Transcript</fullName>
+                    <default>false</default>
+                    <label>Transcript</label>
+                </value>
+                <value>
+                    <fullName>English Test Result</fullName>
+                    <default>false</default>
+                    <label>English Test Result</label>
+                </value>
+                <value>
+                    <fullName>Invoice</fullName>
+                    <default>false</default>
+                    <label>Invoice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

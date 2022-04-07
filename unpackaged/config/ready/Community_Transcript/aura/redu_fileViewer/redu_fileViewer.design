@@ -1,0 +1,30 @@
+<design:component label = "REDU - File List">
+    <design:attribute name="cardTitle" label="Title" description="Title." />
+    <!--<design:attribute name="targetRecordIdField" label="Target Record Id Field" description="The Id field (master-detailed/lookup) API name from the current object to be used in searching related child records based on Parent Object Reference Field." />-->
+    <!--<design:attribute name="parentObjectRefField" label="Parent Object Reference Field" description="The Id field (master-detailed/lookup) API name of the parent object used in child object." />-->
+    <!--<design:attribute name="childObjectApiName" label="Child Object API Name" description="E.g, OpportunityLineItem or rio_ed__Fee_Line__c" />-->
+    <design:attribute name="contentVersionFieldSet" label="contentVersion Field Set API Name" description="The field set API name used to display the list of columns. Please note that Rich Text and Time are not supported." />
+    <design:attribute name="contentVersionFilterCriteria" label="contentVersion Record Filter Criteria" description="E.g, RecordTypeId = 'xxxxxx' or Description = 'Acme'." />
+
+    <!--<design:attribute name="sortedBy" label="Sorted By" description="E.g, Name." />-->
+    <!--<design:attribute name="sortedDirection" label="Sorted Direction" description="E.g, Acsending or Descending." datasource="asc,desc" />-->
+
+    <!--<design:attribute name="currentRecordId" label="Current Record Id" description="Current record id." />-->
+    <!--<design:attribute name="enableViewAll" label="Show View All Button" description="Show view all button for user to view full list." />-->
+    <!--<design:attribute name="enableNewButton" label="Show New Button" description="Show new button for user to create record." />-->
+    <design:attribute name="enableRowViewButton" label="Show View Button" description="Show view button for user to view a record." />
+    <!--<design:attribute name="enableRowEditButton" label="Show Edit Button" description="Show edit button for user to edit a record." />-->
+    <!--<design:attribute name="enableRowDeleteButton" label="Show Delete Button" description="Show delete button for user to delete a record." />-->
+    <design:attribute name="enableRowDownloadButton" label="Show Download Button(For Files only)" description="Show download button for user to download File." />
+    
+    <design:attribute name="maxHeight" label="Maximum Height" description="Maximum height of the component in pixel." />
+    <design:attribute name="showRowNumber" label="Show Row Number" description="Show sequence number for each row." />
+
+    <design:attribute name="enableInfiniteLoading" label="Enable Infinite Loading" description="To enable infinite loading." />
+    <design:attribute name="rowsToLoad" label="Rows to Load" description="Rows to load" />
+
+    <design:attribute name="enableClickableRefField" label="Make reference field clickable" description="Make master-detail or lookup field clickable to open the record." />
+    <design:attribute name="forCommunity" label="For Community?" description="For community" />
+    
+    <!--<design:attribute name="editFormFieldsString" label="Create/Edit Form Header" description="Create/Edit Form Header." />	-->
+</design:component>
