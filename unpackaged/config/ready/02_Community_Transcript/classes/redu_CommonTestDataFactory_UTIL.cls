@@ -186,7 +186,7 @@ public without sharing class redu_CommonTestDataFactory_UTIL {
                 AccountId = acc.Id);
             con.rio_ed__Community_Username__c = con.Email;
             con.rio_ed__Community_Username_Prefix__c = 'testStud_'+conCounter+'_'+numContacts;
-            con.hed__Preferred_Email__c = redu_PaymentConstant_UTIL.PREFERREDEMAIL_ALTERNATE;
+            con.hed__Preferred_Email__c = 'Alternate Email';
             con.hed__AlternateEmail__c = con.Email;
             cons.add(con);
             conCounter++;
