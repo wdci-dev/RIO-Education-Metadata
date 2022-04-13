@@ -18,6 +18,7 @@
         <members>redu_DummyFlowAction</members>
 		<members>redu_fileViewer</members>
 		<members>redu_customSingleRelatedList</members>
+		<members>redu_fileUploaded</members>
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
@@ -33,6 +34,11 @@
     <types>
         <members>Admin</members>
         <name>Profile</name>
+    </types>
+	<types>
+        <members>redu_Custom_Related_List_Delete_Warning</members>
+        <members>redu_View_All</members>
+        <name>CustomLabel</name>
     </types>
     <version>53.0</version>
 </Package>

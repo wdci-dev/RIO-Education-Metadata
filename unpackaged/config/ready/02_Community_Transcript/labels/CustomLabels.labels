@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>redu_Custom_Related_List_Delete_Warning</fullName>
+        <categories>Custom Related List</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Custom Related List - Delete Warning</shortDescription>
+        <value>Are you sure you want to delete this {0}?</value>
+    </labels>
+    <labels>
+        <fullName>redu_View_All</fullName>
+        <categories>Custom related list</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View All</shortDescription>
+        <value>View All</value>
+    </labels>
+</CustomLabels>

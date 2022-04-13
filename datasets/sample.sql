@@ -769,8 +769,8 @@ CREATE TABLE "hed__Program_Plan__c" (
 	"rio_ed__Deposit_Fee__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "hed__Program_Plan__c" VALUES(1,'ISD-PPLAN-01','Bachelor of Business Management (Course-Upfront)','True','2022-01-19','Current','False','False','False','False','Course','Yes','For application fee only','True','15','','','');
-INSERT INTO "hed__Program_Plan__c" VALUES(2,'ISD-PPLAN-02','Bachelor of Business Information System V1','True','2022-01-19','Current','False','False','False','False','Course','Yes','For application fee only','True','21','','2','');
+INSERT INTO "hed__Program_Plan__c" VALUES(1,'ISD-PPLAN-01','Bachelor of Business Management (Course-Upfront)','True','2022-01-19','Current','False','False','False','False','Course','Yes','Always','True','15','','','');
+INSERT INTO "hed__Program_Plan__c" VALUES(2,'ISD-PPLAN-02','Bachelor of Business Information System V1','True','2022-01-19','Current','False','False','False','False','Course','Yes','Always','True','21','','2','');
 INSERT INTO "hed__Program_Plan__c" VALUES(3,'ISD-PPLAN-03','Bachelor of Business Information System V1.5','False','2022-01-19','Current','True','False','False','False','Course','Yes','For application fee only','True','21','','','');
 INSERT INTO "hed__Program_Plan__c" VALUES(4,'ISD-PPLAN-04','Bachelor of Business Information System V2','False','2022-01-19','Current','True','True','True','False','Course','Yes','For application fee only','True','21','6','','5');
 CREATE TABLE "hed__Term_Grade__c" (
@@ -798,6 +798,7 @@ CREATE TABLE "hed__Term__c" (
 	"hed__End_Date__c" VARCHAR(255), 
 	"hed__Start_Date__c" VARCHAR(255), 
 	"hed__Type__c" VARCHAR(255), 
+	"rio_ed__Census_Date__c" VARCHAR(255), 
 	"rio_ed__Enrollment_Open_Date_Time__c" VARCHAR(255), 
 	"rio_ed__Grading_Period_Type__c" VARCHAR(255), 
 	"rio_ed__Term_Label__c" VARCHAR(255), 
@@ -805,12 +806,12 @@ CREATE TABLE "hed__Term__c" (
 	"rio_ed__Previous_Term__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "hed__Term__c" VALUES(1,'ISD-TERM-01','Last Year Term 2','2021-11-17','2021-07-01','','','Final Grade','Default','18','2');
-INSERT INTO "hed__Term__c" VALUES(2,'ISD-TERM-02','Last Year Term 1','2021-06-17','2020-12-19','','','Final Grade','Default','18','');
-INSERT INTO "hed__Term__c" VALUES(3,'ISD-TERM-03','Next Year Term 1','2023-06-17','2023-01-19','Semester','2023-01-18T14:00:00.000+0000','Final Grade','Default','18','6');
-INSERT INTO "hed__Term__c" VALUES(4,'ISD-TERM-04','Next Year Term 2','2023-11-17','2023-07-01','Semester','2023-06-30T14:00:00.000+0000','Final Grade','Default','18','3');
-INSERT INTO "hed__Term__c" VALUES(5,'ISD-TERM-05','Current Year Term 1','2022-06-17','2022-01-19','Semester','2021-12-18T14:00:00.000+0000','Final Grade','Default','18','');
-INSERT INTO "hed__Term__c" VALUES(6,'ISD-TERM-06','Current Year Term 2','2022-11-17','2022-07-01','Semester','2022-06-30T14:00:00.000+0000','Final Grade','Default','18','5');
+INSERT INTO "hed__Term__c" VALUES(1,'ISD-TERM-01','Last Year Term 2','2021-11-17','2021-07-01','','2021-09-01','','Final Grade','Default','18','2');
+INSERT INTO "hed__Term__c" VALUES(2,'ISD-TERM-02','Last Year Term 1','2021-06-17','2020-12-19','','2021-03-01','Final Grade','Default','18','');
+INSERT INTO "hed__Term__c" VALUES(3,'ISD-TERM-03','Next Year Term 1','2023-06-17','2023-01-19','Semester','2023-03-01','2023-01-18T14:00:00.000+0000','Final Grade','Default','18','6');
+INSERT INTO "hed__Term__c" VALUES(4,'ISD-TERM-04','Next Year Term 2','2023-11-17','2023-07-01','Semester','2023-09-01','2023-06-30T14:00:00.000+0000','Final Grade','Default','18','3');
+INSERT INTO "hed__Term__c" VALUES(5,'ISD-TERM-05','Current Year Term 1','2022-06-17','2022-01-19','Semester','2022-03-01','2021-12-18T14:00:00.000+0000','Final Grade','Default','18','');
+INSERT INTO "hed__Term__c" VALUES(6,'ISD-TERM-06','Current Year Term 2','2022-11-17','2022-07-01','Semester','2022-09-01','2022-06-30T14:00:00.000+0000','Final Grade','Default','18','5');
 CREATE TABLE "hed__Time_Block__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 

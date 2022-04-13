@@ -1,0 +1,1 @@
+<aura:event type="APPLICATION" description="Called when a file is uploaded by the redu_CustomFileUploader component"/>
