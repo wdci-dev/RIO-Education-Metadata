@@ -807,7 +807,7 @@ CREATE TABLE "hed__Term__c" (
 	PRIMARY KEY (id)
 );
 INSERT INTO "hed__Term__c" VALUES(1,'ISD-TERM-01','Last Year Term 2','2021-11-17','2021-07-01','','2021-09-01','','Final Grade','Default','18','2');
-INSERT INTO "hed__Term__c" VALUES(2,'ISD-TERM-02','Last Year Term 1','2021-06-17','2020-12-19','','2021-03-01','Final Grade','Default','18','');
+INSERT INTO "hed__Term__c" VALUES(2,'ISD-TERM-02','Last Year Term 1','2021-06-17','2020-12-19','','2021-03-01','','Final Grade','Default','18','');
 INSERT INTO "hed__Term__c" VALUES(3,'ISD-TERM-03','Next Year Term 1','2023-06-17','2023-01-19','Semester','2023-03-01','2023-01-18T14:00:00.000+0000','Final Grade','Default','18','6');
 INSERT INTO "hed__Term__c" VALUES(4,'ISD-TERM-04','Next Year Term 2','2023-11-17','2023-07-01','Semester','2023-09-01','2023-06-30T14:00:00.000+0000','Final Grade','Default','18','3');
 INSERT INTO "hed__Term__c" VALUES(5,'ISD-TERM-05','Current Year Term 1','2022-06-17','2022-01-19','Semester','2022-03-01','2021-12-18T14:00:00.000+0000','Final Grade','Default','18','');
