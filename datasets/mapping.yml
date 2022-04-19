@@ -119,6 +119,7 @@ Insert hed__Term__c:
   - hed__End_Date__c
   - hed__Start_Date__c
   - hed__Type__c
+  - rio_ed__Census_Date__c
   - rio_ed__Enrollment_Open_Date_Time__c
   - rio_ed__Grading_Period_Type__c
   - rio_ed__Term_Label__c
