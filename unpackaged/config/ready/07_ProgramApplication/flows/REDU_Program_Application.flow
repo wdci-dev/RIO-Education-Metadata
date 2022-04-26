@@ -81,13 +81,6 @@
                 <elementReference>Object_Contact.Birthdate</elementReference>
             </value>
         </assignmentItems>
-        <assignmentItems>
-            <assignToReference>input_communityUsernamePrefix</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Object_Contact.rio_ed__Community_Username_Prefix__c</elementReference>
-            </value>
-        </assignmentItems>
         <connector>
             <targetReference>Form_Type</targetReference>
         </connector>
@@ -144,13 +137,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>BirthDate</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Object_Contact.rio_ed__Community_Username_Prefix__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>contactCommunityUsernamePrefix</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -592,15 +578,15 @@
         <displayField>Name</displayField>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>rio_ed__Census_Date__c</field>
-            <operator>GreaterThanOrEqualTo</operator>
+            <field>rio_ed__Enrollment_Open_Date_Time__c</field>
+            <operator>LessThanOrEqualTo</operator>
             <value>
                 <elementReference>$Flow.CurrentDate</elementReference>
             </value>
         </filters>
         <filters>
-            <field>rio_ed__Enrollment_Open_Date_Time__c</field>
-            <operator>LessThanOrEqualTo</operator>
+            <field>rio_ed__Census_Date__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
             <value>
                 <elementReference>$Flow.CurrentDate</elementReference>
             </value>
@@ -832,7 +818,6 @@
         <queriedFields>MobilePhone</queriedFields>
         <queriedFields>Salutation</queriedFields>
         <queriedFields>Birthdate</queriedFields>
-        <queriedFields>rio_ed__Community_Username_Prefix__c</queriedFields>
     </recordLookups>
     <recordUpdates>
         <name>Update_Contact</name>
@@ -854,6 +839,7 @@
         </connector>
         <inputReference>Object_ProgramApplication</inputReference>
     </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Campus</name>
         <label>Campus</label>
