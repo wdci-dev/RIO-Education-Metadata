@@ -135,8 +135,6 @@ flows:
                         path: apex/update_group_members.txt
                     ui_options:
                         name: RIO Education - Update Group Members
-                        is_required: False
-                        is_recommended: False
 
 plans:
     install:
