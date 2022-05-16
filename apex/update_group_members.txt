@@ -1,6 +1,7 @@
 List<Group> reduAll = [Select Id from Group where DeveloperName = 'REDU_All'];
-List<Group> reduGroups = [Select Id from Group where DeveloperName like 'REDU%' 
-                            and DeveloperName != 'REDU_All'];
+List<Group> reduGroups = [Select Id from Group where DeveloperName = 'REDU_Admin' 
+                            Or DeveloperName = 'REDU_Faculty' Or DeveloperName = 'REDU_Guest'
+                            Or DeveloperName = 'REDU_Student'];
 
 if (!(reduAll.isEmpty()) && !(reduGroups.isEmpty())) {
     List<GroupMember> gms = new List<GroupMember>();
