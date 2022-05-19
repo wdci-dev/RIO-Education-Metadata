@@ -51,5 +51,9 @@
         <members>REDU_Guest_Login_Permission</members>
         <name>PermissionSet</name>
     </types>
+	<types>
+        <members>reCaptcha</members>
+        <name>RemoteSiteSetting</name>
+    </types>
     <version>52.0</version>
 </Package>

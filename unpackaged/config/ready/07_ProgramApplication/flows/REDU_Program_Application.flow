@@ -247,14 +247,14 @@
             <assignToReference>Object_ProgramApplication.rio_ed__Fee_Type__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>input_feeType</elementReference>
+                <elementReference>pa_FeeType</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>Object_ProgramApplication.rio_ed__Fee_Type_Option__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>input_feeTypeOption</elementReference>
+                <elementReference>pa_FeeTypeOption</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -383,6 +383,51 @@
             <targetReference>Thank_You_Screen</targetReference>
         </connector>
     </assignments>
+    <choices>
+        <description>FEE-HELP</description>
+        <name>choice_pa_FeeTypeOption_FEEHELP</name>
+        <choiceText>FEE-HELP</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>FEE-HELP</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Financial AID</description>
+        <name>choice_pa_FeeTypeOption_FinancialAID</name>
+        <choiceText>Financial AID</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Financial AID</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Multiple</description>
+        <name>choice_pa_FeeTypeOption_Multiple</name>
+        <choiceText>Multiple</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Multiple</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Scholarship</description>
+        <name>choice_pa_FeeTypeOption_Scholarship</name>
+        <choiceText>Scholarship</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Scholarship</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <description>Sponsor</description>
+        <name>choice_pa_FeeTypeOption_Sponsor</name>
+        <choiceText>Sponsor</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Sponsor</stringValue>
+        </value>
+    </choices>
     <constants>
         <name>Constant_ProgramOffering</name>
         <dataType>String</dataType>
@@ -530,6 +575,14 @@
         <object xsi:nil="true"/>
         <picklistField>rio_ed__Study_Mode__c</picklistField>
         <picklistObject>rio_ed__Educational_Qualification__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>picklistOption_pa_FeeType</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>rio_ed__Fee_Type__c</picklistField>
+        <picklistObject>rio_ed__Program_Application__c</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>PicklistOption_PA_StudyMode</name>
@@ -1219,67 +1272,34 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>Fee_Type</name>
-            <extensionName>flowruntime:dependentPicklists</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>dependencyWrapperApiName</name>
-                <value>
-                    <stringValue>rio_ed__Program_Application__c</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>topPicklistApiName</name>
-                <value>
-                    <stringValue>rio_ed__Fee_Type__c</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>middlePicklistApiName</name>
-                <value>
-                    <stringValue>rio_ed__Fee_Type_Option__c</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>topLabel</name>
-                <value>
-                    <stringValue>Payment Type</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>middleLabel</name>
-                <value>
-                    <stringValue>Assistance/Funding Options</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>topRequired</name>
-                <value>
-                    <booleanValue>true</booleanValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>topValue</name>
-                <value>
-                    <elementReference>input_feeType</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>middleValue</name>
-                <value>
-                    <elementReference>input_feeTypeOption</elementReference>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <name>pa_FeeType</name>
+            <choiceReferences>picklistOption_pa_FeeType</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Payment Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
             <isRequired>true</isRequired>
-            <outputParameters>
-                <assignToReference>input_feeType</assignToReference>
-                <name>topValue</name>
-            </outputParameters>
-            <outputParameters>
-                <assignToReference>input_feeTypeOption</assignToReference>
-                <name>middleValue</name>
-            </outputParameters>
+        </fields>
+        <fields>
+            <name>pa_FeeTypeOption</name>
+            <choiceReferences>choice_pa_FeeTypeOption_FinancialAID</choiceReferences>
+            <choiceReferences>choice_pa_FeeTypeOption_Scholarship</choiceReferences>
+            <choiceReferences>choice_pa_FeeTypeOption_Sponsor</choiceReferences>
+            <choiceReferences>choice_pa_FeeTypeOption_Multiple</choiceReferences>
+            <choiceReferences>choice_pa_FeeTypeOption_FEEHELP</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Assistance/Funding Options</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>pa_FeeType</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>Financial Assistance</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
         </fields>
         <fields>
             <name>Empty_Space</name>
