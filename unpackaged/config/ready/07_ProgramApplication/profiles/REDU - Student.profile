@@ -1,4 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>false</enabled>
+        <name>rio_ed__REDU_Admin</name>
+    </customPermissions>
+	<customPermissions>
+        <enabled>false</enabled>
+        <name>rio_ed__REDU_Faculty</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>false</enabled>
+        <name>rio_ed__REDU_Scheduler</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>false</enabled>
+        <name>rio_ed__REDU_Student</name>
+    </customPermissions>
+
     <custom>true</custom>
     <description>Custom Profile for RIO Education Student Users.</description>
     <fieldPermissions>

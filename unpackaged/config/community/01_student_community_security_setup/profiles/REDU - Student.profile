@@ -13,7 +13,7 @@
         <name>rio_ed__REDU_Scheduler</name>
     </customPermissions>
     <customPermissions>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <name>rio_ed__REDU_Student</name>
     </customPermissions>
 
