@@ -74,6 +74,7 @@ flows:
                     task: install_managed
                     options:
                         version_number: 04t3u000002t5I8
+                        security_type: NONE
                     ui_options:
                         name: Install RIO Education 3.8.4
                 4:
