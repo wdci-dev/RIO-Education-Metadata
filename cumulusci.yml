@@ -176,6 +176,14 @@ plans:
         tier: additional
         steps:
             1:
+                    task: org_settings
+                    options:
+                        settings:
+                            ExperienceBundleSettings:
+                                enableExperienceBundleMetadata: true
+                    ui_options:
+                        name: RIO Education - Enable ExperienceBundle Metadata API
+            2:
                 task: deploy_post
                 options:
                     path: unpackaged/config/community
