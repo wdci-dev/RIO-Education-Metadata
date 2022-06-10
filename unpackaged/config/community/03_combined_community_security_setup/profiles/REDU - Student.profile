@@ -844,6 +844,9 @@
     <layoutAssignments>
         <layout>rio_ed__Trigger_Handler_Data__mdt-rio_ed__Trigger Handler Data Layout</layout>
     </layoutAssignments>
+	<layoutAssignments>
+        <layout>hed__Application__c-rio_ed__RIOEducation Application Community Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>hed__Course_Enrollment__c-rio_ed__RIOEducation Faculty Course Enrollment Layout</layout>
         <recordType>hed__Course_Enrollment__c.Faculty</recordType>
