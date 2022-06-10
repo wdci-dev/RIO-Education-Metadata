@@ -3,6 +3,7 @@
     <types>
         <members>hed__Address__c</members>
         <members>hed__Affiliation__c</members>
+		<members>hed__Application__c</members>
         <members>hed__Course_Enrollment__c</members>
         <members>hed__Course_Offering__c</members>
         <members>hed__Course__c</members>
@@ -17,6 +18,7 @@
     <types>
         <members>hed__Address__c.hed__All</members>
         <members>hed__Affiliation__c.hed__All</members>
+		<members>hed__Application__c.hed__All</members>
         <members>hed__Course_Enrollment__c.All_Faculty</members>
         <members>hed__Course_Enrollment__c.All_Students</members>
         <members>hed__Course_Enrollment__c.hed__All</members>
