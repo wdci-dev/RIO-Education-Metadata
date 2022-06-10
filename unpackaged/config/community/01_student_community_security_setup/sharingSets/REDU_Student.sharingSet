@@ -18,6 +18,12 @@
         <objectField>rio_ed__Contact__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
+	<accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>hed__Application__c</object>
+        <objectField>hed__Applicant__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
     <accessMappings>
         <accessLevel>Edit</accessLevel>
         <object>hed__Course_Enrollment__c</object>

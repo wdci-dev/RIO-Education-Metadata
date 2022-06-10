@@ -95,6 +95,9 @@
     <custom>true</custom>
     <description>Custom Profile for RIO Education Admin Users.</description>
     
+	<layoutAssignments>
+        <layout>hed__Application__c-rio_ed__RIOEducation Application Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>hed__Course_Enrollment__c-rio_ed__RIOEducation Faculty Course Enrollment Layout</layout>
         <recordType>hed__Course_Enrollment__c.Faculty</recordType>

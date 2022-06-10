@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>hed__Application__c</entityName>
+    <fieldName>hed__Application_Status__c</fieldName>
+    <masterLabel>EDA Application Status</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>hed__Applicant_Decision_Date__c</fieldNames>
+        <fieldNames>hed__Application_Decision_Date__c</fieldNames>
+        <picklistValueName>Accepted Offer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>rio_ed__Prerequisites_Met__c</fieldNames>
+        <fieldNames>hed__Term__c</fieldNames>
+        <fieldNames>rio_ed__Default_Campus__c</fieldNames>
+        <fieldNames>hed__Application_Decision_Date__c</fieldNames>
+        <picklistValueName>Admit</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>hed__Applicant_Decision_Date__c</fieldNames>
+        <fieldNames>hed__Application_Decision_Date__c</fieldNames>
+        <picklistValueName>Declined Offer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>hed__Application_Decision_Date__c</fieldNames>
+        <picklistValueName>Deferred Offer</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>hed__Application_Decision_Date__c</fieldNames>
+        <picklistValueName>Deny</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>hed__Applying_To__c</fieldNames>
+        <fieldNames>hed__Application_Type__c</fieldNames>
+        <fieldNames>hed__Application_Date__c</fieldNames>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

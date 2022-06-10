@@ -5,7 +5,8 @@
         <members>Contact</members>
 		<members>Case</members>
         <members>User</members>
-        <members>hed__Course_Enrollment__c</members>
+        <members>hed__Application__c</members>
+		<members>hed__Course_Enrollment__c</members>
         <members>hed__Facility__c</members>
         <members>hed__Plan_Requirement__c</members>
         <members>hed__Program_Enrollment__c</members>
