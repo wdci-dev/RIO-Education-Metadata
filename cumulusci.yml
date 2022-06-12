@@ -124,6 +124,10 @@ flows:
                             name: RIO Education - EDA Object Picklist
                             is_required: False
                             is_recommended: False
+                        14_eda_object_pathassistant:
+                            name: RIO Education - EDA Object Path Assistant
+                            is_required: False
+                            is_recommended: False
                 5:
                     task: assign_permission_sets
                     options:
