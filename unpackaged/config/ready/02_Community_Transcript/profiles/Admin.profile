@@ -55,4 +55,9 @@
         <field>hed__Program_Enrollment__c.redu_Program_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>    
+	<fieldPermissions>
+        <editable>true</editable>
+        <field>SDOC__SDRelationship__c.Program_Enrollment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
 </Profile>

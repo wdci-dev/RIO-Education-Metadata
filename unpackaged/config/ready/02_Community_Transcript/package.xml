@@ -25,6 +25,8 @@
         <members>hed__Program_Enrollment__c.redu_Program_Name__c</members>
         <members>rio_ed__RIO_Education_Settings__c.redu_File_Sharing_Prefix__c</members>
 		<members>ContentVersion.redu_File_Category__c</members>
+		<members>SDOC__SDRelationship__c.Program_Enrollment__c</members>
+        <members>SDOC__SDTemplate__c.SDOC__Base_Object__c</members>
         <name>CustomField</name>
     </types>
     <types>

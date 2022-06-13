@@ -365,6 +365,14 @@
         "Deploy unpackaged/config/ready/Withdrawal": {
             "message": "Deploy unpackaged/config/ready/Withdrawal",
             "description": "title of installation step"
+        },
+        "RIO Education - EDA Object Path Assistant": {
+            "message": "RIO Education - EDA Object Path Assistant",
+            "description": "title of installation step"
+        },
+        "RIO Education - Enable ExperienceBundle Metadata API": {
+            "message": "RIO Education - Enable ExperienceBundle Metadata API",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
