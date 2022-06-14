@@ -32,13 +32,6 @@
     </types>
     <types>
         <members>Transfer_Credits_Approval</members>
-        <members>rio_ed__Agreement_Course__c</members>
-        <members>rio_ed__Agreement__c</members>
-        <members>rio_ed__Transfer_Credit__c</members>
-        <name>CustomTab</name>
-    </types>
-    <types>
-        <members>Transfer_Credits_Approval</members>
         <name>FlexiPage</name>
     </types>
     <types>
