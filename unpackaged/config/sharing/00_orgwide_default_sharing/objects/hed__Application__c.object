@@ -12,6 +12,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
+    <label>Application</label>
     <nameField>
         <displayFormat>APP-{0000}</displayFormat>
         <label>Application Name</label>
