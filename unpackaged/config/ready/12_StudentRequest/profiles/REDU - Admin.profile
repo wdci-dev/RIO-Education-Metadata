@@ -53,21 +53,5 @@
         <layout>Case-Case Layout</layout>
         <recordType>Case.Student_Request</recordType>
     </layoutAssignments>
-    <tabVisibilities>
-        <tab>Transfer_Credits_Approval</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>rio_ed__Agreement_Course__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>rio_ed__Agreement__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
-    <tabVisibilities>
-        <tab>rio_ed__Transfer_Credit__c</tab>
-        <visibility>Hidden</visibility>
-    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
 </Profile>
