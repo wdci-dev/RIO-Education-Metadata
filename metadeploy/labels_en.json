@@ -373,6 +373,10 @@
         "RIO Education - Enable ExperienceBundle Metadata API": {
             "message": "RIO Education - Enable ExperienceBundle Metadata API",
             "description": "title of installation step"
+        },
+        "RIO Ready - Alumni Automation": {
+            "message": "RIO Ready - Alumni Automation",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
