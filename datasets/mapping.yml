@@ -29,6 +29,7 @@ Insert Contact:
   - MailingPostalCode
   - MailingState
   - MailingStreet
+  - Name
   - Salutation
   - hed__AlternateEmail__c
   - hed__Country_of_Origin__c
@@ -282,6 +283,7 @@ Insert rio_ed__Pathway_Unit__c:
   sf_object: rio_ed__Pathway_Unit__c
   fields:
   - rio_ed__External_Id__c
+  - rio_ed__RIO_P1__c
   - rio_ed__Term_Number__c
   lookups:
     rio_ed__Plan_Requirement_Course__c:
@@ -694,6 +696,7 @@ Insert rio_ed__Allocation__c:
   sf_object: rio_ed__Allocation__c
   fields:
   - rio_ed__External_Id__c
+  - rio_ed__Booking_Display_Name__c
   - rio_ed__Booking_Status__c
   - rio_ed__End_Date_Non_TZ__c
   - rio_ed__End_Time_Non_TZ__c
