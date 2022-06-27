@@ -38,4 +38,11 @@
         <target>/my-appointments</target>
         <type>InternalLink</type>
     </navigationMenuItem>
+    <navigationMenuItem>
+        <label>My Transcript</label>
+        <position>6</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/my-transcript</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
 </NavigationMenu>

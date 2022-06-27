@@ -12,4 +12,16 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+	<webLinks>
+        <fullName>redu_Generate_Document</fullName>
+        <availability>online</availability>
+        <description>Create Document using S-Doc</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Generate Document</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR(&apos;/apex/SDOC__SDCreate1&apos;, null,[id=hed__Program_Enrollment__c.Id, Object=&apos;hed__Program_Enrollment__c&apos;])}</url>
+    </webLinks>
 </CustomObject>

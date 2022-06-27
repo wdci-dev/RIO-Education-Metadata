@@ -269,6 +269,10 @@ plans:
                         name: RIO Ready - Withdrawal
                         is_required: False
                         is_recommended: False
+                    14_Alumni_Automation:
+                        name: RIO Ready - Alumni Automation
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
