@@ -224,6 +224,12 @@ Insert hed__Program_Plan__c:
       after: Insert rio_ed__Program_Pathway__c
     rio_ed__Deposit_Fee__c:
       table: rio_ed__Fee__c
+    rio_ed__Fee__c:
+      table: rio_ed__Fee__c
+    rio_ed__Primary_Program__c:
+      table: rio_ed__Fee__c
+    rio_ed__Secondary_Program__c:
+      table: rio_ed__Fee__c
   anchor_date: 2022-01-28
 Insert hed__Plan_Requirement__c:
   sf_object: hed__Plan_Requirement__c
@@ -235,6 +241,8 @@ Insert hed__Plan_Requirement__c:
   - hed__Credits__c
   - hed__Sequence__c
   - rio_ed__Allow_Pre_Enrollment__c
+  - rio_ed__Courses_Required__c
+  - rio_ed__Credits_equivalent_per_Course__c
   - rio_ed__Hide_in_Enrollment__c
   - rio_ed__Placeholder__c
   - rio_ed__Requirement_Description__c
