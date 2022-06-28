@@ -901,7 +901,7 @@ CREATE TABLE "hed__Program_Plan__c" (
 	PRIMARY KEY (id)
 );
 INSERT INTO "hed__Program_Plan__c" VALUES(1,'ISD-PPLAN-05','Bachelor of Business Information System V4','False','','Current','True','False','False','False','Course','No','For application fee only','True','31','','2','','2','','');
-INSERT INTO "hed__Program_Plan__c" VALUES(2,'ISD-PPLAN-06','Bachelor of Business Information System Dual','False','','Current','True','False','False','True','Course','No','For application fee only','True','31','','','','2','0018a00001qG3c6AAC','0018a00001qG3c0AAC');
+INSERT INTO "hed__Program_Plan__c" VALUES(2,'ISD-PPLAN-06','Bachelor of Business Information System Dual','False','','Current','True','False','False','True','Course','No','For application fee only','True','31','','','','2','31','25');
 INSERT INTO "hed__Program_Plan__c" VALUES(3,'ISD-PPLAN-07','Bachelor of Business Information System V6','False','','Current','True','False','False','False','Course','No','For application fee only','True','31','','','','2','','');
 INSERT INTO "hed__Program_Plan__c" VALUES(4,'ISD-PPLAN-08','Bachelor of Business Information System V5','False','','Current','True','False','False','False','Course','No','For application fee only','True','31','','5','','2','','');
 INSERT INTO "hed__Program_Plan__c" VALUES(5,'ISD-PPLAN-09','Bachelor of Business Information System V3','False','','Current','True','False','False','False','Program','Yes','For application fee only','True','31','','3','','4','','');

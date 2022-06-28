@@ -227,9 +227,9 @@ Insert hed__Program_Plan__c:
     rio_ed__Fee__c:
       table: rio_ed__Fee__c
     rio_ed__Primary_Program__c:
-      table: rio_ed__Fee__c
+      table: Account
     rio_ed__Secondary_Program__c:
-      table: rio_ed__Fee__c
+      table: Account
   anchor_date: 2022-01-28
 Insert hed__Plan_Requirement__c:
   sf_object: hed__Plan_Requirement__c
