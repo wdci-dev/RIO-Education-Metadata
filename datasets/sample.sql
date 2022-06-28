@@ -688,6 +688,7 @@ CREATE TABLE "hed__Plan_Requirement__c" (
 	"rio_ed__Credits_equivalent_per_Course__c" VARCHAR(255), 
 	"rio_ed__Hide_in_Enrollment__c" VARCHAR(255), 
 	"rio_ed__Placeholder__c" VARCHAR(255), 
+	"rio_ed__Reporting_Program__c" VARCHAR(255), 
 	"rio_ed__Requirement_Description__c" VARCHAR(255), 
 	"rio_ed__Requirement_Logic__c" VARCHAR(255), 
 	"rio_ed__Show_Child_Groups__c" VARCHAR(255), 
@@ -697,132 +698,132 @@ CREATE TABLE "hed__Plan_Requirement__c" (
 	"rio_ed__Shared_Group__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "hed__Plan_Requirement__c" VALUES(1,'ISD-PR-55','RIOUNI06 - Mandatory','0128a000000tbcyAAA','Required','80.0','','False','','','False','False','','','False','','','5','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(2,'ISD-PR-56','RIOUNI07 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','12','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(3,'ISD-PR-57','RIOUNI07 - ICT120','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','6','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(4,'ISD-PR-58','RIOUNI07 - Mandatory','0128a000000tbcyAAA','Required','200.0','','False','','','False','False','','','False','','','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(5,'ISD-PR-59','RIOUNI07 - COR109','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','14','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(6,'ISD-PR-60','RIOUNI07 - ICT310','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','10','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(7,'ISD-PR-61','RIOUNI06 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','3','1','5','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(8,'ISD-PR-62','RIOUNI06 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','13','1','5','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(9,'ISD-PR-63','RIOUNI07 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','13','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(10,'ISD-PR-64','RIOUNI07 - ICT211','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','23','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(11,'ISD-PR-65','RIOUNI07 - ICT221','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','24','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(12,'ISD-PR-66','RIOUNI06 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','19','1','5','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(13,'ISD-PR-67','RIOUNI06 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','12','1','5','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(14,'ISD-PR-68','RIOUNI08 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','13','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(15,'ISD-PR-69','RIOUNI08 - ICT221','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','24','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(16,'ISD-PR-70','RIOUNI08 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A OR B','False','3','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(17,'ISD-PR-71','RIOUNI09 - Credit','0128a000000tbcyAAA','Required','20.0','','False','','','False','False','','','False','','','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(18,'ISD-PR-72','RIOUNI09 - ICT211','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','False','23','63','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(19,'ISD-PR-73','RIOUNI03 - ETC102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','1','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(20,'ISD-PR-74','RIOUNI03-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','False','','','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(21,'ISD-PR-75','RIOUNI02-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','False','','','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(22,'ISD-PR-76','RIOUNI02-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','False','','','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(23,'ISD-PR-77','RIOUNI03-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','False','','','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(24,'ISD-PR-78','RIOUNI02 - BUS102','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','3','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(25,'ISD-PR-79','RIOUNI02 - BUS104','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','4','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(26,'ISD-PR-80','RIOUNI02 - BUS203','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','5','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(27,'ISD-PR-81','RIOUNI02 - ICT120','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','6','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(28,'ISD-PR-82','RIOUNI02 - ICT352','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','7','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(29,'ISD-PR-83','RIOUNI02 - BUS301','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(30,'ISD-PR-84','RIOUNI02 - BUS108','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','9','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(31,'ISD-PR-85','RIOUNI02 - ICT310','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','10','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(32,'ISD-PR-86','RIOUNI02 - BUS211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','11','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(33,'ISD-PR-87','RIOUNI02 - ICT112','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','12','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(34,'ISD-PR-88','RIOUNI02 - ICT115','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','13','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(35,'ISD-PR-89','RIOUNI02 - COR109','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','14','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(36,'ISD-PR-90','RIOUNI02 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','15','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(37,'ISD-PR-91','RIOUNI02 - ICT320','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','16','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(38,'ISD-PR-92','RIOUNI02 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','17','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(39,'ISD-PR-93','RIOUNI02 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','18','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(40,'ISD-PR-94','RIOUNI02 - BUS106','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','20','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(41,'ISD-PR-95','RIOUNI02 - BUS105','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','21','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(42,'ISD-PR-96','RIOUNI02 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','22','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(43,'ISD-PR-97','RIOUNI02 - ICT211','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','23','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(44,'ISD-PR-98','RIOUNI02 - ICT221','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','<p>ICT112 is the pre-requisite for this course.</p>','A','False','24','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(45,'ISD-PR-99','RIOUNI02 - HRM311','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','25','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(46,'ISD-PR-100','RIOUNI02 - BUS320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','26','22','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(47,'ISD-PR-101','RIOUNI02 - BUS101','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','19','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(48,'ISD-PR-102','RIOUNI02 - ETC101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','2','21','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(49,'ISD-PR-103','RIOUNI03 - ETC102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','1','23','2','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(50,'ISD-PR-104','RIOUNI02 - ETC101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','2','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(51,'ISD-PR-105','RIOUNI07 - BUS105','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A AND B','False','21','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(52,'ISD-PR-106','RIOUNI08 - Mandatory','0128a000000tbcyAAA','Required','160.0','','False','','','False','False','','','False','','','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(53,'ISD-PR-107','RIOUNI08 - ICT211','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','23','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(54,'ISD-PR-108','RIOUNI08 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A AND B','False','19','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(55,'ISD-PR-109','RIOUNI08 - BUS104','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A AND (B OR C OR (D AND E))','False','4','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(56,'ISD-PR-110','RIOUNI08 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','12','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(57,'ISD-PR-111','RIOUNI08 - ICT120','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','6','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(58,'ISD-PR-112','RIOUNI07 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A AND B','False','19','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(59,'ISD-PR-113','RIOUNI07 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A OR B','False','3','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(60,'ISD-PR-114','RIOUNI07 - BUS104','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A AND (B OR C OR (D AND E))','False','4','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(61,'ISD-PR-115','RIOUNI07 - BUS106','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A OR B','False','20','4','1','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(62,'ISD-PR-116','RIOUNI09 - ICT112','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','False','12','17','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(63,'ISD-PR-117','RIOUNI09 - Non Credit','0128a000000tbcyAAA','Required','','','False','2.0','5.0','False','False','','','False','','','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(64,'ISD-PR-118','RIOUNI09 - ICT115','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','False','13','17','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(65,'ISD-PR-119','RIOUNI09 - ICT120','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','False','6','63','3','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(66,'ISD-PR-120','RIOUNI08 - ICT310','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','A','False','10','52','4','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(67,'ISD-PR-10','RIOUNI02 - ICT112','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','12','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(68,'ISD-PR-11','RIOUNI03 - ICT115','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','13','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(69,'ISD-PR-12','RIOUNI02 - ICT115','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','13','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(70,'ISD-PR-13','RIOUNI03 - COR109','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','14','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(71,'ISD-PR-14','RIOUNI02 - COR109','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','14','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(72,'ISD-PR-15','RIOUNI03 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','15','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(73,'ISD-PR-16','RIOUNI02 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','15','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(74,'ISD-PR-17','RIOUNI03 - ICT320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','16','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(75,'ISD-PR-18','RIOUNI02 - ICT320','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','16','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(76,'ISD-PR-19','RIOUNI03 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','17','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(77,'ISD-PR-20','RIOUNI02 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','17','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(78,'ISD-PR-21','RIOUNI03 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','18','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(79,'ISD-PR-22','RIOUNI02 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','18','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(80,'ISD-PR-23','RIOUNI03 - BUS101','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','19','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(81,'ISD-PR-24','RIOUNI02 - BUS101','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','19','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(82,'ISD-PR-25','RIOUNI03 - BUS106','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','20','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(83,'ISD-PR-26','RIOUNI02 - BUS106','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','20','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(84,'ISD-PR-27','RIOUNI03 - BUS105','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','21','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(85,'ISD-PR-28','RIOUNI02 - BUS105','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','21','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(86,'ISD-PR-29','RIOUNI03 - BUS104','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','4','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(87,'ISD-PR-30','RIOUNI02 - BUS104','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','4','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(88,'ISD-PR-31','RIOUNI03 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','22','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(89,'ISD-PR-32','RIOUNI02 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','22','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(90,'ISD-PR-33','RIOUNI03 - ICT211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','23','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(91,'ISD-PR-34','RIOUNI02 - ICT211','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','23','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(92,'ISD-PR-35','RIOUNI03 - ICT221','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','<p>ICT112 is a pre-requisite for this course.</p>','A','False','24','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(93,'ISD-PR-36','RIOUNI02 - ICT221','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','<p>ICT112 is the pre-requisite for this course.</p>','A','False','24','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(94,'ISD-PR-37','RIOUNI03 - HRM311','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','25','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(95,'ISD-PR-38','RIOUNI02 - HRM311','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','25','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(96,'ISD-PR-39','RIOUNI03 - BUS320','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','26','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(97,'ISD-PR-40','RIOUNI02 - BUS320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','26','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(98,'ISD-PR-41','RIOUNI03 - BUS203','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','5','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(99,'ISD-PR-42','RIOUNI02 - BUS203','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','5','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(100,'ISD-PR-43','RIOUNI03 - ICT120','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','6','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(101,'ISD-PR-44','RIOUNI02 - ICT120','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','6','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(102,'ISD-PR-45','RIOUNI03 - ICT352','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','7','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(103,'ISD-PR-46','RIOUNI02 - ICT352','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','7','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(104,'ISD-PR-47','RIOUNI03 - BUS301','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(105,'ISD-PR-48','RIOUNI02 - BUS301','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(106,'ISD-PR-49','RIOUNI03 - BUS108','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','9','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(107,'ISD-PR-50','RIOUNI02 - BUS108','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','9','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(108,'ISD-PR-51','RIOUNI03 - ICT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','10','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(109,'ISD-PR-52','RIOUNI02 - ICT310','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','10','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(110,'ISD-PR-53','RIOUNI03 - BUS211','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','False','11','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(111,'ISD-PR-54','RIOUNI02 - BUS211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','11','114','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(112,'ISD-PR-01','RIOUNI03-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','False','','','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(113,'ISD-PR-02','RIOUNI03-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','False','','','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(114,'ISD-PR-03','RIOUNI02-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','False','','','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(115,'ISD-PR-04','RIOUNI02-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','False','','','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(116,'ISD-PR-05','RIOUNI04-Electives','0128a000000tbcyAAA','Required','40.0','','False','','','False','False','','','False','','','8','114');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(117,'ISD-PR-06','RIOUNI04-Mandatory','0128a000000tbcyAAA','Required','120.0','','False','','','False','False','','','False','','','8','115');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(118,'ISD-PR-07','RIOUNI03 - BUS102','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','False','3','113','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(119,'ISD-PR-08','RIOUNI02 - BUS102','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','False','3','115','7','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(120,'ISD-PR-09','RIOUNI03 - ICT112','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','False','12','112','6','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(121,'ISD-PR-121','RIOUNI05 - Electives','0128a000000tbcyAAA','Optional','40.0','','False','','','False','False','','','False','','','9','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(122,'ISD-PR-122','RIOUNI05 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','3','125','9','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(123,'ISD-PR-123','RIOUNI05 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','12','121','9','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(124,'ISD-PR-124','RIOUNI05 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','13','121','9','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(125,'ISD-PR-125','RIOUNI05 - Mandatory','0128a000000tbcyAAA','Required','40.0','','False','','','False','False','','','False','','','9','');
-INSERT INTO "hed__Plan_Requirement__c" VALUES(126,'ISD-PR-126','RIOUNI05 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','False','19','125','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(1,'ISD-PR-55','RIOUNI06 - Mandatory','0128a000000tbcyAAA','Required','80.0','','False','','','False','False','','','','False','','','5','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(2,'ISD-PR-56','RIOUNI07 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','12','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(3,'ISD-PR-57','RIOUNI07 - ICT120','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','6','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(4,'ISD-PR-58','RIOUNI07 - Mandatory','0128a000000tbcyAAA','Required','200.0','','False','','','False','False','','','','False','','','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(5,'ISD-PR-59','RIOUNI07 - COR109','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','14','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(6,'ISD-PR-60','RIOUNI07 - ICT310','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','10','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(7,'ISD-PR-61','RIOUNI06 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','3','1','5','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(8,'ISD-PR-62','RIOUNI06 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','13','1','5','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(9,'ISD-PR-63','RIOUNI07 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','13','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(10,'ISD-PR-64','RIOUNI07 - ICT211','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','23','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(11,'ISD-PR-65','RIOUNI07 - ICT221','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','24','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(12,'ISD-PR-66','RIOUNI06 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','19','1','5','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(13,'ISD-PR-67','RIOUNI06 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','12','1','5','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(14,'ISD-PR-68','RIOUNI08 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','13','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(15,'ISD-PR-69','RIOUNI08 - ICT221','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','24','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(16,'ISD-PR-70','RIOUNI08 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A OR B','False','3','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(17,'ISD-PR-71','RIOUNI09 - Credit','0128a000000tbcyAAA','Required','20.0','','False','','','False','False','','','','False','','','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(18,'ISD-PR-72','RIOUNI09 - ICT211','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','','False','23','63','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(19,'ISD-PR-73','RIOUNI03 - ETC102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','1','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(20,'ISD-PR-74','RIOUNI03-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','','False','','','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(21,'ISD-PR-75','RIOUNI02-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','','False','','','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(22,'ISD-PR-76','RIOUNI02-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','','False','','','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(23,'ISD-PR-77','RIOUNI03-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','','False','','','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(24,'ISD-PR-78','RIOUNI02 - BUS102','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','Both','','','False','3','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(25,'ISD-PR-79','RIOUNI02 - BUS104','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','Both','','','False','4','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(26,'ISD-PR-80','RIOUNI02 - BUS203','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','5','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(27,'ISD-PR-81','RIOUNI02 - ICT120','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','Both','','','False','6','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(28,'ISD-PR-82','RIOUNI02 - ICT352','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','Both','','','False','7','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(29,'ISD-PR-83','RIOUNI02 - BUS301','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(30,'ISD-PR-84','RIOUNI02 - BUS108','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','9','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(31,'ISD-PR-85','RIOUNI02 - ICT310','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','Both','','','False','10','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(32,'ISD-PR-86','RIOUNI02 - BUS211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','11','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(33,'ISD-PR-87','RIOUNI02 - ICT112','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','Both','','','False','12','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(34,'ISD-PR-88','RIOUNI02 - ICT115','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','Both','','','False','13','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(35,'ISD-PR-89','RIOUNI02 - COR109','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','14','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(36,'ISD-PR-90','RIOUNI02 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','15','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(37,'ISD-PR-91','RIOUNI02 - ICT320','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','Both','','','False','16','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(38,'ISD-PR-92','RIOUNI02 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','17','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(39,'ISD-PR-93','RIOUNI02 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','18','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(40,'ISD-PR-94','RIOUNI02 - BUS106','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','20','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(41,'ISD-PR-95','RIOUNI02 - BUS105','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','Both','','','False','21','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(42,'ISD-PR-96','RIOUNI02 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','22','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(43,'ISD-PR-97','RIOUNI02 - ICT211','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','Both','','','False','23','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(44,'ISD-PR-98','RIOUNI02 - ICT221','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','Both','<p>ICT112 is the pre-requisite for this course.</p>','A','False','24','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(45,'ISD-PR-99','RIOUNI02 - HRM311','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','25','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(46,'ISD-PR-100','RIOUNI02 - BUS320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','Both','','','False','26','22','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(47,'ISD-PR-101','RIOUNI02 - BUS101','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','Both','','','False','19','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(48,'ISD-PR-102','RIOUNI02 - ETC101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','Primary','','','False','2','21','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(49,'ISD-PR-103','RIOUNI03 - ETC102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','Secondary','','','False','1','23','2','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(50,'ISD-PR-104','RIOUNI02 - ETC101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','2','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(51,'ISD-PR-105','RIOUNI07 - BUS105','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A AND B','False','21','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(52,'ISD-PR-106','RIOUNI08 - Mandatory','0128a000000tbcyAAA','Required','160.0','','False','','','False','False','','','','False','','','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(53,'ISD-PR-107','RIOUNI08 - ICT211','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','23','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(54,'ISD-PR-108','RIOUNI08 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A AND B','False','19','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(55,'ISD-PR-109','RIOUNI08 - BUS104','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A AND (B OR C OR (D AND E))','False','4','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(56,'ISD-PR-110','RIOUNI08 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','12','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(57,'ISD-PR-111','RIOUNI08 - ICT120','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','6','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(58,'ISD-PR-112','RIOUNI07 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A AND B','False','19','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(59,'ISD-PR-113','RIOUNI07 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A OR B','False','3','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(60,'ISD-PR-114','RIOUNI07 - BUS104','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A AND (B OR C OR (D AND E))','False','4','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(61,'ISD-PR-115','RIOUNI07 - BUS106','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A OR B','False','20','4','1','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(62,'ISD-PR-116','RIOUNI09 - ICT112','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','','False','12','17','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(63,'ISD-PR-117','RIOUNI09 - Non Credit','0128a000000tbcyAAA','Required','','','False','2.0','5.0','False','False','','','','False','','','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(64,'ISD-PR-118','RIOUNI09 - ICT115','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','','False','13','17','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(65,'ISD-PR-119','RIOUNI09 - ICT120','0128a000000tbcxAAA','Required','10.0','','False','','','False','False','','','','False','6','63','3','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(66,'ISD-PR-120','RIOUNI08 - ICT310','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','A','False','10','52','4','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(67,'ISD-PR-10','RIOUNI02 - ICT112','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','12','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(68,'ISD-PR-11','RIOUNI03 - ICT115','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','13','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(69,'ISD-PR-12','RIOUNI02 - ICT115','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','13','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(70,'ISD-PR-13','RIOUNI03 - COR109','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','14','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(71,'ISD-PR-14','RIOUNI02 - COR109','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','14','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(72,'ISD-PR-15','RIOUNI03 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','15','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(73,'ISD-PR-16','RIOUNI02 - MGT210','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','15','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(74,'ISD-PR-17','RIOUNI03 - ICT320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','16','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(75,'ISD-PR-18','RIOUNI02 - ICT320','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','16','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(76,'ISD-PR-19','RIOUNI03 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','17','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(77,'ISD-PR-20','RIOUNI02 - HRM321','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','17','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(78,'ISD-PR-21','RIOUNI03 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','18','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(79,'ISD-PR-22','RIOUNI02 - IBS220','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','18','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(80,'ISD-PR-23','RIOUNI03 - BUS101','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','19','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(81,'ISD-PR-24','RIOUNI02 - BUS101','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','19','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(82,'ISD-PR-25','RIOUNI03 - BUS106','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','20','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(83,'ISD-PR-26','RIOUNI02 - BUS106','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','20','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(84,'ISD-PR-27','RIOUNI03 - BUS105','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','21','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(85,'ISD-PR-28','RIOUNI02 - BUS105','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','21','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(86,'ISD-PR-29','RIOUNI03 - BUS104','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','4','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(87,'ISD-PR-30','RIOUNI02 - BUS104','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','4','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(88,'ISD-PR-31','RIOUNI03 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','22','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(89,'ISD-PR-32','RIOUNI02 - MGT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','22','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(90,'ISD-PR-33','RIOUNI03 - ICT211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','23','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(91,'ISD-PR-34','RIOUNI02 - ICT211','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','23','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(92,'ISD-PR-35','RIOUNI03 - ICT221','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','<p>ICT112 is a pre-requisite for this course.</p>','A','False','24','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(93,'ISD-PR-36','RIOUNI02 - ICT221','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','<p>ICT112 is the pre-requisite for this course.</p>','A','False','24','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(94,'ISD-PR-37','RIOUNI03 - HRM311','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','25','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(95,'ISD-PR-38','RIOUNI02 - HRM311','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','25','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(96,'ISD-PR-39','RIOUNI03 - BUS320','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','26','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(97,'ISD-PR-40','RIOUNI02 - BUS320','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','26','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(98,'ISD-PR-41','RIOUNI03 - BUS203','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','5','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(99,'ISD-PR-42','RIOUNI02 - BUS203','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','5','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(100,'ISD-PR-43','RIOUNI03 - ICT120','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','6','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(101,'ISD-PR-44','RIOUNI02 - ICT120','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','6','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(102,'ISD-PR-45','RIOUNI03 - ICT352','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','7','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(103,'ISD-PR-46','RIOUNI02 - ICT352','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','7','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(104,'ISD-PR-47','RIOUNI03 - BUS301','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(105,'ISD-PR-48','RIOUNI02 - BUS301','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','<p><span style="color: rgb(62, 62, 60);">BUS101 is a pre-requisite for this course.</span></p>','A','False','8','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(106,'ISD-PR-49','RIOUNI03 - BUS108','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','9','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(107,'ISD-PR-50','RIOUNI02 - BUS108','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','9','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(108,'ISD-PR-51','RIOUNI03 - ICT310','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','10','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(109,'ISD-PR-52','RIOUNI02 - ICT310','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','10','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(110,'ISD-PR-53','RIOUNI03 - BUS211','0128a000000tbcxAAA','Required','10.0','2.0','False','','','False','False','','','','False','11','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(111,'ISD-PR-54','RIOUNI02 - BUS211','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','11','114','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(112,'ISD-PR-01','RIOUNI03-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','','False','','','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(113,'ISD-PR-02','RIOUNI03-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','','False','','','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(114,'ISD-PR-03','RIOUNI02-Elective','0128a000000tbcyAAA','Required','40.0','2.0','False','','','False','False','','','','False','','','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(115,'ISD-PR-04','RIOUNI02-Mandatory','0128a000000tbcyAAA','Required','120.0','1.0','False','','','False','False','','','','False','','','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(116,'ISD-PR-05','RIOUNI04-Electives','0128a000000tbcyAAA','Required','40.0','','False','','','False','False','','','','False','','','8','114');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(117,'ISD-PR-06','RIOUNI04-Mandatory','0128a000000tbcyAAA','Required','120.0','','False','','','False','False','','','','False','','','8','115');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(118,'ISD-PR-07','RIOUNI03 - BUS102','0128a000000tbcxAAA','Required','10.0','1.0','False','','','False','False','','','','False','3','113','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(119,'ISD-PR-08','RIOUNI02 - BUS102','0128a000000tbcxAAA','Required','10.0','3.0','False','','','False','False','','','','False','3','115','7','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(120,'ISD-PR-09','RIOUNI03 - ICT112','0128a000000tbcxAAA','Optional','10.0','','False','','','False','False','','','','False','12','112','6','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(121,'ISD-PR-121','RIOUNI05 - Electives','0128a000000tbcyAAA','Optional','40.0','','False','','','False','False','','','','False','','','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(122,'ISD-PR-122','RIOUNI05 - BUS102','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','3','125','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(123,'ISD-PR-123','RIOUNI05 - ICT112','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','12','121','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(124,'ISD-PR-124','RIOUNI05 - ICT115','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','13','121','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(125,'ISD-PR-125','RIOUNI05 - Mandatory','0128a000000tbcyAAA','Required','40.0','','False','','','False','False','','','','False','','','9','');
+INSERT INTO "hed__Plan_Requirement__c" VALUES(126,'ISD-PR-126','RIOUNI05 - BUS101','0128a000000tbcxAAA','Required','20.0','','False','','','False','False','','','','False','19','125','9','');
 CREATE TABLE "hed__Plan_Requirement__c_rt_mapping" (
 	record_type_id VARCHAR(18) NOT NULL, 
 	developer_name VARCHAR(255), 
@@ -2841,7 +2842,7 @@ INSERT INTO "rio_ed__Session_Connection__c" VALUES(9,'ISD-SC-37','CC-0086 - Test
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(10,'ISD-SC-38','CC-0075 - Test Student 1','False','','','False','False','','Current','24','','44');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(11,'ISD-SC-39','CC-0082 - Test Student 1','False','','','False','False','','Current','25','','51');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(12,'ISD-SC-40','CC-0320 - Test Student 18','False','','','False','False','','Current','39','','51');
-INSERT INTO "rio_ed__Session_Connection__c" VALUES(13,'ISD-SC-09','CC-0000 - Fran Fisher','True','2022-06-04','Confirmed','True','False','2022-01-06','Current','195','40','33');
+INSERT INTO "rio_ed__Session_Connection__c" VALUES(13,'ISD-SC-09','CC-0000 - Fran Fisher','True','2022-06-04','Confirmed','True','False','2022-01-06','Current','195','43','33');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(14,'ISD-SC-10','CC-0000 - Fran Fisher','False','2022-05-01','Confirmed','True','False','2022-01-09','Current','195','44','34');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(15,'ISD-SC-43','CC-0224 - Test Student 11','False','','','False','False','','Current','51','','51');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(16,'ISD-SC-11','CC-0015 - Fran Fisher','True','2022-11-04','Confirmed','True','False','2022-06-18','Current','197','45','35');
@@ -2861,10 +2862,10 @@ INSERT INTO "rio_ed__Session_Connection__c" VALUES(29,'ISD-SC-19','CC-0013 - Fra
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(30,'ISD-SC-28','CC-0023 - Fiona Forton','True','2023-06-04','Confirmed','True','False','2023-01-06','Current','164','39','29');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(31,'ISD-SC-03','CC-0272 - Test Student 15','False','','','False','False','','Current','147','','51');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(32,'ISD-SC-06','CC-0284 - Test Student 16','False','','','False','False','','Current','162','','51');
-INSERT INTO "rio_ed__Session_Connection__c" VALUES(33,'ISD-SC-29','CC-0034 - Fiona Forton','True','2023-11-04','Confirmed','True','False','2023-06-18','Current','167','43','32');
+INSERT INTO "rio_ed__Session_Connection__c" VALUES(33,'ISD-SC-29','CC-0034 - Fiona Forton','True','2023-11-04','Confirmed','True','False','2023-06-18','Current','167','42','32');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(34,'ISD-SC-30','CC-0024 - Fiona Forton','True','2023-06-04','Confirmed','True','False','2023-01-06','Current','170','2','42');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(35,'ISD-SC-20','CC-0088 - Edward Educator','True','2022-06-04','Confirmed','True','False','2022-01-06','Current','172','19','28');
-INSERT INTO "rio_ed__Session_Connection__c" VALUES(36,'ISD-SC-21','CC-0093 - Edward Educator','True','2022-11-04','Confirmed','True','False','2022-06-18','Current','173','42','31');
+INSERT INTO "rio_ed__Session_Connection__c" VALUES(36,'ISD-SC-21','CC-0093 - Edward Educator','True','2022-11-04','Confirmed','True','False','2022-06-18','Current','173','41','31');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(37,'ISD-SC-22','CC-0090 - Edward Educator','True','2022-06-04','Confirmed','True','False','2022-01-06','Current','188','48','39');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(38,'ISD-SC-23','CC-0091 - Edward Educator','True','2022-11-04','Confirmed','True','False','2022-06-18','Current','189','50','41');
 INSERT INTO "rio_ed__Session_Connection__c" VALUES(39,'ISD-SC-24','CC-0089 - Edward Educator','True','2022-06-04','Confirmed','True','False','2022-01-06','Current','190','5','44');
@@ -2970,22 +2971,22 @@ INSERT INTO "rio_ed__Session_Time__c" VALUES(39,'ISD-ST-07','Recreate','Session 
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Tuesday','2023-06-04','11:00','Weekly','False','Tuesday','Weekly','2023-01-06','10:00','Active','Create/Update after today','9','29');
-INSERT INTO "rio_ed__Session_Time__c" VALUES(40,'ISD-ST-46','Upsert','Session booking generation log 6/15/2022, 6:52 PM:
-Historical recurrence - Weekly
-Updated recurrence - Weekly
-Booking action - Upsert','Monday','2022-06-04','10:00','Weekly','False','Monday','Weekly','2022-01-06','09:00','Active','Create/Update all','9','33');
-INSERT INTO "rio_ed__Session_Time__c" VALUES(41,'ISD-ST-18','Recreate','Session booking generation log 24/1/2022, 3:59 pm:
+INSERT INTO "rio_ed__Session_Time__c" VALUES(40,'ISD-ST-18','Recreate','Session booking generation log 24/1/2022, 3:59 pm:
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Wednesday','2023-11-04','15:00','Weekly','False','Wednesday','Weekly','2023-06-18','14:00','Active','Create/Update after today','9','30');
-INSERT INTO "rio_ed__Session_Time__c" VALUES(42,'ISD-ST-25','Recreate','Session booking generation log 21/1/2022, 6:07 pm:
+INSERT INTO "rio_ed__Session_Time__c" VALUES(41,'ISD-ST-25','Recreate','Session booking generation log 21/1/2022, 6:07 pm:
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Wednesday','2022-11-04','13:00','Weekly','False','Wednesday','Weekly','2022-06-18','12:00','Active','Create/Update after today','9','31');
-INSERT INTO "rio_ed__Session_Time__c" VALUES(43,'ISD-ST-35','Recreate','Session booking generation log 24/1/2022, 3:58 pm:
+INSERT INTO "rio_ed__Session_Time__c" VALUES(42,'ISD-ST-35','Recreate','Session booking generation log 24/1/2022, 3:58 pm:
 Historical recurrence - null
 Updated recurrence - Weekly
 Booking action - Recreate','Tuesday','2023-11-04','13:00','Weekly','False','Tuesday','Weekly','2023-06-18','12:00','Active','Create/Update after today','9','32');
+INSERT INTO "rio_ed__Session_Time__c" VALUES(43,'ISD-ST-46','Upsert','Session booking generation log 6/15/2022, 6:52 PM:
+Historical recurrence - Weekly
+Updated recurrence - Weekly
+Booking action - Upsert','Monday','2022-06-04','10:00','Weekly','False','Monday','Weekly','2022-01-06','09:00','Active','Create/Update all','9','33');
 INSERT INTO "rio_ed__Session_Time__c" VALUES(44,'ISD-ST-47','Upsert','Session booking generation log 25/1/2022, 4:29 pm:
 Historical recurrence - Weekly
 Updated recurrence - Weekly

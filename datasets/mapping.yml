@@ -245,6 +245,7 @@ Insert hed__Plan_Requirement__c:
   - rio_ed__Credits_equivalent_per_Course__c
   - rio_ed__Hide_in_Enrollment__c
   - rio_ed__Placeholder__c
+  - rio_ed__Reporting_Program__c
   - rio_ed__Requirement_Description__c
   - rio_ed__Requirement_Logic__c
   - rio_ed__Show_Child_Groups__c
