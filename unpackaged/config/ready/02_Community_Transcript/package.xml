@@ -36,11 +36,15 @@
     <types>
         <members>Admin</members>
         <name>Profile</name>
-    </types>
+    </types>	
 	<types>
         <members>redu_Custom_Related_List_Delete_Warning</members>
         <members>redu_View_All</members>
         <name>CustomLabel</name>
+    </types>
+	<types>
+        <members>hed__Program_Enrollment__c.redu_Generate_Document</members>        
+        <name>WebLink</name>
     </types>
     <version>53.0</version>
 </Package>
