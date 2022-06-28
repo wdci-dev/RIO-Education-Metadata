@@ -2122,12 +2122,12 @@ CREATE TABLE "rio_ed__Fee_Schedule__c" (
 	"rio_ed__Fee__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(1,'ISD-FS-01','Default','False','False','2000.0','2000.0','2032-01-06','Term','2022-01-06','False','Approved','1');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(2,'ISD-FS-02','Default','True','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Approved','2');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(3,'ISD-FS-03','Discountable Default','False','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Approved','3');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(4,'ISD-FS-04','Default','True','False','2500.0','2500.0','2032-01-06','Program','2022-01-06','False','Approved','4');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(5,'ISD-FS-05','Default','True','False','1000.0','1000.0','2032-01-06','Deposit','2022-01-06','False','Approved','5');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(6,'ISD-FS-06','Default','True','False','500.0','500.0','2032-01-06','Application','2022-01-06','False','Approved','6');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(1,'ISD-FS-01','Default','False','False','2000.0','2000.0','2032-01-06','Term','2022-01-06','False','Draft','1');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(2,'ISD-FS-02','Default','True','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Draft','2');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(3,'ISD-FS-03','Discountable Default','False','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Draft','3');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(4,'ISD-FS-04','Default','True','False','2500.0','2500.0','2032-01-06','Program','2022-01-06','False','Draft','4');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(5,'ISD-FS-05','Default','True','False','1000.0','1000.0','2032-01-06','Deposit','2022-01-06','False','Draft','5');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(6,'ISD-FS-06','Default','True','False','500.0','500.0','2032-01-06','Application','2022-01-06','False','Draft','6');
 CREATE TABLE "rio_ed__Fee__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 
