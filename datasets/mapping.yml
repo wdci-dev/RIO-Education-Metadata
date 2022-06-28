@@ -29,7 +29,6 @@ Insert Contact:
   - MailingPostalCode
   - MailingState
   - MailingStreet
-  - Name
   - Salutation
   - hed__AlternateEmail__c
   - hed__Country_of_Origin__c
