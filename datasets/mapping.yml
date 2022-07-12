@@ -1,7 +1,7 @@
 Insert Account:
   sf_object: Account
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - RecordTypeId
   - rio_ed__Campus__c
@@ -19,7 +19,7 @@ Insert Account:
 Insert Contact:
   sf_object: Contact
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Birthdate
   - Email
   - FirstName
@@ -46,7 +46,7 @@ Insert Contact:
 Insert hed__Affiliation__c:
   sf_object: hed__Affiliation__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - hed__Role__c
   - hed__Status__c
   lookups:
@@ -58,7 +58,7 @@ Insert hed__Affiliation__c:
 Insert hed__Time_Block__c:
   sf_object: hed__Time_Block__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__End_Time__c
   - hed__Start_Time__c
@@ -73,7 +73,7 @@ Insert hed__Time_Block__c:
 Insert hed__Facility__c:
   sf_object: hed__Facility__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__Capacity__c
   - hed__Facility_Type__c
@@ -88,7 +88,7 @@ Insert hed__Facility__c:
 Insert rio_ed__Fee__c:
   sf_object: rio_ed__Fee__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Fee_Type__c
   - rio_ed__Fee_Unit__c
@@ -96,7 +96,7 @@ Insert rio_ed__Fee__c:
 Insert rio_ed__Fee_Schedule__c:
   sf_object: rio_ed__Fee_Schedule__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Current__c
   - rio_ed__Discountable__c
@@ -114,7 +114,7 @@ Insert rio_ed__Fee_Schedule__c:
 Insert hed__Term__c:
   sf_object: hed__Term__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__End_Date__c
   - hed__Start_Date__c
@@ -133,7 +133,7 @@ Insert hed__Term__c:
 Insert rio_ed__Fee_Schedule_Term__c:
   sf_object: rio_ed__Fee_Schedule_Term__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   lookups:
     rio_ed__Fee_Schedule__c:
       table: rio_ed__Fee_Schedule__c
@@ -143,7 +143,7 @@ Insert rio_ed__Fee_Schedule_Term__c:
 Insert rio_ed__Grade_Setting__c:
   sf_object: rio_ed__Grade_Setting__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__For_Fail_Absent__c
   - rio_ed__Grade_Points__c
@@ -160,7 +160,7 @@ Insert rio_ed__Grade_Setting__c:
 Insert hed__Course__c:
   sf_object: hed__Course__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__Course_ID__c
   - hed__Credit_Hours__c
@@ -179,7 +179,7 @@ Insert hed__Course__c:
 Insert rio_ed__Grade_Criteria__c:
   sf_object: rio_ed__Grade_Criteria__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Sequence__c
   - rio_ed__Weight__c
@@ -190,7 +190,7 @@ Insert rio_ed__Grade_Criteria__c:
 Insert rio_ed__Qualified_Faculty__c:
   sf_object: rio_ed__Qualified_Faculty__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Roles__c
   lookups:
     rio_ed__Course__c:
@@ -201,7 +201,7 @@ Insert rio_ed__Qualified_Faculty__c:
 Insert hed__Program_Plan__c:
   sf_object: hed__Program_Plan__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__Is_Primary__c
   - hed__Start_Date__c
@@ -234,7 +234,7 @@ Insert hed__Program_Plan__c:
 Insert hed__Plan_Requirement__c:
   sf_object: hed__Plan_Requirement__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - RecordTypeId
   - hed__Category__c
@@ -264,7 +264,7 @@ Insert hed__Plan_Requirement__c:
 Insert rio_ed__Program_Course_Requirement__c:
   sf_object: rio_ed__Program_Course_Requirement__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Requirement_ID__c
   - rio_ed__Requirement_Type__c
@@ -277,7 +277,7 @@ Insert rio_ed__Program_Course_Requirement__c:
 Insert rio_ed__Program_Pathway__c:
   sf_object: rio_ed__Program_Pathway__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Enrollment_Method__c
   - rio_ed__Name__c
   - rio_ed__Number_of_Terms__c
@@ -290,7 +290,7 @@ Insert rio_ed__Program_Pathway__c:
 Insert rio_ed__Pathway_Unit__c:
   sf_object: rio_ed__Pathway_Unit__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__RIO_P1__c
   - rio_ed__Term_Number__c
   lookups:
@@ -304,7 +304,7 @@ Insert rio_ed__Pathway_Unit__c:
 Insert rio_ed__Program_Discipline__c:
   sf_object: rio_ed__Program_Discipline__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Credits__c
   - rio_ed__Type__c
@@ -315,7 +315,7 @@ Insert rio_ed__Program_Discipline__c:
 Insert rio_ed__Discipline_Requirement__c:
   sf_object: rio_ed__Discipline_Requirement__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - RecordTypeId
   - rio_ed__Credits__c
@@ -345,7 +345,7 @@ Insert rio_ed__Plan__c:
 Insert hed__Course_Offering__c:
   sf_object: hed__Course_Offering__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - hed__Capacity__c
   - hed__End_Date__c
@@ -377,7 +377,7 @@ Insert hed__Course_Offering__c:
 Insert rio_ed__Program_Application__c:
   sf_object: rio_ed__Program_Application__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Fee_Method__c
   - rio_ed__Fee_Type__c
   - rio_ed__Non_Tuition_Fee_Type__c
@@ -401,7 +401,7 @@ Insert rio_ed__Program_Application__c:
 Insert hed__Program_Enrollment__c:
   sf_object: hed__Program_Enrollment__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - hed__Admission_Date__c
   - hed__Application_Submitted_Date__c
   - hed__Credits_Attempted__c
@@ -447,7 +447,7 @@ Insert rio_ed__Student_Fee__c:
 Insert rio_ed__Funding__c:
   sf_object: rio_ed__Funding__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Discount_Amount__c
   - rio_ed__Discount_Percent__c
@@ -462,7 +462,7 @@ Insert rio_ed__Funding__c:
 Insert rio_ed__PE_Group_Status__c:
   sf_object: rio_ed__PE_Group_Status__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Category__c
   - rio_ed__Completion_Percentage__c
@@ -482,7 +482,7 @@ Insert rio_ed__PE_Group_Status__c:
 Insert rio_ed__PE_Pathway_Status__c:
   sf_object: rio_ed__PE_Pathway_Status__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__All_Courses_Completed__c
   - rio_ed__All_Courses_Passed__c
   - rio_ed__Automatically_Enroll_in_Courses__c
@@ -507,7 +507,7 @@ Insert rio_ed__PE_Pathway_Status__c:
 Insert hed__Course_Enrollment__c:
   sf_object: hed__Course_Enrollment__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - RecordTypeId
   - hed__Credits_Attempted__c
   - hed__Credits_Earned__c
@@ -552,7 +552,7 @@ Insert hed__Course_Enrollment__c:
 Insert rio_ed__Course_Connection_Requirement__c:
   sf_object: rio_ed__Course_Connection_Requirement__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Requirement_ID__c
   - rio_ed__Requirement_Met__c
@@ -566,7 +566,7 @@ Insert rio_ed__Course_Connection_Requirement__c:
 Insert rio_ed__Fee_Line__c:
   sf_object: rio_ed__Fee_Line__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Commencement_Date__c
   - rio_ed__Completion_Date__c
   - rio_ed__Course_Connection_Fee_Amount__c
@@ -584,7 +584,7 @@ Insert rio_ed__Fee_Line__c:
 Insert rio_ed__Resource_Type__c:
   sf_object: rio_ed__Resource_Type__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   anchor_date: 2022-01-28
 Insert rio_ed__Resource__c:
@@ -618,7 +618,7 @@ Insert rio_ed__Role__c:
 Insert rio_ed__Session__c:
   sf_object: rio_ed__Session__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - RecordTypeId
   - rio_ed__Attendance_Marking__c
@@ -644,7 +644,7 @@ Insert rio_ed__Session__c:
 Insert rio_ed__Session_Time__c:
   sf_object: rio_ed__Session_Time__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Booking_Action__c
   - rio_ed__Change_Log__c
   - rio_ed__Day_of_week__c
@@ -667,7 +667,7 @@ Insert rio_ed__Session_Time__c:
 Insert hed__Term_Grade__c:
   sf_object: hed__Term_Grade__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - hed__Credits_Attempted__c
   - hed__Credits_Earned__c
   - hed__Letter_Grade__c
@@ -689,7 +689,7 @@ Insert hed__Term_Grade__c:
 Insert rio_ed__Grade__c:
   sf_object: rio_ed__Grade__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - RecordTypeId
   - rio_ed__Grade_Criteria_Id__c
@@ -703,7 +703,7 @@ Insert rio_ed__Grade__c:
 Insert rio_ed__Allocation__c:
   sf_object: rio_ed__Allocation__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Booking_Display_Name__c
   - rio_ed__Booking_Status__c
   - rio_ed__End_Date_Non_TZ__c
@@ -725,7 +725,7 @@ Insert rio_ed__Allocation__c:
 Insert rio_ed__Session_Connection__c:
   sf_object: rio_ed__Session_Connection__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Auto_Attendance_Creation__c
   - rio_ed__End_Date__c
@@ -745,7 +745,7 @@ Insert rio_ed__Session_Connection__c:
 Insert rio_ed__Attendance__c:
   sf_object: rio_ed__Attendance__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Session_Date__c
   lookups:
     rio_ed__Booking__c:
@@ -756,7 +756,7 @@ Insert rio_ed__Attendance__c:
 Insert rio_ed__Appointment_Type__c:
   sf_object: rio_ed__Appointment_Type__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Active__c
   - rio_ed__Allow_Students_to_book__c
@@ -771,7 +771,7 @@ Insert rio_ed__Appointment_Type__c:
 Insert rio_ed__Appointment_Availability__c:
   sf_object: rio_ed__Appointment_Availability__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   lookups:
     rio_ed__Appointment_Type__c:
       table: rio_ed__Appointment_Type__c
@@ -783,7 +783,7 @@ Insert rio_ed__Appointment_Availability__c:
 Insert rio_ed__Appointment_Time__c:
   sf_object: rio_ed__Appointment_Time__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__Active__c
   - rio_ed__Appointment_Duration__c
@@ -800,7 +800,7 @@ Insert rio_ed__Appointment_Time__c:
 Insert rio_ed__Availability_Time__c:
   sf_object: rio_ed__Availability_Time__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - Name
   - rio_ed__All_Locations__c
   - rio_ed__Day_of_the_Week__c
@@ -815,7 +815,7 @@ Insert rio_ed__Availability_Time__c:
 Insert rio_ed__Assigned_Location__c:
   sf_object: rio_ed__Assigned_Location__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   lookups:
     rio_ed__Location__c:
       table: Account
@@ -825,7 +825,7 @@ Insert rio_ed__Assigned_Location__c:
 Insert rio_ed__Contact_Attendance__c:
   sf_object: rio_ed__Contact_Attendance__c
   fields:
-  - rio_ed__RIO_P1__c
+  - rio_ed__External_Id__c
   - rio_ed__Primary_Contact__c
   - rio_ed__Status__c
   lookups:
