@@ -37,6 +37,12 @@
         <userField>Contact</userField>
     </accessMappings>
 	<accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>hed__Term_Grade__c</object>
+        <objectField>hed__Course_Connection__c.hed__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+	<accessMappings>
         <accessLevel>Edit</accessLevel>
         <object>rio_ed__Funding_Allocation__c</object>
         <objectField>rio_ed__Contact__c</objectField>
