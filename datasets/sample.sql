@@ -2759,7 +2759,6 @@ CREATE TABLE "rio_ed__Role__c" (
 	"rio_ed__Auto_Allocate__c" VARCHAR(255), 
 	"rio_ed__Double_Booking_Count__c" VARCHAR(255), 
 	"rio_ed__Published__c" VARCHAR(255), 
-	"rio_ed__Session_Id__c" VARCHAR(255), 
 	"rio_ed__Plan__c" VARCHAR(255), 
 	"rio_ed__Resource_Type__c" VARCHAR(255), 
 	PRIMARY KEY (id)
