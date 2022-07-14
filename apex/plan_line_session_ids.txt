@@ -1,0 +1,7 @@
+Map<Id, rio_ed__Role__c> planLineMap = new Map<Id, rio_ed__Role__c>([SELECT rio_ed__Session_Id__c FROM rio_ed__Role__c WHERE rio_ed__External_Id__c LIKE 'ISD-%']);
+
+List<rio_ed__Session__c> listSessions = [SELECT Id, rio_ed__Plan_Line__c FROM rio_ed__Session__c WHERE rio_ed__Plan_Line__c IN :planLineMap.keySet()];
+
+for (rio_ed__Session__c session : listSessions) {
+    planLineMap.get(session.rio_ed__Plan_Line__c).rio_ed__Session_Id__c = session.Id;
+}
