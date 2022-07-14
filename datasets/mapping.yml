@@ -608,7 +608,6 @@ Insert rio_ed__Role__c:
   - rio_ed__Auto_Allocate__c
   - rio_ed__Double_Booking_Count__c
   - rio_ed__Published__c
-  - rio_ed__Session_Id__c
   lookups:
     rio_ed__Plan__c:
       table: rio_ed__Plan__c
