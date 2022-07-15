@@ -47,10 +47,10 @@ delete sts;
 List<rio_ed__Session__c> sess = [Select Id From rio_ed__Session__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete sess;
 
-List<rio_ed__Role__c> pls = [Select Id From rio_ed__Role__c Where rio_ed__RIO_P1__c = 'ISD'];
+List<rio_ed__Role__c> pls = [Select Id From rio_ed__Role__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete pls;
 
-List<rio_ed__Resource__c> ress = [Select Id From rio_ed__Resource__c Where rio_ed__RIO_P1__c = 'ISD'];
+List<rio_ed__Resource__c> ress = [Select Id From rio_ed__Resource__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete ress;
 
 List<rio_ed__Resource_Type__c> rts = [Select Id From rio_ed__Resource_Type__c Where rio_ed__External_Id__c Like 'ISD-%'];
@@ -74,7 +74,7 @@ delete pegs;
 List<rio_ed__Funding__c> funds = [Select Id From rio_ed__Funding__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete funds;
 
-List<rio_ed__Student_Fee__c> sfs = [Select Id From rio_ed__Student_Fee__c Where rio_ed__RIO_P1__c = 'ISD'];
+List<rio_ed__Student_Fee__c> sfs = [Select Id From rio_ed__Student_Fee__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete sfs;
 
 List<hed__Program_Enrollment__c> pes = [Select Id From hed__Program_Enrollment__c Where rio_ed__External_Id__c Like 'ISD-%'];
@@ -86,7 +86,7 @@ delete pas;
 List<hed__Course_Offering__c> cos = [Select Id From hed__Course_Offering__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete cos;
 
-List<rio_ed__Plan__c> plans = [Select Id From rio_ed__Plan__c Where rio_ed__RIO_P1__c = 'ISD'];
+List<rio_ed__Plan__c> plans = [Select Id From rio_ed__Plan__c Where rio_ed__External_Id__c Like 'ISD-%'];
 delete plans;
 
 List<rio_ed__Discipline_Requirement__c> drs = [Select Id From rio_ed__Discipline_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%'];

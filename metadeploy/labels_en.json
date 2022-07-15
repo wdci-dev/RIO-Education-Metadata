@@ -377,6 +377,10 @@
         "RIO Ready - Alumni Automation": {
             "message": "RIO Ready - Alumni Automation",
             "description": "title of installation step"
+        },
+        "RIO Education - Plan Line Session IDs": {
+            "message": "RIO Education - Plan Line Session IDs",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
