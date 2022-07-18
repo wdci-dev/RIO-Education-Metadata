@@ -12,6 +12,7 @@
         <members>hed__Program_Enrollment__c</members>
         <members>hed__Program_Plan__c</members>
         <members>hed__Time_Block__c</members>
+		<members>hed__Term_Grade__c</members>
         <name>CustomObject</name>
     </types>
     <version>52.0</version>
