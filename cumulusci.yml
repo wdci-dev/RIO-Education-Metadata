@@ -73,10 +73,10 @@ flows:
                 3:
                     task: install_managed
                     options:
-                        version_number: 04t3u000003T0RF
+                        version_number: 04t3u000003T0RP
                         security_type: NONE
                     ui_options:
-                        name: Install RIO Education 3.9.1
+                        name: Install RIO Education 3.9.2
                 4:
                     task: deploy_post
                     options:
@@ -311,18 +311,24 @@ plans:
             5:
                 task: custom_execute_anon
                 options:
+                    path: apex/plan_line_session_ids.txt
+                ui_options:
+                    name: RIO Education - Plan Line Session IDs
+            6:
+                task: custom_execute_anon
+                options:
                     path: apex/provision_community_users.txt
                 ui_options:
                     name: RIO Education - Provision Community Users
                     is_required: False
                     is_recommended: False
-            6:
+            7:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed
                 ui_options:
                     name: Restore Trigger Handlers
-            7:
+            8:
                 task: execute_anon
                 options:
                     path: apex/approve_fs.txt
