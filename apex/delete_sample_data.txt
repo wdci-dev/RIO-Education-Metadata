@@ -104,11 +104,11 @@ delete ppaths;
 List<rio_ed__Program_Course_Requirement__c> pcrs = [Select Id From rio_ed__Program_Course_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD'];
 delete pcrs;
 
-List<hed__Plan_Requirement__c> cprs = [Select Id From hed__Plan_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD' And
+List<hed__Plan_Requirement__c> cprs = [Select Id From hed__Plan_Requirement__c Where (rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD') And
                                         hed__Plan_Requirement__c != null];
 delete cprs;
 
-List<hed__Plan_Requirement__c> pprs = [Select Id From hed__Plan_Requirement__c Where rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD' And
+List<hed__Plan_Requirement__c> pprs = [Select Id From hed__Plan_Requirement__c Where (rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD') And
                                         hed__Plan_Requirement__c = null];
 delete pprs;
 
