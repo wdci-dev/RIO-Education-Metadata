@@ -73,10 +73,10 @@ flows:
                 3:
                     task: install_managed
                     options:
-                        version_number: 04t3u000003T0RF
+                        version_number: 04t3u000003T0RP
                         security_type: NONE
                     ui_options:
-                        name: Install RIO Education 3.9.1
+                        name: Install RIO Education 3.9.2
                 4:
                     task: deploy_post
                     options:
