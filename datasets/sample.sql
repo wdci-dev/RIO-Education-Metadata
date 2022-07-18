@@ -2123,12 +2123,12 @@ CREATE TABLE "rio_ed__Fee_Schedule__c" (
 	"rio_ed__Fee__c" VARCHAR(255), 
 	PRIMARY KEY (id)
 );
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(1,'ISD-1','Default','False','False','2000.0','2000.0','2032-01-06','Term','2022-01-06','False','Approved','3');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(2,'ISD-2','Default','True','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Approved','4');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(3,'ISD-3','Discountable Default','False','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Approved','5');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(4,'ISD-4','Default','True','False','2500.0','2500.0','2032-01-06','Program','2022-01-06','False','Approved','6');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(5,'ISD-5','Default','True','False','1000.0','1000.0','2032-01-06','Deposit','2022-01-06','False','Approved','1');
-INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(6,'ISD-6','Default','True','False','500.0','500.0','2032-01-06','Application','2022-01-06','False','Approved','2');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(1,'ISD-1','Default','False','False','2000.0','2000.0','2032-01-06','Term','2022-01-06','False','Draft','3');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(2,'ISD-2','Default','True','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Draft','4');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(3,'ISD-3','Discountable Default','False','False','1000.0','1000.0','2032-01-06','Course','2022-01-06','False','Draft','5');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(4,'ISD-4','Default','True','False','2500.0','2500.0','2032-01-06','Program','2022-01-06','False','Draft','6');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(5,'ISD-5','Default','True','False','1000.0','1000.0','2032-01-06','Deposit','2022-01-06','False','Draft','1');
+INSERT INTO "rio_ed__Fee_Schedule__c" VALUES(6,'ISD-6','Default','True','False','500.0','500.0','2032-01-06','Application','2022-01-06','False','Draft','2');
 CREATE TABLE "rio_ed__Fee__c" (
 	id INTEGER NOT NULL, 
 	"rio_ed__External_Id__c" VARCHAR(255), 
@@ -2850,7 +2850,7 @@ INSERT INTO "rio_ed__Role__c" VALUES(43,'ISD-44','HRM321 Lecture #1','False','0.
 INSERT INTO "rio_ed__Role__c" VALUES(44,'ISD-45','MGT310 Lecture #1','False','0.0','True','','3');
 INSERT INTO "rio_ed__Role__c" VALUES(45,'ISD-46','BUS101 Lecture #2 (Session Group)','False','0.0','True','','3');
 INSERT INTO "rio_ed__Role__c" VALUES(46,'ISD-47','ICT115 Tutorial Series #1','False','0.0','False','','3');
-INSERT INTO "rio_ed__Role__c" VALUES(47,'ISD-24','ICT115 Lecture #2','False','0.0','True','104','2');
+INSERT INTO "rio_ed__Role__c" VALUES(47,'ISD-24','ICT115 Lecture #2','False','0.0','True','104','3');
 INSERT INTO "rio_ed__Role__c" VALUES(48,'ISD-48','ICT115 Lecture #1','False','0.0','True','104','3');
 INSERT INTO "rio_ed__Role__c" VALUES(49,'ISD-49','ICT112 Lecture #1','False','0.0','True','105','3');
 INSERT INTO "rio_ed__Role__c" VALUES(50,'ISD-50','Appointments','False','0.0','False','106','3');
