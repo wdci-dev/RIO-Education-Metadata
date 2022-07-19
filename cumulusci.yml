@@ -4,7 +4,7 @@ project:
     package:
         name: RIO-Education-Metadata
         namespace: rio_ed
-        api_version: '52.0'
+        api_version: '55.0'
     git:
         prefix_release: rel/
         repo_url: https://github.com/wdci-dev/RIO-Education-Metadata
