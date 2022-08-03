@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>REDU_CustomFeesTestDataFactory_UTIL</members>
-        <members>redu_CustomFeesTriggerHandler_MANAGER</members>
-		<members>redu_SFEE_CustomFees_TDTM</members>
-		<members>redu_SFEE_CustomFees_TEST</members>
-        <name>ApexClass</name>
-    </types>
-    <types>
         <members>hed__Program_Enrollment__c.redu_Last_Annual_Fee_Term__c</members>
         <members>hed__Program_Enrollment__c.redu_Last_Annual_Fee_Year__c</members>
         <members>hed__Program_Plan__c.redu_Annual_Fee_Group__c</members>
