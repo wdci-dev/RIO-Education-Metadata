@@ -381,6 +381,10 @@
         "RIO Education - Plan Line Session IDs": {
             "message": "RIO Education - Plan Line Session IDs",
             "description": "title of installation step"
+        },
+        "RIO Ready - Custom Fees": {
+            "message": "RIO Ready - Custom Fees",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
