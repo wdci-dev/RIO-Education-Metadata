@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Last_Annual_Fee_Term__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The most recent Term that applied an Annual Fee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The most recent Term that applied an Annual Fee.</inlineHelpText>
+        <label>Last Annual Fee Term</label>
+        <referenceTo>hed__Term__c</referenceTo>
+        <relationshipLabel>Program Enrollments (Last Annual Fee Term)</relationshipLabel>
+        <relationshipName>Program_Enrollments_Last_Annual_Fee</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>redu_Last_Annual_Fee_Year__c</fullName>
+        <description>The most recent Academic Year that applied an Annual Fee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The most recent Academic Year that applied an Annual Fee.</inlineHelpText>
+        <label>Last Annual Fee Year</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

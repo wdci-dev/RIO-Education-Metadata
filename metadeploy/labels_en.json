@@ -385,6 +385,10 @@
         "RIO Ready - Custom Fees": {
             "message": "RIO Ready - Custom Fees",
             "description": "title of installation step"
+        },
+        "RIO Ready - Custom Fees (Pre-Deploy)": {
+            "message": "RIO Ready - Custom Fees (Pre-Deploy)",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

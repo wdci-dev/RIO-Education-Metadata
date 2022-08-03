@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Annual_Fee_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Annual Fee Group</label>
+        <referenceTo>rio_ed__Fee__c</referenceTo>
+        <relationshipLabel>Program Plans (Annual Fee Group)</relationshipLabel>
+        <relationshipName>Annual_Program_Plans</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>redu_Program_Completion_Fee_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program Completion Fee Group</label>
+        <referenceTo>rio_ed__Fee__c</referenceTo>
+        <relationshipLabel>Program Plans (Program Completion Fee Group)</relationshipLabel>
+        <relationshipName>Program_Completion_Program_Plans</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>redu_Term_wise_Fee_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Term-wise Fee Group</label>
+        <referenceTo>rio_ed__Fee__c</referenceTo>
+        <relationshipLabel>Program Plans (Term-wise Fee Group)</relationshipLabel>
+        <relationshipName>Term_wise_Program_Plans</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>
