@@ -273,6 +273,10 @@ plans:
                         name: RIO Ready - Alumni Automation
                         is_required: False
                         is_recommended: False
+                    16_Custom_Fees:
+                        name: RIO Ready - Custom Fees
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
