@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Housing_Picklist_Option_Label__c</fullName>
+        <description>For picklist option label in Generate Housing Fee</description>
+        <externalId>false</externalId>
+        <formula>rio_ed__Term__r.Name + &apos; (&apos; + Name + &apos;)&apos;</formula>
+        <label>Housing Picklist Option Label</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

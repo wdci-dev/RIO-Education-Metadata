@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Invoke generate housing fee flow</description>
+    <flowDefinition>redu_Generate_Housing_Fee</flowDefinition>
+    <label>Generate Housing Fee</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

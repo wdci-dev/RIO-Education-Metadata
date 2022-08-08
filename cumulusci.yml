@@ -281,6 +281,10 @@ plans:
                         name: RIO Ready - Custom Fees
                         is_required: False
                         is_recommended: False
+                    18_HousingFeeGeneration:
+                        name: RIO Ready - Housing Fee Generation
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
