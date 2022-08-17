@@ -389,6 +389,10 @@
         "RIO Ready - Custom Fees (Pre-Deploy)": {
             "message": "RIO Ready - Custom Fees (Pre-Deploy)",
             "description": "title of installation step"
+        },
+        "RIO Ready - Housing Fee Generation": {
+            "message": "RIO Ready - Housing Fee Generation",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
