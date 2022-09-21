@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REDU_Program_Enrollment__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>This is the program enrollment parent for this calls object.</description>
+    <externalId>false</externalId>
+    <label>Program Enrollment</label>
+    <referenceTo>hed__Program_Enrollment__c</referenceTo>
+    <relationshipLabel>Custom Calls</relationshipLabel>
+    <relationshipName>Custom_Calls</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

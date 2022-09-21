@@ -267,6 +267,10 @@ plans:
                         name: RIO Ready - Alumni Automation
                         is_required: False
                         is_recommended: False
+                    15_Calls:
+                        name: RIO Ready - Calls
+                        is_required: False
+                        is_recommended: False
                     16_Custom_Fees_preDeploy:
                         name: RIO Ready - Custom Fees (Pre-Deploy)
                         is_required: False
