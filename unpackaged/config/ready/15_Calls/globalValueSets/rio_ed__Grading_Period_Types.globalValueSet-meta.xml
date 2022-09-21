@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mid-Term Grade</fullName>
+        <default>false</default>
+        <label>Mid-Term Grade</label>
+    </customValue>
+    <customValue>
+        <fullName>Final Grade</fullName>
+        <default>true</default>
+        <label>Final Grade</label>
+    </customValue>
+    <customValue>
+        <fullName>Grading Period</fullName>
+        <default>false</default>
+        <label>Grading Period</label>
+    </customValue>
+    <customValue>
+        <fullName>Ordinary</fullName>
+        <default>false</default>
+        <label>Ordinary</label>
+    </customValue>
+    <customValue>
+        <fullName>Extraordinary</fullName>
+        <default>false</default>
+        <label>Extraordinary</label>
+    </customValue>
+    <description>Grading period type, similar to the Term Grade Type on term grade.</description>
+    <masterLabel>Grading Period Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Course_Required_If_All_Courses_Unchecked</fullName>
+    <active>true</active>
+    <description>The Course field is required if the “All courses” checkbox is not checked.</description>
+    <errorConditionFormula>AND( ISBLANK( REDU_Course__c ) ,  REDU_All_Courses__c = false )</errorConditionFormula>
+    <errorMessage>The Course field is required if the “All courses” checkbox is not checked.</errorMessage>
+</ValidationRule>
