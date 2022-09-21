@@ -393,6 +393,10 @@
         "RIO Ready - Housing Fee Generation": {
             "message": "RIO Ready - Housing Fee Generation",
             "description": "title of installation step"
+        },
+        "RIO Ready - Calls": {
+            "message": "RIO Ready - Calls",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
