@@ -6,7 +6,7 @@
  */
 
 @isTest
-public with sharing class REDU_GradesRollupTestDataFactory_UTIL { 
+public without sharing class REDU_GradesRollupTestDataFactory_UTIL { 
 
     /**
      * @description Course connection status - Current
