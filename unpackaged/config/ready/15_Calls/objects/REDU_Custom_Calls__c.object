@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>REDU_All_Courses__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to indicate that this call count maximum is for the student across all their courses.</description>
+        <externalId>false</externalId>
+        <label>All Courses</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>REDU_Course__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>This is the course object that this Calls count relates to.</description>
+        <externalId>false</externalId>
+        <label>Course</label>
+        <referenceTo>hed__Course__c</referenceTo>
+        <relationshipLabel>Custom Calls</relationshipLabel>
+        <relationshipName>Custom_Calls</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>REDU_Max_Calls__c</fullName>
+        <description>Maximum number of calls allowed for this course</description>
+        <externalId>false</externalId>
+        <label>Max Calls</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REDU_Program_Enrollment__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>This is the program enrollment parent for this calls object.</description>
+        <externalId>false</externalId>
+        <label>Program Enrollment</label>
+        <referenceTo>hed__Program_Enrollment__c</referenceTo>
+        <relationshipLabel>Custom Calls</relationshipLabel>
+        <relationshipName>Custom_Calls</relationshipName>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <validationRules xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Course_Required_If_All_Courses_Unchecked</fullName>
+        <active>true</active>
+        <description>The Course field is required if the “All courses” checkbox is not checked.</description>
+        <errorConditionFormula>AND( ISBLANK( REDU_Course__c ) ,  REDU_All_Courses__c = false )</errorConditionFormula>
+        <errorMessage>The Course field is required if the “All courses” checkbox is not checked.</errorMessage>
+    </validationRules>
+    
     <actionOverrides>
         <actionName>Accept</actionName>
         <type>Default</type>
