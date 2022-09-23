@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
+		<members>REDU_GradesRollup_UTIL</members>
 		<members>REDU_GradesRollupTestDataFactory_UTIL</members>
 		<members>redu_GRD_GradeToTermGradeRollup_TDTM</members>
 		<members>redu_GRD_GradeToTermGradeRollup_TEST</members>
