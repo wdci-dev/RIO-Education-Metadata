@@ -5,7 +5,7 @@
  * @description Util for RIO Ready grades rollup classes.
  */
 
-public with sharing class REDU_GradesRollup_UTIL { 
+public without sharing class REDU_GradesRollup_UTIL { 
 
     public static List<GradeSettingWrapper> getGradeSettings(Set<Id> gsAcctIds) {
         List<GradeSettingWrapper> gradeSettings = new List<GradeSettingWrapper>();
