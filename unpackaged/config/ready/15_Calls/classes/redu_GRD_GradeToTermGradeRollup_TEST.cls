@@ -1476,7 +1476,6 @@ public class redu_GRD_GradeToTermGradeRollup_TEST {
         customSettings.rio_ed__Resource_Type_Plan_RT_Id__c = Schema.SObjectType.rio_ed__Plan__c.getRecordTypeInfosByDeveloperName().get('Resource_Type').getRecordTypeId();
         customSettings.rio_ed__Session_Scheduler_REST_API_Url__c = 'https://' + System.URL.getOrgDomainUrl().getHost() + '/services/apexrest/rio_ed/calendarevent';
                    
-        customSettings.redu_File_Sharing_Prefix__c = 'Official_Transcript';
         return customSettings;
     }
 }
