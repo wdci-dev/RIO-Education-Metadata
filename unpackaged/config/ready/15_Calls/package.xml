@@ -41,5 +41,9 @@
 		<members>rio_ed__Grading_Period_Types</members>
 		<name>GlobalValueSet</name>
 	</types>
+	<types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
 	<version>55.0</version>
 </Package>
