@@ -7,7 +7,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
         <field>hed__Course_Enrollment__c.REDU_Call_Count_Alert__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -53,11 +52,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>REDU_Custom_Calls__c.REDU_Max_Calls__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>REDU_Custom_Calls__c.REDU_Program_Enrollment__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
