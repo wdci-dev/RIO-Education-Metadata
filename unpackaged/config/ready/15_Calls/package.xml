@@ -17,6 +17,7 @@
 	<types>
 		<members>hed__Course_Enrollment__c.REDU_Call_Count_Alert__c</members>
 		<members>hed__Course_Enrollment__c.REDU_Call_Count_Max__c</members>
+		<members>hed__Course_Enrollment__c.REDU_Call_Number__c</members>
 		<members>hed__Course_Enrollment__c.REDU_Grade_Override__c</members>
 		<members>hed__Course_Enrollment__c.REDU_Grade_Type__c</members>
 		<members>hed__Course__c.REDU_Max_Calls__c</members>
@@ -34,7 +35,7 @@
 	</types>
 	<types>
 		<members>REDU_Course_Connection_Call_Count_Max</members>
-		<members>REDU_Term_Grade_Increment_Course_Connection_Attempt_Number</members>
+		<members>REDU_Term_Grade_Increment_Course_Connection_Call_Number</members>
 		<name>Flow</name>
 	</types>
 	<types>
