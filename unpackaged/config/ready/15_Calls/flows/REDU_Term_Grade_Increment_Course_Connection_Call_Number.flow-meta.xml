@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>55.0</apiVersion>
+    <apiVersion>56.0</apiVersion>
     <environments>Default</environments>
     <formulas>
-        <name>IncrementAttemptNumberFormula</name>
+        <name>IncrementCallNumberFormula</name>
         <dataType>Number</dataType>
-        <expression>{!Get_Course_Connection.rio_ed__Attempt_Number__c} + 1</expression>
+        <expression>{!Get_Course_Connection.REDU_Call_Number__c} + 1</expression>
         <scale>0</scale>
     </formulas>
-    <interviewLabel>Term Grade Increment Course Connection Attempt Number {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Term Grade Increment Course Connection Attempt Number</label>
+    <interviewLabel>Term Grade Increment Course Connection Call Number {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Term Grade Increment Course Connection Call Number</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -36,7 +36,7 @@
         <locationY>335</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Increment_Course_Connection_Attempt_Number</targetReference>
+            <targetReference>Increment_Course_Connection_Call_Number</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -48,12 +48,11 @@
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>hed__Course_Enrollment__c</object>
-        <queriedFields>Id</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Increment_Course_Connection_Attempt_Number</name>
-        <label>Increment Course Connection Attempt Number</label>
+        <name>Increment_Course_Connection_Call_Number</name>
+        <label>Increment Course Connection Call Number</label>
         <locationX>176</locationX>
         <locationY>455</locationY>
         <filterLogic>and</filterLogic>
@@ -65,9 +64,9 @@
             </value>
         </filters>
         <inputAssignments>
-            <field>rio_ed__Attempt_Number__c</field>
+            <field>REDU_Call_Number__c</field>
             <value>
-                <elementReference>IncrementAttemptNumberFormula</elementReference>
+                <elementReference>IncrementCallNumberFormula</elementReference>
             </value>
         </inputAssignments>
         <object>hed__Course_Enrollment__c</object>
@@ -78,24 +77,25 @@
         <connector>
             <targetReference>Get_Course_Connection</targetReference>
         </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
             <field>hed__Result__c</field>
-            <operator>NotEqualTo</operator>
-            <value>
-                <stringValue>Pass</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>hed__Result__c</field>
-            <operator>NotEqualTo</operator>
+            <operator>EqualTo</operator>
             <value>
                 <stringValue>Fail</stringValue>
             </value>
         </filters>
+        <filters>
+            <field>REDU_Call_Override__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Extraordinary</stringValue>
+            </value>
+        </filters>
         <object>hed__Term_Grade__c</object>
-        <recordTriggerType>Create</recordTriggerType>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

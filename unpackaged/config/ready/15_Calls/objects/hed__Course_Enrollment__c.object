@@ -3,7 +3,7 @@
     <fields>
         <fullName>REDU_Call_Count_Alert__c</fullName>
         <externalId>false</externalId>
-        <formula>rio_ed__Attempt_Number__c  &gt;=  REDU_Call_Count_Max__c</formula>
+        <formula>REDU_Call_Number__c  &gt;=  REDU_Call_Count_Max__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Call Count Alert</label>
         <trackHistory>false</trackHistory>
@@ -15,6 +15,22 @@
         <description>The number of calls for this course that the student can take</description>
         <externalId>false</externalId>
         <label>Call Count Max</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>REDU_Call_Number__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Shows how many previous calls a student has had for this course</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows how many previous calls a student has had for this course</inlineHelpText>
+        <label>Call Number</label>
         <precision>2</precision>
         <required>false</required>
         <scale>0</scale>
