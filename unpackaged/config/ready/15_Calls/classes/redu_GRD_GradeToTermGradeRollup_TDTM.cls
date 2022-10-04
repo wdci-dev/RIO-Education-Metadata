@@ -27,6 +27,7 @@ global without sharing class redu_GRD_GradeToTermGradeRollup_TDTM extends hed.TD
         List<rio_ed__Grade__c> oldGrade = (List<rio_ed__Grade__c>) oldList;
 
         Set<Id> termGradeIdsUpdateGrades = new Set<Id>();
+        Set<Id> gradeIdsSetOverrides = new Set<Id>();
         Set<Id> termGradeIdsSetOverrides = new Set<Id>();
         Set<Id> termGradeIdsClearOverrides = new Set<Id>();
 
@@ -39,6 +40,7 @@ global without sharing class redu_GRD_GradeToTermGradeRollup_TDTM extends hed.TD
                     }
 
                     if (grade.REDU_Grade_Override__c <> null || grade.REDU_Call_Override__c <> null) {
+                        gradeIdsSetOverrides.add(grade.Id);
                         termGradeIdsSetOverrides.add(grade.rio_ed__Term_Grade__c);
                     }
                 }
@@ -57,6 +59,7 @@ global without sharing class redu_GRD_GradeToTermGradeRollup_TDTM extends hed.TD
                         newGrade[i].REDU_Grade_Override__c <> oldGrade[i].REDU_Grade_Override__c || 
                         newGrade[i].REDU_Call_Override__c <> oldGrade[i].REDU_Call_Override__c) 
                     {
+                        gradeIdsSetOverrides.add(newGrade[i].Id);
                         termGradeIdsSetOverrides.add(newGrade[i].rio_ed__Term_Grade__c);
                     }
                 }
@@ -179,11 +182,9 @@ global without sharing class redu_GRD_GradeToTermGradeRollup_TDTM extends hed.TD
                 }
 
                 //Update override fields
-                if (termGradeIdsSetOverrides.contains(grade.rio_ed__Term_Grade__c)) {
-                    if (updateTermGrades.containsKey(grade.rio_ed__Term_Grade__c)) {
-                        updateTermGrades.get(grade.rio_ed__Term_Grade__c).REDU_Call_Override__c = grade.REDU_Call_Override__c;
-                        updateTermGrades.get(grade.rio_ed__Term_Grade__c).REDU_Grade_Override__c = grade.REDU_Grade_Override__c;
-                    }
+                if (termGradeIdsSetOverrides.contains(grade.rio_ed__Term_Grade__c) && gradeIdsSetOverrides.contains(grade.Id)) {
+                    updateTermGrades.get(grade.rio_ed__Term_Grade__c).REDU_Call_Override__c = grade.REDU_Call_Override__c;
+                    updateTermGrades.get(grade.rio_ed__Term_Grade__c).REDU_Grade_Override__c = grade.REDU_Grade_Override__c;
                 }
             }
 
