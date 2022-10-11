@@ -267,10 +267,6 @@ plans:
                         name: RIO Ready - Alumni Automation
                         is_required: False
                         is_recommended: False
-                    15_Calls:
-                        name: RIO Ready - Calls
-                        is_required: False
-                        is_recommended: False
                     16_Custom_Fees_preDeploy:
                         name: RIO Ready - Custom Fees (Pre-Deploy)
                         is_required: False
@@ -281,6 +277,10 @@ plans:
                         is_recommended: False
                     18_HousingFeeGeneration:
                         name: RIO Ready - Housing Fee Generation
+                        is_required: False
+                        is_recommended: False
+                    19_Student_Ledger:
+                        name: RIO Ready - Student Ledger
                         is_required: False
                         is_recommended: False
     

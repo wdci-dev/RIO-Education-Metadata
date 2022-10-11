@@ -1,0 +1,29 @@
+<template>
+    <lightning-card>
+        <lightning-record-view-form
+            object-api-name='redu_Student_Ledger__c'
+            record-id={studentLedgerId}>
+            <lightning-layout>
+                <lightning-layout-item size="7" padding="around-small">
+                    <lightning-output-field
+                        field-name={slContactField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={slNameField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={slOutstandingAmountField}>
+                    </lightning-output-field>
+                </lightning-layout-item>
+                <lightning-layout-item size="7" padding="around-small">
+                    <lightning-output-field
+                        field-name={slTotalFeesField}>
+                    </lightning-output-field>
+                    <lightning-output-field
+                        field-name={slTotalPaymentsField}>
+                    </lightning-output-field>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-record-view-form>
+    </lightning-card>
+</template>
