@@ -2,15 +2,14 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>Stores student grades for a specific grading period within a Term.</description>
-    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <enableActivities>true</enableActivities>
+    <description>Stores student grades for a specific grading period within a Term.</description>
     <externalSharingModel>Private</externalSharingModel>
     <label>Term Grade</label>
     <nameField>

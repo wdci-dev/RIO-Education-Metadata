@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!--
+	<allowInChatterGroups>false</allowInChatterGroups>
+	<enableFeeds>false</enableFeeds>
+	<enableLicensing>false</enableLicensing>
+	<externalSharingModel>Private</externalSharingModel>
+    <visibility>Public</visibility>
+	-->
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <enableBulkApi>true</enableBulkApi>
@@ -9,15 +16,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <enableActivities>true</enableActivities>
-    <description>Represents a block of time in which classes are held.</description>
-    <externalSharingModel>Read</externalSharingModel>
-    <label>Time Block</label>
-    <nameField>
-        <label>Time Block Name</label>
+	<label>Application</label>
+	<pluralLabel>Applications</pluralLabel>
+	<description>Stores information about a student&apos;s application to an educational institution or program.</description>
+	<nameField>
+        <displayFormat>APP-{0000}</displayFormat>
+        <label>Application Name</label>
         <trackHistory>false</trackHistory>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Time Blocks</pluralLabel>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>
