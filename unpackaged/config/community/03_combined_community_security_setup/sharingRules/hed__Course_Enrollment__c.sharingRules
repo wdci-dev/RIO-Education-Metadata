@@ -13,6 +13,7 @@
             <operation>equals</operation>
             <value>Student</value>
         </criteriaItems>
+		<includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
     <sharingCriteriaRules>
         <fullName>REDU_Faculty_ReadOnFaculty</fullName>
@@ -28,5 +29,6 @@
             <operation>equals</operation>
             <value>Faculty</value>
         </criteriaItems>
+		<includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
 </SharingRules>

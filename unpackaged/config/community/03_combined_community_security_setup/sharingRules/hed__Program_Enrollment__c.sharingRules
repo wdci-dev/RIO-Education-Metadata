@@ -13,5 +13,6 @@
             <operation>equals</operation>
             <value>Current,Completed</value>
         </criteriaItems>
+		<includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
     </sharingCriteriaRules>
 </SharingRules>
