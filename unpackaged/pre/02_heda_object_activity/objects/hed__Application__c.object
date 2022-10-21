@@ -9,13 +9,14 @@
 	-->
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <enableActivities>true</enableActivities>
 	<label>Application</label>
 	<pluralLabel>Applications</pluralLabel>
 	<description>Stores information about a student&apos;s application to an educational institution or program.</description>
