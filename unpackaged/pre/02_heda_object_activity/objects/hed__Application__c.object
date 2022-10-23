@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <!--
+	<allowInChatterGroups>false</allowInChatterGroups>
+	<enableFeeds>false</enableFeeds>
+	<enableLicensing>false</enableLicensing>
+	<externalSharingModel>Private</externalSharingModel>
+    <visibility>Public</visibility>
+	-->
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <enableActivities>true</enableActivities>
@@ -10,16 +17,14 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <description>Stores student grades for a specific grading period within a Term.</description>
-    <externalSharingModel>Private</externalSharingModel>
-    <label>Term Grade</label>
-    <nameField>
-        <displayFormat>TG-{0000}</displayFormat>
-        <label>Term Grade Name</label>
+	<label>Application</label>
+	<pluralLabel>Applications</pluralLabel>
+	<description>Stores information about a student&apos;s application to an educational institution or program.</description>
+	<nameField>
+        <displayFormat>APP-{0000}</displayFormat>
+        <label>Application Name</label>
+        <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Term Grades</pluralLabel>
-    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>

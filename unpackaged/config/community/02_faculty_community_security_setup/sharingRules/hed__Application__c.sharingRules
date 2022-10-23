@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
     <sharingCriteriaRules>
-        <fullName>REDU_Faculty_ReadEdit</fullName>
-        <accessLevel>Edit</accessLevel>
-        <label>REDU-Faculty-ReadEdit</label>
+        <fullName>REDU_Faculty_Read</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>REDU-Faculty-Read</label>
         <sharedTo>
             <group>REDU_Faculty</group>
         </sharedTo>
