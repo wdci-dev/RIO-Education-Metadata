@@ -397,6 +397,14 @@
         "RIO Ready - Calls": {
             "message": "RIO Ready - Calls",
             "description": "title of installation step"
+        },
+        "RIO Education - HEDA Object Activity": {
+            "message": "RIO Education - HEDA Object Activity",
+            "description": "title of installation step"
+        },
+        "RIO Ready - Student Ledger": {
+            "message": "RIO Ready - Student Ledger",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
