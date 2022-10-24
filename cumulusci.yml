@@ -36,6 +36,8 @@ tasks:
         ui_options:
             01_heda_object_tracking:
                 name: RIO Education - HEDA Object Tracking
+            02_heda_object_activity:
+                name: RIO Education - HEDA Object Activity
     
     check_communities_enabled:
         description: Ensure that Communities is enabled.
