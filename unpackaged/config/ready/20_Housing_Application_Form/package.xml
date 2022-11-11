@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>rio_edhouse__Housing__c</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>REDU_Campus_Housing_Application</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Admin</members>
+    <members>REDU - Admin</members>
+    <members>REDU - Student</members>
+    <name>Profile</name>
+  </types>
+  <version>56.0</version>
+</Package>
