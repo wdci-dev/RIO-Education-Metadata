@@ -141,5 +141,4 @@
         <field>rio_edhouse__Housing__c.redu_Year_of_Study__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <userLicense>Customer Community Plus</userLicense>
 </Profile>
