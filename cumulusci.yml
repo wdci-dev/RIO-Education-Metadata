@@ -285,6 +285,10 @@ plans:
                         name: RIO Ready - Student Ledger
                         is_required: False
                         is_recommended: False
+                    20_Housing_Application_Form:
+                        name: RIO Ready - Housing Application Form
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
