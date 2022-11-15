@@ -405,6 +405,10 @@
         "RIO Ready - Student Ledger": {
             "message": "RIO Ready - Student Ledger",
             "description": "title of installation step"
+        },
+        "RIO Ready - Housing Application Form": {
+            "message": "RIO Ready - Housing Application Form",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
