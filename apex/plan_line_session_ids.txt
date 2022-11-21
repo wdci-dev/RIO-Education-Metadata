@@ -1,4 +1,4 @@
-Map<Id, rio_ed__Role__c> planLineMap = new Map<Id, rio_ed__Role__c>([SELECT rio_ed__Session_Id__c FROM rio_ed__Role__c Where rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD']);
+Map<Id, rio_ed__Role__c> planLineMap = new Map<Id, rio_ed__Role__c>([SELECT rio_ed__Session_Id__c FROM rio_ed__Role__c Where rio_ed__External_Id__c Like 'ISD-%']);
 
 List<rio_ed__Session__c> listSessions = [SELECT Id, rio_ed__Plan_Line__c FROM rio_ed__Session__c WHERE rio_ed__Plan_Line__c IN :planLineMap.keySet()];
 

@@ -1,4 +1,4 @@
-List<Contact> cts = [Select Id From Contact Where rio_ed__External_Id__c Like 'ISD-%' Or rio_ed__RIO_P1__c = 'ISD'];
+List<Contact> cts = [Select Id From Contact Where rio_ed__External_Id__c Like 'ISD-%'];
 List<Id> ctIds = new List<Id>();
 
 for (Contact ct : cts) {
