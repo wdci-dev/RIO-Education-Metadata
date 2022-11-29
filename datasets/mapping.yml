@@ -291,7 +291,6 @@ Insert rio_ed__Pathway_Unit__c:
   sf_object: rio_ed__Pathway_Unit__c
   fields:
   - rio_ed__External_Id__c
-  - rio_ed__RIO_P1__c
   - rio_ed__Term_Number__c
   lookups:
     rio_ed__Plan_Requirement_Course__c:
