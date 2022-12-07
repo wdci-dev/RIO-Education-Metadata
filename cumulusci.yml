@@ -88,6 +88,7 @@ plans:
             3:
                 task: install_managed
                 options:
+                    version: 3.11.2
                     version_number: 04t3u000003KrIx
                     security_type: NONE
                 ui_options:
