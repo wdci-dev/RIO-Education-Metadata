@@ -97,6 +97,5 @@
         <searchResultsAdditionalFields>hed__Latest_End_Date__c</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
-    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>
