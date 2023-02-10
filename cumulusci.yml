@@ -88,11 +88,11 @@ plans:
             3:
                 task: install_managed
                 options:
-                    version: 3.11.4
-                    version_number: 04t3u000003KrKy
+                    version: 3.11.5
+                    version_number: 04t3u000003KrPu
                     security_type: NONE
                 ui_options:
-                    name: Install RIO Education 3.11.4
+                    name: Install RIO Education 3.11.5
             4:
                 task: deploy_post
                 options:
