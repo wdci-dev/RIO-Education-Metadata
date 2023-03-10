@@ -14,7 +14,7 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>obj_Housing.redu_Program_Enrollment__c</assignToReference>
+            <assignToReference>obj_Housing.rio_edhouse__Program_Enrollment__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>housing_ProgramEnrollment</elementReference>
@@ -373,7 +373,7 @@
             <field>hed__Facility_Type__c</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Building</stringValue>
+                <stringValue>Residence Building</stringValue>
             </value>
         </filters>
         <object>hed__Facility__c</object>

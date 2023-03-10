@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Grievance</fullName>
+        <default>false</default>
+        <label>Grievance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Request for Approved Absence</fullName>
+        <default>false</default>
+        <label>Request for Approved Absence</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Extension of Assessment</fullName>
+        <default>false</default>
+        <label>Extension of Assessment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Application for RPL</fullName>
+        <default>false</default>
+        <label>Application for RPL</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Special Consideration</fullName>
+        <default>false</default>
+        <label>Special Consideration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Variation of Enrolment</fullName>
+        <default>false</default>
+        <label>Variation of Enrolment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appeal of Results</fullName>
+        <default>false</default>
+        <label>Appeal of Results</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Documentation Request</fullName>
+        <default>false</default>
+        <label>Documentation Request</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Transfer</fullName>
+        <default>false</default>
+        <label>Credit Transfer</label>
+    </standardValue>
+</StandardValueSet>
