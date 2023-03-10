@@ -75,5 +75,9 @@
 		<members>Case.Student_Request</members>
 		<name>RecordType</name>
 	</types>
+	<types>
+		<members>CaseType</members>
+		<name>StandardValueSet</name>
+	</types>
     <version>51.0</version>
 </Package>

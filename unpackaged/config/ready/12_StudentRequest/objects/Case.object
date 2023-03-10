@@ -180,5 +180,44 @@
                 <default>false</default>
             </values>
         </picklistValues>
+		<picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Appeal of Results</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Application for RPL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Documentation Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extension of Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grievance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request for Approved Absence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Consideration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Variation of Enrolment</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
     </recordTypes>
 </CustomObject>

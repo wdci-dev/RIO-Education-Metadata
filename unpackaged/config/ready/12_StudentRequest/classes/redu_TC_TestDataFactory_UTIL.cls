@@ -397,7 +397,7 @@ public class redu_TC_TestDataFactory_UTIL {
         for (rio_ed__Agreement__c a : listAgreement) {
             for(hed__Course__c c :listCourse){
                 listA.add(new rio_ed__Agreement_Course__c(rio_ed__Transfer_Course_Title__c = c.Name, rio_ed__Transfer_Course_ID__c = c.hed__Course_ID__c
-                , rio_ed__Agreement__c = a.Id, rio_ed__Status__c='Active', rio_ed__Course__c = c.Id));
+                , rio_ed__Agreement__c = a.Id, rio_ed__Status__c='Active', rio_ed__Course_ID_s__c = c.Id));
             }
         }
 
