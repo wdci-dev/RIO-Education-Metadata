@@ -65,9 +65,9 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>GPA</label>
-        <precision>4</precision>
+        <precision>5</precision>
         <required>false</required>
-        <scale>3</scale>
+        <scale>4</scale>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
