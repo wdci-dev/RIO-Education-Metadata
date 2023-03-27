@@ -11,6 +11,16 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>redu_Enable_Captcha__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This will enable the reCaptcha feature in RIO Ready Self Register component</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This will enable the reCaptcha feature in RIO Ready Self Register component</inlineHelpText>
+        <label>Enable Captcha</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>redu_Student_Permission_Set_Group__c</fullName>
         <description>Default permission set group name (developer name) for a student contact.</description>
         <externalId>false</externalId>

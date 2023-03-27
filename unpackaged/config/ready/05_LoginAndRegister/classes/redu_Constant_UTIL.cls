@@ -12,6 +12,7 @@ public with sharing class redu_Constant_UTIL {
     public static final String PREFERREDEMAIL_ALTERNATE = 'Alternate Email';
     
     public static final String CONTACT_TYPE_APPLICANT = 'Applicant';
+    public static final String CONTACT_TYPE_STUDENT = 'Student';
 
     public static final String SALT = 'CRANDALL-Reg';
     public static final String COMMUNITY_NAME = 'Education Community';

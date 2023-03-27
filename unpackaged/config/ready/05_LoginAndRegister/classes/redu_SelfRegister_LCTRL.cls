@@ -36,146 +36,155 @@ public without sharing class redu_SelfRegister_LCTRL {
 
         System.debug('leadId: ' +leadId);
         System.debug('captchaResponse: ' +captchaResponse);
+
+		Boolean enableCaptcha = false;
+		rio_ed__RIO_Education_Settings__c cs = rio_ed__RIO_Education_Settings__c.getInstance();
+		
+		String secretKey = '';
+		String captchaVerificationResult = '';
+		if (cs.redu_Enable_Captcha__c) {
+            // Verify the Captcha
+            secretKey = redu_LoginRegister_UTIL.getCaptchaSecretKey();
+            captchaVerificationResult = redu_Captcha_UTIL.captchaVerification(secretKey, captchaResponse);
+			enableCaptcha = cs.redu_Enable_Captcha__c;
+		}
         
-        // Verify the Captcha
-        String secretKey = redu_LoginRegister_UTIL.getCaptchaSecretKey();
-        String captchaVerificationResult = redu_Captcha_UTIL.captchaVerification(secretKey, captchaResponse);
-        
-        if (captchaVerificationResult == redu_Constant_UTIL.CAPTCHA_SUCCESS_V2 || captchaVerificationResult == redu_Constant_UTIL.CAPTCHA_SUCCESS_V3) {
-            
-            Savepoint sp = Database.setSavepoint();        
-
-            try {                                
-
-                firstNameCache = firstname;
-                lastNameCache = lastname;
-                emailCache = email;
-
-                String profileId = redu_LoginRegister_UTIL.getStudentProfile().Id;
-
-                if (lastname == null || String.isEmpty(firstname)) {
-                    return Label.redu_Missing_First_Name;
-                }
-
-                if (lastname == null || String.isEmpty(lastname)) {
-                    return Label.redu_Missing_Last_Name;
-                }
-                
-                if (email == null || String.isEmpty(email)) {
-                    return Label.redu_Missing_Email;
-                }
-                
-                if (password == null || String.isEmpty(password)) {
-                    return Label.redu_Missing_Password;
-                }
-
-                if (confirmPassword == null || String.isEmpty(confirmPassword)) {
-                    return Label.redu_Missing_Password;
-                }
-
-                // Verifying the hash
-                if (!String.isBlank(contactIdParam) || !String.isBlank(hashParam)) {
-                    Boolean hashValidated = validateHash(email, contactIdParam, hashParam);
-                    if (!hashValidated) {
-                        return Label.redu_Community_Malformed_Self_Registration_URL;
-                    }
-                }            
-
-                //Get org info for creating users
-                Organization orgInfo = [SELECT TimeZoneSidKey, LanguageLocaleKey, DefaultLocaleSidKey FROM Organization WHERE Id =: UserInfo.getOrganizationId()];
-
-                // Check the Email against existing User and Contact Emails
-                if (!existingUserCheck(email, email)) {
-                    User u = new User();
-                    u.Username = email;
-                    u.put('Email',email);            
-                    u.FirstName = firstname;
-                    u.LastName = lastname;
-
-                    u.ProfileId = profileId;
-                    u.CommunityNickname = email.substringBefore('@') + System.now().getTime();
-                    Integer firstNameSubstringLength = firstName.length() < 7 ? firstName.length() : 7;
-                    u.Alias = lastName.subString(0, 1) + firstName.substring(0, firstNameSubstringLength);
-                    u.TimeZoneSidKey = orgInfo.TimeZoneSidKey;
-                    u.LocaleSidKey = orgInfo.DefaultLocaleSidKey;
-                    u.EmailEncodingKey = redu_Constant_UTIL.USER_COMMUNITYSELFREG_EMAILENCODING;
-                    u.LanguageLocaleKey = orgInfo.LanguageLocaleKey;                            
-
-                    if (!String.isBlank(contactIdParam)) {
-                        u.ContactId = contactIdParam;
-
-                        List<Contact> checkContact = [SELECT Id, AccountId FROM Contact WHERE Id = :contactIdParam];
-                        if (!checkContact.isEmpty()) {
-                            if (checkContact[0].AccountId != null) {
-                                accountId = checkContact[0].AccountId;
-                            }
-                        } else {
-                            return Label.redu_Community_Malformed_Self_Registration_URL;
-                        }                    
-                    } else {
-
-                        // Generate the Administrative Account and User Contact for the new Community User                                        
-
-                        Id recordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('Administrative').getRecordTypeId();
-                        String userAdminAccountName = firstname+ ' ' +lastname+ ' Administrative Account';
-                        Account newUserAdminAccount = generateUserAdminAccount(userAdminAccountName, recordTypeId);
-                        insert newUserAdminAccount;
-
-                        accountId = newUserAdminAccount.Id;
-
-                        Contact newUserContact = generateUserContact(firstname, lastname, accountId, email, leadId);
-                        insert newUserContact;
-
-                        u.ContactId = newUserContact.Id;
-                    }
-
-                    if (includePassword) {    
-                        if (!isValidPassword(password, confirmPassword)) {
-                            return Label.redu_Password_mismatch;
-                        }
-                        validatePassword(u, password, confirmPassword);
-                    } else {
-                        password = null;
-                    }                
-                    
-                    String userId = Site.createExternalUser(u, accountId, password, false);
-                    
-                    // create a fake userId for test.
-                    if (Test.isRunningTest()) {
-                        userId = 'fakeUserId';           
-                    }
-
-                    if (userId != null) {
-                        if (password != null && password.length() > 1) {                        
-
-                            ApexPages.PageReference lgn = Site.login(email, password, startUrl);
-                            if(!Test.isRunningTest()) {
-                                aura.redirect(lgn);
-                            }
-                        } else {
-                            ApexPages.PageReference confirmRef = new PageReference(regConfirmUrl);
-                            if(!Test.isRunningTest()) {
-                                aura.redirect(confirmRef);
-                            }
-                        }
-                    }
-                } else {
-                    // Return error, telling them to use a new username (or new email?)
-                    String errorMsg = Label.redu_Community_Self_Register_Duplicate_Username_Error;
-                    return errorMsg;
-                }            
-                return null;
-            } catch (Exception ex) {
-                System.debug('ex: ' +ex);            
-
-                sendErrorEmail(ex);
-
-                Database.rollback(sp);
-                return ex.getMessage();            
+		if (enableCaptcha) {
+			if (captchaVerificationResult != redu_Constant_UTIL.CAPTCHA_SUCCESS_V2 && captchaVerificationResult != redu_Constant_UTIL.CAPTCHA_SUCCESS_V3) {
+                return Label.redu_Captcha_Failed;
             }
-        } else {
-            return Label.redu_Captcha_Failed;
-        }        
+		}
+            
+		Savepoint sp = Database.setSavepoint();
+		
+		try {                                
+			
+			firstNameCache = firstname;
+			lastNameCache = lastname;
+			emailCache = email;
+			
+			String profileId = redu_LoginRegister_UTIL.getStudentProfile().Id;
+			
+			if (lastname == null || String.isEmpty(firstname)) {
+				return Label.redu_Missing_First_Name;
+			}
+			
+			if (lastname == null || String.isEmpty(lastname)) {
+				return Label.redu_Missing_Last_Name;
+			}
+			
+			if (email == null || String.isEmpty(email)) {
+				return Label.redu_Missing_Email;
+			}
+			
+			if (password == null || String.isEmpty(password)) {
+				return Label.redu_Missing_Password;
+			}
+			
+			if (confirmPassword == null || String.isEmpty(confirmPassword)) {
+				return Label.redu_Missing_Password;
+			}
+			
+			// Verifying the hash
+			if (!String.isBlank(contactIdParam) || !String.isBlank(hashParam)) {
+				Boolean hashValidated = validateHash(email, contactIdParam, hashParam);
+				if (!hashValidated) {
+					return Label.redu_Community_Malformed_Self_Registration_URL;
+				}
+			}            
+			
+			//Get org info for creating users
+			Organization orgInfo = [SELECT TimeZoneSidKey, LanguageLocaleKey, DefaultLocaleSidKey FROM Organization WHERE Id =: UserInfo.getOrganizationId()];
+			
+			// Check the Email against existing User and Contact Emails
+			if (!existingUserCheck(email, email)) {
+				User u = new User();
+				u.Username = email;
+				u.put('Email',email);            
+				u.FirstName = firstname;
+				u.LastName = lastname;
+				
+				u.ProfileId = profileId;
+				u.CommunityNickname = email.substringBefore('@') + System.now().getTime();
+				Integer firstNameSubstringLength = firstName.length() < 7 ? firstName.length() : 7;
+				u.Alias = lastName.subString(0, 1) + firstName.substring(0, firstNameSubstringLength);
+				u.TimeZoneSidKey = orgInfo.TimeZoneSidKey;
+				u.LocaleSidKey = orgInfo.DefaultLocaleSidKey;
+				u.EmailEncodingKey = redu_Constant_UTIL.USER_COMMUNITYSELFREG_EMAILENCODING;
+				u.LanguageLocaleKey = orgInfo.LanguageLocaleKey;                            
+				
+				if (!String.isBlank(contactIdParam)) {
+					u.ContactId = contactIdParam;
+					
+					List<Contact> checkContact = [SELECT Id, AccountId FROM Contact WHERE Id = :contactIdParam];
+					if (!checkContact.isEmpty()) {
+						if (checkContact[0].AccountId != null) {
+							accountId = checkContact[0].AccountId;
+						}
+					} else {
+						return Label.redu_Community_Malformed_Self_Registration_URL;
+					}                    
+				} else {
+					
+					// Generate the Administrative Account and User Contact for the new Community User                                        
+					
+					Id recordTypeId = Schema.SObjectType.Account.getRecordTypeInfosByDeveloperName().get('Administrative').getRecordTypeId();
+					String userAdminAccountName = firstname+ ' ' +lastname+ ' Administrative Account';
+					Account newUserAdminAccount = generateUserAdminAccount(userAdminAccountName, recordTypeId);
+					insert newUserAdminAccount;
+					
+					accountId = newUserAdminAccount.Id;
+					
+					Contact newUserContact = generateUserContact(firstname, lastname, accountId, email, leadId);
+					insert newUserContact;
+					
+					u.ContactId = newUserContact.Id;
+				}
+				
+				if (includePassword) {    
+					if (!isValidPassword(password, confirmPassword)) {
+						return Label.redu_Password_mismatch;
+					}
+					validatePassword(u, password, confirmPassword);
+				} else {
+					password = null;
+				}                
+				
+				String userId = Site.createExternalUser(u, accountId, password, false);
+				
+				// create a fake userId for test.
+				if (Test.isRunningTest()) {
+					userId = 'fakeUserId';           
+				}
+				
+				if (userId != null) {
+					if (password != null && password.length() > 1) {                        
+						
+						ApexPages.PageReference lgn = Site.login(email, password, startUrl);
+						if(!Test.isRunningTest()) {
+							aura.redirect(lgn);
+						}
+					} else {
+						ApexPages.PageReference confirmRef = new PageReference(regConfirmUrl);
+						if(!Test.isRunningTest()) {
+							aura.redirect(confirmRef);
+						}
+					}
+				}
+			} else {
+				// Return error, telling them to use a new username (or new email?)
+				String errorMsg = Label.redu_Community_Self_Register_Duplicate_Username_Error;
+				return errorMsg;
+			}            
+			return null;
+		} catch (Exception ex) {
+			System.debug('ex: ' +ex);            
+			
+			sendErrorEmail(ex);
+			
+			Database.rollback(sp);
+			return ex.getMessage();            
+		}
     }    
 
     @TestVisible
@@ -282,5 +291,14 @@ public without sharing class redu_SelfRegister_LCTRL {
         } catch (Exception ex) {
             return ex.getMessage();            
         }        
+    }
+    
+    @AuraEnabled
+    public static Boolean checkCaptchaStatus() {
+        rio_ed__RIO_Education_Settings__c cs = rio_ed__RIO_Education_Settings__c.getInstance();
+        if (cs != null && cs.redu_Enable_Captcha__c == true) {
+            return true;
+        }
+        return false;
     }
 }
