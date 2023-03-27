@@ -33,6 +33,7 @@
     <aura:attribute name="recaptchaResponse" type="String" />
     <aura:attribute name="allowSubmission" type="Boolean" default="false"/>
     <aura:attribute name="captchaErrorMsg" type="String"/>
+    <aura:attribute name="captchaEnabled" type="Boolean"/>
     
     <!-- Spinner -->
     <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
@@ -93,9 +94,11 @@
         </aura:renderIf>
         
         <!-- Captcha Element -->
-        <br/>
-        <div id="recaptchaCheckbox"></div>
-        <br/>
+        <aura:renderIf isTrue="{!v.captchaEnabled}">
+            <br/>
+            <div id="recaptchaCheckbox"></div>
+            <br/>
+        </aura:renderIf>
         
         <!-- Register Button -->
         <div class="sfdc">

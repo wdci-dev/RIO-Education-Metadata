@@ -27,6 +27,7 @@
     <types>
         <members>rio_ed__RIO_Education_Settings__c.redu_Captcha_SecretKey__c</members>
         <members>rio_ed__RIO_Education_Settings__c.redu_Student_Permission_Set_Group__c</members>
+		<members>rio_ed__RIO_Education_Settings__c.redu_Enable_Captcha__c</members>
         <name>CustomField</name>
     </types>
     <types>

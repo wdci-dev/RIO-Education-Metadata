@@ -1,6 +1,6 @@
 ({
 	initialize: function(component, event, helper) {
-        // console.log('Self Register v1.0a');
+        // console.log('Self Register v1.0a');               
         
 		var leadId = helper.getUrlParameter("leadId");
         component.set("v.leadId", leadId);
@@ -8,23 +8,8 @@
         var captchaErrorMessage = $A.get("$Label.c.redu_Unsolved_Captcha");        
         component.set("v.captchaErrorMsg", captchaErrorMessage);
 
-        // Captcha Events
-        document.addEventListener("grecaptchaVerified", function(e) {            
-            component.set('v.recaptchaResponse', e.detail.response);
-            
-            let myButton = component.find("submitButton");
-            // myButton.set('v.disabled', false);
-            component.set("v.allowSubmission", true);
-            
-            var checkSubmission1 = component.get("v.allowSubmission");            
-        });
-        
-        document.addEventListener("grecaptchaExpired", function() {
-            let myButton = component.find("submitButton");
-            // myButton.set('v.disabled', true);
-            component.set("v.allowSubmission", false);
-        }); 
-
+        // reCaptcha check and event initialization
+        helper.getCaptchaStatus(component, event);               
         
         $A.get("e.siteforce:registerQueryEventMap").setParams({"qsToEvent" : helper.qsToEventMap}).fire();
         $A.get("e.siteforce:registerQueryEventMap").setParams({"qsToEvent" : helper.qsToEventMap2}).fire();                
@@ -47,7 +32,7 @@
     },
     
     handleSelfRegister: function (component, event, helper) {
-        helper.handleSelfRegister(component, event, helper);
+        helper.handleSelfRegister(component, event);
     },
     
     redu_SetStartUrl: function (component, event, helper) {
@@ -72,13 +57,13 @@
         if (expId) {
             component.set("v.expid", expId);
         }
-        helper.setBrandingCookie(component, event, helper);
+        helper.setBrandingCookie(component, event);
     },
     
     onKeyUp: function(component, event, helper){
         //checks for "enter" key
         if (event.getParam('keyCode')===13) {
-            helper.handleSelfRegister(component, event, helper);
+            helper.handleSelfRegister(component, event);
         }
     },
 
