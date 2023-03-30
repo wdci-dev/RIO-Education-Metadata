@@ -53,7 +53,7 @@ tasks:
         options:
             org_wide_defaults:
                 - api_name: Contact
-                external_sharing_model: Private
+                  external_sharing_model: Private
     
     custom_execute_anon:
         description: Execute anonymous Apex. Log errors instead of throwing exceptions.
