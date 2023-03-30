@@ -183,8 +183,8 @@ plans:
         tier: additional
         checks:
             - when: "not tasks.check_org_wide_defaults()"
-            action: error
-            message: "Please ensure the Contact Org-Wide Default sharing setting for external users is set to Private."
+              action: error
+              message: "Please ensure the Contact Org-Wide Default sharing setting for external users is set to Private."
         steps:
             1:
                     task: org_settings
