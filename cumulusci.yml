@@ -48,6 +48,12 @@ tasks:
             settings_field: IsCommunityWorkspacesEnabled
             value: true
             treat_missing_as_failure: True
+
+    check_org_wide_defaults:
+        options:
+            org_wide_defaults:
+                - api_name: Contact
+                external_sharing_model: Private
     
     custom_execute_anon:
         description: Execute anonymous Apex. Log errors instead of throwing exceptions.
@@ -175,6 +181,10 @@ plans:
         slug: community
         title: Community Security Setup
         tier: additional
+        checks:
+            - when: "not tasks.check_org_wide_defaults()"
+            action: error
+            message: "Please ensure the Contact Org-Wide Default sharing setting for external users is set to Private."
         steps:
             1:
                     task: org_settings
