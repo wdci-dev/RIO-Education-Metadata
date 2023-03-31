@@ -413,6 +413,10 @@
         "RIO Ready - Housing Application Form": {
             "message": "RIO Ready - Housing Application Form",
             "description": "title of installation step"
+        },
+        "RIO Education - Check Transfer Credit Course ID": {
+            "message": "RIO Education - Check Transfer Credit Course ID",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

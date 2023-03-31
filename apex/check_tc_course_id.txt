@@ -1,13 +1,19 @@
-List<rio_ed__Transfer_Credit__c> notCopiedTransferCreditList = 
-[SELECT Id FROM rio_ed__Transfer_Credit__c 
-WHERE rio_ed__Approved_Course__c != null
-AND rio_ed__Course_ID_s__c == null];
+Boolean error = false;
 
-if (!notCopiedTransferCreditList.isEmpty()) {
+Set<String> tcFields = Schema.SObjectType.rio_ed__Transfer_Credit__c.fields.getMap().keySet();
+
+if(!tcFields.contains('rio_ed__Course_ID_s__c')) {
+  error = true;
+} else {
+    List<rio_ed__Transfer_Credit__c> notCopiedTransferCreditList = Database.query('SELECT Id FROM rio_ed__Transfer_Credit__c WHERE rio_ed__Approved_Course__c != null AND rio_ed__Course_ID_s__c = null');
+    
+    if (!notCopiedTransferCreditList.isEmpty()) {
+        error = true;
+    }
+}
+
+if (error) {
     throw new AuraHandledException(
-        'There are Transfer Credit records in this org that have not had the values of the 
-        obsolete Approved Course field copied to the new Approved Course ID (s). You must 
-        install RIO Education v3.9 and run the "Transfer Credit Course ID" task from the v3.9 
-        upgrade plan before proceeding or you will lose the data in these fields.'
+        'There are Transfer Credit records in this org that have not had the values of the obsolete Approved Course field copied to the new Approved Course ID (s). You must install RIO Education v3.9 and run the "Transfer Credit Course ID" task from the v3.9 upgrade plan before proceeding or you will lose the data in these fields.'
     );
 }
