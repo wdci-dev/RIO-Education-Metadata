@@ -76,6 +76,12 @@ plans:
               message: "Please enable Communities in your org prior to installing."
         steps:
             1:
+                task: execute_anon
+                options:
+                    path: apex/check_tc_course_id.txt
+                ui_options:
+                    name: RIO Education - Check Transfer Credit Course ID
+            2:
                 task: org_settings
                 options:
                     settings:
@@ -89,9 +95,9 @@ plans:
                     name: RIO Education - Salesforce Feature Enablement
                     is_required: False
                     is_recommended: False
-            2:
-                flow: dependencies
             3:
+                flow: dependencies
+            4:
                 task: install_managed
                 options:
                     version: 3.11.7
@@ -99,7 +105,7 @@ plans:
                     security_type: NONE
                 ui_options:
                     name: Install RIO Education 3.11.7
-            4:
+            5:
                 task: deploy_post
                 options:
                     unmanaged: False
@@ -150,13 +156,13 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-            5:
+            6:
                 task: assign_permission_sets
                 options:
                     api_names: REDU_Admin
                 ui_options:
                     name: RIO Education - REDU - Admin Permission Set
-            6:
+            7:
                 task: execute_anon
                 options:
                     path: apex/update_group_members.txt
