@@ -4,7 +4,7 @@ Boolean error = false;
 
 Set<String> tcFields = Schema.SObjectType.rio_ed__Transfer_Credit__c.fields.getMap().keySet();
 
-if(!tcFields.contains('rio_ed__course_id_s__c') || !tcFields.contains('rio_ed__approved_course__c')) {
+if(!tcFields.contains('rio_ed__course_id_s__c')) {
     error = true;
 } else {
     List<rio_ed__Transfer_Credit__c> notCopiedTransferCreditList = Database.query('SELECT Id FROM rio_ed__Transfer_Credit__c WHERE rio_ed__Approved_Course__c != null AND rio_ed__Course_ID_s__c = null');
