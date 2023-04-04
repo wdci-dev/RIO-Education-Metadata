@@ -350,18 +350,24 @@ plans:
             6:
                 task: custom_execute_anon
                 options:
+                    path: apex/booking_session_time_ids.txt
+                ui_options:
+                    name: RIO Education - Booking Session Time IDs
+            7:
+                task: custom_execute_anon
+                options:
                     path: apex/provision_community_users.txt
                 ui_options:
                     name: RIO Education - Provision Community Users
                     is_required: False
                     is_recommended: False
-            7:
+            8:
                 task: restore_tdtm_trigger_handlers
                 options:
                     namespace: hed
                 ui_options:
                     name: Restore Trigger Handlers
-            8:
+            9:
                 task: execute_anon
                 options:
                     path: apex/approve_fs.txt
