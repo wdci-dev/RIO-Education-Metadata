@@ -417,6 +417,10 @@
         "RIO Education - Check Transfer Credit Course ID": {
             "message": "RIO Education - Check Transfer Credit Course ID",
             "description": "title of installation step"
+        },
+        "RIO Education - Booking Session Time IDs": {
+            "message": "RIO Education - Booking Session Time IDs",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
