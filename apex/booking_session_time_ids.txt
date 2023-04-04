@@ -1,6 +1,6 @@
 Map<String, String> sessionTimeIdOldToNewMap = new Map<String, String>();
 
-for (rio_ed__Session_Time__c st : [SELECT Id FROM rio_ed__Session_Time__c WHERE rio_ed__External_Id__c Like 'ISD-%']) {
+for (rio_ed__Session_Time__c st : [SELECT Id, rio_ed__External_Id__c FROM rio_ed__Session_Time__c WHERE rio_ed__External_Id__c Like 'ISD-%']) {
     sessionTimeIdOldToNewMap.put(st.rio_ed__External_Id__c, 'ISD-' + st.Id);
 }
 
