@@ -1,14 +1,16 @@
 public class TcCourseIdException extends Exception {} 
 
-if (Schema.getGlobalDescribe().containsKey('rio_ed__Transfer_Credit__c')) {
+Map<String, Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
+
+if (globalDescribe.containsKey('rio_ed__Transfer_Credit__c')) {
     Boolean error = false;
 
-    Set<String> tcFields = Schema.SObjectType.rio_ed__Transfer_Credit__c.fields.getMap().keySet();
+    Set<String> tcFields = globalDescribe.get('rio_ed__Transfer_Credit__c').getDescribe().fields.getMap().keySet();
 
     if(!tcFields.contains('rio_ed__course_id_s__c')) {
         error = true;
     } else if (tcFields.contains('rio_ed__approved_course__c')) {
-        List<rio_ed__Transfer_Credit__c> notCopiedTransferCreditList = Database.query('SELECT Id FROM rio_ed__Transfer_Credit__c WHERE rio_ed__Approved_Course__c != null AND rio_ed__Course_ID_s__c = null');
+        List<sObject> notCopiedTransferCreditList = (List<sObject>)Database.query('SELECT Id FROM rio_ed__Transfer_Credit__c WHERE rio_ed__Approved_Course__c != null AND rio_ed__Course_ID_s__c = null');
         
         if (!notCopiedTransferCreditList.isEmpty()) {
             error = true;
