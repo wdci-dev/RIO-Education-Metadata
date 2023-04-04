@@ -55,13 +55,13 @@ if (ccls.size() == 1) {
 
     // Assign permssion set to new users
     PermissionSet studentPermissionSet = [SELECT Id FROM PermissionSet WHERE Name = 'REDU_Student'];
-    List<PermissionSetAssignment studentPSAs = new List<PermissionSetAssignment>();
+    List<PermissionSetAssignment> studentPSAs = new List<PermissionSetAssignment>();
 
     for (User newStudentUser : newStudentUsers) {
         PermissionSetAssignment studentPSA = new PermissionSetAssignment();
         studentPSA.PermissionSetId = studentPermissionSet.Id;
         studentPSA.AssigneeId = newStudentUser.Id;
-        studentPSAs.add(studentPSAs);
+        studentPSAs.add(studentPSA);
     }
 
     insert studentPSAs;
@@ -107,7 +107,7 @@ if (ccpls.size() == 1) {
 
     // Assign permssion set to new users
     PermissionSet facultyPermissionSet = [SELECT Id FROM PermissionSet WHERE Name = 'REDU_Faculty'];
-    List<PermissionSetAssignment facultyPSAs = new List<PermissionSetAssignment>();
+    List<PermissionSetAssignment> facultyPSAs = new List<PermissionSetAssignment>();
 
     for (User newFacultyUser : newFacultyUsers) {
         PermissionSetAssignment facultyPSA = new PermissionSetAssignment();
