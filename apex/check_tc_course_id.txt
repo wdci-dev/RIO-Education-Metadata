@@ -2,10 +2,10 @@ public class TcCourseIdException extends Exception {}
 
 Map<String, Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
 
-if (globalDescribe.containsKey('rio_ed__Transfer_Credit__c')) {
+if (globalDescribe.containsKey('rio_ed__transfer_credit__c')) {
     Boolean error = false;
 
-    Set<String> tcFields = globalDescribe.get('rio_ed__Transfer_Credit__c').getDescribe().fields.getMap().keySet();
+    Set<String> tcFields = globalDescribe.get('rio_ed__transfer_credit__c').getDescribe().fields.getMap().keySet();
 
     if(!tcFields.contains('rio_ed__course_id_s__c')) {
         error = true;
