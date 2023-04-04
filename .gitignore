@@ -21,3 +21,6 @@ robot/RIO-Education-Metadata/results/
 
 # Misc
 .DS_Store
+
+#SF config
+.sf/config.json
