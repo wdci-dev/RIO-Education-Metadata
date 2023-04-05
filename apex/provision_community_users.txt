@@ -21,9 +21,9 @@ if (ccls.size() == 1) {
     Integer cclCount = ccls[0].TotalLicenses - ccls[0].UsedLicenses;
     
     List<Contact> students = [Select Id, FirstName, LastName From Contact Where Name = 'Howard Randall'
-                                Or Name = 'Tim Cruz' Or Name = 'Eleanor Huber' Or Name = 'Gregg Robinson' 
-                                Or Name = 'Donna Underwood' Or Name = 'Bonnie Christensen' Or Name = 'Gwen Burton' 
-                                Or Name = 'Charlotte Andrews' Or Name = 'John Smith'];
+                                Or Name = 'Gregg Robinson' Or Name = 'Eleanor Huber'
+                                Or Name = 'Donna Underwood' Or Name = 'Bonnie Christensen' 
+                                Or Name = 'Gwen Burton'];
     
     Profile reduStudent = [Select Id From Profile Where Name = 'REDU - Student'];
     
@@ -52,19 +52,6 @@ if (ccls.size() == 1) {
     }
     
     insert newStudentUsers;
-
-    // Assign permssion set to new users
-    PermissionSet studentPermissionSet = [SELECT Id FROM PermissionSet WHERE Name = 'REDU_Student'];
-    List<PermissionSetAssignment> studentPSAs = new List<PermissionSetAssignment>();
-
-    for (User newStudentUser : newStudentUsers) {
-        PermissionSetAssignment studentPSA = new PermissionSetAssignment();
-        studentPSA.PermissionSetId = studentPermissionSet.Id;
-        studentPSA.AssigneeId = newStudentUser.Id;
-        studentPSAs.add(studentPSA);
-    }
-
-    insert studentPSAs;
 }
 
 List<UserLicense> ccpls = [select TotalLicenses, UsedLicenses from userlicense 
@@ -74,8 +61,7 @@ if (ccpls.size() == 1) {
     Integer ccplCount = ccpls[0].TotalLicenses - ccpls[0].UsedLicenses;
     
     List<Contact> faculty = [Select Id, FirstName, LastName From Contact Where Name = 'Fran Fisher'
-                                Or Name = 'Freddie Freeman' Or Name = 'Edward Educator' Or Name = 'Fiona Forton'
-                                Or Name = 'Fendi Educator' Or Name = 'Gary Educator'];
+                                Or Name = 'Freddie Freeman' Or Name = 'Edward Educator'];
     
     Profile reduFaculty = [Select Id From Profile Where Name = 'REDU - Faculty'];
     
@@ -104,17 +90,4 @@ if (ccpls.size() == 1) {
     }
     
     insert newFacultyUsers;
-
-    // Assign permssion set to new users
-    PermissionSet facultyPermissionSet = [SELECT Id FROM PermissionSet WHERE Name = 'REDU_Faculty'];
-    List<PermissionSetAssignment> facultyPSAs = new List<PermissionSetAssignment>();
-
-    for (User newFacultyUser : newFacultyUsers) {
-        PermissionSetAssignment facultyPSA = new PermissionSetAssignment();
-        facultyPSA.PermissionSetId = facultyPermissionSet.Id;
-        facultyPSA.AssigneeId = newFacultyUser.Id;
-        facultyPSAs.add(facultyPSA);
-    }
-
-    insert facultyPSAs;
 }
