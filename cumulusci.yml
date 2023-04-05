@@ -353,6 +353,8 @@ plans:
                     path: apex/booking_session_time_ids.txt
                 ui_options:
                     name: RIO Education - Booking Session Time IDs
+                    is_required: False
+                    is_recommended: False
             7:
                 task: custom_execute_anon
                 options:
