@@ -1,13 +1,13 @@
 Map<String, String> sessionTimeIdOldToNewMap = new Map<String, String>();
 
-for (rio_ed__Session_Time__c st : [SELECT Id, rio_ed__External_Id__c FROM rio_ed__Session_Time__c WHERE rio_ed__External_Id__c Like 'ISD-%']) {
-    sessionTimeIdOldToNewMap.put(st.rio_ed__External_Id__c, 'ISD-' + st.Id);
+for (rio_ed__Session_Time__c st : [SELECT Id, rio_ed__External_Id__c FROM rio_ed__Session_Time__c WHERE rio_ed__External_Id__c LIKE 'ISD-%']) {
+    sessionTimeIdOldToNewMap.put(st.rio_ed__External_Id__c, st.Id);
 }
 
-List<rio_ed__Allocation__c> bookingsToUpdate = [SELECT rio_ed__Session_Time_Id__c FROM rio_ed__Allocation__c WHERE rio_ed__External_Id__c Like 'ISD-%'];
+List<rio_ed__Allocation__c> bookingsToUpdate = [SELECT rio_ed__Session_Time_Id__c FROM rio_ed__Allocation__c WHERE rio_ed__External_Id__c LIKE 'ISD-%'];
 
 for (rio_ed__Allocation__c booking : bookingsToUpdate) {
-    String oldValue = booking.rio_ed__Session_Time_Id__c;
+    String oldValue = 'ISD-' + booking.rio_ed__Session_Time_Id__c;
     booking.rio_ed__Session_Time_Id__c = sessionTimeIdOldToNewMap.get(oldValue);
 }
 
