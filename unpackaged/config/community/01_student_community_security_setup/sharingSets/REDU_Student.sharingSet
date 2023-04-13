@@ -66,6 +66,24 @@
         <objectField>rio_ed__Contact__c</objectField>
         <userField>Contact</userField>
     </accessMappings>
+	<accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>rio_ed__Order__c</object>
+        <objectField>rio_ed__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+	<accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>rio_ed__Study_Credit__c</object>
+        <objectField>rio_ed__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+	<accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>rio_ed__Study_Registration__c</object>
+        <objectField>rio_ed__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
     <description>Sharing setting for student community users.</description>
     <name>REDU - Student</name>
     <profiles>redu - student</profiles>
