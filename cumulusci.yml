@@ -54,7 +54,7 @@ tasks:
         class_path: cumulusci.tasks.preflight.settings.CheckSettingsValue
         group: Preflight Checks
         options:
-            settings_type: SecuritySettings
+            settings_type: SecuritySettings.SessionSettings
             settings_field: lockerServiceNext
             value: true
             treat_missing_as_failure: True

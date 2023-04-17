@@ -39,6 +39,10 @@
         "Please ensure the Contact Org-Wide Default sharing setting for external users is set to Private.": {
             "message": "Please ensure the Contact Org-Wide Default sharing setting for external users is set to Private.",
             "description": "shown if validation fails"
+        },
+        "Please enable Lightning Web Security in your org prior to installing.": {
+            "message": "Please enable Lightning Web Security in your org prior to installing.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
