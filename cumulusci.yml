@@ -49,6 +49,16 @@ tasks:
             value: true
             treat_missing_as_failure: True
 
+    check_lws_enabled:
+        description: Ensure that Lightning Web Security is enabled.
+        class_path: cumulusci.tasks.preflight.settings.CheckSettingsValue
+        group: Preflight Checks
+        options:
+            settings_type: SecuritySettings
+            settings_field: lockerServiceNext
+            value: true
+            treat_missing_as_failure: True
+
     check_org_wide_defaults:
         options:
             org_wide_defaults:
@@ -74,6 +84,9 @@ plans:
             - when: "not tasks.check_communities_enabled()"
               action: error
               message: "Please enable Communities in your org prior to installing."
+            - when: "not tasks.check_lws_enabled()"
+              action: error
+              message: "Please enable Lightning Web Security in your org prior to installing."
         steps:
             1:
                 task: execute_anon
@@ -100,11 +113,11 @@ plans:
             4:
                 task: install_managed
                 options:
-                    version: 3.11.7
-                    version_number: 04t3u000003KrQd
+                    version: 3.12
+                    version_number: 04t3u000003X63p
                     security_type: NONE
                 ui_options:
-                    name: Install RIO Education 3.11.7
+                    name: Install RIO Education 3.12
             5:
                 task: deploy_post
                 options:
