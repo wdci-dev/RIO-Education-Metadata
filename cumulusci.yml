@@ -55,7 +55,7 @@ tasks:
         group: Preflight Checks
         options:
             settings_type: SessionSettings
-            settings_field: lockerServiceNext
+            settings_field: LockerServiceNext
             value: true
             treat_missing_as_failure: True
 
