@@ -106,7 +106,7 @@
             <filterItems>
                 <field>Account.RecordType.DeveloperName</field>
                 <operation>equals</operation>
-                <value>Academic Program</value>
+                <value>Academic_Program</value>
             </filterItems>
             <infoMessage>Please select the Program related to this application.</infoMessage>
             <isOptional>false</isOptional>
