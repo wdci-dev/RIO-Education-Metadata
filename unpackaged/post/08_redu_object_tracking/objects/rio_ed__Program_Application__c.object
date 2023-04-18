@@ -104,7 +104,7 @@
         <lookupFilter>
             <active>true</active>
             <filterItems>
-                <field>Account.RecordTypeId</field>
+                <field>Account.RecordType.DeveloperName</field>
                 <operation>equals</operation>
                 <value>Academic Program</value>
             </filterItems>
