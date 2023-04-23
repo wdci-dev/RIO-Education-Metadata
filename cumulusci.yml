@@ -390,7 +390,7 @@ plans:
     dev_install:
         slug: dev_install
         title: Install RIO Education (DEV ONLY)
-        tier: primary
+        tier: additional
         checks:
             - when: "not tasks.check_my_domain_active()"
               action: error
