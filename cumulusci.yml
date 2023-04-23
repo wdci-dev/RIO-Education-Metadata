@@ -411,8 +411,6 @@ plans:
                     path: apex/check_tc_course_id.txt
                 ui_options:
                     name: RIO Education - Check Transfer Credit Course ID
-                    is_required: False
-                    is_recommended: False
             2:
                 task: org_settings
                 options:
