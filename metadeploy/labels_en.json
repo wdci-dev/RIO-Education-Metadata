@@ -462,5 +462,11 @@
             "message": "Test Apex Error",
             "description": "title of installation plan"
         }
+    },
+    "plan:dev_install": {
+        "title": {
+            "message": "Install RIO Education (DEV ONLY)",
+            "description": "title of installation plan"
+        }
     }
 }

@@ -428,7 +428,18 @@ plans:
                     is_required: False
                     is_recommended: False
             3:
-                flow: dependencies
+                task: deploy_pre
+                options:
+                    unmanaged: False
+                ui_options:
+                    01_heda_object_tracking:
+                        name: RIO Education - HEDA Object Tracking
+                        is_required: False
+                        is_recommended: False
+                    02_heda_object_activity:
+                        name: RIO Education - HEDA Object Activity
+                        is_required: False
+                        is_recommended: False
             4:
                 task: install_managed
                 options:
