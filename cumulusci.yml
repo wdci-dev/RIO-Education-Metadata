@@ -386,3 +386,125 @@ plans:
                     path: apex/approve_fs.txt
                 ui_options:
                     name: RIO Education - Approve Fee Schedules
+    
+    dev_install:
+        slug: dev_install
+        title: Install RIO Education (DEV ONLY)
+        tier: primary
+        checks:
+            - when: "not tasks.check_my_domain_active()"
+              action: error
+              message: "Please enable My Domain in your org prior to installing."
+            - when: "'hed' not in tasks.get_installed_packages()"
+              action: error
+              message: "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education."
+            - when: "not tasks.check_communities_enabled()"
+              action: error
+              message: "Please enable Communities in your org prior to installing."
+            - when: "not tasks.check_lws_enabled()"
+              action: error
+              message: "Please enable Lightning Web Security in your org prior to installing."
+        steps:
+            1:
+                task: execute_anon
+                options:
+                    path: apex/check_tc_course_id.txt
+                ui_options:
+                    name: RIO Education - Check Transfer Credit Course ID
+                    is_required: False
+                    is_recommended: False
+            2:
+                task: org_settings
+                options:
+                    settings:
+                        ChatterSettings:
+                            enableChatter: true
+                        ContentSettings:
+                            enableSiteGuestUserToUploadFiles: true
+                        PathAssistantSettings:
+                            pathAssistantEnabled: true
+                ui_options:
+                    name: RIO Education - Salesforce Feature Enablement
+                    is_required: False
+                    is_recommended: False
+            3:
+                flow: dependencies
+            4:
+                task: install_managed
+                options:
+                    version: 3.12
+                    version_number: 04t3u000003X63p
+                    security_type: NONE
+                ui_options:
+                    name: Install RIO Education 3.12
+                    is_required: False
+                    is_recommended: False
+            5:
+                task: deploy_post
+                options:
+                    unmanaged: False
+                ui_options:
+                    00_redu_public_groups:
+                        name: RIO Education - Public Groups
+                        is_required: False
+                        is_recommended: False
+                    01_standard_objects_ui:
+                        name: RIO Education - Standard Objects UI
+                        is_required: False
+                        is_recommended: False
+                    02_eda_objects_ui:
+                        name: RIO Education - EDA Objects UI
+                        is_required: False
+                        is_recommended: False
+                    03_standard_objects_security_setup:
+                        name: RIO Education - Standard Objects Security Setup
+                        is_required: False
+                        is_recommended: False
+                    04_eda_security_setup:
+                        name: RIO Education - EDA Security Setup
+                        is_required: False
+                        is_recommended: False
+                    05_redu_security_setup:
+                        name: RIO Education - REDU Security Setup
+                        is_required: False
+                        is_recommended: False
+                    06_standard_object_tracking:
+                        name: RIO Education - Standard Object Tracking
+                        is_required: False
+                        is_recommended: False
+                    07_heda_object_tracking:
+                        name: RIO Education - HEDA Object Tracking
+                        is_required: False
+                        is_recommended: False
+                    08_redu_object_tracking:
+                        name: RIO Education - REDU Object Tracking
+                        is_required: False
+                        is_recommended: False
+                    12_appointment_scheduler_automation:
+                        name: RIO Education - Appointment Scheduler Automation
+                        is_required: False
+                        is_recommended: False
+                    13_eda_object_picklist:
+                        name: RIO Education - EDA Object Picklist
+                        is_required: False
+                        is_recommended: False
+                    14_eda_object_pathassistant:
+                        name: RIO Education - EDA Object Path Assistant
+                        is_required: False
+                        is_recommended: False
+            6:
+                task: assign_permission_sets
+                options:
+                    api_names: REDU_Admin
+                ui_options:
+                    name: RIO Education - REDU - Admin Permission Set
+                    is_required: False
+                    is_recommended: False
+            7:
+                task: execute_anon
+                options:
+                    path: apex/update_group_members.txt
+                ui_options:
+                    name: RIO Education - Update Group Members
+                    is_required: False
+                    is_recommended: False
