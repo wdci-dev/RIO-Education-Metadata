@@ -219,15 +219,15 @@ plans:
                     path: unpackaged/config/community
                     unmanaged: False
                 ui_options:
-                    01_student_community_security_setup:
+                    04_student_community_security_setup:
                         name: RIO Education - Student Community Security Setup
                         is_required: False
                         is_recommended: False
-                    02_faculty_community_security_setup:
+                    05_faculty_community_security_setup:
                         name: RIO Education - Faculty Community Security Setup
                         is_required: False
                         is_recommended: False
-                    03_combined_community_security_setup:
+                    06_combined_community_security_setup:
                         name: RIO Education - Combined Community Security Setup
                         is_required: False
                         is_recommended: False

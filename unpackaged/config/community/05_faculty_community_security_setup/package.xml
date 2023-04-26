@@ -8,9 +8,7 @@
     </types>
     
     <types>
-        <members>REDU - Faculty</members>
-		<members>REDU - Platform Faculty</members>
-		<members>Faculty Community Profile</members>
+        <members>Faculty Community Profile</members>
         <name>Profile</name>
     </types>
     <types>
