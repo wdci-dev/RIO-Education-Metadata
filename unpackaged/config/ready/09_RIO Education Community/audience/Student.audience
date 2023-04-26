@@ -18,6 +18,12 @@
     <isDefaultAudience>false</isDefaultAudience>
     <targets>
         <target>
+            <groupName>baf7f1b1-4136-4cb5-a4a6-0381bc34714d</groupName>
+            <priority>1</priority>
+            <targetType>ExperienceVariation</targetType>
+            <targetValue>Housing_Application_Housing_Application_Page</targetValue>
+        </target>
+        <target>
             <groupName>3aa5bf1f-c397-493a-b1e3-3cdb7691574a</groupName>
             <priority>1</priority>
             <targetType>ExperienceVariation</targetType>
