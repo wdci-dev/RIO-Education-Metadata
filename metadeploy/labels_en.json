@@ -425,6 +425,18 @@
         "RIO Education - Booking Session Time IDs": {
             "message": "RIO Education - Booking Session Time IDs",
             "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/community/01_redu_student_profile": {
+            "message": "Deploy unpackaged/config/community/01_redu_student_profile",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/community/02_redu_faculty_profile": {
+            "message": "Deploy unpackaged/config/community/02_redu_faculty_profile",
+            "description": "title of installation step"
+        },
+        "Deploy unpackaged/config/community/03_redu_platform_faculty_profile": {
+            "message": "Deploy unpackaged/config/community/03_redu_platform_faculty_profile",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {

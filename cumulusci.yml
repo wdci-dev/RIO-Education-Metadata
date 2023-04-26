@@ -219,6 +219,18 @@ plans:
                     path: unpackaged/config/community
                     unmanaged: False
                 ui_options:
+                    01_redu_student_profile:
+                        name: RIO Education - REDU - Student Profile
+                        is_required: False
+                        is_recommended: False
+                    02_redu_faculty_profile:
+                        name: RIO Education - REDU - Faculty Profile
+                        is_required: False
+                        is_recommended: False
+                    03_redu_platform_faculty_profile:
+                        name: RIO Education - REDU - Platform Faculty Profile
+                        is_required: False
+                        is_recommended: False
                     04_student_community_security_setup:
                         name: RIO Education - Student Community Security Setup
                         is_required: False
