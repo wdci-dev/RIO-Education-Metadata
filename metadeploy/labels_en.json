@@ -437,6 +437,18 @@
         "Deploy unpackaged/config/community/03_redu_platform_faculty_profile": {
             "message": "Deploy unpackaged/config/community/03_redu_platform_faculty_profile",
             "description": "title of installation step"
+        },
+        "RIO Education - REDU - Student Profile": {
+            "message": "RIO Education - REDU - Student Profile",
+            "description": "title of installation step"
+        },
+        "RIO Education - REDU - Faculty Profile": {
+            "message": "RIO Education - REDU - Faculty Profile",
+            "description": "title of installation step"
+        },
+        "RIO Education - REDU - Platform Faculty Profile": {
+            "message": "RIO Education - REDU - Platform Faculty Profile",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
