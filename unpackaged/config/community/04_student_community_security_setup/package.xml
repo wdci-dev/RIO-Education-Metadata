@@ -6,12 +6,6 @@
         <members>REDU_Student</members>
         <name>Group</name>
     </types>
-    
-    <types>
-        <members>REDU - Student</members>
-		<members>Student Community Profile</members>
-        <name>Profile</name>
-    </types>
 	
 	<types>
         <members>REDU_Student</members>
