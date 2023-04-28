@@ -8,10 +8,6 @@
     </types>
     
     <types>
-        <members>Faculty Community Profile</members>
-        <name>Profile</name>
-    </types>
-    <types>
         <members>*</members>
         <name>SharingCriteriaRule</name>
     </types>

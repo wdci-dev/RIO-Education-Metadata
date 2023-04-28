@@ -10,11 +10,6 @@
     </types>
     
     <types>
-        <members>RIO Education Community Profile</members>
-        <name>Profile</name>
-    </types>
-	
-	<types>
         <members>REDU_Student</members>
 		<members>REDU_Faculty</members>
         <name>SharingSet</name>
