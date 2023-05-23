@@ -399,31 +399,16 @@ plans:
                 ui_options:
                     name: RIO Education - Approve Fee Schedules
     
-    dev_install:
-        slug: dev_install
-        title: Install RIO Education (DEV ONLY)
+    metadata:
+        slug: metadata
+        title: Deploy Metadata
         tier: additional
         checks:
-            - when: "not tasks.check_my_domain_active()"
+            - when: "'rio_ed' not in tasks.get_installed_packages()"
               action: error
-              message: "Please enable My Domain in your org prior to installing."
-            - when: "'hed' not in tasks.get_installed_packages()"
-              action: error
-              message: "Education Data Architecture (EDA) is not installed. Please install EDA before installing RIO Education."
-            - when: "not tasks.check_communities_enabled()"
-              action: error
-              message: "Please enable Communities in your org prior to installing."
-            - when: "not tasks.check_lws_enabled()"
-              action: error
-              message: "Please enable Lightning Web Security in your org prior to installing."
+              message: "RIO Education is not installed. Please install RIO Education before deploying metadata."
         steps:
             1:
-                task: execute_anon
-                options:
-                    path: apex/check_tc_course_id.txt
-                ui_options:
-                    name: RIO Education - Check Transfer Credit Course ID
-            2:
                 task: org_settings
                 options:
                     settings:
@@ -437,7 +422,7 @@ plans:
                     name: RIO Education - Salesforce Feature Enablement
                     is_required: False
                     is_recommended: False
-            3:
+            2:
                 task: deploy_pre
                 options:
                     unmanaged: False
@@ -450,17 +435,7 @@ plans:
                         name: RIO Education - HEDA Object Activity
                         is_required: False
                         is_recommended: False
-            4:
-                task: install_managed
-                options:
-                    version: 3.12
-                    version_number: 04t3u000003X63p
-                    security_type: NONE
-                ui_options:
-                    name: Install RIO Education 3.12
-                    is_required: False
-                    is_recommended: False
-            5:
+            3:
                 task: deploy_post
                 options:
                     unmanaged: False
@@ -513,7 +488,7 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-            6:
+            4:
                 task: assign_permission_sets
                 options:
                     api_names: REDU_Admin
@@ -521,7 +496,7 @@ plans:
                     name: RIO Education - REDU - Admin Permission Set
                     is_required: False
                     is_recommended: False
-            7:
+            5:
                 task: execute_anon
                 options:
                     path: apex/update_group_members.txt
