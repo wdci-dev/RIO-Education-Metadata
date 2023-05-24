@@ -404,9 +404,9 @@ plans:
         title: Deploy Metadata
         tier: additional
         checks:
-            - when: "'rio_ed' not in tasks.get_installed_packages()"
+            - when: "'hed' not in tasks.get_installed_packages()"
               action: error
-              message: "RIO Education is not installed. Please install RIO Education before deploying metadata."
+              message: "Education Data Architecture (EDA) is not installed. Please install EDA before deploying RIO Education metadata."
         steps:
             1:
                 task: org_settings
