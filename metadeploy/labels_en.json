@@ -47,6 +47,10 @@
         "RIO Education is not installed. Please install RIO Education before deploying metadata.": {
             "message": "RIO Education is not installed. Please install RIO Education before deploying metadata.",
             "description": "shown if validation fails"
+        },
+        "Education Data Architecture (EDA) is not installed. Please install EDA before deploying RIO Education metadata.": {
+            "message": "Education Data Architecture (EDA) is not installed. Please install EDA before deploying RIO Education metadata.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
