@@ -43,6 +43,10 @@
         "Please enable Lightning Web Security in your org prior to installing.": {
             "message": "Please enable Lightning Web Security in your org prior to installing.",
             "description": "shown if validation fails"
+        },
+        "RIO Education is not installed. Please install RIO Education before deploying metadata.": {
+            "message": "RIO Education is not installed. Please install RIO Education before deploying metadata.",
+            "description": "shown if validation fails"
         }
     },
     "steps": {
@@ -490,6 +494,12 @@
     "plan:dev_install": {
         "title": {
             "message": "Install RIO Education (DEV ONLY)",
+            "description": "title of installation plan"
+        }
+    },
+    "plan:metadata": {
+        "title": {
+            "message": "Deploy Metadata",
             "description": "title of installation plan"
         }
     }
