@@ -4,7 +4,7 @@ project:
     package:
         name: RIO-Education-Metadata
         namespace: rio_ed
-        api_version: '55.0'
+        api_version: '58.0'
     git:
         prefix_release: rel/
         repo_url: https://github.com/wdci-dev/RIO-Education-Metadata
@@ -113,11 +113,11 @@ plans:
             4:
                 task: install_managed
                 options:
-                    version: 3.13.1
-                    version_number: 04t3u000002tAK6
+                    version: 3.13.2
+                    version_number: 04t3u0000038Sdd
                     security_type: NONE
                 ui_options:
-                    name: Install RIO Education 3.13.1
+                    name: Install RIO Education 3.13.2
             5:
                 task: deploy_post
                 options:
