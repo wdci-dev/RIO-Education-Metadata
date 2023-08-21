@@ -729,6 +729,9 @@
         <layout>rio_ed__Allocation__c-rio_ed__RIOEducation Allocation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>rio_ed__Announcement__c-RIOEducation Community Announcement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>rio_ed__Attendance__c-rio_ed__RIOEducation Attendance Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
