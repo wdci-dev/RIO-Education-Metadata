@@ -13,5 +13,5 @@
         <members>rio_ed__Study_Registration__c</members>
         <name>CustomObject</name>
     </types>
-    <version>44.0</version>
+    <version>45.0</version>
 </Package>
