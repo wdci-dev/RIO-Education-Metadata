@@ -728,6 +728,9 @@
     <layoutAssignments>
         <layout>rio_ed__Allocation__c-rio_ed__RIOEducation Allocation Layout</layout>
     </layoutAssignments>
+	<layoutAssignments>
+        <layout>rio_ed__Announcement__c-rio_ed__RIOEducation Community Announcement Layout</layout>
+    </layoutAssignments>
     <layoutAssignments>
         <layout>rio_ed__Attendance__c-rio_ed__RIOEducation Attendance Layout</layout>
     </layoutAssignments>
@@ -834,6 +837,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>rio_ed__Session_Time__c-rio_ed__RIOEducation Session Time Layout</layout>
+    </layoutAssignments>
+	<layoutAssignments>
+        <layout>rio_ed__Study_Registration__c-rio_ed__RIOEducation Community Study Registration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>rio_ed__Term_Holiday__c-rio_ed__RIOEducation Term Holiday Layout</layout>

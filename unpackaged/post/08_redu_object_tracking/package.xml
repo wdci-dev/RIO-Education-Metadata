@@ -2,11 +2,15 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>rio_ed__Attendance__c</members>
+		<members>rio_ed__Order_Line__c</members>
+        <members>rio_ed__Order__c</members>
         <members>rio_ed__PE_Group_Status__c</members>
         <members>rio_ed__PE_Pathway_Status__c</members>
         <members>rio_ed__Program_Application__c</members>
         <members>rio_ed__Session_Connection__c</members>
         <members>rio_ed__Session__c</members>
+        <members>rio_ed__Study_Offering__c</members>
+        <members>rio_ed__Study_Registration__c</members>
         <name>CustomObject</name>
     </types>
     <version>44.0</version>
