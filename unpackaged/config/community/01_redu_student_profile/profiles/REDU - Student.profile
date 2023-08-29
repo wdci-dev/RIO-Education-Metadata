@@ -839,7 +839,7 @@
         <layout>rio_ed__Session_Time__c-rio_ed__RIOEducation Session Time Layout</layout>
     </layoutAssignments>
 	<layoutAssignments>
-        <layout>rio_ed__Study_Registration__c-rio_ed__RIOEducation Community Study Registration Layout</layout>
+        <layout>rio_ed__Study_Registration__c-rio_ed__RIOEducation Community Registration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>rio_ed__Term_Holiday__c-rio_ed__RIOEducation Term Holiday Layout</layout>
