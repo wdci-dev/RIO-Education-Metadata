@@ -1,0 +1,11 @@
+//Init the RIO Education Settings and Trigger Handler
+REDU_PostInstallation postinstall = new REDU_PostInstallation();
+
+//Run post install methods
+insert postinstall.initRIOEdSettings(null);
+insert postinstall.initRIOEdAdvSettings(null);
+insert postinstall.createRIOPlanColourMappings();
+insert postinstall.createResourceType();
+upsert postinstall.updateEDASettings();
+postinstall.createAllTriggerHandlers();
+postinstall.scheduleJob();
