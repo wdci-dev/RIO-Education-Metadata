@@ -457,6 +457,18 @@
         "RIO Education - REDU - Platform Faculty Profile": {
             "message": "RIO Education - REDU - Platform Faculty Profile",
             "description": "title of installation step"
+        },
+        "RIO Education - REDU - Admin Permission Sets": {
+            "message": "RIO Education - REDU - Admin Permission Sets",
+            "description": "title of installation step"
+        },
+        "RIO Education - Post Installation Script": {
+            "message": "RIO Education - Post Installation Script",
+            "description": "title of installation step"
+        },
+        "RIO Education - Assign Role": {
+            "message": "RIO Education - Assign Role",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
