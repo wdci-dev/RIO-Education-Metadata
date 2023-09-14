@@ -491,9 +491,9 @@ plans:
             4:
                 task: assign_permission_sets
                 options:
-                    api_names: REDU_Admin
+                    api_names: REDU_Admin,REDU_Admin_Tabs
                 ui_options:
-                    name: RIO Education - REDU - Admin Permission Set
+                    name: RIO Education - REDU - Admin Permission Sets
                     is_required: False
                     is_recommended: False
             5:
@@ -502,5 +502,21 @@ plans:
                     path: apex/update_group_members.txt
                 ui_options:
                     name: RIO Education - Update Group Members
+                    is_required: False
+                    is_recommended: False
+            6:
+                task: execute_anon
+                options:
+                    path: apex/postInstallation.txt
+                ui_options:
+                    name: RIO Education - Post Installation Script
+                    is_required: False
+                    is_recommended: False
+            7:
+                task: execute_anon
+                options:
+                    path: apex/assignRole.txt
+                ui_options:
+                    name: RIO Education - Assign Role
                     is_required: False
                     is_recommended: False
