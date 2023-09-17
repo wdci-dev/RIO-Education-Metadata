@@ -119,6 +119,12 @@ plans:
                 ui_options:
                     name: Install RIO Education 3.14.1
             5:
+                task: assign_permission_sets
+                options:
+                    api_names: REDU_Admin
+                ui_options:
+                    name: RIO Education - REDU - Admin Permission Set
+            6:
                 task: deploy_post
                 options:
                     unmanaged: False
@@ -169,12 +175,6 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-            6:
-                task: assign_permission_sets
-                options:
-                    api_names: REDU_Admin
-                ui_options:
-                    name: RIO Education - REDU - Admin Permission Set
             7:
                 task: execute_anon
                 options:
