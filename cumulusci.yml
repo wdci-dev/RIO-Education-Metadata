@@ -243,6 +243,12 @@ plans:
                         name: RIO Education - Combined Community Security Setup
                         is_required: False
                         is_recommended: False
+            3:
+                task: execute_anon
+                options:
+                    path: apex/update_group_members.txt
+                ui_options:
+                    name: RIO Education - Update Group Members
 
     ready:
         slug: ready
