@@ -469,6 +469,10 @@
         "RIO Education - Assign Role": {
             "message": "RIO Education - Assign Role",
             "description": "title of installation step"
+        },
+        "RIO Ready - Program Offering Capacity Rollup": {
+            "message": "RIO Ready - Program Offering Capacity Rollup",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
