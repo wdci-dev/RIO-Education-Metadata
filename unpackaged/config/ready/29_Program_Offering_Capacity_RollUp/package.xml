@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>redu_Program_Offering_Capacity__c.redu_Booked_Places__c</members>
+        <members>redu_Program_Offering_Capacity__c.redu_Capacity__c</members>
+        <members>redu_Program_Offering_Capacity__c.redu_Category__c</members>
+        <members>redu_Program_Offering_Capacity__c.redu_Program_Offering__c</members>
+        <members>redu_Program_Offering_Capacity__c.redu_Seat_Category__c</members>
+        <members>rio_ed__Program_Application__c.redu_Applicant_Seat_Category__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>redu_Program_Offering_Capacity__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>redu_Program_Offering_Capacity_Rollup</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>REDU - Admin</members>
+        <members>REDU - Platform Faculty</members>
+        <name>Profile</name>
+    </types>
+    <version>58.0</version>
+</Package>
