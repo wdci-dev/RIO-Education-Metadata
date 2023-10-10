@@ -337,6 +337,10 @@ plans:
                         name: RIO Ready - Housing Application Form
                         is_required: False
                         is_recommended: False
+                    29_Program_Offering_Capacity_RollUp:
+                        name: RIO Ready - Program Offering Capacity Rollup
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
