@@ -13,11 +13,11 @@ for (GroupMember existingGm : [SELECT UserOrGroupId FROM GroupMember WHERE Group
 if (!(reduGroups.isEmpty())) {
     List<GroupMember> gmList = new List<GroupMember>();
 
-    for (Group group : reduGroups) {
-        if (!addedGroupIds.contains(group.Id)) {
+    for (Group reduGroup : reduGroups) {
+        if (!addedGroupIds.contains(reduGroup.Id)) {
             GroupMember gm = new GroupMember();
             gm.GroupId = reduAll.Id;
-            gm.UserOrGroupId = group.Id;
+            gm.UserOrGroupId = reduGroup.Id;
             gmList.add(gm);
         }
     }
