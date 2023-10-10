@@ -2,8 +2,8 @@
 REDU_PostInstallation postinstall = new REDU_PostInstallation();
 
 //Run post install methods
-insert postinstall.initRIOEdSettings(null);
-insert postinstall.initRIOEdAdvSettings(null);
+upsert postinstall.initRIOEdSettings(null);
+upsert postinstall.initRIOEdAdvSettings(null);
 upsert postinstall.updateEDASettings();
 postinstall.createAllTriggerHandlers();
 postinstall.scheduleJob();
