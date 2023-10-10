@@ -119,6 +119,12 @@ plans:
                 ui_options:
                     name: Install RIO Education 3.14.1
             5:
+                task: assign_permission_sets
+                options:
+                    api_names: REDU_Admin
+                ui_options:
+                    name: RIO Education - REDU - Admin Permission Set
+            6:
                 task: deploy_post
                 options:
                     unmanaged: False
@@ -169,12 +175,6 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-            6:
-                task: assign_permission_sets
-                options:
-                    api_names: REDU_Admin
-                ui_options:
-                    name: RIO Education - REDU - Admin Permission Set
             7:
                 task: execute_anon
                 options:
@@ -243,6 +243,12 @@ plans:
                         name: RIO Education - Combined Community Security Setup
                         is_required: False
                         is_recommended: False
+            3:
+                task: execute_anon
+                options:
+                    path: apex/update_group_members.txt
+                ui_options:
+                    name: RIO Education - Update Group Members
 
     ready:
         slug: ready
@@ -413,6 +419,30 @@ plans:
               message: "Education Data Architecture (EDA) is not installed. Please install EDA before deploying RIO Education metadata."
         steps:
             1:
+                task: assign_permission_sets
+                options:
+                    api_names: REDU_Admin,REDU_Admin_Tabs
+                ui_options:
+                    name: RIO Education - REDU - Admin Permission Sets
+                    is_required: False
+                    is_recommended: False
+            2:
+                task: execute_anon
+                options:
+                    path: apex/postInstallation.txt
+                ui_options:
+                    name: RIO Education - Post Installation Script
+                    is_required: False
+                    is_recommended: False
+            3:
+                task: execute_anon
+                options:
+                    path: apex/assignRole.txt
+                ui_options:
+                    name: RIO Education - Assign Role
+                    is_required: False
+                    is_recommended: False
+            4:
                 task: org_settings
                 options:
                     settings:
@@ -426,7 +456,7 @@ plans:
                     name: RIO Education - Salesforce Feature Enablement
                     is_required: False
                     is_recommended: False
-            2:
+            5:
                 task: deploy_pre
                 options:
                     unmanaged: False
@@ -439,7 +469,7 @@ plans:
                         name: RIO Education - HEDA Object Activity
                         is_required: False
                         is_recommended: False
-            3:
+            6:
                 task: deploy_post
                 options:
                     unmanaged: False
@@ -492,35 +522,11 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-            4:
-                task: assign_permission_sets
-                options:
-                    api_names: REDU_Admin,REDU_Admin_Tabs
-                ui_options:
-                    name: RIO Education - REDU - Admin Permission Sets
-                    is_required: False
-                    is_recommended: False
-            5:
+            7:
                 task: execute_anon
                 options:
                     path: apex/update_group_members.txt
                 ui_options:
                     name: RIO Education - Update Group Members
-                    is_required: False
-                    is_recommended: False
-            6:
-                task: execute_anon
-                options:
-                    path: apex/postInstallation.txt
-                ui_options:
-                    name: RIO Education - Post Installation Script
-                    is_required: False
-                    is_recommended: False
-            7:
-                task: execute_anon
-                options:
-                    path: apex/assignRole.txt
-                ui_options:
-                    name: RIO Education - Assign Role
                     is_required: False
                     is_recommended: False
