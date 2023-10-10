@@ -1,19 +1,26 @@
-List<Group> reduAll = [Select Id from Group where DeveloperName = 'REDU_All'];
-List<Group> reduGroups = [Select Id from Group where DeveloperName = 'REDU_Admin' 
-                            Or DeveloperName = 'REDU_Faculty' Or DeveloperName = 'REDU_Guest'
-                            Or DeveloperName = 'REDU_Student'];
+Group reduAll = [SELECT Id FROM Group WHERE DeveloperName = 'REDU_All' LIMIT 1];
 
-if (!(reduAll.isEmpty()) && !(reduGroups.isEmpty())) {
-    List<GroupMember> gms = new List<GroupMember>();
+List<String> groupNames = new List<String>{'REDU_Admin','REDU_Faculty','REDU_Guest','REDU_Student'};
+List<Group> reduGroups = [SELECT Id FROM Group WHERE DeveloperName IN :groupNames];
 
-    for (Group g1 : reduAll) {
-        for (Group g2 : reduGroups) {
+//Get existing Group Members
+List<Id> addedGroupIds = new List<Id>();
+
+for (GroupMember existingGm : [SELECT UserOrGroupId FROM GroupMember WHERE GroupId = :reduAll.Id]) {
+    addedGroupIds.add(existingGm.UserOrGroupId);
+}
+
+if (!(reduGroups.isEmpty())) {
+    List<GroupMember> gmList = new List<GroupMember>();
+
+    for (Group group : reduGroups) {
+        if (!addedGroupIds.contains(group.Id)) {
             GroupMember gm = new GroupMember();
-            gm.GroupId = g1.Id;
-            gm.UserOrGroupId = g2.Id;
-            gms.add(gm);
+            gm.GroupId = reduAll.Id;
+            gm.UserOrGroupId = group.Id;
+            gmList.add(gm);
         }
     }
     
-    insert gms;
+    insert gmList;
 }
