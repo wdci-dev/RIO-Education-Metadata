@@ -32,15 +32,6 @@ tasks:
         options:
             required_org_code_coverage_percent: 75
     
-    deploy_pre:
-        ui_options:
-            01_heda_object_tracking:
-                name: RIO Education - HEDA Object Tracking
-                is_required: False
-                is_recommended: False
-            02_heda_object_activity:
-                name: RIO Education - HEDA Object Activity
-    
     check_communities_enabled:
         description: Ensure that Communities is enabled.
         class_path: cumulusci.tasks.preflight.settings.CheckSettingsValue
@@ -111,7 +102,18 @@ plans:
                     is_required: False
                     is_recommended: False
             3:
-                flow: dependencies
+                task: deploy_pre
+                options:
+                    unmanaged: False
+                ui_options:
+                    01_heda_object_tracking:
+                        name: RIO Education - HEDA Object Tracking
+                        is_required: False
+                        is_recommended: False
+                    02_heda_object_activity:
+                        name: RIO Education - HEDA Object Activity
+                        is_required: False
+                        is_recommended: False
             4:
                 task: install_managed
                 options:
