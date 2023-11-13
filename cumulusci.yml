@@ -36,6 +36,8 @@ tasks:
         ui_options:
             01_heda_object_tracking:
                 name: RIO Education - HEDA Object Tracking
+                is_required: False
+                is_recommended: False
             02_heda_object_activity:
                 name: RIO Education - HEDA Object Activity
     
