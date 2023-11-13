@@ -113,11 +113,11 @@ plans:
             4:
                 task: install_managed
                 options:
-                    version: 3.14.2
-                    version_number: 04t3u0000038T5h
+                    version: 3.14.3
+                    version_number: 04t3u000003P03d
                     security_type: NONE
                 ui_options:
-                    name: Install RIO Education 3.14.2
+                    name: Install RIO Education 3.14.3
             5:
                 task: assign_permission_sets
                 options:
