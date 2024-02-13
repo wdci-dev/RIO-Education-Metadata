@@ -105,7 +105,6 @@ plans:
                 task: deploy_pre
                 options:
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     01_heda_object_tracking:
                         name: RIO Education - HEDA Object Tracking
@@ -132,7 +131,6 @@ plans:
                 task: deploy_post
                 options:
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     00_redu_public_groups:
                         name: RIO Education - Public Groups
@@ -197,7 +195,6 @@ plans:
                 options:
                     path: unpackaged/config/sharing
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     00_orgwide_default_sharing:
                         name: RIO Education - Org-Wide Default Sharing
@@ -224,7 +221,6 @@ plans:
                 options:
                     path: unpackaged/config/community
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     01_redu_student_profile:
                         name: RIO Education - REDU - Student Profile
@@ -267,7 +263,6 @@ plans:
                 options:
                     path: unpackaged/config/ready
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     01_AccountsReceivableDisplay:
                         name: RIO Ready - Accounts Receivable Display
@@ -468,7 +463,6 @@ plans:
                 task: deploy_pre
                 options:
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     01_heda_object_tracking:
                         name: RIO Education - HEDA Object Tracking
@@ -482,7 +476,6 @@ plans:
                 task: deploy_post
                 options:
                     unmanaged: False
-                    collision-check: False
                 ui_options:
                     00_redu_public_groups:
                         name: RIO Education - Public Groups
