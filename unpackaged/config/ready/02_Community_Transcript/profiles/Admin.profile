@@ -44,6 +44,14 @@
         <apexClass>redu_TranscriptTriggerHandler_MANAGER</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+	<classAccesses>
+        <apexClass>redu_SDoc_Visibility_TDTM</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>redu_SDoc_Visibility_TEST</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -60,4 +68,7 @@
         <field>SDOC__SDRelationship__c.Program_Enrollment__c</field>
         <readable>true</readable>
     </fieldPermissions>
+	<layoutAssignments>
+        <layout>redu_File_Sharing_Configuration__mdt-File Sharing Configuration Layout</layout>
+    </layoutAssignments>
 </Profile>

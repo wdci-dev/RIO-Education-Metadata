@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>File Sharing Configuration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>File Sharing Configurations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>redu_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContentVersion File Category --></label>
+        <name>redu_ContentVersion_File_Category__c</name>
+        <picklistValues>
+            <masterLabel>Official Transcript</masterLabel>
+            <translation><!-- Official Transcript --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule</masterLabel>
+            <translation><!-- Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unofficial Transcript</masterLabel>
+            <translation><!-- Unofficial Transcript --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Template Name --></label>
+        <name>redu_Template_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visibility --></label>
+        <name>redu_Visibility__c</name>
+        <picklistValues>
+            <masterLabel>Not visible in Community</masterLabel>
+            <translation><!-- Not visible in Community --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visible in Community</masterLabel>
+            <translation><!-- Visible in Community --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

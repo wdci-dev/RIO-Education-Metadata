@@ -12,8 +12,14 @@
 		<members>redu_FileViewerController_LCTRL_TEST</members>
 		<members>redu_CustomSingleRelatedList_LCTRL</members>
 		<members>redu_CustomSingleRelatedList_TEST</members>
+		<members>redu_SDoc_Visibility_TDTM</members>
+		<members>redu_SDoc_Visibility_TEST</members>
         <name>ApexClass</name>
     </types>
+	<types>
+		<members>REDU_SDocTrigger</members>
+		<name>ApexTrigger</name>
+	</types>
     <types>
         <members>redu_DummyFlowAction</members>
 		<members>redu_fileViewer</members>
@@ -29,10 +35,22 @@
         <members>SDOC__SDTemplate__c.SDOC__Base_Object__c</members>
         <name>CustomField</name>
     </types>
+	<types>
+		<members>redu_File_Sharing_Configuration__mdt</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>redu_File_Sharing_Configuration__mdt-en_US</members>
+		<name>CustomObjectTranslation</name>
+	</types>
     <types>
         <members>Request_Student_Transcript</members>
         <name>Flow</name>
     </types>
+	<types>
+		<members>redu_File_Sharing_Configuration__mdt-File Sharing Configuration Layout</members>
+		<name>Layout</name>
+	</types>
     <types>
         <members>Admin</members>
         <name>Profile</name>

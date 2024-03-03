@@ -11,6 +11,11 @@ public class redu_TranscriptTriggerHandler_MANAGER {
     public static void init_UpdateCustomerAccessTDTM(){
         redu_CDL_UpdateCustomerAccess_TDTM.installTDTMSetting();        
     }
+
+    public static void init_SDocVisibilityTDTM(){
+        redu_SDoc_Visibility_TDTM.installTDTMSetting();        
+    }
+
     public static void init_UpdateSDocsGeneratedFilesTDTM(){
         redu_CV_UpdateSDocsGeneratedFiles_TDTM.installTDTMSetting();
     }    
