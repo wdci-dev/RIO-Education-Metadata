@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>redu_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>redu_ContentVersion_File_Category__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>ContentVersion File Category</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unofficial Transcript</fullName>
+                    <default>true</default>
+                    <label>Unofficial Transcript</label>
+                </value>
+                <value>
+                    <fullName>Schedule</fullName>
+                    <default>false</default>
+                    <label>Schedule</label>
+                </value>
+                <value>
+                    <fullName>Official Transcript</fullName>
+                    <default>false</default>
+                    <label>Official Transcript</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>redu_Template_Name__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Template Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>redu_Visibility__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Visibility</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AllUsers</fullName>
+                    <default>true</default>
+                    <label>Visible in Community</label>
+                </value>
+                <value>
+                    <fullName>InternalUsers</fullName>
+                    <default>false</default>
+                    <label>Not visible in Community</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>File Sharing Configuration</label>
+    <pluralLabel>File Sharing Configurations</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
