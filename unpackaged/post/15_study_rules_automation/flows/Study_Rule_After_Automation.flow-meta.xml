@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Execute_Related_Study_Requirements</name>
+        <label>Execute Related Study Requirements</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <actionName>REDU_ExecuteStudyRequirments_INV</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>studyRuleId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>REDU_ExecuteStudyRequirments_INV</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Check_Record_Status</name>
+        <label>Check Record Status</label>
+        <locationX>182</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>check_if_status_changed_to_Evaluation_Requested</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.rio_ed__Evaluation_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Evaluation Requested</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.rio_ed__Evaluation_Status__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Execute_Related_Study_Requirements</targetReference>
+            </connector>
+            <label>Evaluation Requested</label>
+        </rules>
+    </decisions>
+    <description>This Flow will handel all the after automation on study rule.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <formulas>
+        <name>valueForCompletionTypeStudyRule</name>
+        <dataType>String</dataType>
+        <expression>IF(TEXT({!$Record.rio_ed__Evaluation_Status__c}) = &apos;Evaluation Passed&apos;, &apos;Completion Rules Passed&apos;, &apos;Completion Issue&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>valueForProgressionTypeStudyRule</name>
+        <dataType>String</dataType>
+        <expression>IF(TEXT({!$Record.rio_ed__Evaluation_Status__c}) = &apos;Evaluation Passed&apos;, &apos;Provisional&apos;, &apos;Blocked&apos;)</expression>
+    </formulas>
+    <interviewLabel>Study Rule(After Automation) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Study Rule (After Automation)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Record_Status</targetReference>
+        </connector>
+        <object>rio_ed__Study_Rule__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <triggerOrder>1</triggerOrder>
+</Flow>

@@ -336,6 +336,10 @@
 		<recordType>rio_ed__Session__c.rio_ed__Class</recordType>
 	</layoutAssignments>
 	<layoutAssignments>
+		<layout>rio_ed__Session__c-rio_ed__RIOEducation Session Standalone Layout</layout>
+		<recordType>rio_ed__Session__c.rio_ed__Standalone</recordType>
+	</layoutAssignments>
+    <layoutAssignments>
 		<layout>rio_ed__Session__c-rio_ed__RIOEducation Session Template Layout</layout>
 		<recordType>rio_ed__Session__c.rio_ed__Template</recordType>
 	</layoutAssignments>
@@ -367,6 +371,11 @@
 	<recordTypeVisibilities>
         <default>false</default>
         <recordType>rio_ed__Session__c.rio_ed__Template</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>rio_ed__Session__c.rio_ed__Standalone</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
 		
