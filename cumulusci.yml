@@ -178,10 +178,6 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
-                    15_study_rules_automation:
-                        name: RIO Education - Study Rules Automation
-                        is_required: False
-                        is_recommended: False
             7:
                 task: execute_anon
                 options:
