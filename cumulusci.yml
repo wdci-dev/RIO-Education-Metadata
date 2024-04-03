@@ -116,8 +116,8 @@ plans:
             4:
                 task: install_managed
                 options:
-                    version: 3.14.4
-                    version_number: 04t3u000003P04l
+                    version: 3.15
+                    version_number: 04t3u000002zov8
                     security_type: NONE
                 ui_options:
                     name: Install RIO Education 3.14.4
@@ -176,6 +176,10 @@ plans:
                         is_recommended: False
                     14_eda_object_pathassistant:
                         name: RIO Education - EDA Object Path Assistant
+                        is_required: False
+                        is_recommended: False
+                    15_study_rules_automation:
+                        name: RIO Education - Study Rules Automation
                         is_required: False
                         is_recommended: False
             7:
