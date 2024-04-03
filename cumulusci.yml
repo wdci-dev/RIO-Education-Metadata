@@ -120,7 +120,7 @@ plans:
                     version_number: 04t3u000002zov8
                     security_type: NONE
                 ui_options:
-                    name: Install RIO Education 3.14.4
+                    name: Install RIO Education 3.15
             5:
                 task: assign_permission_sets
                 options:
