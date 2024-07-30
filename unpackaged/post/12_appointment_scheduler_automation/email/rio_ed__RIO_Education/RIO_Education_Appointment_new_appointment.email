@@ -7,5 +7,5 @@ Start: {!rio_ed__Contact_Attendance__c.rio_ed__Booking_Start__c}<br>
 End: {!rio_ed__Contact_Attendance__c.rio_ed__Booking_End__c}<br>
 </p>
 <p>
-Go here: https://YourCommunity.na124.force.com/portal/s/YourAppointmentSchedulerPage?c__apptId={!rio_ed__Contact_Attendance__c.rio_ed__BookingId__c} to confirm the appointment.
+Go here: https://YourCommunity.na124.force.com/portal/s/YourAppointmentSchedulerPage?rio_ed__apptId={!rio_ed__Contact_Attendance__c.rio_ed__BookingId__c} to confirm the appointment.
 </p>
