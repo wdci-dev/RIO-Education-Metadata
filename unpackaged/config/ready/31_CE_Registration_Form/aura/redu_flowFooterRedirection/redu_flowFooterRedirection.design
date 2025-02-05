@@ -1,0 +1,13 @@
+<design:component >
+    <design:attribute name="redirector1Label" label="Redirector Button 1 Label" description="Button label" />
+    <design:attribute name="redirector1Type" label="Redirector Button 1 Type" description="Lightning button varient." datasource="base,neutral,brand,destructive,inverse,success" />
+    <design:attribute name="redirectorUrl1" label="URL to be redirected for Redirector Button 1" description="Lightning button varient." datasource="base,neutral,brand,destructive,inverse,success" />
+    <design:attribute name="showRedirector1" label="Show Redirector Button 1" description="Button to redirect user to an URL." />
+
+    <design:attribute name="redirector2Label" label="Redirector Button 2 Label" description="Button label" />
+    <design:attribute name="redirector2Type" label="Redirector Button 2 Type" description="Lightning button varient." datasource="base,neutral,brand,destructive,inverse,success" />
+    <design:attribute name="redirectorUrl2" label="URL to be redirected for Redirector Button 2" description="Lightning button varient." datasource="base,neutral,brand,destructive,inverse,success" />
+    <design:attribute name="showRedirector2" label="Show Redirector Button 2" description="Button to redirect user to an URL." />
+
+    <design:attribute name="buttonAlignment" label="Button Alignment" description="Define how the button should be aligned. Left, Right or Split (Redirector 1 button on the left, and Redirector 2 button on the right)." datasource="left,right,split" />
+</design:component>

@@ -348,6 +348,10 @@ plans:
                         name: RIO Ready - Course Substitution
                         is_required: False
                         is_recommended: False
+                    31_CE_Registration_Form:
+                        name: RIO Ready - CE Registration Form
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset

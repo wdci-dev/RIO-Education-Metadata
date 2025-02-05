@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>redu_flowFooterRedirection</members>
+    <name>AuraDefinitionBundle</name>
+  </types>
+  <types>
+    <members>rio_ed__Study_Offering__c.redu_Is_Dietary_Info_Required__c</members>
+    <members>rio_ed__Study_Offering__c.redu_Is_Emergency_Contact_Required__c</members>
+    <members>rio_ed__Study_Registration__c.redu_Dietary_Information__c</members>
+    <members>rio_ed__Study_Registration__c.redu_Emergency_Contacts__c</members>
+    <members>rio_ed__Study_Registration__c.redu_Medical_details__c</members>
+    <members>rio_ed__Study_Registration__c.redu_Other_Preferences__c</members>
+    <name>CustomField</name>
+  </types>
+  <types>
+    <members>Study_Offering_Register</members>
+    <members>Study_Offering_Register_Dietary_Info</members>
+    <members>Study_Offering_Register_Emergency_Contacts</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>Admin</members>
+    <members>REDU - Student</members>
+    <name>Profile</name>
+  </types>
+  <version>62.0</version>
+</Package>
