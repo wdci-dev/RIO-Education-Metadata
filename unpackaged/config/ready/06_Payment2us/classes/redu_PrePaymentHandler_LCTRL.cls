@@ -11,20 +11,24 @@ public without sharing class redu_PrePaymentHandler_LCTRL {
     public class Application_EXCEPTION extends Exception {}    
 
     @AuraEnabled
-    public static string pageMessage(String studentFeeId) {
+    public static string pageMessage(String studentFeeId, String orderId) {
         try {
-            Map<Id, rio_ed__Student_Fee__c> studentFeeInfo = redu_Payment_UTIL.getStudentFeesInfo(new Set<Id>{studentFeeId});
-            if (studentFeeInfo.isEmpty()) {
+
+            String prePaymentMsg;
+            if(String.isNotBlank(studentFeeId)){
+                Map<Id, rio_ed__Student_Fee__c> studentFeeInfo = redu_Payment_UTIL.getStudentFeesInfo(new Set<Id>{studentFeeId});
+                prePaymentMsg = studentFeeInfo.get(studentFeeId).redu_PrepaymentMsg__c;
+            }else if(String.isNotBlank(orderId)){
+                Map<Id, rio_ed__Order__c> ordersInfo = redu_Payment_UTIL.getOrdersInfo(new Set<Id>{orderId});
+                prePaymentMsg = ordersInfo.get(orderId).redu_PrepaymentMsg__c;
+            }
+            
+            if (String.isBlank(prePaymentMsg)) {
                 NoDataFoundException ndfe = new NoDataFoundException();
                 ndfe.setMessage(Label.redu_PaymentHandler_Missing_Student_Fee_Id);
                 throw ndfe;
             } else {
-                if (!String.isBlank(studentFeeId)){
-                    AAkPay__Payment_Txn__c initializedTrx = new AAkPay__Payment_Txn__c();
-                    initializedTrx.AAkPay__Amount__c = 0;                    
-                }
-                rio_ed__Student_Fee__c sfee = studentFeeInfo.get(studentFeeId);
-                return sfee.redu_PrepaymentMsg__c;
+                return prePaymentMsg;
             }
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
@@ -32,7 +36,7 @@ public without sharing class redu_PrePaymentHandler_LCTRL {
     }
 
     @AuraEnabled
-    public static redu_PrePaymentInfo initData(String studentFeeId, String progAppId){
+    public static redu_PrePaymentInfo initData(String studentFeeId, String progAppId, String orderId){
         try {
             
             if (String.isNotBlank(progAppId)) {
@@ -46,42 +50,56 @@ public without sharing class redu_PrePaymentHandler_LCTRL {
                 }
             }
 
-            if (String.isNotBlank(studentFeeId)) {
-                Map<Id, rio_ed__Student_Fee__c> studentFeeInfo = redu_Payment_UTIL.getStudentFeesInfo(new Set<Id>{studentFeeId});
+            if (String.isNotBlank(studentFeeId) || String.isNotBlank(orderId)) {
 
-                if (studentFeeInfo.isEmpty()) {
+                Map<Id, rio_ed__Student_Fee__c> studentFeeInfo = new Map<Id, rio_ed__Student_Fee__c>();
+                Map<Id, rio_ed__Order__c> orderInfo = new Map<Id, rio_ed__Order__c>();
+                Decimal ourstandingAmount = 0;
+                if(String.isNotBlank(studentFeeId)){
+                    studentFeeInfo = redu_Payment_UTIL.getStudentFeesInfo(new Set<Id>{studentFeeId});
+                    ourstandingAmount= studentFeeInfo.get(studentFeeId).rio_ed__Outstanding_Amount__c;
+                } else if (String.isNotBlank(orderId)){
+                    orderInfo = redu_Payment_UTIL.getOrdersInfo(new Set<Id>{orderId});
+                    ourstandingAmount= orderInfo.get(orderId).rio_ed__Outstanding_Amount__c;
+                }
+
+                if (studentFeeInfo.isEmpty() && orderInfo.isEmpty()) {
                     NoDataFoundException ndfe = new NoDataFoundException();
                     ndfe.setMessage(Label.redu_PaymentHandler_Missing_Student_Fee_Id);
                     throw ndfe;
                 } else {
-                    rio_ed__Student_Fee__c sfee = studentFeeInfo.get(studentFeeId);
 
-                    if (sfee.rio_ed__Outstanding_Amount__c > 0) {
+                    if (ourstandingAmount > 0) {
                         
-                        redu_PrePaymentInfo ppInfo = new redu_PrePaymentInfo(sfee);
-                        ppInfo.contactId = sfee.rio_ed__Program_Enrollment__r.hed__Contact__c;                                                
+                        redu_PrePaymentInfo ppInfo;
+                        if(!studentFeeInfo.isEmpty()){
+                            ppInfo = new redu_PrePaymentInfo(studentFeeInfo.get(studentFeeId));
 
-                        if(sfee.Payment_Txns__r.isEmpty()){
+                            for (rio_ed__Funding_Allocation__c fa : [SELECT Id, rio_ed__Funding__r.Name, rio_ed__Amount__c FROM rio_ed__Funding_Allocation__c WHERE rio_ed__Status__c = 'Approved' AND (rio_ed__Program_Enrollment__c =: ppInfo.peId OR rio_ed__Program_Application__c =: ppInfo.paId)]) {
+                                ppInfo.hasScholarship = true;
+                                ppInfo.scholarshipInfo += fa.rio_ed__Funding__r.Name + ' $' + fa.rio_ed__Amount__c.format() + '.00<br/>';
+    
+                                ppInfo.scholarshipAmount += fa.rio_ed__Amount__c;
+                            }
+
+                        }else{
+                            ppInfo = new redu_PrePaymentInfo(orderInfo.get(orderId));
+                        }
+                        
+                        if(ppInfo.paymentTrxId == null){
                             //just in case there is no payment trx, we will create one upon request                            
-                            AAkPay__Payment_Txn__c newTrx = redu_Payment_UTIL.initPaymentTrx(sfee, sfee.rio_ed__Outstanding_Amount__c);
+                            AAkPay__Payment_Txn__c newTrx = redu_Payment_UTIL.initPaymentTrx(ppInfo, ourstandingAmount);
                             if(Test.isRunningTest()){
                                 newTrx.OwnerId = UserInfo.getUserId();
                             } else {
                                 newTrx.OwnerId = Site.getAdminId();
                             }
-                            System.debug('newTrx owner:');
-                            System.debug(newTrx.OwnerId);
                             insert newTrx;
 
                             AAkPay__Payment_Txn__c createdPayTrx = [SELECT Id, AAkPay__Amount__c, AAkPay__Pay_Now__c FROM AAkPay__Payment_Txn__c WHERE Id =: newTrx.Id];
                             ppInfo.paymentTrxId = createdPayTrx.Id;
                             ppInfo.paymentTrxUrl = redu_PrePaymentInfo.cleansedUrl(createdPayTrx.AAkPay__Pay_Now__c);
                             ppInfo.paymentAmount = createdPayTrx.AAkPay__Amount__c;
-                        } else {
-
-                            ppInfo.paymentTrxId = sfee.Payment_Txns__r.get(0).Id;
-                            ppInfo.paymentTrxUrl = redu_PrePaymentInfo.cleansedUrl(sfee.Payment_Txns__r.get(0).AAkPay__Pay_Now__c);
-                            ppInfo.paymentAmount = sfee.Payment_Txns__r.get(0).AAkPay__Amount__c;
                         }
 
                         return ppInfo;

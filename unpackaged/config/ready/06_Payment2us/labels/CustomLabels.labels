@@ -6,7 +6,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>PaymentHandler Missing Student Fee Id</shortDescription>
-        <value>Missing/Invalid student fee id.</value>
+        <value>Missing/Invalid student fee id or order id.</value>
     </labels>
     <labels>
         <fullName>redu_PaymentHandler_No_Payment_Required</fullName>

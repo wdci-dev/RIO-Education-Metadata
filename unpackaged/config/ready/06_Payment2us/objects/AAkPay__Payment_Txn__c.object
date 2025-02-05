@@ -15,6 +15,19 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>redu_RIO_Order__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <label>RIO Order</label>
+        <referenceTo>rio_ed__Order__c</referenceTo>
+        <relationshipLabel>Payment Txns</relationshipLabel>
+        <relationshipName>Payment_Txns</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>redu_Student_Fee__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>

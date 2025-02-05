@@ -33,7 +33,7 @@ global without sharing class redu_PTXN_UpsertPayment_TDTM extends hed.TDTM_Runna
                 AAkPay__Payment_Txn__c oldPTxn = (AAkPay__Payment_Txn__c) oldList.get(counter);
 
                 if((pTxn.redu_Student_Fee__c != null && pTxn.redu_Payment__c == null && pTxn.AAkPay__Banked_Payment__c == 'YES' && pTxn.AAkPay__Banked_Payment__c != oldPTxn.AAkPay__Banked_Payment__c)
-                    || (Test.isRunningTest())) {
+                    || (pTxn.redu_Student_Fee__c != null && Test.isRunningTest())) {
                     qualifiedList.add(pTxn);
                 }
             }            

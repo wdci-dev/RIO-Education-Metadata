@@ -10,16 +10,19 @@
             cmp.set("v.progAppId", urlParams.get('progappid'));
         } else if(urlParams.has('studentfeeid')){
             cmp.set("v.studentFeeId", urlParams.get('studentfeeid'));
-        }      
+        } else if(urlParams.has('orderid')){
+            cmp.set("v.orderId", urlParams.get('orderid'));
+        }
     },
 
     init : function(cmp, event) {
-        if (cmp.get("v.studentFeeId")) {
+        if (cmp.get("v.studentFeeId") || cmp.get("v.orderId")) {
             this.toggleSpinner(cmp, true);
 
             let action = cmp.get("c.pageMessage");
             action.setParams({
-                studentFeeId: cmp.get("v.studentFeeId")                
+                studentFeeId: cmp.get("v.studentFeeId"),
+                orderId: cmp.get("v.orderId")
             });
 
             action.setCallback(this, function(response){
@@ -52,13 +55,14 @@
 
     confirmCharge : function(cmp, event) {
 
-        if (cmp.get("v.studentFeeId") || cmp.get("v.progAppId")) {
+        if (cmp.get("v.studentFeeId") || cmp.get("v.progAppId") || cmp.get("v.orderId")) {
             this.toggleSpinner(cmp, true);
 
             let action = cmp.get("c.initData");
             action.setParams({
                 studentFeeId: cmp.get("v.studentFeeId"),
-                progAppId: cmp.get("v.progAppId")
+                progAppId: cmp.get("v.progAppId"),
+                orderId: cmp.get("v.orderId")
             });
 
             action.setCallback(this, function(response){
@@ -69,7 +73,10 @@
                 if (state === "SUCCESS") {
                     let ppInfo = response.getReturnValue();
                     cmp.set("v.prepaymentInfo", ppInfo);
-                    cmp.set("v.studentFeeId", ppInfo.studentFee.Id);
+
+                    if(ppInfo.studentFee !== null && ppInfo.studentFee !== undefined){
+                        cmp.set("v.studentFeeId", ppInfo.studentFee.Id);
+                    }
                     this.navigateTo(cmp, ppInfo.paymentTrxUrl);                    
                 } else {
                     let message = '';

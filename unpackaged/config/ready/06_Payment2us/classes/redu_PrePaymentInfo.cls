@@ -12,6 +12,9 @@ public with sharing class redu_PrePaymentInfo {
     public rio_ed__Student_Fee__c studentFee {set; get;}
 
     @AuraEnabled
+    public rio_ed__Order__c order {set; get;}
+
+    @AuraEnabled
     public String paId {set; get;}
 
     @AuraEnabled
@@ -87,11 +90,22 @@ public with sharing class redu_PrePaymentInfo {
 
         this.studentFee = studentFee;
         this.paId = studentFee.rio_ed__Program_Enrollment__r.rio_ed__ProgramApplication__c;
-        this.peId = studentFee.rio_ed__Program_Enrollment__c;        
+        this.peId = studentFee.rio_ed__Program_Enrollment__c;
+        this.contactId = studentFee.rio_ed__Program_Enrollment__r.hed__Contact__c;
 
         if(!studentFee.Payment_Txns__r.isEmpty()){
-            this.paymentTrxUrl = cleansedUrl(studentFee.Payment_Txns__r.get(0).AAkPay__Pay_Now__c);
-            this.paymentAmount = studentFee.Payment_Txns__r.get(0).AAkPay__Amount__c;
+            setPaymentInfo(studentFee.Payment_Txns__r);
+        }
+    }
+
+    public redu_PrePaymentInfo(rio_ed__Order__c order){
+        this();
+
+        this.order = order;
+        this.contactId = order.rio_ed__Contact__c;
+
+        if(!order.Payment_Txns__r.isEmpty()){
+            setPaymentInfo(order.Payment_Txns__r);
         }
     }
 
@@ -100,6 +114,13 @@ public with sharing class redu_PrePaymentInfo {
         paymentUrl = paymentUrl.replace('&amp;', '&');
 
         return paymentUrl;
+    }
+
+    private void setPaymentInfo(List<AAkPay__Payment_Txn__c> paymentTxns){
+
+        this.paymentTrxId = paymentTxns.get(0).Id;
+        this.paymentTrxUrl = cleansedUrl(paymentTxns.get(0).AAkPay__Pay_Now__c);
+        this.paymentAmount = paymentTxns.get(0).AAkPay__Amount__c;
     }
     
 }

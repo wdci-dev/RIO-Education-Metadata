@@ -344,6 +344,10 @@ plans:
                         name: RIO Ready - Program Offering Capacity Rollup
                         is_required: False
                         is_recommended: False
+                    30_Course_Substitution:
+                        name: RIO Ready - Course Substitution
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset

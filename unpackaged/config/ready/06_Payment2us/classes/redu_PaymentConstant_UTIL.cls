@@ -32,4 +32,7 @@ public with sharing class redu_PaymentConstant_UTIL {
 
     public static final String FP_TRANSACTIONTYPE_PAYMENT = 'Payment';
     public static final String FP_TRANSACTIONTYPE_REFUND = 'Refund';
+    
+    public static final String ORDER_STATUS_DRAFT = 'Draft';
+    public static final String ORDER_STATUS_PAID = 'Paid';
 }

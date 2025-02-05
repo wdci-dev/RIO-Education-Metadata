@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>rio_ed__RIO_Education_Settings__c.redu_Program_Plan_Substitution_Record_ID__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>rio_ed__RIO_Education_Settings__c.redu_Student_Course_Connection_RT_Id__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>redu_Course_Substitutions</members>
+        <name>Flow</name>
+    </types>
+    <version>54.0</version>
+</Package>
