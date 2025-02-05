@@ -1,19 +1,25 @@
 /**
- * @author          WDCi-LKoh
- * @date            Jan 2022
- * @group           Payment
- * @description     TEST for Pre Payment component
+ * @author 		    WDCi (VTan)
+ * @date 		    Jan 2025
+ * @group 		    Test
+ * @description	    Test class for redu_PTXN_UpdateOrder_TDTM
+ * 
  */
-@IsTest global with sharing class redu_PrePaymentHandler_TEST {    
+
+ @IsTest
+ public with sharing class redu_PTXN_UpdateOrder_TEST {
 
     @TestSetup
-    static void setupData() {
+    static void setupData() {        
 
         redu_PaymentTestDataFactory_UTIL.setupPayment2UsData();
 
         rio_ed__RIO_Education_Settings__c defaultSetting = redu_PaymentTestDataFactory_UTIL.createDefaultSettings();
         redu_PaymentTestDataFactory_UTIL.createDefaultUser(defaultSetting);
         insert defaultSetting;
+
+        redu_PaymentCustomSetting_UTIL.getPaymentRecordTypeId();
+        redu_PaymentCustomSetting_UTIL.getPaymentTrxDefaultStatus();
 
         redu_PaymentTriggerHandler_MANAGER.initCustomTriggerHandler();
 
@@ -26,7 +32,7 @@
         rpi.createAllTriggerHandlers();                
 
         // Pass trigger handler config to set method for this test run
-        hed.TDTM_Global_API.setTdtmConfig(tokens);        
+        hed.TDTM_Global_API.setTdtmConfig(tokens);
 
         //Create Educational Instituition
         List<Account> educationalInstitutions = redu_PaymentTestDataFactory_UTIL.createEducationalInstitutions(1);
@@ -43,6 +49,8 @@
 
         //Create Term
         List<hed__Term__c> termList = redu_PaymentTestDataFactory_UTIL.createTerms(educationalInstitutions[0].Id, 1);
+        termList[0].rio_ed__Census_Date__c = system.today();
+        termList[0].hed__Type__c = 'Study Period';
         insert termList;
 
         //Create Fees
@@ -131,89 +139,9 @@
         newStudent.hed__AlternateEmail__c = newStudent.Email;
         newStudent.rio_ed__Student_ID__c = '202112346';
         insert newStudent;
-
-        rio_ed__Program_Application__c newPA = new rio_ed__Program_Application__c();        
-        newPA.rio_ed__Applicant__c = newStudent.Id;
-        newPA.rio_ed__Starting_Term__c = termList[0].Id;
-        insert newPA;
-
-        //Create Program Enrollment
-        hed__Program_Enrollment__c pe = new hed__Program_Enrollment__c();
-        pe.hed__Contact__c = newStudent.Id;
-        pe.hed__Program_Plan__c = ppList[0].Id;
-        pe.rio_ed__Program_Pathway__c = progPathwayList[0].Id;
-        pe.rio_ed__Fee_Method__c = 'Term';
-        pe.rio_ed__Pay_Upfront__c = 'No';
-        insert pe;
-
-        //Make sure Course Connections were created
-        List<hed__Course_Enrollment__c> ccList = [
-            SELECT Id, rio_ed__Target_Course__c
-            FROM hed__Course_Enrollment__c
-            WHERE hed__Program_Enrollment__c = :pe.Id
-        ];
-        System.assertEquals(courseOfferingList.size(), ccList.size(), 'Incorrect number of Course Connections created');
-
-        //Enroll in courses
-            //Creating student fees
-        for (hed__Course_Enrollment__c cc : ccList){
-            for (hed__Course_Offering__c co : courseOfferingList){
-                if (cc.rio_ed__Target_Course__c == co.hed__Course__c){
-                    cc.hed__Course_Offering__c = co.Id;
-                    cc.rio_ed__Enrollment_Status__c = 'Enrolled';
-                    break;
-                }
-            }
-        }
-
-        update ccList;
     }
 
-    
-    private static testMethod void runTestStudentFee() {                
-
-        rio_ed__Program_Application__c newPA = [SELECT Id, rio_ed__Applicant__c FROM rio_ed__Program_Application__c LIMIT 1];
-        List<rio_ed__Student_Fee__c> studentFeeCheck = [SELECT Id, rio_ed__Outstanding_Amount__c FROM rio_ed__Student_Fee__c WHERE rio_ed__Contact_Id__c =: newPA.rio_ed__Applicant__c];
-
-        Test.startTest();
-
-        Id studentFeeId = studentFeeCheck[0].Id;        
-
-        redu_Payment_UTIL.returnEmpty = true;
-        try {
-            String messageCheck1 = redu_PrePaymentHandler_LCTRL.pageMessage(studentFeeId, '');
-        } catch (Exception ex) {            
-        }
-        
-
-        redu_Payment_UTIL.returnEmpty = false;
-        String messageCheck2 = redu_PrePaymentHandler_LCTRL.pageMessage(studentFeeId, null);
-        System.debug('messageCheck2:');
-        System.debug(messageCheck2);
-        
-        // Case 1 - First Txn created for the Student Fee
-        redu_PrePaymentInfo ppInfoCheck = redu_PrePaymentHandler_LCTRL.initData(studentFeeId, newPA.Id, null);
-        System.debug('ppInfoCheck:');
-        System.debug(ppInfoCheck);
-
-        // Case 2 - Student Fee already has Payment Txn (from Case 1)
-        redu_PrePaymentInfo ppInfoCheck2 = redu_PrePaymentHandler_LCTRL.initData(studentFeeId, newPA.Id, null);
-        System.debug('ppInfoCheck2:');
-        System.debug(ppInfoCheck2);
-
-        try {
-            // Case 3 - no Student Fee provided
-            redu_PrePaymentInfo ppInfoCheck3 = redu_PrePaymentHandler_LCTRL.initData(null, null, null);
-            System.debug('ppInfoCheck3:');
-            System.debug(ppInfoCheck3);
-        } catch (Exception ex) {
-            // This will throw the Missing Student Fee exception message, if we need assertion and additional check this should be expanded
-        }        
-
-        Test.stopTest();
-    }
-
-    private static testMethod void runTestOrder() {                
+    private static testMethod void runTest() {                
 
         Contact studentCon = [SELECT Id, AccountId FROM Contact LIMIT 1];
 
@@ -231,39 +159,31 @@
         ceOrderLine.rio_ed__Unit_Price__c = 1000;
         ceOrderLine.rio_ed__Description__c = 'BUS101';
         insert ceOrderLine;
+
         Test.startTest();
 
-        redu_Payment_UTIL.returnEmpty = true;
-        try {
-            String messageCheck1 = redu_PrePaymentHandler_LCTRL.pageMessage(null, ceOrder.Id);
-        } catch (Exception ex) {            
-        }
-        
+        Map<Id, rio_ed__Order__c> orderMapCheck = redu_Payment_UTIL.getOrdersInfo(new Set<Id>{ceOrder.Id});
 
-        redu_Payment_UTIL.returnEmpty = false;
-        String messageCheck2 = redu_PrePaymentHandler_LCTRL.pageMessage(null, ceOrder.Id);
-        System.debug('messageCheck2:');
-        System.debug(messageCheck2);
-        
-        // Case 1 - First Txn created for the Order
-        redu_PrePaymentInfo ppInfoCheck = redu_PrePaymentHandler_LCTRL.initData(null, null, ceOrder.Id);
-        System.debug('ppInfoCheck:');
-        System.debug(ppInfoCheck);
+        System.assert(!orderMapCheck.isEmpty(), 'No Order generated for redu_PTXN_UpdateOrder_TDTM testing');
 
-        // Case 2 - Order already has Payment Txn (from Case 1)
-        redu_PrePaymentInfo ppInfoCheck2 = redu_PrePaymentHandler_LCTRL.initData(null, null, ceOrder.Id);
-        System.debug('ppInfoCheck2:');
-        System.debug(ppInfoCheck2);
+        redu_PrePaymentInfo ppInfo = new redu_PrePaymentInfo(orderMapCheck.get(ceOrder.Id));
 
-        try {
-            // Case 3 - no order provided
-            redu_PrePaymentInfo ppInfoCheck3 = redu_PrePaymentHandler_LCTRL.initData(null, null, null);
-            System.debug('ppInfoCheck3:');
-            System.debug(ppInfoCheck3);
-        } catch (Exception ex) {
-            // This will throw the Missing Student Fee exception message, if we need assertion and additional check this should be expanded
-        }        
+        // Generate Payment Transaction        
+        AAkPay__Payment_Txn__c newTrx = redu_Payment_UTIL.initPaymentTrx(ppInfo, 1000);
+        newTrx.OwnerId = UserInfo.getUserId();
+        insert newTrx;
 
-        Test.stopTest();
+        // Simulating a paid payment transaction
+        update newTrx;
+
+        // Once the Payment Transaction is generated, check if the automatic Payment is generated
+        List<rio_ed__Order__c> checkOrder = 
+            [SELECT Id, rio_ed__Status__c 
+                FROM rio_ed__Order__c WHERE Id =: ceOrder.Id];
+
+        System.assert(!checkOrder.isEmpty(), 'No Order is generated');
+        System.assert(checkOrder[0].rio_ed__Status__c == redu_PaymentConstant_UTIL.ORDER_STATUS_PAID, 'Order should be updated to Paid');        
+
+        Test.stopTest();        
     }
 }

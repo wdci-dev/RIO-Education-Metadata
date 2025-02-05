@@ -51,40 +51,74 @@ public without sharing class redu_Payment_UTIL {
             return new Map<Id, rio_ed__Student_Fee__c>();
         }
         return studentFeesInfo;
-    }    
+    }
 
-    public static AAkPay__Payment_Txn__c initPaymentTrx(rio_ed__Student_Fee__c sfeeInfo, Decimal oustandingAmount) {
+    public static Map<Id, rio_ed__Order__c> getOrdersInfo(Set<Id> orderId) {
+                
+        Map<Id, rio_ed__Order__c> ordersInfo = new Map<Id, rio_ed__Order__c>(
+            [SELECT Id, rio_ed__Contact__c, redu_PaymentFormId__c, redu_PrepaymentMsg__c, rio_ed__Outstanding_Amount__c, redu_Payment_For__c,
+                (SELECT Id, redu_Student_Fee__c, AAkPay__Pay_Now__c, AAkPay__Amount__c 
+                FROM Payment_Txns__r 
+                WHERE RecordTypeId =: redu_PaymentCustomSetting_UTIL.getPaymentRecordTypeId() AND AAkPay__Banked_Payment__c = 'NO' AND AAkPay__Status__c =: redu_PaymentCustomSetting_UTIL.getPaymentTrxDefaultStatus() ORDER BY CreatedDate LIMIT 1) 
+            FROM rio_ed__Order__c 
+            WHERE Id IN: orderId
+            AND rio_ed__Status__c = 'Draft']
+        );
+
+        if (Test.isRunningTest() && returnEmpty) {
+            return new Map<Id, rio_ed__Order__c>();
+        }
+        return ordersInfo;
+    }
+
+    public static AAkPay__Payment_Txn__c initPaymentTrx(redu_PrePaymentInfo ppInfo,Decimal oustandingAmount) {
 
         AAkPay__Payment_Txn__c newTrx = new AAkPay__Payment_Txn__c();
-        if(!sfeeInfo.Payment_Txns__r.isEmpty()){
+
+        Contact conInfo = [SELECT Id, AccountId, FirstName, LastName, Email, MobilePhone, Salutation,
+                        MailingStreet, MailingCity, MailingState, MailingPostalCode, MailingCountry
+                        FROM Contact WHERE Id =: ppInfo.contactId];
+
+        if(ppInfo.studentFee != null && !ppInfo.studentFee.Payment_Txns__r.isEmpty()){
             //if existing unpaid payment transaction found, we update it
-            newTrx.Id = sfeeInfo.Payment_Txns__r.get(0).Id;
+            newTrx.Id = ppInfo.studentFee.Payment_Txns__r.get(0).Id;
+        }else if(ppInfo.order != null && !ppInfo.order.Payment_Txns__r.isEmpty()){
+            newTrx.Id = ppInfo.order.Payment_Txns__r.get(0).Id;
         }
 
+        // General
         newTrx.AAkPay__Status__c = redu_PaymentCustomSetting_UTIL.getPaymentTrxDefaultStatus();
-        newTrx.redu_Student_Fee__c = sfeeInfo.Id;
-        newTrx.AAkPay__Contact__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__c;
-        newTrx.AAkPay__Account__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.AccountId;
-        newTrx.AAkPay__FirstName__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.FirstName;
-        newTrx.AAkPay__LastName__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.LastName;
-        newTrx.AAkPay__Email__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.Email;
-        newTrx.AAkPay__MobilePhone__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MobilePhone;
+        newTrx.AAkPay__Contact__c = conInfo.Id;
+        newTrx.AAkPay__Account__c = conInfo.AccountId;
+        newTrx.AAkPay__FirstName__c = conInfo.FirstName;
+        newTrx.AAkPay__LastName__c = conInfo.LastName;
+        newTrx.AAkPay__Email__c = conInfo.Email;
+        newTrx.AAkPay__MobilePhone__c = conInfo.MobilePhone;
 
-        newTrx.AAkPay__MailingStreet__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MailingStreet;
-        newTrx.AAkPay__MailingCity__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MailingCity;
-        newTrx.AAkPay__MailingState__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MailingState;
-        newTrx.AAkPay__MailingPostalCode__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MailingPostalCode;
-        newTrx.AAkPay__MailingCountry__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.MailingCountry;
-        newTrx.AAkPay__Salutation__c = sfeeInfo.rio_ed__Program_Enrollment__r.hed__Contact__r.Salutation;
+        newTrx.AAkPay__MailingStreet__c = conInfo.MailingStreet;
+        newTrx.AAkPay__MailingCity__c = conInfo.MailingCity;
+        newTrx.AAkPay__MailingState__c = conInfo.MailingState;
+        newTrx.AAkPay__MailingPostalCode__c = conInfo.MailingPostalCode;
+        newTrx.AAkPay__MailingCountry__c = conInfo.MailingCountry;
+        newTrx.AAkPay__Salutation__c = conInfo.Salutation;
 
         newTrx.RecordTypeId = redu_PaymentCustomSetting_UTIL.getPaymentRecordTypeId();
         newTrx.AAkPay__Amount__c = oustandingAmount;                    
         
-        // General
-        newTrx.AAkPay__Payment_Type__c = sfeeInfo.redu_PaymentFormId__c;
-        newTrx.AAkPay__Payment_For__c = sfeeInfo.redu_Payment_For__c;        
+        String paymentFormId;
+        if(ppInfo.studentFee != null){
+            newTrx.AAkPay__Payment_Type__c = ppInfo.studentFee.redu_PaymentFormId__c;
+            newTrx.AAkPay__Payment_For__c = ppInfo.studentFee.redu_Payment_For__c;
+            newTrx.redu_Student_Fee__c = ppInfo.studentFee.Id;
+            paymentFormId=ppInfo.studentFee.redu_PaymentFormId__c;
+        }else if (ppInfo.order != null){
+            newTrx.AAkPay__Payment_Type__c = ppInfo.order.redu_PaymentFormId__c;
+            newTrx.AAkPay__Payment_For__c = ppInfo.order.redu_Payment_For__c;
+            newTrx.redu_RIO_Order__c = ppInfo.order.Id;
+            paymentFormId=ppInfo.order.redu_PaymentFormId__c;
+        }
 
-        List<AAkPay__Payment_Type__c> retrievePaymentFormList = [SELECT Id, AAkPay__Payment_Setting__c, AAkPay__Service_Fee_PCT__c FROM AAkPay__Payment_Type__c WHERE Id = :sfeeInfo.redu_PaymentFormId__c];
+        List<AAkPay__Payment_Type__c> retrievePaymentFormList = [SELECT Id, AAkPay__Payment_Setting__c, AAkPay__Service_Fee_PCT__c FROM AAkPay__Payment_Type__c WHERE Id = :paymentFormId];
         if (Test.isRunningTest()) {
             retrievePaymentFormList = [SELECT Id, AAkPay__Payment_Setting__c, AAkPay__Service_Fee_PCT__c FROM AAkPay__Payment_Type__c];
             newTrx.AAkPay__Payment_Type__c = retrievePaymentFormList[0].Id;

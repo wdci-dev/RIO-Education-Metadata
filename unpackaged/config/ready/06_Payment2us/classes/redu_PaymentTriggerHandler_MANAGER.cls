@@ -9,6 +9,7 @@
 public class redu_PaymentTriggerHandler_MANAGER {
     
     public static void initCustomTriggerHandler(){
-        redu_PTXN_UpsertPayment_TDTM.installTDTMSetting();   
+        redu_PTXN_UpsertPayment_TDTM.installTDTMSetting();
+        redu_PTXN_UpdateOrder_TDTM.installTDTMSetting();
     }    
 }

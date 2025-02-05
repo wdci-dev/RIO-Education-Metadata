@@ -35,7 +35,6 @@ public with sharing class redu_PTXN_UpsertPayment_TEST {
         hed.TDTM_Global_API.setTdtmConfig(tokens);        
     }
 
-    
     private static testMethod void runTest() {                
 
         //Create Educational Instituition
@@ -194,8 +193,10 @@ public with sharing class redu_PTXN_UpsertPayment_TEST {
         System.debug('sfeeToPay:');
         System.debug(sfeeToPay);
 
+        redu_PrePaymentInfo ppInfo = new redu_PrePaymentInfo(sfeeToPay);
+
         // Generate Payment Transaction        
-        AAkPay__Payment_Txn__c newTrx = redu_Payment_UTIL.initPaymentTrx(sfeeToPay, sfeeToPay.rio_ed__Outstanding_Amount__c);
+        AAkPay__Payment_Txn__c newTrx = redu_Payment_UTIL.initPaymentTrx(ppInfo, sfeeToPay.rio_ed__Outstanding_Amount__c);
         newTrx.OwnerId = UserInfo.getUserId();
         insert newTrx;
 

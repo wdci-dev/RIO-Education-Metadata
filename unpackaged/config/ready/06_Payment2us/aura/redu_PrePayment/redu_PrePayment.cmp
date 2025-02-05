@@ -5,6 +5,7 @@
 
     <aura:attribute name="modalTitle" type="String" default="Payment" access="global" />
     <aura:attribute name="studentFeeId" type="String" access="global" />
+    <aura:attribute name="orderId" type="String" access="global" />
     <aura:attribute name="progAppId" type="String" access="global" />
     <aura:attribute name="homeUrl" type="String" access="global" default="/portal/s" />
 
