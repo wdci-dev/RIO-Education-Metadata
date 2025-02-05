@@ -1,0 +1,65 @@
+<!--
+/**
+ * @author          WDCi-VTan
+ * @date            07/04/2021
+ * @group           Lightning Component
+ * @description     Custom flow footer for URL redirection
+ */
+/* 
+ * @change-history
+ * PAN:7623 07/04/2021 Lean - new class
+ */
+-->
+<aura:component implements="lightning:availableForFlowScreens" access="global">
+
+    <aura:attribute name="redirector1Label" type="String" default="Continue" access="global"  />
+    <aura:attribute name="redirector1Type" type="String" default="brand" access="global"  />
+    <aura:attribute name="redirectorUrl1" type="String" access="global" />
+
+    <aura:attribute name="redirector2Label" type="String" default="Checkout" access="global"  />
+    <aura:attribute name="redirector2Type" type="String" default="brand" access="global"  />
+    <aura:attribute name="redirectorUrl2" type="String" access="global" />
+
+    <aura:attribute name="buttonAlignment" type="String" default="split" access="global"  />
+
+    <!-- Determine which actions are available -->
+    <aura:attribute name="showRedirector1" type="Boolean" default="true" access="global" />
+    <aura:attribute name="showRedirector2" type="Boolean" default="true" access="global" />
+
+    <aura:attribute name="buttonGroupCss" type="String" />
+    <aura:attribute name="isSplitButtonGroup" type="Boolean" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <div aura:id="actionButtonBar" class="slds-clearfix slds-p-top_medium">
+        <div class="{!v.buttonGroupCss}">
+           
+            <aura:if isTrue="{!v.isSplitButtonGroup}">
+
+                <div class="slds-float_left">
+                    <aura:if isTrue="{!v.showRedirector1}">
+                        <lightning:button aura:id="REDIRECTOR1" label="{!v.redirector1Label}" variant="{!v.redirector1Type}" onclick="{!c.onButtonPressed}" />
+                    </aura:if>
+                </div>
+    
+                <div class="slds-float_right">
+                    
+                    <aura:if isTrue="{!v.showRedirector2}">
+                    <lightning:button aura:id="REDIRECTOR2" label="{!v.redirector2Label}" variant="{!v.redirector2Type}" onclick="{!c.onButtonPressed}" />
+                    </aura:if>
+                </div>
+           </aura:if>
+  
+           <aura:if isTrue="{!not(v.isSplitButtonGroup)}">
+              
+              <aura:if isTrue="{!v.showRedirector1}">
+                 <lightning:button aura:id="REDIRECTOR1" label="{!v.redirector1Label}" variant="{!v.redirector1Type}" onclick="{!c.onButtonPressed}" />
+              </aura:if>
+
+              <aura:if isTrue="{!v.showRedirector2}">
+                 <lightning:button aura:id="REDIRECTOR2" label="{!v.redirector2Label}" variant="{!v.redirector2Type}" onclick="{!c.onButtonPressed}" />
+              </aura:if>
+           </aura:if>
+        </div>
+     </div>
+</aura:component>
