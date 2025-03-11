@@ -481,6 +481,14 @@
         "Deploy unpackaged/post/15_study_rules_automation": {
             "message": "Deploy unpackaged/post/15_study_rules_automation",
             "description": "title of installation step"
+        },
+        "RIO Ready - Course Substitution": {
+            "message": "RIO Ready - Course Substitution",
+            "description": "title of installation step"
+        },
+        "RIO Ready - CE Registration Form": {
+            "message": "RIO Ready - CE Registration Form",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
