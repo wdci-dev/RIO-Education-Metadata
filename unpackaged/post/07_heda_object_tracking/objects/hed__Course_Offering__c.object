@@ -132,8 +132,10 @@
         <fullName>rio_ed__Release_Grades__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
+        <description>This field's functionality has been replaced with the Grade Release Wizard.</description>
         <externalId>false</externalId>
-        <label>Release Grades</label>
+        <inlineHelpText>This field's functionality has been replaced with the Grade Release Wizard.</inlineHelpText>
+        <label>(Obsolete) Release Grades</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
