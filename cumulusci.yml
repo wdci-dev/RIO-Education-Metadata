@@ -116,7 +116,7 @@ plans:
             4:
                 task: install_managed
                 options:
-                    version: 3.20
+                    version: "3.20"
                     version_number: 04tKg000000cBwV
                     security_type: NONE
                 ui_options:
