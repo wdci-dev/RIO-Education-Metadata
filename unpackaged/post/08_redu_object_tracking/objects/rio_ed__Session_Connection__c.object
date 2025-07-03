@@ -46,7 +46,7 @@
                 </value>
                 <value>
                     <fullName>Confirmed</fullName>
-                    <default>false</default>
+                    <default>true</default>
                     <label>Confirmed</label>
                 </value>
                 <value>
