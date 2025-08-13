@@ -489,6 +489,10 @@
         "RIO Ready - CE Registration Form": {
             "message": "RIO Ready - CE Registration Form",
             "description": "title of installation step"
+        },
+        "RIO Ready - RIO Education AI": {
+            "message": "RIO Ready - RIO Education AI",
+            "description": "title of installation step"
         }
     },
     "plan:sharing": {
