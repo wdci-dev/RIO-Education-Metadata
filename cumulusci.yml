@@ -352,6 +352,10 @@ plans:
                         name: RIO Ready - CE Registration Form
                         is_required: False
                         is_recommended: False
+                    32_RIO_Education_AI:
+                        name: RIO Ready - RIO Education AI
+                        is_required: False
+                        is_recommended: False
     
     dataset:
         slug: dataset
