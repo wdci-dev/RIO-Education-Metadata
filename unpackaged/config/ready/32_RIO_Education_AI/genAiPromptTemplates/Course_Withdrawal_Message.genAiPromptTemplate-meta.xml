@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_10</activeVersionIdentifier>
+    <developerName>Course_Withdrawal_Message</developerName>
+    <masterLabel>Course Withdrawal Message</masterLabel>
+    <templateVersions>
+        <content>Task
+&quot;Customized output for student course withdrawal&quot;
+
+Instructions
+1. {!$Input:courseWithdrawalResult}
+2. If output is empty, { }, provide the message &quot;No course connection found. Did you mean: &quot; where a list of course connection the student is enrolled in is shown
+3. If output is not empty, provide a message &quot;Successfully withdraw from course.&quot; and provide a link to the updated course connection.
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Customized output for student course withdrawal&quot;
+
+Instructions
+1. {!$Input:courseWithdrawalResult}
+2. If output is empty &apos;{}&apos;, display the message: 
+ &quot;No course connection found. Did you mean: &quot;
+ followed by a list of course connections the student is enrolled in.
+
+3. If output is not empty:
+ - Display: &quot;Successfully withdrawn from course &lt;&lt;the withdrawn course&gt;&gt;.&quot;
+  - Pull up the course connection record completed with Course Connection ID, Student Name, Program Enrollment ID, hed__Course_Enrollment__c.rio_ed__Course_ID__c, Course, and Enrollment Status
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Customized output for student course withdrawal&quot;
+
+Instructions
+1. {!$Input:courseWithdrawalResult}
+2. If output is null or empty, display the message: 
+ &quot;No course connection found.&quot;
+3. If output is not empty:
+ - Display: &quot;Successfully withdrawn from course &lt;&lt;the withdrawn course&gt;&gt;.&quot;
+  - Pull up the course connection record completed with Course Connection ID, Student Name, Program Enrollment ID, hed__Course_Enrollment__c.rio_ed__Course_ID__c, Course, and Enrollment Status
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Get output from &apos;REDU_AF_Course_Withdrawal’ and generate an output message&quot;
+
+Instructions
+1. Get result from REDU_AF_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2. If output is null or empty {}, display the message: 
+ &quot;No course connection found.&quot;
+3. If output is not empty:
+ - Display: &quot;Successfully withdrawn from course &lt;&lt;the withdrawn course&gt;&gt;.&quot;
+  - Pull up the course connection record completed with Course Connection ID, Student Name, Program Enrollment ID, hed__Course_Enrollment__c.rio_ed__Course_ID__c, Course, and Enrollment Status
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Get output from &apos;REDU_AF_Course_Withdrawal’ and generate an output message&quot;
+
+Instructions
+1. Get result from REDU_AF_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2. If output is null or empty {}, display the message: 
+ &quot;No course connection found.&quot;
+3. If output is not empty:
+ - Display: &quot;Successfully withdrawn from course &lt;&lt;the withdrawn course&gt;&gt;.&quot;
+  - Pull up the course connection record completed with hed__Course_Enrollment__c.rio_ed__Course_ID__c, Course, and Enrollment Status
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Get output from &apos;REDU_AF_Course_Withdrawal’ and generate an output message&quot;
+
+Instructions
+1. Get result from REDU_AF_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2.  - Display: &quot;Successfully withdrawn from course &lt;&lt;the withdrawn course&gt;&gt;.&quot;
+  - Pull up the course connection record completed with hed__Course_Enrollment__c.rio_ed__Course_ID__c, Course, and Enrollment Status
+  - Format the output
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_6</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+Get output from &apos;REDU_AF_Course_Withdrawal’ and generate an output message
+
+Instructions
+1. Get result from REDU_AF_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2. If isSuccess = false , display the error message starting with &quot;Course Enrollment failed.&quot; + message.
+3. If isSuccess is true, display: &quot;Successfully withdrawn from course.&quot; + Contact Name, Course Connection, and Enrollment Status. 
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_7</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions
+1. Get result from REDU_AF_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2. If isSuccess = false , display the error message starting with &quot;Course Enrollment failed.&quot; + message.
+3. If isSuccess is true, display: &quot;Successfully withdrawn from course.&quot; + Contact Name, Course Connection, and Enrollment Status. Format the output with each information in one new line.
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_8</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions
+1. Get result from REDU_AI_Course_Withdrawal and pass it into {!$Input:courseWithdrawalResult}
+2. If isSuccess = false , display the error message starting with &quot;Course Enrollment failed.&quot; + message.
+3. If isSuccess is true, display: &quot;Successfully withdrawn from course.&quot; + Contact Name, Course Connection, and Enrollment Status. Format the output with each information in one new line.
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_9</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions
+1. Get the output from Course_Withdrawal_Management and pass the responseData into {!$Input:courseWithdrawalResult}
+2. If isSuccess from Course_Withdrawal_Management is false then display the error message starting with &quot;Course Enrollment failed.&quot; + message.
+3. If isSuccess from Course_Withdrawal_Management is true then display: &quot;Successfully withdrawn from course.&quot; + Contact Name, Course Connection, and Enrollment Status. Format the output with each information in one new line.
+</content>
+        <inputs>
+            <apiName>courseWithdrawalResult</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>courseWithdrawalResult</masterLabel>
+            <referenceName>Input:courseWithdrawalResult</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_10</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

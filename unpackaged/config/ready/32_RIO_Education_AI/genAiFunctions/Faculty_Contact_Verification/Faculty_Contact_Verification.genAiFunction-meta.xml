@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get contact record and check if Faculty Member exist</description>
+    <invocationTarget>REDU_AI_VerifyFacultyContact</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Faculty Contact Verification</masterLabel>
+    <progressIndicatorMessage>Verifying Faculty Contact</progressIndicatorMessage>
+</GenAiFunction>

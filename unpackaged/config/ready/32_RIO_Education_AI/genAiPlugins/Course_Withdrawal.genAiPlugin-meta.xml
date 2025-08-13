@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttodro0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttodro0</masterLabel>
+        <utterance>I want to drop</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttoune1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttoune1</masterLabel>
+        <utterance>I want to unenroll</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttowit2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttowit2</masterLabel>
+        <utterance>I want to withdraw</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Guide users through the process of withdrawing a student from a course.</description>
+    <developerName>Course_Withdrawal</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Course_Withdrawal_Management</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Course_Withdrawal_Message</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Student_Contact_Verification</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Action ‘Course Withdrawal Management’ to trigger the withdrawal process. Pass the output to Action &apos;Course Withdrawal Message&apos;</description>
+        <developerName>instruction_actioncour0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_actioncour0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After calling rio_edai.Course_Withdrawal_Management make sure to pass the responseData in the output to rio_edai.Course_Withdrawal_Message</description>
+        <developerName>instruction_aftercalli1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftercalli1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Prompt user for Contact Name and Course Code to be withdrawn.</description>
+        <developerName>instruction_promptuser2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_promptuser2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use prompt template &quot;Course Withdrawal Message&quot; to generate result.</description>
+        <developerName>instruction_usepromptt3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usepromptt3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to find Contact Name and &quot;rio_ed__Student_ID__c&quot;. If &quot;rio_ed__Student_ID__c&quot;: null, stop the process and inform the user that the person is not a student.</description>
+        <developerName>instruction_usequeryre4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Course Withdrawal</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to assist users in withdrawing students from courses.</scope>
+</GenAiPlugin>

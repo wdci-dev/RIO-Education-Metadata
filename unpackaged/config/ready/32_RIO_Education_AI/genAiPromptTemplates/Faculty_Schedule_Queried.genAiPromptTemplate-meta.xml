@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_6</activeVersionIdentifier>
+    <developerName>Faculty_Schedule_Queried</developerName>
+    <masterLabel>Faculty Schedule Queried</masterLabel>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_GetFacultySchedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_GetFacultySchedule&apos; and pass the result into {!$Input:Faculty_Schedule_Queried}.
+2. Summarize the output in a formatted manner
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_GetFacultySchedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_GetFacultySchedule&apos; and pass the result into {!$Input:Faculty_Schedule_Queried}.
+2. Summarize the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_GetFacultySchedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_GetFacultySchedule&apos; and pass the result into {!$Input:Faculty_Schedule_Queried}.
+2. Convert the date time based on user timezone. Summarize the output in a formatted manner without any special characters or symbols, 
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Draft</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_GetFacultySchedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AI_GetFacultySchedule&apos; and pass the result into {!$Input:Faculty_Schedule_Queried}.
+2. Convert the date time based on user timezone. Summarize the output in a formatted manner without any special characters or symbols, 
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Get_Faculty_Schedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;Get_Faculty_Schedule&apos; and pass the responseData into {!$Input:Faculty_Schedule_Queried}.
+2. Convert the date time based on user timezone. Summarize the output in a formatted manner without any special characters or symbols, 
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Get_Faculty_Schedule&apos; in human language
+
+Instructions
+1. Get the output of &apos;Get_Faculty_Schedule&apos; and pass the responseData into {!$Input:Faculty_Schedule_Queried}.
+2. Convert the date time based on user timezone. Summarize the output in a formatted manner without any special characters or symbols,
+3. Inform the user that the date time shown is already converted to the user timezone. 
+</content>
+        <inputs>
+            <apiName>Faculty_Schedule_Queried</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Faculty Schedule Queried</masterLabel>
+            <referenceName>Input:Faculty_Schedule_Queried</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_6</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

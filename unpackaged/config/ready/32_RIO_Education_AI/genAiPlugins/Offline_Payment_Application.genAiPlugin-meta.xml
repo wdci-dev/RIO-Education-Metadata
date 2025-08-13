@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_astudentma0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_astudentma0</masterLabel>
+        <utterance>A student made payment.</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_astudentpa1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_astudentpa1</masterLabel>
+        <utterance>A student paid.</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>This topic handles the application of offline payments to user accounts. It addresses user requests related to processing payments made via offline methods.</description>
+    <developerName>Offline_Payment_Application</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Apply_Offline_Payment</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Offline_Payment_Result</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Get student name, payment amount, and the term name from user.</description>
+        <developerName>instruction_getstudent0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_getstudent0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use &apos;Offline Payment Result&apos; as a template for the result.</description>
+        <developerName>instruction_useoffline1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useoffline1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to get the Salesforce ID of contactId and termId.</description>
+        <developerName>instruction_usequeryre2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Offline Payment Application</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users in applying offline payments to their accounts. You should not handle any other types of payment processing or account issues.</scope>
+</GenAiPlugin>

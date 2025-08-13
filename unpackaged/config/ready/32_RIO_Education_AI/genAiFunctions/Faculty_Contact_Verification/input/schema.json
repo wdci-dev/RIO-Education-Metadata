@@ -1,0 +1,17 @@
+{
+  "required" : [ "myContact" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "myContact" : {
+      "title" : "myContact",
+      "description" : "Get the faculty name from user input",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Contact"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

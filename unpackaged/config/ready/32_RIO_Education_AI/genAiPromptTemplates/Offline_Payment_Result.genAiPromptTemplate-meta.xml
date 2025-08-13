@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_4</activeVersionIdentifier>
+    <developerName>Offline_Payment_Result</developerName>
+    <masterLabel>Offline Payment Result</masterLabel>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_ApplyOfflinePaymen&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_ApplyOfflinePaymen&apos; and pass the result into {!$Input:Offline_Payment_Success_Msg}
+2. Summarize the output in a formatted manner  without any special characters or symbols
+</content>
+        <inputs>
+            <apiName>Offline_Payment_Success_Msg</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Offline Payment Success Msg</masterLabel>
+            <referenceName>Input:Offline_Payment_Success_Msg</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_ApplyOfflinePayment&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_ApplyOfflinePayment&apos; and pass the result into {!$Input:Offline_Payment_Success_Msg}
+2. Summarize the output in a formatted manner  without any special characters or symbols
+</content>
+        <inputs>
+            <apiName>Offline_Payment_Success_Msg</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Offline Payment Success Msg</masterLabel>
+            <referenceName>Input:Offline_Payment_Success_Msg</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_ApplyOfflinePayment&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AF_ApplyOfflinePayment&apos; and pass the result into {!$Input:Offline_Payment_Success_Msg}
+2. Format it like this: &quot;Payment record updated successfully.&quot; + the payment details in a formatted output without any special characters or symbols
+</content>
+        <inputs>
+            <apiName>Offline_Payment_Success_Msg</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Offline Payment Success Msg</masterLabel>
+            <referenceName>Input:Offline_Payment_Success_Msg</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_ApplyOfflinePayment&apos; in human language
+
+Instructions
+1. Get the output of &apos;REDU_AI_ApplyOfflinePayment&apos; and pass the result into {!$Input:Offline_Payment_Success_Msg}
+2. Format it like this: &quot;Payment record updated successfully.&quot; + the payment details in a formatted output without any special characters or symbols
+</content>
+        <inputs>
+            <apiName>Offline_Payment_Success_Msg</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Offline Payment Success Msg</masterLabel>
+            <referenceName>Input:Offline_Payment_Success_Msg</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_4</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

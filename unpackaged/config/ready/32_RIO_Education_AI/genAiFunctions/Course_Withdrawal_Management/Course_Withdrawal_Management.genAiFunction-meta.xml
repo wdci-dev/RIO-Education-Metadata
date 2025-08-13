@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Check if the course connection has Enrollment Status = &quot;Enrolled&quot;. Withdraw student from a course by updating the course connection enrollment status to &quot;Withdrawn&quot;</description>
+    <invocationTarget>REDU_AI_Course_Withdrawal</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>true</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Course Withdrawal Management</masterLabel>
+    <progressIndicatorMessage>Withdrawing from course</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "amount", "studentFeeId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "amount" : {
+      "title" : "amount",
+      "description" : "Amount to be refunded",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "studentFeeId" : {
+      "title" : "studentFeeId",
+      "description" : "Student Fee ID. Use Query to search for the records.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

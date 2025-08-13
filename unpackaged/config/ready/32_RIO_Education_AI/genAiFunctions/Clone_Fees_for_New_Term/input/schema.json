@@ -1,0 +1,21 @@
+{
+  "required" : [ "existingTermId", "newTermId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "existingTermId" : {
+      "title" : "existingTermId",
+      "description" : "Existing Term ID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "newTermId" : {
+      "title" : "newTermId",
+      "description" : "New Term ID",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

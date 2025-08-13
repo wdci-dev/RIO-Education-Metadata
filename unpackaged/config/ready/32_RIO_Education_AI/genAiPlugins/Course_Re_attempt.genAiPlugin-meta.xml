@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_studentwan0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_studentwan0</masterLabel>
+        <utterance>Student wants to reattempt a course.</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_studentwan1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_studentwan1</masterLabel>
+        <utterance>Student wants to retake a course</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_studentwan2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_studentwan2</masterLabel>
+        <utterance>Student wants to re-enroll in a course</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Guides the course re-attempt process for users seeking to re-enroll in a course.</description>
+    <developerName>Course_Re_attempt</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Course_Re_attempt_Management</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Action “Course Re-attempt Management” to create course enrollment.</description>
+        <developerName>instruction_actioncour0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_actioncour0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Get Student Name and Course Code to reattempt.</description>
+        <developerName>instruction_getstudent1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_getstudent1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to get the Salesforce ID of Student and Course Code.</description>
+        <developerName>instruction_usequeryre2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre2</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Course Re-attempt</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users with the process of re-attempting a course, including verifying eligibility and providing re-enrollment options.</scope>
+</GenAiPlugin>
