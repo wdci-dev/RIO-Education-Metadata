@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:programTransferResult" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:programTransferResult" : {
+      "title" : "programTransferResult",
+      "description" : "Get the output from 'Program_Transfer_Management' and pass the responseData into {!$Input:programTransferResult}",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,14 @@
+{
+  "required" : [ "ccId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ccId" : {
+      "title" : "ccId",
+      "description" : "Course Enrollment ID. Use Query to search for the records.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

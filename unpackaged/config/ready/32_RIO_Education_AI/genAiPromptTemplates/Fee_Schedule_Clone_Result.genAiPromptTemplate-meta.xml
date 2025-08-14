@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_5</activeVersionIdentifier>
+    <description>The template result for a successful fee schedule cloning</description>
+    <developerName>Fee_Schedule_Clone_Result</developerName>
+    <masterLabel>Fee Schedule Clone Result</masterLabel>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Fee_Schedule_Term_Cloning&apos; in human language.&quot;
+
+Instructions
+1. Get the output of &apos;Fee_Schedule_Term_Cloning&apos; and pass the result into {!$Input:Fee_Schedule_Cloned}
+2. Return the output in a formatted manner without any special characters or symbols.
+3. Exclude the URL
+
+</content>
+        <inputs>
+            <apiName>Fee_Schedule_Cloned</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Fee Schedule Cloned</masterLabel>
+            <referenceName>Input:Fee_Schedule_Cloned</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_CloneFeeForNewTerm&apos; in human language.&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AF_CloneFeeForNewTerm&apos; and pass the result into {!$Input:Fee_Schedule_Cloned}
+2. Count the number of Fee Schedule Terms created
+3. Format it like this: &quot;Fee Schedules are successfully cloned. There were&quot; + the number of records created + &quot;records created.&quot;
+4. Show the first record, leave out the URL. And leave out any header
+</content>
+        <inputs>
+            <apiName>Fee_Schedule_Cloned</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Fee Schedule Cloned</masterLabel>
+            <referenceName>Input:Fee_Schedule_Cloned</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_CloneFeeForNewTerm&apos; in human language.&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AI_CloneFeeForNewTerm&apos; and pass the result into {!$Input:Fee_Schedule_Cloned}
+2. Count the number of Fee Schedule Terms created
+3. Format it like this: &quot;Fee Schedules are successfully cloned. There were&quot; + the number of records created + &quot;records created.&quot;
+4. Show the first record, leave out the URL. And leave out any header
+</content>
+        <inputs>
+            <apiName>Fee_Schedule_Cloned</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Fee Schedule Cloned</masterLabel>
+            <referenceName>Input:Fee_Schedule_Cloned</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_CloneFeeForNewTerm&apos; in human language.&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AI_CloneFeeForNewTerm&apos; and pass the result into {!$Input:Fee_Schedule_Cloned}
+2. Count the number of Fee Schedule Terms created
+3. Format it like this: &quot;Fee Schedules are successfully cloned. Fee Schedule from&quot; + Source Term+ &quot;has been successfully cloned to&quot; + Target Term
+4. Show the first record, leave out the URL. And leave out any header
+
+</content>
+        <inputs>
+            <apiName>Fee_Schedule_Cloned</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Fee Schedule Cloned</masterLabel>
+            <referenceName>Input:Fee_Schedule_Cloned</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_CloneFeeForNewTerm&apos; in human language.&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AI_CloneFeeForNewTerm&apos; and pass the result into {!$Input:Fee_Schedule_Cloned}
+2. Count the number of Fee Schedule Terms created in the JSON format responseData resp. 
+3. Format it like this: &quot;Fee Schedules are successfully cloned. There were&quot; + the number of records created + &quot;records created.&quot;
+4. Show the first record, leave out the URL. And leave out any header
+</content>
+        <inputs>
+            <apiName>Fee_Schedule_Cloned</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Fee Schedule Cloned</masterLabel>
+            <referenceName>Input:Fee_Schedule_Cloned</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_5</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

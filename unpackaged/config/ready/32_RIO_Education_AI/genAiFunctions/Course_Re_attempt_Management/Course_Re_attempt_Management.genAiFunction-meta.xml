@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Query course enrollment based on the contactId and CourseCode.</description>
+    <invocationTarget>REDU_AI_CourseReattempt</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Course Re-attempt Management</masterLabel>
+    <progressIndicatorMessage>Re-attempting Course</progressIndicatorMessage>
+</GenAiFunction>

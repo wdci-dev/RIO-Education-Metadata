@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get output from Action &apos;REDU_AI_ApplyOfflinePayment&apos; and use this action as a template for the final result</description>
+    <invocationTarget>Offline_Payment_Result</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Offline Payment Result</masterLabel>
+    <progressIndicatorMessage>Generating receipt</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_3</activeVersionIdentifier>
+    <description>The formatted output for refund process</description>
+    <developerName>Refund_Processed_Message</developerName>
+    <masterLabel>Refund Processed Message</masterLabel>
+    <templateVersions>
+        <content>Tell user that the refund was successful and include the refunded amount and student fee ID.
+</content>
+        <inputs>
+            <apiName>refundMessage</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>refundMessage</masterLabel>
+            <referenceName>Input:refundMessage</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions:
+1. Get output from &apos;REDU_AF_RefundStudentFee&apos; and pass it into {!$Input:refundMessage}.
+2. Start with &quot;Refund was a success!&quot; + Student Fee ID, Amount, Description in a formatted manner.
+</content>
+        <inputs>
+            <apiName>refundMessage</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>refundMessage</masterLabel>
+            <referenceName>Input:refundMessage</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Instructions:
+1. Get output from &apos;REDU_AI_RefundStudentFee&apos; and pass it into {!$Input:refundMessage}.
+2. Start with &quot;Refund was a success!&quot; + Student Fee ID, Amount, Description in a formatted manner.
+</content>
+        <inputs>
+            <apiName>refundMessage</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>refundMessage</masterLabel>
+            <referenceName>Input:refundMessage</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_3</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

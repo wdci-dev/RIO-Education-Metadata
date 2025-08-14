@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_astudentwa0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_astudentwa0</masterLabel>
+        <utterance>A student wants to change program</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttomov1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttomov1</masterLabel>
+        <utterance>I want to move student to another program</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttotra2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttotra2</masterLabel>
+        <utterance>I want to transfer student to another program.</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Assist users in transferring students between different educational programs.</description>
+    <developerName>Student_Program_Transfer</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Program_Transfer_Management</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Program_Transfer_Result</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Student_Contact_Verification</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Action ‘Program Transfer Management’ to trigger the program transfer process.</description>
+        <developerName>instruction_actionprog0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_actionprog0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>After calling rio_edai.Program_Transfer_Management make sure to pass the responseData in the output to rio_edai.Program_Transfer_Result</description>
+        <developerName>instruction_aftercalli1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftercalli1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Get Student Name and the Program Name to be transferred to.</description>
+        <developerName>instruction_getstudent2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_getstudent2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the selected Program Enrollment does not have Program_Status = &apos;Current&apos;, stop the process and notify the user the Program Status.</description>
+        <developerName>instruction_iftheselec3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheselec3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Action &apos;Program Transfer Result&apos; as a template for the result.</description>
+        <developerName>instruction_useactionp4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useactionp4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to find Program Enrollment(s) for the student where Program_Status = &apos;Current&apos;. Present the Program Enrollment as options for user.</description>
+        <developerName>instruction_usequeryre5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to get the Salesforce ID of the Account.</description>
+        <developerName>instruction_usequeryre6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre6</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use ‘Student Contact Verification’ to check if the provided name and Student ID is for a valid student. Confirm with the user if the result is negative.</description>
+        <developerName>instruction_usestudent7</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usestudent7</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When querying for the program, make sure to find an Account record with the record type Academic Program.</description>
+        <developerName>instruction_whenqueryi8</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenqueryi8</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When using the &apos;Student Contact Verification&apos; do not pass Student ID as record ID as Student ID does not refer to the Contact record ID. Student ID refer to a specific field in Contact with API name rio_ed__Student_ID__c</description>
+        <developerName>instruction_whenusingt9</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenusingt9</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Student Program Transfer</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to guide users through the process of transferring students between programs, ensuring all necessary information is collected and appropriate actions are taken.</scope>
+</GenAiPlugin>

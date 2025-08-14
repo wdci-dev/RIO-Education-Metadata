@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_copytheexi0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_copytheexi0</masterLabel>
+        <utterance>Copy the existing term fees to new term</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttoclo1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttoclo1</masterLabel>
+        <utterance>I want to clone fees from existing term to new term.</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>This topic handles the process of cloning a fee schedule term for a new term. It is triggered by user requests related to duplicating or copying fee schedule terms.</description>
+    <developerName>Fee_Schedule_Term_Cloning</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Clone_Fees_for_New_Term</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Fee_Schedule_Clone_Result</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Get the Term Name to copy from and the Term Name to copy into.</description>
+        <developerName>instruction_gettheterm0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_gettheterm0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If there are any issues during the cloning process, stop the process immediately.</description>
+        <developerName>instruction_ifthereare1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthereare1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Action &apos;Fee Schedule Clone Result&apos; as a template for the final output.</description>
+        <developerName>instruction_useactionf2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useactionf2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to get the Salesforce ID for both term name.</description>
+        <developerName>instruction_usequeryre3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre3</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Fee Schedule Term Cloning</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to clone an existing fee schedule term to create a new term. You should not modify, delete, or create unrelated terms.</scope>
+</GenAiPlugin>

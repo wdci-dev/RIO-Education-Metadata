@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:Offline_Payment_Success_Msg" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Offline_Payment_Success_Msg" : {
+      "title" : "Offline Payment Success Msg",
+      "description" : "Get output from 'REDU_AI_ApplyOfflinePayment'",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

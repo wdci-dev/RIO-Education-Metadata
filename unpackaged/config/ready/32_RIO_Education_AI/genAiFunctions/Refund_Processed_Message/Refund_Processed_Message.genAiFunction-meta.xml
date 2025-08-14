@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action get the output from &apos;REDU_AI_RefundStudentFee&apos; and modify it to match the result template.</description>
+    <invocationTarget>Refund_Processed_Message</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Refund Processed Message</masterLabel>
+    <progressIndicatorMessage>Processing Refund</progressIndicatorMessage>
+</GenAiFunction>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get output from &apos;Course_Withdrawal_Management&apos; and use this as template for the result.</description>
+    <invocationTarget>Course_Withdrawal_Message</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Course Withdrawal Message</masterLabel>
+    <progressIndicatorMessage>Withdrawing student</progressIndicatorMessage>
+</GenAiFunction>

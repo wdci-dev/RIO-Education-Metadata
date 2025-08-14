@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_12</activeVersionIdentifier>
+    <developerName>Additional_Fee_Added_Message</developerName>
+    <masterLabel>Additional Fee Added Message</masterLabel>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_AddStudentFee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AF_AddStudentFee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+2. Start the message with &quot;Additional Fee added&quot;
+3. Include the contact, pathway, program enrollment, and term.
+4. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_AddStudentFee&apos; in human language,&quot;
+
+Instructions
+1. Start the message with &quot;Additional Fee added&quot;.
+2. Get the output of &apos;REDU_AF_AddStudentFee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+3. Include the contact, pathway, program enrollment, and term.
+4. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_2</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AF_AddStudentFee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AF_AddStudentFee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Ztrmg1WOCKvEdVwf9xKKXgjdAKJ9bjh7cSsEgP4cio4=_3</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;REDU_AI_AddStudentFee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;REDU_AI_AddStudentFee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_4</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_5</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question. 
+5. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_6</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in que 
+6. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_7</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question.
+6. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_8</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; responseData in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question.
+6. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_9</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question.
+6. Return the output in a formatted manner without any special characters or symbols.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_10</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from &apos;Add_Additional_Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of &apos;Add_Additional_Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question.
+6. Return the output in a formatted manner without any special characters or symbols.
+7. Do not mention the name &apos;Add_Additional_Fee&apos; in the response text from the prompt template.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_11</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Task
+&quot;Return the result from action &apos;Add Additional Fee&apos; in human language,&quot;
+
+Instructions
+1. Get the output of action &apos;Add Additional Fee&apos; responseData and pass the result into {!$Input:Add_Fee_Message}.
+2. Include the contact, pathway, program enrollment, and term.
+3. Pathway&apos;s object has an API name of rio_ed__PE_Pathway_Status__c, but note that we should refer to them as Pathway in the response.
+4. Contact can be inferred from the Program Enrollment&apos;s Contact.
+5. When returning the information regarding contact, pathway, program enrollment and term, we should return the name of the record in question.
+6. Return the output in a formatted manner without any special characters or symbols.
+7. Do not mention the name of action &apos;Add Additional Fee&apos; in the response text from the prompt template.
+</content>
+        <inputs>
+            <apiName>Add_Fee_Message</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Add Fee Message</masterLabel>
+            <referenceName>Input:Add_Fee_Message</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>Uvs+8PJEJRvggjozap0F1/p2rU8dLO0IoFGJkdYE/E8=_12</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

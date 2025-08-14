@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Create a new fee line with the agreed amount and link to the studentFeeId.</description>
+    <invocationTarget>REDU_AI_RefundStudentFee</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Processing Refunds</masterLabel>
+    <progressIndicatorMessage>Refunding Student Fee</progressIndicatorMessage>
+</GenAiFunction>

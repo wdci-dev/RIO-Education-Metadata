@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:Fee_Schedule_Cloned" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Fee_Schedule_Cloned" : {
+      "title" : "Fee Schedule Cloned",
+      "description" : "Get output from 'Clone_Fees_for_New_Term'",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

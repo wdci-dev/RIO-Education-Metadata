@@ -1,0 +1,21 @@
+{
+  "required" : [ "peId", "programId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "peId" : {
+      "title" : "peId",
+      "description" : "Query the existing Program Enrollment based on peId. Use QueryRecords to search for them.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "programId" : {
+      "title" : "programId",
+      "description" : "Use QueryRecords to search for the Salesforce ID of the Program Code.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

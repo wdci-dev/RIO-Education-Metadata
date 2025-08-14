@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Query existing Program Enrollment based on Program Enrollment ID. Update existing Program Enrollment with Program Status = Cancelled. Create a new Program Enrollment with program = programId, Program Status = Current, Enrollment Status = Full-Time, Pay Upfront = Yes.</description>
+    <invocationTarget>REDU_AI_Program_Transfer</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Program Transfer Management</masterLabel>
+    <progressIndicatorMessage>Transferring Program</progressIndicatorMessage>
+</GenAiFunction>

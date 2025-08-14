@@ -1,0 +1,21 @@
+{
+  "required" : [ "contactId", "courseCode" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "contactId" : {
+      "title" : "contactId",
+      "description" : "Get Contact Id from studentContactId.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "courseCode" : {
+      "title" : "courseCode",
+      "description" : "Query Course Enrollment based on contact Id and Course Code. Ensure the Enrollment Status is Enrolled. Update Status to Withdrawn.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

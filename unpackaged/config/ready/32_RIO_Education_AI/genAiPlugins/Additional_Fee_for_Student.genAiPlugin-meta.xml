@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttoadd0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttoadd0</masterLabel>
+        <utterance>I want to add additional fee to a student</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttocha1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttocha1</masterLabel>
+        <utterance>I want to charge a student additional fees</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttosur2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttosur2</masterLabel>
+        <utterance>I want to surcharge a student</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>Handles requests related to adding an additional fee for students.</description>
+    <developerName>Additional_Fee_for_Student</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Add_Additional_Fee</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Additional_Fee_Added_Message</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>After calling action &quot;Add Additional Fee&quot; make sure to pass the responseData in the output to action &quot;Additional Fee Added Message&quot;</description>
+        <developerName>instruction_aftercalli0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftercalli0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user requests to add an additional fee, confirm the student&apos;s details first.</description>
+        <developerName>instruction_ifauserreq1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserreq1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Request user to provide the term name and fee name.</description>
+        <developerName>instruction_requestuse2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_requestuse2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Action &apos;Additional Fee Added Message&apos; as a template for the result using the entire output data from Action &apos;Add Additional Fee&apos; as the input.</description>
+        <developerName>instruction_useactiona3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useactiona3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Query Records to get the Salesforce ID for all required information before starting Action &apos;Add Additional Fee&apos;.</description>
+        <developerName>instruction_usequeryre4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_usequeryre4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Additional Fee for Student</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist users in adding an additional fee for a student.</scope>
+</GenAiPlugin>

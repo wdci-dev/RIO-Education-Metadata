@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttoche0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttoche0</masterLabel>
+        <utterance>I want to check a faculty&apos;s schedule</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttover1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttover1</masterLabel>
+        <utterance>I want to verify a faculty&apos;s availability</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_iwanttovie2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_iwanttovie2</masterLabel>
+        <utterance>I want to view a faculty&apos;s timetable</utterance>
+    </aiPluginUtterances>
+    <canEscalate>false</canEscalate>
+    <description>This topic handles checking and verifying the schedule of faculty members. It is triggered by user requests related to faculty schedules.</description>
+    <developerName>Check_Faculty_Schedule</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Faculty_Contact_Verification</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Faculty_Schedule_Queried</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Get_Faculty_Schedule</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>After calling rio_edai.Get_Faculty_Schedule make sure to pass the responseData in the output to rio_edai.Faculty_Schedule_Queried</description>
+        <developerName>instruction_aftercalli0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_aftercalli0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Get Faculty name and the date range, such as Start Date and End Date</description>
+        <developerName>instruction_getfaculty1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_getfaculty1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Action &quot;Faculty Schedule Queried&quot; as a template for the result.</description>
+        <developerName>instruction_useactionf2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useactionf2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Use Action &quot;Faculty Contact Verification&quot; to check if faculty member exists. Confirm with user if no records are found,</description>
+        <developerName>instruction_useactionf3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_useactionf3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When calling rio_edai.Faculty_Contact_Verification make sure to pass the Contact ID of the person in question.</description>
+        <developerName>instruction_whencallin4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whencallin4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Check Faculty Schedule</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to check and verify the schedule of faculty members based on user inquiries. Do not attempt to respond to requests outside of faculty scheduling.</scope>
+</GenAiPlugin>

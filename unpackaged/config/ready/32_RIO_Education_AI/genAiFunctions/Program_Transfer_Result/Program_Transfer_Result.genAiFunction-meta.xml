@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Get the output of &apos;Program_Transfer_Management&apos; and use this action as a result template.</description>
+    <invocationTarget>Program_Transfer_Result</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Program Transfer Result</masterLabel>
+    <progressIndicatorMessage>Transferring Program</progressIndicatorMessage>
+</GenAiFunction>

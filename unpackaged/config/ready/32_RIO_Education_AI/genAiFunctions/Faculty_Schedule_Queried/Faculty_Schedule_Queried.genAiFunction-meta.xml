@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This template will receive data from Get_Faculty_Schedule also known as REDU_AI_GetFacultySchedule and generate the output</description>
+    <invocationTarget>Faculty_Schedule_Queried</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Faculty Schedule Queried</masterLabel>
+    <progressIndicatorMessage>Compiling Faculty Schedule</progressIndicatorMessage>
+</GenAiFunction>

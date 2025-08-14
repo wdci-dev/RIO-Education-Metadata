@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Add Additional Fee to Student Fee</description>
+    <invocationTarget>REDU_AI_AddStudentFee</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Add Additional Fee</masterLabel>
+    <progressIndicatorMessage>Adding Student Fee</progressIndicatorMessage>
+</GenAiFunction>

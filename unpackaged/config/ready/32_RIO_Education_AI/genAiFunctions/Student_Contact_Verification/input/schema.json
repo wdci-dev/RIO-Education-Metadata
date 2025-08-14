@@ -1,0 +1,17 @@
+{
+  "required" : [ "myContact" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "myContact" : {
+      "title" : "myContact",
+      "description" : "Ensure rio_ed__Student_ID__c is not empty. Get the contact Id if it's not empty.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:sObjectInfo" : {
+        "apiName" : "Contact"
+      },
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

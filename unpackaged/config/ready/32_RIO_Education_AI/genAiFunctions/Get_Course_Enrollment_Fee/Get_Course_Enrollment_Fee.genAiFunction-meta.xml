@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Query fee line that linked to the course enrollment.</description>
+    <invocationTarget>REDU_AI_GetCourseEnrollmentFee</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Course Enrollment Fee</masterLabel>
+    <progressIndicatorMessage>Getting Course Enrollment Fee</progressIndicatorMessage>
+</GenAiFunction>

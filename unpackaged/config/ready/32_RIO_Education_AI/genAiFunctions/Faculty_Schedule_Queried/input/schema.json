@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:Faculty_Schedule_Queried" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Faculty_Schedule_Queried" : {
+      "title" : "Faculty Schedule Queried",
+      "description" : "Get result from 'REDU_AI_GetFacultySchedule'",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "citationMode" : {
+      "title" : "Citation Mode",
+      "description" : "Select Citation Mode",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

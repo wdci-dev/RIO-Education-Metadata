@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Query Student Fee that linked to the contactId and pe pathway with term = termId.</description>
+    <invocationTarget>REDU_AI_GetStudentFee</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Get Student Fee</masterLabel>
+    <progressIndicatorMessage>Getting Student Fee</progressIndicatorMessage>
+</GenAiFunction>

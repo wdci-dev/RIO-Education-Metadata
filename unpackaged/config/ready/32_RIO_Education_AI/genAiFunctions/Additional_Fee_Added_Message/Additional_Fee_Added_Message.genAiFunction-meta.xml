@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this template to generate the final output using the output from &apos;Add_Additional_Fee&apos; before returning to user upon a successful student fee addition.</description>
+    <invocationTarget>Additional_Fee_Added_Message</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>Additional Fee Added Message</masterLabel>
+    <progressIndicatorMessage>Finalizing Fee Addition</progressIndicatorMessage>
+</GenAiFunction>
