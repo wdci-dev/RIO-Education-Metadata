@@ -178,6 +178,10 @@ plans:
                         name: RIO Education - EDA Object Path Assistant
                         is_required: False
                         is_recommended: False
+                    15_default_attendance_submission_allow_partial:
+                        name: RIO Education - Default Attendance Submission to Allow Partial
+                        is_required: False
+                        is_recommended: True
             7:
                 task: execute_anon
                 options:
