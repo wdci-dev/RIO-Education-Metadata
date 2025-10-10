@@ -12,6 +12,14 @@
         <enabled>false</enabled>
         <name>rio_ed__REDU_Faculty</name>
     </customPermissions>
+	<customPermissions>
+        <enabled>false</enabled>
+        <name>REDU_Student_Success_Manager</name>
+    </customPermissions>
+	<customPermissions>
+        <enabled>false</enabled>
+        <name>REDU_Student_Success_User</name>
+    </customPermissions>
 	
 	<recordTypeVisibilities>
 		<default>false</default>
