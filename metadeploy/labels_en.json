@@ -11,6 +11,10 @@
         "description": {
             "message": "<h1>Welcome to the RIO Education installer!</h1>\r\n\r\n<b>IMPORTANT:</b> We do not recommend installing upgrades directly in production organizations. Instead, install your RIO Education upgrade in one of your free sandbox environments, or a developer organization first.\r\n\r\n<b>In order to install RIO Education, please ensure you have first installed Salesforce.org's Education Data Architecture (EDA). The EDA installer can be found <a href='https://install.salesforce.org/products/eda/latest'>here</a>.</b>\r\n\r\nPlease install RIO Education before deploying any additional plans. All additional plans are dependent on the RIO Education package.\r\n\r\nFor more detailed information about this installer and all its plans, please see <a href='https://help.rioeducation.com/en_US/install-rio-education/rio-education-plans'>this article</a>.",
             "description": "shown on product detail page (markdown)"
+        },
+        "click_through_agreement": {
+            "message": "By proceeding with the installation, you confirm that:\r\n<ol>\r\n<li>Your organization has executed and agreed to the RIO Education Subscription and Services Agreement (\u201cAgreement\u201d), which governs your use of the RIO Education product and related services.</li>\r\n<li>This installation is performed under the terms of that Agreement, including all limitations, warranties, and obligations described therein.</li>\r\n<li>You represent that you are authorized to accept and install this product on behalf of your organization.</li>\r\n<li>Installation of RIO Education may involve the transfer of configuration and metadata within your Salesforce environment as described in our product documentation.</li>\r\n<li>If you do not agree to the terms of the Master Agreement, you must cancel the installation.</li>",
+            "description": "legal text shown in modal dialog"
         }
     },
     "plan:install": {
